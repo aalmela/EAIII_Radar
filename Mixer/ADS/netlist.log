@@ -1,0 +1,98 @@
+; Top Design: "Mi_darae_lib:Mixer_microstrips:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Mi_darae_lib:Mixer_microstrips:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: Mi_darae_lib
+; Cell Name: BAT15_03w
+; View Name: schematic
+define BAT15_03w ( vin  P2 ) 
+;parameters 
+"DIODEM1":DIODE1  N__4 N__3 Mode=1 Noise=yes 
+R:R1  N__4 N__3 R=15e6 Ohm Noise=yes 
+L:L3  N__3 P2 L=0.60 nH Noise=yes  
+L:L2  vin N__2 L=0.65 nH Noise=yes  
+L:L1  N__2 N__4 L=0.76 nH Noise=yes  
+C:C1  N__2 N__3 C=120 fF 
+model DIODEM1 Diode Is=74 nA Rs=5 Ohm N=1.07 Tt=3 psec Cjo=138.5 fF Vj=0.224 V M=0.138 Fc=0.5 Nr=2 Ikf=1e300 Bv=4.2 Ibv=100 uA Kf=0 Af=1 AllowScaling=0 Tnom=27 Xti=1.5 Eg=0.59 
+end BAT15_03w
+
+MLIN2:TL1  N__1 N__22 Subst="MSub1" W=2.96 mm L=40.61 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+model MSub1 MSUB H=1.58 mm Er=4.5 Mur=1 Cond=4.0E+7 Hu=1e+33 mm T=0.150 mil TanD=0 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL2  N__21 N__16 Subst="MSub1" W=2.96 mm L=40.61 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  N__29 N__19 Subst="MSub1" W=5.07 mm L=39.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL4  N__7 N__13 Subst="MSub1" W=5.07 mm L=39.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__4 N__29 N__21 Subst="MSub1" W1=2.96 mm W2=5.07 mm W3=2.96 mm 
+MTEE_ADS:Tee4  N__7 N__20 N__16 Subst="MSub1" W1=5.07 mm W2=2.96 mm W3=2.96 mm 
+MTEE_ADS:Tee2  N__19 N__10 N__1 Subst="MSub1" W1=5.07 mm W2=2.96 mm W3=2.96 mm 
+MTEE_ADS:Tee3  N__17 N__13 N__22 Subst="MSub1" W1=2.96 mm W2=5.07 mm W3=2.96 mm 
+MLIN2:TL5  N__4 RF Subst="MSub1" W=2.96 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__20 LO Subst="MSub1" W=2.96 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL8  N__14 N__10 Subst="MSub1" W=2.96 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL7  N__28 N__17 Subst="MSub1" W=2.96 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSOBND:Bend2  N__12 N__14 Subst="MSub1" W=2.96 mm 
+MLIN2:TL9  N__3 N__27 Subst="MSub1" W=2.96 mm L=20.3 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSOBND:Bend1  N__28 N__27 Subst="MSub1" W=2.96 mm 
+MLIN2:TL10  N__11 N__12 Subst="MSub1" W=2.96 mm L=20.27 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL11  N__11 N__43 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL12  N__3 N__44 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL13  N__42 N__6 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee5  N__6 N__41 N__30 Subst="MSub1" W1=0.8 mm W2=0.8 mm W3=0.8 mm 
+MLIN2:TL14  N__41 N__0 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL15  N__39 N__38 Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee6  N__38 N__34 N__32 Subst="MSub1" W1=0.8 mm W2=0.8 mm W3=0.8 mm 
+MLIN2:TL16  N__34 Vout Subst="MSub1" W=0.8 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+HB:HB2 MaxOrder=5 Freq[1]=1 GHz Freq[2]=995 MHz Order[1]=7 Order[2]=3 StatusLevel=2 HBSS_WSP=0 SweepVar="LOpower" SweepPlan="HB2_stim" OutputPlan="HB2_Output" 
+
+SweepPlan: HB2_stim Start=LOpower Stop=LOpower Lin=1 
+
+OutputPlan:HB2_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB2_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1 GHz Order[1]=7 
+
+Component:tahb_HB2 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB2_tran" HB_Analysis="HB2" 
+
+
+LOpower=7
+S_Param:SP2 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP2_stim" OutputPlan="SP2_Output" 
+
+SweepPlan: SP2_stim Start=10 MHz Stop=3 GHz Step=10 MHz 
+
+OutputPlan:SP2_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Short:I_Probe1  Vout N__37 Mode=0 SaveCurrent=yes 
+Port:Term1  N__37 0 Num=3 Z=50 Noise=no 
+Port:PORT2  RF 0 Num=2 Z=50 Ohm P[1]=polar(dbmtow(-5),0) Freq[1]=995 MHz    Noise=yes Pac=polar(dbmtow(0),0) LimitPhaseNoiseToCarrier=no 
+Port:PORT1  LO 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(LOpower),0) Freq[1]=1000 MHz    Noise=no 
+TLIN:TL22  0 N__43 Z=85 Ohm E=90 F=1 GHz 
+TLIN:TL23  0 N__44 Z=85 Ohm E=90 F=1 GHz 
+BAT15_03w:X1  N__43 N__42 
+BAT15_03w:X2  N__42 N__44 
+C:C2  N__30 0 C=56 pF 
+C:C3  N__32 0 C=56 pF 
+L:L2  N__0 N__39 L=200 nH Noise=yes  

@@ -1,0 +1,12 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE Mi_darae_lib Mi_darae_lib
+ASSIGN Mi_darae_lib libMode shared
+INCLUDE $HOME/Documents/ADS_lib/HFDiode_vendor_kit/lib.defs
+DEFINE D315_v7_lib D315_v7_lib
+ASSIGN D315_v7_lib libMode shared
+DEFINE BAT15_04W_RFE $HOME/Documents/ADS_lib/BAT15_04W_RFE
+ASSIGN BAT15_04W_RFE libMode shared
+DEFINE BAT15_03W_RFE $HOME/Documents/ADS_lib/BAT15_03W_RFE
+ASSIGN BAT15_03W_RFE libMode shared
+INCLUDE $HOME/Documents/ADS_lib/murata/muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE $HOME/Documents/ADS_lib/murata/muRataLibWeb_L_EIA_confidential/lib.defs

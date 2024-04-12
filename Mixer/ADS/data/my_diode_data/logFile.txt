@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Mar 25 10:38:23 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk\data"
+      Process ID: 19148
+
+
+DC DC1[1] <Mi_darae_lib:my_diode:schematic>   VCC=(0->1)
+.....................................................................................................
+
+Resource usage:
+  Total stopwatch time     =     0.39 seconds.
+

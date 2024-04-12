@@ -1,0 +1,20 @@
+Netlist Translator (*) 550.shp Jul 24 2021
+ADS Netlist translation log
+
+Input format: PSpice
+Input filename: C:/Users/AlejandroAlmela/Documents/ADS_lib/BAT15_03w_spice_spar/bat15_03w/SPICE/D315_v7.TXT
+
+Output format: ADS Netlist file
+Output filename: C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk\d315.net
+
+Special options:
+    Processing first line as comment.
+
+Begin translation at Mon Mar 25 02:35:01 2024
+
+Creating netlist.
+Reading item definition file "C:\Program Files\Keysight\ADS2022/config\spctoiff.cfg"
+WARNING: Device "d1" in circuit "d315" has same name as model. Device name changed to "dd1".
+Subcircuits found in Spice Netlist:   1
+Subcircuits written to ADS Netlist:   1
+Translation completed at Mon Mar 25 02:35:01 2024.

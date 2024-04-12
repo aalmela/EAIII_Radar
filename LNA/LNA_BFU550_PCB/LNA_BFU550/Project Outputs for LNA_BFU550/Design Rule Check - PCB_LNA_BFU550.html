@@ -1,0 +1,476 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11/4/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">13:26:32</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc" class="file"><acronym title="C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc">C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">44</td></tr>
+</table>
+</td>
+</table><a name="IDTT0LHHCH2NBJMFQOJL3AZTBXLIB5TOTK5EKC2NN1ZPZ0EIRCYRMP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSEPH50RJ44X1G3PWZ03JW0IB2DZRUAN55UP0HILHPEBNSNURH3">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQWWNL35UMSHAIHW1LYLHH3PO0OHSOFRXW0N1BMK5IWIXXL0BDVKM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWP1LPHWFWKSIBAILLPNAX5UHUJOXORAS0QXEN4PLQ1YO0YSGIWHF">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">20</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ253GJ5LU5TFIJNOA5PKTDAWBDWJPOOAZSIIEZDRLKD3ZQB4UDTO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN4YEMP30SHZRJIL1OMO43NHMBPENMYO0IYNHMSOCVYDE1DXLGO3B">Width Constraint (Min=0.254mm) (Max=2.54mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIGH12YENGAHEJ2AAO3GSPEF0AHEACAGEINSLHOC25YAQACMRMEOK">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBNGXO43IL2QGPRCVJMRUCZ15WOSEOILVHXGMWHNWBLWBMLRJ1LII">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYITYWN5HHBBRCC3WE2KAZ51XTMOTOD1ZECXBMRJILXUG3OACJ22C">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK4PIKFWAVY2THWRNPCHODP4WZKSW3NVQRTU02DCAHOHAK30CQEAP">Minimum Solder Mask Sliver (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZW2EJH5RJFH2HBOAT0OCWY1APDZRY5PESPBUXCOK2SCUQ5BABTHE">Silk To Solder Mask (Clearance=0.152mm) (IsPad),(All)</a></td>
+<td class="column2">17</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJBNIUDNV51I1H2XEFBTCKMBZZC5BZCMOJX4IN3HZM54DVNJZZMTM">Silk to Silk (Clearance=0.152mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ0PXKNI4Y4MZBJHOQUENKUMQYIIZM2WYCXKOOFPVN1LBQKXMRMFE">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">5</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYRKCEC4XN1WF0DZGSFABYW2HGIQWD4RDSHJ52NWVYGH2JCEEMLL">Room LNA_BFU500 (Bounding Region = (178.943mm, 26.924mm, 300.482mm, 111.379mm) (InComponentClass('LNA_BFU500'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBMA4RRNAMRMOCB1UK1UKYORK0I4ZYO3FN1DIJWLRVGFMB3TUPUCG">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">44</td>
+</tr>
+</table><br><a name="IDWP1LPHWFWKSIBAILLPNAX5UHUJOXORAS0QXEN4PLQ1YO0YSGIWHF"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9178.441mil|Location2.X=9331.559mil|Location1.Y=3397.811mil|Location2.Y=3453.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9178.441mil|Location2.X=9331.559mil|Location1.Y=3397.811mil|Location2.Y=3453.055mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C10-2(233.934mm,87.006mm) on Top Layer And Pad C9-2(236.22mm,87.006mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9113.441mil|Location2.X=9241.559mil|Location1.Y=3001.945mil|Location2.Y=3453.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9113.441mil|Location2.X=9241.559mil|Location1.Y=3001.945mil|Location2.Y=3453.055mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad L2-2(232.283mm,76.951mm) on Top Layer And Pad C10-2(233.934mm,87.006mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8873.441mil|Location2.X=9176.559mil|Location1.Y=3001.945mil|Location2.Y=3057.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8873.441mil|Location2.X=9176.559mil|Location1.Y=3001.945mil|Location2.Y=3057.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C11-2(226.187mm,76.951mm) on Top Layer And Pad L2-2(232.283mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9957.811mil|Location2.X=10013.055mil|Location1.Y=3288.441mil|Location2.Y=3441.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9957.811mil|Location2.X=10013.055mil|Location1.Y=3288.441mil|Location2.Y=3441.559mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2-2(253.63mm,84.328mm) on Top Layer And Pad C1-2(253.63mm,86.614mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9957.811mil|Location2.X=10053.528mil|Location1.Y=3378.441mil|Location2.Y=3613.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9957.811mil|Location2.X=10053.528mil|Location1.Y=3378.441mil|Location2.Y=3613.528mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-2(253.63mm,86.614mm) on Top Layer And Pad VCC-2(254.508mm,90.932mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9113.441mil|Location2.X=9426.559mil|Location1.Y=3001.945mil|Location2.Y=3057.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9113.441mil|Location2.X=9426.559mil|Location1.Y=3001.945mil|Location2.Y=3057.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad L2-2(232.283mm,76.951mm) on Top Layer And Pad C12-2(238.633mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9363.441mil|Location2.X=9528.409mil|Location1.Y=3001.945mil|Location2.Y=3083.252mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9363.441mil|Location2.X=9528.409mil|Location1.Y=3001.945mil|Location2.Y=3083.252mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C12-2(238.633mm,76.951mm) on Top Layer And Pad Q1-3(241.62mm,77.563mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9908.441mil|Location2.X=10013.055mil|Location1.Y=3001.945mil|Location2.Y=3351.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9908.441mil|Location2.X=10013.055mil|Location1.Y=3001.945mil|Location2.Y=3351.559mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C8-2(252.476mm,76.951mm) on Top Layer And Pad C2-2(253.63mm,84.328mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9531.945mil|Location2.X=9587.189mil|Location1.Y=3488.441mil|Location2.Y=3636.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9531.945mil|Location2.X=9587.189mil|Location1.Y=3488.441mil|Location2.Y=3636.559mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4-2(242.813mm,89.408mm) on Top Layer And Pad C3-2(242.813mm,91.567mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9268.441mil|Location2.X=9587.189mil|Location1.Y=3397.811mil|Location2.Y=3551.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9268.441mil|Location2.X=9587.189mil|Location1.Y=3397.811mil|Location2.Y=3551.559mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-2(236.22mm,87.006mm) on Top Layer And Pad C4-2(242.813mm,89.408mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9571.591mil|Location2.X=9971.559mil|Location1.Y=3001.945mil|Location2.Y=3083.252mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9571.591mil|Location2.X=9971.559mil|Location1.Y=3001.945mil|Location2.Y=3083.252mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad Q1-4(243.52mm,77.563mm) on Top Layer And Pad C8-2(252.476mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9405mil|Location2.X=9606.25mil|Location1.Y=3030.709mil|Location2.Y=3319.183mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9405mil|Location2.X=9606.25mil|Location1.Y=3030.709mil|Location2.Y=3319.183mil|Absolute=True">Un-Routed Net Constraint: Net NetC6_2 Between Track (241.409mm,79.502mm)(241.427mm,79.52mm) on Top Layer And Pad PH3-1(241.459mm,81.767mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9406.25mil|Location2.X=9610.63mil|Location1.Y=3190.049mil|Location2.Y=3476.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9406.25mil|Location2.X=9610.63mil|Location1.Y=3190.049mil|Location2.Y=3476.063mil|Absolute=True">Un-Routed Net Constraint: Net NetPH2_1 Between Pad PH3-2(241.459mm,83.567mm) on Top Layer And Track (241.57mm,85.752mm)(241.67mm,85.852mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9489.37mil|Location2.X=9695mil|Location1.Y=3276.063mil|Location2.Y=3390.049mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9489.37mil|Location2.X=9695mil|Location1.Y=3276.063mil|Location2.Y=3390.049mil|Absolute=True">Un-Routed Net Constraint: Net NetPH2_2 Between Track (243.47mm,85.852mm)(243.57mm,85.752mm) on Top Layer And Pad PH4-2(243.713mm,83.567mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351mil|Location2.X=8559mil|Location1.Y=2906mil|Location2.Y=3009mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351mil|Location2.X=8559mil|Location1.Y=2906mil|Location2.Y=3009mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad RF input-2(214.757mm,75.121mm) on Top Layer And Pad RF input-2(214.757mm,75.121mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351mil|Location2.X=8559mil|Location1.Y=3251mil|Location2.Y=3354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8351mil|Location2.X=8559mil|Location1.Y=3251mil|Location2.Y=3354mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad RF input-2(214.757mm,83.883mm) on Top Layer And Pad RF input-2(214.757mm,83.883mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10516mil|Location2.X=10724mil|Location1.Y=2906mil|Location2.Y=3009mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10516mil|Location2.X=10724mil|Location1.Y=2906mil|Location2.Y=3009mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad RF output-2(269.748mm,75.121mm) on Top Layer And Pad RF output-2(269.748mm,75.121mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10516mil|Location2.X=10724mil|Location1.Y=3251mil|Location2.Y=3354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10516mil|Location2.X=10724mil|Location1.Y=3251mil|Location2.Y=3354mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad RF output-2(269.748mm,83.883mm) on Top Layer And Pad RF output-2(269.748mm,83.883mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9479.528mil|Location2.X=9680mil|Location1.Y=3030.433mil|Location2.Y=3315.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9479.528mil|Location2.X=9680mil|Location1.Y=3030.433mil|Location2.Y=3315.787mil|Absolute=True">Un-Routed Net Constraint: Net NetC5_1 Between Track (243.32mm,79.513mm)(243.47mm,79.513mm) on Top Layer And Track (243.332mm,81.681mm)(243.682mm,82.031mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9844.468mil|Location2.X=10280mil|Location1.Y=2859.466mil|Location2.Y=3062.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9844.468mil|Location2.X=10280mil|Location1.Y=2859.466mil|Location2.Y=3062.5mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (252.476mm,75.284mm)(252.589mm,75.17mm) on Top Layer And Track (258.572mm,75.248mm)(258.572mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZW2EJH5RJFH2HBOAT0OCWY1APDZRY5PESPBUXCOK2SCUQ5BABTHE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.152mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9902.494mil|Location2.X=9907.494mil|Location1.Y=3407.492mil|Location2.Y=3412.492mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9902.494mil|Location2.X=9907.494mil|Location1.Y=3407.492mil|Location2.Y=3412.492mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.152mm) Between Pad C1-1(251.83mm,86.614mm) on Top Layer And Text "C2" (251.079mm,85.979mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9721.159mil|Location2.X=9728.409mil|Location1.Y=3216.364mil|Location2.Y=3223.614mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9721.159mil|Location2.X=9728.409mil|Location1.Y=3216.364mil|Location2.Y=3223.614mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad L1-1(246.253mm,82.18mm) on Top Layer And Text "L1" (247.904mm,80.899mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3210.991mil|Location2.Y=3218.241mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3210.991mil|Location2.Y=3218.241mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad L1-1(246.253mm,82.18mm) on Top Layer And Text "PH4" (245.364mm,81.651mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9721.159mil|Location2.X=9728.409mil|Location1.Y=3181.375mil|Location2.Y=3188.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9721.159mil|Location2.X=9728.409mil|Location1.Y=3181.375mil|Location2.Y=3188.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad L1-2(246.253mm,80.38mm) on Top Layer And Text "L1" (247.904mm,80.899mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.159mil|Location2.X=9628.409mil|Location1.Y=3210.991mil|Location2.Y=3218.241mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.159mil|Location2.X=9628.409mil|Location1.Y=3210.991mil|Location2.Y=3218.241mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad PH4-1(243.713mm,81.767mm) on Top Layer And Text "PH4" (245.364mm,81.651mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.159mil|Location2.X=9628.409mil|Location1.Y=3285.967mil|Location2.Y=3293.217mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9621.159mil|Location2.X=9628.409mil|Location1.Y=3285.967mil|Location2.Y=3293.217mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad PH4-2(243.713mm,83.567mm) on Top Layer And Text "PH4" (245.364mm,81.651mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3363.186mil|Location2.Y=3370.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3363.186mil|Location2.Y=3370.436mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad R1-1(249.047mm,86.117mm) on Top Layer And Text "R1" (248.158mm,84.709mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3331.375mil|Location2.Y=3338.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3331.375mil|Location2.Y=3338.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad R1-2(249.047mm,84.317mm) on Top Layer And Text "R1" (248.158mm,84.709mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.571mil|Location2.X=9668.821mil|Location1.Y=3286.912mil|Location2.Y=3294.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.571mil|Location2.X=9668.821mil|Location1.Y=3286.912mil|Location2.Y=3294.162mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.116mm &lt; 0.152mm) Between Pad R2-1(246.253mm,84.19mm) on Top Layer And Text "PH4" (245.364mm,81.651mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.116mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3326.375mil|Location2.Y=3333.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3326.375mil|Location2.Y=3333.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad R2-1(246.253mm,84.19mm) on Top Layer And Text "R2" (245.364mm,84.582mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3358.186mil|Location2.Y=3365.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3358.186mil|Location2.Y=3365.436mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.113mm &lt; 0.152mm) Between Pad R2-2(246.253mm,85.99mm) on Top Layer And Text "R2" (245.364mm,84.582mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=3101.375mil|Location2.Y=3108.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=3101.375mil|Location2.Y=3108.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF input-1(214.757mm,79.502mm) on Top Layer And Track (211.963mm,66.167mm)(211.963mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=2906.375mil|Location2.Y=2913.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=2906.375mil|Location2.Y=2913.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF input-2(214.757mm,75.121mm) on Top Layer And Track (211.963mm,66.167mm)(211.963mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=3251.375mil|Location2.Y=3258.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8348.875mil|Location2.X=8356.125mil|Location1.Y=3251.375mil|Location2.Y=3258.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF input-2(214.757mm,83.883mm) on Top Layer And Track (211.963mm,66.167mm)(211.963mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=3101.375mil|Location2.Y=3108.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=3101.375mil|Location2.Y=3108.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF output-1(269.748mm,79.502mm) on Top Layer And Track (272.542mm,66.167mm)(272.542mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=2906.375mil|Location2.Y=2913.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=2906.375mil|Location2.Y=2913.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF output-2(269.748mm,75.121mm) on Top Layer And Track (272.542mm,66.167mm)(272.542mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=3251.375mil|Location2.Y=3258.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10718.875mil|Location2.X=10726.125mil|Location1.Y=3251.375mil|Location2.Y=3258.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.127mm &lt; 0.152mm) Between Pad RF output-2(269.748mm,83.883mm) on Top Layer And Track (272.542mm,66.167mm)(272.542mm,96.52mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.127mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJBNIUDNV51I1H2XEFBTCKMBZZC5BZCMOJX4IN3HZM54DVNJZZMTM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.152mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3351.371mil|Location2.Y=3358.621mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9771.595mil|Location2.X=9778.845mil|Location1.Y=3351.371mil|Location2.Y=3358.621mil|Absolute=True">Silk To Silk Clearance Constraint: (0.113mm &lt; 0.152mm) Between Text "R1" (248.158mm,84.709mm) on Top Overlay And Track (248.447mm,85.217mm)(249.647mm,85.217mm) on Top Overlay Silk Text to Silk Clearance [0.113mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3346.371mil|Location2.Y=3353.621mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9661.595mil|Location2.X=9668.845mil|Location1.Y=3346.371mil|Location2.Y=3353.621mil|Absolute=True">Silk To Silk Clearance Constraint: (0.113mm &lt; 0.152mm) Between Text "R2" (245.364mm,84.582mm) on Top Overlay And Track (245.653mm,85.09mm)(246.853mm,85.09mm) on Top Overlay Silk Text to Silk Clearance [0.113mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJ0PXKNI4Y4MZBJHOQUENKUMQYIIZM2WYCXKOOFPVN1LBQKXMRMFE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8881.815mil|Location2.X=8937.372mil|Location1.Y=2941.815mil|Location2.Y=3029.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8881.815mil|Location2.X=8937.372mil|Location1.Y=2941.815mil|Location2.Y=3029.52mil|Absolute=True">Net Antennae: Track (226.187mm,75.311mm)(226.187mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9121.815mil|Location2.X=9177.372mil|Location1.Y=2936.485mil|Location2.Y=3024.191mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9121.815mil|Location2.X=9177.372mil|Location1.Y=2936.485mil|Location2.Y=3024.191mil|Absolute=True">Net Antennae: Track (232.283mm,75.176mm)(232.283mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9371.815mil|Location2.X=9427.372mil|Location1.Y=2936.281mil|Location2.Y=3023.986mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9371.815mil|Location2.X=9427.372mil|Location1.Y=2936.281mil|Location2.Y=3023.986mil|Absolute=True">Net Antennae: Track (238.633mm,75.17mm)(238.633mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9916.815mil|Location2.X=9972.372mil|Location1.Y=2940.748mil|Location2.Y=3028.454mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9916.815mil|Location2.X=9972.372mil|Location1.Y=2940.748mil|Location2.Y=3028.454mil|Absolute=True">Net Antennae: Track (252.476mm,75.284mm)(252.476mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10156.815mil|Location2.X=10212.372mil|Location1.Y=2939.315mil|Location2.Y=3027.02mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\AlejandroAlmela\Documents\EAIII_2024\LNA\LNA_BFU550_02\LNA_BFU550\PCB_LNA_BFU550.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10156.815mil|Location2.X=10212.372mil|Location1.Y=2939.315mil|Location2.Y=3027.02mil|Absolute=True">Net Antennae: Track (258.572mm,75.248mm)(258.572mm,76.951mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

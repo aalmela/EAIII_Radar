@@ -1,0 +1,147 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Sun Apr  7 03:56:56 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mixer\ADS\data"
+      Process ID: 15060
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'HB' analysis present.
+
+HB HB2[1] <Mi_darae_lib:Mixer_microstrips:schematic>
+Pt DC convergence is used.
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 1335.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	74.5047 A   	100.0             
+1.0 	47.2559 A   	100.0	1.95216 kV   
+        Samanskii-Newton iteration failed
+1.1*	47.2559 A   	100.0	428.825 mV   
+2.0*	1.40771 A   	100.0	132.328 mV   
+3.0 	510.724 mA  	100.0	27.6755 mV   
+3.1 	349.425 mA  	100.0	20.1749 mV   
+3.2*	267.79 mA   	100.0	183.61 mV    
+4.0 	91.584 mA   	100.0	61.8103 mV   
+4.1 	60.3716 mA  	100.0	45.6312 mV   
+4.2 	45.2138 mA  	100.0	33.1487 mV   
+4.3 	36.0098 mA  	100.0	21.9105 mV   
+4.4 	29.7747 mA  	100.0	13.9793 mV   
+4.5 	25.2463 mA  	100.0	9.08559 mV   
+4.6 	21.8022 mA  	100.0	6.07054 mV   
+4.7 	19.1313 mA  	100.0	4.33326 mV   
+4.8*	16.9913 mA  	100.0	41.0888 mV   
+5.0 	5.27207 mA  	100.0	10.2756 mV   
+5.1 	3.19657 mA  	100.0	7.8613 mV    
+5.2 	2.26447 mA  	100.0	5.96728 mV   
+5.3 	1.74211 mA  	100.0	4.70901 mV   
+5.4 	1.41776 mA  	100.0	3.83214 mV   
+5.5 	1.18954 mA  	100.0	3.18665 mV   
+5.6 	1.00989 mA  	100.0	2.69099 mV   
+5.7 	865.858 uA  	100.0	2.29855 mV   
+5.8 	748.473 uA  	100.0	1.98076 mV   
+5.9 	651.407 uA  	100.0	1.71898 mV   
+5.10 	570.14 uA   	100.0	1.50043 mV   
+5.11 	501.381 uA  	100.0	1.31599 mV   
+5.12 	443.217 uA  	100.0	1.15895 mV   
+5.13 	393.141 uA  	100.0	1.02525 mV   
+5.14 	349.728 uA  	100.0	909.701 uV   
+5.15 	311.884 uA  	100.0	809.283 uV   
+5.16 	278.738 uA  	100.0	721.6 uV     
+5.17 	249.588 uA  	100.0	644.72 uV    
+5.18 	223.86 uA   	100.0	577.067 uV   
+5.19 	201.081 uA  	100.0	517.342 uV   
+5.20 	180.868 uA  	100.0	464.465 uV   
+5.21 	163.024 uA  	100.0	417.53 uV    
+5.22 	147.083 uA  	100.0	375.774 uV   
+5.23 	132.856 uA  	100.0	338.547 uV   
+5.24 	120.121 uA  	100.0	305.296 uV   
+5.25 	108.676 uA  	100.0	275.546 uV   
+5.26*	98.3797 uA  	100.0	2.61034 mV   
+6.0 	2.25997 uA  	100.0	59.0024 uV   
+6.1 	100.452 nA  	100.0	2.62041 uV   
+6.2 	4.50738 nA  	100.0	117.55 nV    
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             1.811e-03       >       1.085e-06
+X1.N__3                 1.270e-03       >       1.069e-06
+X2.N__3                 8.652e-04       >       1.296e-06
+X1.DIODE1.a             3.292e-04       >       1.267e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 1.811e-03 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.085e-06 for this waveform.
+o A time-domain plot of the N__42 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB2[1] <Mi_darae_lib:Mixer_microstrips:schematic>   LOpower=7
+    Number of tones:   2.
+    Number of frequencies:   29.
+    Number of time samples:  128.
+    Number of HB equations (problem size): 5073.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+    LOpower=7            100.00% 1/1
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	19.5959 mA  	100.0             
+1 	22.2406 mA  	100.0	154.43 mV   	  3	4.586e-02   
+2 	16.8543 mA  	 25.0	240.355 mV  	 42	4.727e-02   
+3 	11.2986 mA  	 50.0	217.413 mV  	 42	4.613e-02   
+4 	2.6081 mA   	100.0	136.549 mV  	 46	4.504e-02   
+5 	373.842 uA  	100.0	25.0475 mV  	 43	4.411e-02   
+6 	28.4762 uA  	100.0	5.13594 mV  	 50	6.351e-02   
+7 	2.70436 uA  	100.0	968.929 uV  	 51	9.942e-02   
+8 	274.294 nA  	100.0	78.5051 uV  	 53	9.923e-02   
+9 	20.0857 nA  	100.0	6.09093 uV  	 50	8.164e-02   
+10 	2.20634 nA  	100.0	767.789 nV  	 52	9.417e-02   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             2.840e-04       >       1.084e-06
+X1.N__3                 2.350e-04       >       1.069e-06
+X2.N__3                 1.136e-04       >       1.297e-06
+X1.DIODE1.a             9.253e-05       >       1.273e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 2.840e-04 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.084e-06 for this waveform.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+SP SP2[1] <Mi_darae_lib:Mixer_microstrips:schematic>   freq=(10 MHz->3 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.78 seconds.
+

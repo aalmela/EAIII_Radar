@@ -1,0 +1,22 @@
+*********************************************************************
+* Infineon Technologies Discrete & RF Semiconductors                *
+* SPICE2G6 Model:  Schottky Diode BAT15 series (Chip model)         *
+* Filename:        D315_v7.txt                                      *
+* Version:         7.0                                              *
+* Date:            Feb 2003                                         *
+* Author:          A. Boehme                                        *
+*********************************************************************
+* -Parallel-resistor R1 for a better reverse behaviour.             *
+* -The temperature-dependence of the reverse breakdown voltage and  *
+*  the ohmic series resistance (parameter RS) are in SPICE2G6 not   *
+*  adaptable.                                                       *
+* -Model needs a very low parameter Vj. The value is limited        *
+*  to 0.224 for model-use at 85 degC. This value can produce        *
+*  simulator-warnings at higher temperatures.                       *
+*********************************************************************
+.SUBCKT D315  1  2
+D1  1  2  D1
+R1  1  2  15e6
+.MODEL D1 D(IS=74.0n N=1.07 RS=5.0 XTI=1.5 EG=0.59
++ CJO=138.5f M=0.138 VJ=0.224 FC=0.5 TT=3.0p BV=4.2 IBV=100.0u)
+.ENDS D315

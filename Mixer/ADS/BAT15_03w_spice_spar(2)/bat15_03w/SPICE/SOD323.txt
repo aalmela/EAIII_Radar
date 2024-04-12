@@ -1,0 +1,40 @@
+****************************************************************
+*  INFINEON TECHNOLOGIES AG
+* RF-PACKAGE EQUIVALENT CIRCUIT 
+* VALID UP TO 6 GHZ
+* >>> SOD123 <<< (RF-DIODE-PACKAGE)
+* FILENAME: SOD123.TXT
+
+* (C) 2001 INFINEON TECHNOLOGIES AG
+* Version 1.2             June 2001               A.Boehme
+****************************************************************
+*
+*                           CAC
+*             (10)          | |          (20)
+*              +------------| |------------+
+*              |            | |            |
+*         LAO  |                           |  LCO
+*     A---LLL--+                           +--LLL---C
+*   (100)      |                           |      (200)
+*              |  LAI                      |
+*              +--LLL---A' CHIP  C'--------+
+*                      (1)      (2)
+*
+BLK
+     IND    1   10    L=0.76nH       ; LAI
+     CAP   10   20    C=120fF        ; CAC
+     IND   10  100    L=0.65nH       ; LAO
+     IND   20  200    L=0.60nH       ; LCO
+     PACK: 4POR  1  2  100  200
+     *           A' C'  A    C
+END
+****************************************************************
+* PACK = NAME OF PACKAGE BLOCK, DEFINED AS 4-PORT
+* 1    = ANODE OF CHIP
+* 2    = CATHODE OF CHIP
+* 100  = ANODE OF COMPLETE DIODE IN PACKAGE
+* 200  = CATHODE OF COMPLETE DIODE IN PACKAGE
+* 
+* Add Spice model or discrete equivalent circuit for chip
+* between terminals (1) and (2)
+****************************************************************

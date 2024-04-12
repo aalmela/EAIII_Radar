@@ -1,0 +1,8 @@
+ConnectionMethod = 2
+SpiceDialect = 3
+ElementReplacementTable
+IgnoreFirstLine = true
+SuppressNameMapping = false
+ComponentName = spice1
+NumberOfPins = 0
+DirectoryToStoreNetList = C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk

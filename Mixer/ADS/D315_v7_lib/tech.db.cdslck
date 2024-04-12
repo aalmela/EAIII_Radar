@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      AlejandroAlmela
+HostName                       DESKTOP-LHADK87
+ProcessIdentifier              12864
+ProcessCreationTime_UTC        1711317765
+ProcessCreationTime_Readable   Sun Mar 24 19:02:45 2024 Hora estándar de Argentina
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk\D315_v7_lib\tech.db.cdslck
+TimeEditLocked                 Mon Mar 25 02:34:46 2024 Hora estándar de Argentina

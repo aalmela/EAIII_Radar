@@ -1,0 +1,7 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic y1="-8" cell="1_DC" lib="VCO_lib" x1="-1" geom="1,0,2,361,371,687,688,1366,768" view="schematic" height="697" width="1366"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

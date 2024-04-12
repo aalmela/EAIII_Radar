@@ -1,0 +1,45 @@
+Simulation Messages
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'HB' analysis present.
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 3
+
+Status / Summary
+
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+***** Simulation started at Mon Mar 25 18:10:03 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk\data"
+      Process ID: 4944
+
+HB HB1[1] <Mi_darae_lib:Mixer_microstrips:schematic>
+Pt DC convergence is used.
+.
+
+
+HB HB1[1] <Mi_darae_lib:Mixer_microstrips:schematic>
+.
+
+SP SP1[1] <Mi_darae_lib:Mixer_microstrips:schematic>   freq=(0 Hz->3 GHz)
+
+Resource usage:
+  Total stopwatch time     =     0.46 seconds.
+
+***** Simulation finished at Mon Mar 25 18:10:03 2024
+
+-------------------------------------------------------------------------------
+Simulation finished: dataset `Mixer_microstrips' written in:
+  `C:\Users\AlejandroAlmela\Documents\EAIII_2024\Mi_darae_wrk/data'
+-------------------------------------------------------------------------------
+
+
+---------------------------------------
+----  Creating New Display Window  ----
+----          Please Wait...       ----
+
+----         Window Created        ----
+---------------------------------------

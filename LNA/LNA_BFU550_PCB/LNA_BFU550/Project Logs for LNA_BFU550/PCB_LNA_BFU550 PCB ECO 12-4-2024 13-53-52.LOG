@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetC6_2 Pin=PH3-1
+Removed Pin From Net: NetName=NetC5_1 Pin=PH4-1
+Removed Member From Class: ClassName=LNA_BFU500 Member=PH2
+Removed Member From Class: ClassName=LNA_BFU500 Member=PH3
+Removed Member From Class: ClassName=LNA_BFU500 Member=PH4
