@@ -1,0 +1,34 @@
+/* macref bjade.jmr - - - - - - - */
+jade_exec  "jade 0"
+master library master mask drawgrx 
+jade_resolution_factor 1
+xyuser "%4.2lf"
+readprefix '$HOME'
+listreadsuffix opal  ".def"
+! opal_profile .stream inc .opal_profile end_opal_profile 
+all_layers
+topdown pamp end_libblk
+end_library
+master  
+fjade run drc_result
+rule jh_pc5
+xyuser
+!! report in USER (chip) coordinates
+local
+!! run jade locally (DPC interface not yet implemented)
+norootcell clip 
+autowindow autogrid real 32000000
+makefacets
+!! calculate facets based on memory and storage
+dofacets
+!! execute JADE for all facets
+opalheader
+!! send resolution
+reportfacets
+!! collect the results
+showfacets
+!! report on the status of all facets
+cleanfacets
+!! clean up all the facet files
+end_fjade
+.stream return

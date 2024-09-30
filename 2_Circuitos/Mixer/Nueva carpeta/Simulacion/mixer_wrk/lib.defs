@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_L_EIA_confidential/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_C_EIA_confidential/lib.defs
+DEFINE mixer_lib mixer_lib
+ASSIGN mixer_lib libMode shared

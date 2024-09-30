@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQW32FT2R2M0H","1:LQW32FT2R2M0H, Wound, 2200[nH], +/-20[%], 1000[mA], 1[MHz]-20[GHz]:1",68,"1","LQW32FT2R2M0H");
+create_constant_form("LQW32FT2R7M0H","2:LQW32FT2R7M0H, Wound, 2700[nH], +/-20[%], 975[mA], 1[MHz]-20[GHz]:2",68,"2","LQW32FT2R7M0H");
+create_constant_form("LQW32FT3R3M0H","3:LQW32FT3R3M0H, Wound, 3300[nH], +/-20[%], 950[mA], 1[MHz]-20[GHz]:3",68,"3","LQW32FT3R3M0H");
+create_constant_form("LQW32FT4R7M0H","4:LQW32FT4R7M0H, Wound, 4700[nH], +/-20[%], 850[mA], 1[MHz]-20[GHz]:4",68,"4","LQW32FT4R7M0H");
+create_constant_form("LQW32FT100M0H","5:LQW32FT100M0H, Wound, 10000[nH], +/-20[%], 700[mA], 1[MHz]-20[GHz]:5",68,"5","LQW32FT100M0H");
+create_constant_form("LQW32FT220M0H","6:LQW32FT220M0H, Wound, 22000[nH], +/-20[%], 550[mA], 1[MHz]-20[GHz]:6",68,"6","LQW32FT220M0H");
+create_constant_form("LQW32FT470M0H","7:LQW32FT470M0H, Wound, 47000[nH], +/-20[%], 500[mA], 1[MHz]-20[GHz]:7",68,"7","LQW32FT470M0H");
+
+create_form_set("LQW32FT_0H_list" 
+,"LQW32FT2R2M0H"
+,"LQW32FT2R7M0H"
+,"LQW32FT3R3M0H"
+,"LQW32FT4R7M0H"
+,"LQW32FT100M0H"
+,"LQW32FT220M0H"
+,"LQW32FT470M0H"
+);
+
+create_compound_form("LQW32FT_0H_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQW32FT_0H_list",-1,prm("LQW32FT2R2M0H")),
+create_parm("MIN","Minimum",32,"LQW32FT_0H_list",-1,prm("LQW32FT2R2M0H")),
+create_parm("MAX","Maximum",32,"LQW32FT_0H_list",-1,prm("LQW32FT470M0H")));
+
+create_form_set("LQW32FT_0H_list_opt","NULL" 
+,"LQW32FT2R2M0H"
+,"LQW32FT2R7M0H"
+,"LQW32FT3R3M0H"
+,"LQW32FT4R7M0H"
+,"LQW32FT100M0H"
+,"LQW32FT220M0H"
+,"LQW32FT470M0H"
+,"LQW32FT_0H_compound"
+);
+
+
+

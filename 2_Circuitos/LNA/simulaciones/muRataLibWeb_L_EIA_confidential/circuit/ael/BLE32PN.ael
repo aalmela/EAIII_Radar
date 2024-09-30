@@ -1,0 +1,222 @@
+//****************************************************************************
+// File:        BLE32PN.ael (create_item_FB.ael)
+// Description: component definition file
+// Author:      Keysight Technologies Japan, Ltd. 
+// Created:     2023.10.30 14:32:41
+// Language:    AEL
+// (C) Copyright 2004-2016, Keysight Technologies Japan G.K. , all rights reserved.
+//****************************************************************************
+
+
+// Item definition /////////////////////////////////////////////////
+set_simulator_type(-1);
+create_item
+(
+	"BLE32PN"	//name//
+	,"EMI Filter"		//label//
+	,"FB"		//prefix//
+	,ITEM_BOM_ITEM		//attribute//
+	,-1					//priority//
+	,NULL               //iconName//
+	,"Component Parameters"  //dialogName//
+	,""                      //dialogData//
+	,ComponentNetlistFmt      //netlistformat// CmpModelNetlistFmt or ComponentNetlistFmt
+	,"BLE32PN"            //netlistData//
+	,ComponentAnnotFmt       //displayFormat//
+	,"SYM_FB"    //symbolName(Obsolete)//
+	,2                               //artworkType,0 = no artwork,1 = fixed artwork,2 = ael generated artwork(Obsolete)//
+	,"muRataLibWeb_BLE32PN_draw_artwork"  //artworkData, For fixed artwork,a layout artwork design name, For macro artwork, an AEL artwork generation function (Obsolete)// 
+	,ITEM_PRIMITIVE_EX                //extraAttribute//
+////////////////////////////////////////////////////////////////////
+
+// Parmameter definition ///////////////////////////////////////////
+	,create_parm
+	(
+		"PartNumber"
+		,"Component Part Number"
+		,PARM_STRING
+		,"BLE32PN_list_opt"
+		,STRING_UNIT
+		,prm("NULL","NULL")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_L_paramType_FB_cb", "PartNumber", TRUE))
+	)
+	,create_parm
+	(
+		"Type"
+		,"Type or Use"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_L_paramType_FB_cb", "Type", TRUE))
+	)
+	,create_parm
+	(
+		"Size"
+		,"Size Code"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm", "\"3225[mm]/1210[inch]\"")
+	)
+	,create_parm
+	(
+		"Dimensions"
+		,"LxWxH"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED | PARM_NOT_EDITED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm", "\"3.2x2.5[mm]\"")
+	)
+	,create_parm
+	(
+		"RatedCurrent"
+		,"Rated Current"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_L_paramType_FB_cb", "RatedCurrent", TRUE))
+	)
+	,create_parm
+	(
+		"FreqRange"
+		,"Frequency Range"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_L_paramType_FB_cb", "FreqRange", TRUE))
+	)
+	// for artwork 
+	,create_parm
+	(
+		"LandWidth"
+		,"Width of the land ( 2.05 mm < LandWidth < 2.05 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","2.05 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_BLE32PN_lay_cb", "LandWidth", TRUE))
+	)
+	,create_parm
+	(
+		"LandLength"
+		,"Length of the land ( 1.1 mm < LandLength < 1.1 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","1.1 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_BLE32PN_lay_cb", "LandLength", TRUE))
+
+	)
+	,create_parm
+	(
+		"LandSpace"
+		,"Space of the land ( 2.2 mm < LandSpace < 2.2 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","2.2 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_BLE32PN_lay_cb", "LandSpace", TRUE))
+
+	)
+	,create_parm
+	(
+		"LandLayer"
+		,"Layer of the pad"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"smt_pad_layer"
+		,UNITLESS_UNIT
+//		,prm("layer_text_form","\"bond\"")
+		,prm("layer_text_form","\"bond:drawing\"")
+	)
+);
+
+////////////////////////////////////////////////////////////////////
+// Callback function
+////////////////////////////////////////////////////////////////////
+
+defun muRataLibWeb_BLE32PN_lay_cb(cbP, clientData, callData)
+{
+	decl dependentParmData=NULL;
+
+
+	//get parameter value
+	decl LandWidth  = pcb_get_mks(callData, "LandWidth");
+	decl LandLength = pcb_get_mks(callData, "LandLength");
+	decl LandSpace  = pcb_get_mks(callData, "LandSpace");
+
+	decl LandWidth_MIN  = 2.05 mm;
+	decl LandLength_MIN = 1.1 mm;
+	decl LandSpace_MIN  = 2.2 mm;
+
+	decl LandWidth_MAX  = 2.05 mm;
+	decl LandLength_MAX = 1.1 mm;
+	decl LandSpace_MAX  = 2.2 mm;
+
+	// check value range ---
+	if(LandWidth < LandWidth_MIN )
+		LandWidth = LandWidth_MIN;
+	elseif(LandWidth > LandWidth_MAX )
+		LandWidth = LandWidth_MAX;
+
+	// check value range ---
+	if(LandLength < LandLength_MIN )
+		LandLength = LandLength_MIN;
+	elseif(LandLength > LandLength_MAX )
+		LandLength = LandLength_MAX;
+
+	// check value range ---
+	if(LandSpace < LandSpace_MIN )
+		LandSpace = LandSpace_MIN;
+	elseif(LandSpace > LandSpace_MAX )
+		LandSpace = LandSpace_MAX;
+
+	// Return the values ////
+	dependentParmData = pcb_set_mks(dependentParmData, "LandWidth"  ,LandWidth);
+	dependentParmData = pcb_set_mks(dependentParmData, "LandLength" ,LandLength);
+	dependentParmData = pcb_set_mks(dependentParmData, "LandSpace"  ,LandSpace);
+	return dependentParmData;
+
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+// Artwork data
+////////////////////////////////////////////////////////////////////
+
+
+defun muRataLibWeb_BLE32PN_draw_artwork(
+//	PartNumber,
+//	Type,
+//	Size,
+//	TempCharacteristics,
+//	Value,
+//	Tolerance,
+//	Dimensions,
+//	RatedVoltage,
+//	FreqRange,
+	PartNumber,
+	Type,
+	Size,
+	Dimensions,
+	RatedCurrent,
+	FreqRange,
+	LandWidth,
+	LandLength,
+	LandSpace,
+	LandLayer
+)
+{
+	// artwork ...  ./circuit/artwork/layout.ael
+	muRataLibWeb_basic_CL_draw_artwork(
+		Dimensions,
+		LandWidth,
+		LandLength,
+		LandSpace,
+		LandLayer );
+		
+}
+

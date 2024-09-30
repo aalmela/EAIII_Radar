@@ -1,0 +1,9 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_connectivity
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_connectivity"
+
+.termconduct
+.stream return

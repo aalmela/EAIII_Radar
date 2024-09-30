@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR731AW0BB103KW01","1:GR731AW0BB103KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 10000[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","GR731AW0BB103KW01");
+create_constant_form("GR731AW0BB153KW01","2:GR731AW0BB153KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 15000[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","GR731AW0BB153KW01");
+create_constant_form("GR731AW0BB223KW01","3:GR731AW0BB223KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 22000[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","GR731AW0BB223KW01");
+create_constant_form("GR731BW0BB223KW01","4:GR731BW0BB223KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 22000[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","GR731BW0BB223KW01");
+create_constant_form("GR731AW0BB333KW01","5:GR731AW0BB333KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 33000[pF], +/-10[%], 100[kHz]-3[GHz]:5",68,"5","GR731AW0BB333KW01");
+create_constant_form("GR731BW0BB333KW01","6:GR731BW0BB333KW01, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 33000[pF], +/-10[%], 100[kHz]-3[GHz]:6",68,"6","GR731BW0BB333KW01");
+create_constant_form("GR731CW0BB473KW03","7:GR731CW0BB473KW03, 200V and over/ Camera Flash Units, -(-55to125[deg]), 350[V], 47000[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","GR731CW0BB473KW03");
+
+create_form_set("GR731_list" 
+,"GR731AW0BB103KW01"
+,"GR731AW0BB153KW01"
+,"GR731AW0BB223KW01"
+,"GR731BW0BB223KW01"
+,"GR731AW0BB333KW01"
+,"GR731BW0BB333KW01"
+,"GR731CW0BB473KW03"
+);
+
+create_compound_form("GR731_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR731_list",-1,prm("GR731AW0BB103KW01")),
+create_parm("MIN","Minimum",32,"GR731_list",-1,prm("GR731AW0BB103KW01")),
+create_parm("MAX","Maximum",32,"GR731_list",-1,prm("GR731CW0BB473KW03")));
+
+create_form_set("GR731_list_opt","NULL" 
+,"GR731AW0BB103KW01"
+,"GR731AW0BB153KW01"
+,"GR731AW0BB223KW01"
+,"GR731BW0BB223KW01"
+,"GR731AW0BB333KW01"
+,"GR731BW0BB333KW01"
+,"GR731CW0BB473KW03"
+,"GR731_compound"
+);
+
+
+

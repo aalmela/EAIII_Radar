@@ -1,0 +1,11 @@
+Added Component: Designator=L5(INDC1608X100N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LQW18AN18NJ00D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = "LQW0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1nHy"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC5_2 Pin=L5-1
+Added Pin To Net: NetName=NetC6_2 Pin=L5-2
+Added Member To Class: ClassName=mixer_1GHz_rat_race_discreto Member=Component L5 LQW18

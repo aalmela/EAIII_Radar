@@ -1,0 +1,31 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM21RK102SN1","1:BLM21RK102SN1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:1",68,"1","BLM21RK102SN1");
+create_constant_form("BLM21RK121SN1","2:BLM21RK121SN1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:2",68,"2","BLM21RK121SN1");
+create_constant_form("BLM21RK221SN1","3:BLM21RK221SN1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:3",68,"3","BLM21RK221SN1");
+create_constant_form("BLM21RK471SN1","4:BLM21RK471SN1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:4",68,"4","BLM21RK471SN1");
+create_constant_form("BLM21RK601SN1","5:BLM21RK601SN1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:5",68,"5","BLM21RK601SN1");
+
+create_form_set("BLM21RK_list" 
+,"BLM21RK102SN1"
+,"BLM21RK121SN1"
+,"BLM21RK221SN1"
+,"BLM21RK471SN1"
+,"BLM21RK601SN1"
+);
+
+create_compound_form("BLM21RK_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM21RK_list",-1,prm("BLM21RK102SN1")),
+create_parm("MIN","Minimum",32,"BLM21RK_list",-1,prm("BLM21RK102SN1")),
+create_parm("MAX","Maximum",32,"BLM21RK_list",-1,prm("BLM21RK601SN1")));
+
+create_form_set("BLM21RK_list_opt","NULL" 
+,"BLM21RK102SN1"
+,"BLM21RK121SN1"
+,"BLM21RK221SN1"
+,"BLM21RK471SN1"
+,"BLM21RK601SN1"
+,"BLM21RK_compound"
+);
+
+
+

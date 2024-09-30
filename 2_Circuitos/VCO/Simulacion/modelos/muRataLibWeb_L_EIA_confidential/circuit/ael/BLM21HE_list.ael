@@ -1,0 +1,40 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM21HE601SH1","1:BLM21HE601SH1, Ferrite Bead Single Type, 2300[mA], 1[MHz]-3[GHz]:1",68,"1","BLM21HE601SH1");
+create_constant_form("BLM21HE122SH1","2:BLM21HE122SH1, Ferrite Bead Single Type, 1600[mA], 1[MHz]-3[GHz]:2",68,"2","BLM21HE122SH1");
+create_constant_form("BLM21HE472SH1","3:BLM21HE472SH1, Ferrite Bead Single Type, 850[mA], 1[MHz]-3[GHz]:3",68,"3","BLM21HE472SH1");
+create_constant_form("BLM21HE802SH1","4:BLM21HE802SH1, Ferrite Bead Single Type, 650[mA], 1[MHz]-3[GHz]:4",68,"4","BLM21HE802SH1");
+create_constant_form("BLM21HE601BH1","5:BLM21HE601BH1, Ferrite Bead Single Type, 2300[mA], 1[MHz]-3[GHz]:5",68,"5","BLM21HE601BH1");
+create_constant_form("BLM21HE122BH1","6:BLM21HE122BH1, Ferrite Bead Single Type, 1600[mA], 1[MHz]-3[GHz]:6",68,"6","BLM21HE122BH1");
+create_constant_form("BLM21HE472BH1","7:BLM21HE472BH1, Ferrite Bead Single Type, 850[mA], 1[MHz]-3[GHz]:7",68,"7","BLM21HE472BH1");
+create_constant_form("BLM21HE802BH1","8:BLM21HE802BH1, Ferrite Bead Single Type, 650[mA], 1[MHz]-3[GHz]:8",68,"8","BLM21HE802BH1");
+
+create_form_set("BLM21HE_list" 
+,"BLM21HE601SH1"
+,"BLM21HE122SH1"
+,"BLM21HE472SH1"
+,"BLM21HE802SH1"
+,"BLM21HE601BH1"
+,"BLM21HE122BH1"
+,"BLM21HE472BH1"
+,"BLM21HE802BH1"
+);
+
+create_compound_form("BLM21HE_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM21HE_list",-1,prm("BLM21HE601SH1")),
+create_parm("MIN","Minimum",32,"BLM21HE_list",-1,prm("BLM21HE601SH1")),
+create_parm("MAX","Maximum",32,"BLM21HE_list",-1,prm("BLM21HE802BH1")));
+
+create_form_set("BLM21HE_list_opt","NULL" 
+,"BLM21HE601SH1"
+,"BLM21HE122SH1"
+,"BLM21HE472SH1"
+,"BLM21HE802SH1"
+,"BLM21HE601BH1"
+,"BLM21HE122BH1"
+,"BLM21HE472BH1"
+,"BLM21HE802BH1"
+,"BLM21HE_compound"
+);
+
+
+

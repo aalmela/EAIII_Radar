@@ -1,0 +1,3 @@
+DE_SIM_FILE_PATH=.\data;
+EESOF_MODEL_PATH=.:..:../networks:$HOME/hpeesof/circuit/lib.$ARCH:$HPEESOF_DIR/custom/circuit/lib.$ARCH:$HPEESOF_DIR/circuit/lib.$ARCH:%DESIGN_KIT_MODEL_PATH;{%DESIGN_KIT_MODEL_PATH}
+SIM_FILE_PATH=.:..:../data:../networks:%DESIGN_KIT_SIM_FILE_PATH;{%DESIGN_KIT_SIM_FILE_PATH}

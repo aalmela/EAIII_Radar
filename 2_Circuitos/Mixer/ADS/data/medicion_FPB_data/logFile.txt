@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Sun Jun 23 13:32:58 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 21860
+
+
+SP SP1[1] <Mi_darae_lib:medicion_FPB:schematic>   freq=(1 Hz->100 MHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.30 seconds.
+

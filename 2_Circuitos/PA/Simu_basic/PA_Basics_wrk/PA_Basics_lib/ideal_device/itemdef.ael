@@ -1,0 +1,6 @@
+create_item("ideal_device","ideal_device","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","ideal_device","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",0,NULL,0,
+create_parm("gm","gm",68608,"StdFormSet",-1,prm("StdForm","0.2")),
+create_parm("Vknee","Vknee",68608,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("Rin","Rin",68608,"StdFormSet",-1,prm("StdForm","50")),
+create_parm("Cp","Rin",68608,"StdFormSet",-1,prm("StdForm","0")),
+create_parm("Ls","Rin",68608,"StdFormSet",-1,prm("StdForm","0")));

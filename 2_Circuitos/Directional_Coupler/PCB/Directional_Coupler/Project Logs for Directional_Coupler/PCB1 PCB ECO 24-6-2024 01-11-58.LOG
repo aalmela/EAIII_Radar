@@ -1,0 +1,7 @@
+Added Component: Designator=R1(RESC1508X55N)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "50 ohms"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Member To Class: ClassName=Directional_Coupler Member=Component R1 Resistor

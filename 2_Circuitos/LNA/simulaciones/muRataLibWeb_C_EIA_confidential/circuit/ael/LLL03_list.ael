@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LLL03TR61E333KE01","1:LLL03TR61E333KE01, Low ESL, X5R(-55to85[deg]), 25[V], 33000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","LLL03TR61E333KE01");
+
+create_form_set("LLL03_list" 
+,"LLL03TR61E333KE01"
+);
+
+create_compound_form("LLL03_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LLL03_list",-1,prm("LLL03TR61E333KE01")),
+create_parm("MIN","Minimum",32,"LLL03_list",-1,prm("LLL03TR61E333KE01")),
+create_parm("MAX","Maximum",32,"LLL03_list",-1,prm("LLL03TR61E333KE01")));
+
+create_form_set("LLL03_list_opt","NULL" 
+,"LLL03TR61E333KE01"
+,"LLL03_compound"
+);
+
+
+

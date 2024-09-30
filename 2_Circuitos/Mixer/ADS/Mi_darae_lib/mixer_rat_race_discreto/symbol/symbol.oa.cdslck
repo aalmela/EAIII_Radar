@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      AlejandroAlmela
+HostName                       DESKTOP-LHADK87
+ProcessIdentifier              28380
+ProcessCreationTime_UTC        1727201919
+ProcessCreationTime_Readable   Tue Sep 24 15:18:39 2024 Hora estándar de Argentina
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\Mi_darae_lib\mixer_rat_race_discreto\symbol\symbol.oa.cdslck
+TimeEditLocked                 Wed Sep 25 13:58:30 2024 Hora estándar de Argentina

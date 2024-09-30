@@ -1,0 +1,5 @@
+Name: BFU5XX_family_design_kit_v2
+Version: 1
+Date: Wed Apr 23 14:49:45 2014
+Description: This library contains BFU5XX transistors
+Revision: Initial revision

@@ -1,0 +1,138 @@
+; Top Design: "VCO_lib:1_DC:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="VCO_lib:1_DC:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+R:R2  N__9 N__6 R=3.1k Noise=yes 
+R:R3  N__6 0 R=10k Noise=yes 
+R:R4  N__3 N__2 R=220 Ohm Noise=yes 
+C:C4  0 N__19 C=100 pF 
+R:R5  N__19 N__4 R=10 kOhm Noise=yes 
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/VCO/Simulacion/modelos/Infineon_RF//circuit/models/RF.net"
+R:R6  N__13 N__15 R=10 Ohm Noise=yes 
+V_Source:SRC1  N__9 0 Type="V_DC" Vdc=5.2 V SaveCurrent=1 
+BFP420F:Q1  N__15 N__6 N__3 N__3 
+L:L2  N__11 0 L=Ls nH Noise=yes  
+V_Source:SRC2  N__19 0 Type="V_DC" Vdc=Vtune V SaveCurrent=1 
+DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
+OutputPlan="DC1_Output" 
+
+OutputPlan:DC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+HB:HB1 MaxOrder=4 Freq[1]=1 GHz Order[1]=9 StatusLevel=3 FundOversample=1 \
+Restart=no OutputBudgetIV=no \
+HBSS_WSP=0 OscPortName="Yes" \
+OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1 GHz Order[1]=9 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+
+;#@# autodisplay="GS_Oscillator_Spect"
+R:R7  Vout 0 R=50 Ohm Noise=yes 
+model DIODEM1 Diode Is=1e-14 A Rs=0 N=1 Tt=0 Cjo=Cjo pF Vj=Vj V M=M Fc=0.5 Isr=0 Nr=2 Ikf=0 Bv=0 Ibv=1e-3 A Nbv=1 Ibvl=0 Nbvl=1 Kf=0 Af=1 Ffe=1 AllowScaling=0 Tnom=27 Xti=3 Eg=1.11 Tbv=0 
+R:Rs  N__11 N__10 R=Rs Ohm Noise=yes 
+C:Cp  N__4 N__11 C=Cp pF 
+"DIODEM1":DIODE1  N__10 N__4 Mode=1 Noise=yes 
+
+Vj=8.36
+Ls=1.5
+M=4.690
+Cjo=3.43
+Cp=0.68
+Rs=1.5
+Tran:Tran1 StartTime=0.0 nsec StopTime=100.0 nsec MaxTimeStep=1.0 nsec LimitStepForTL=yes TimeStepControl=2 TruncTol=7.0 ChargeTol=1.0e-14 IntegMethod=0 MaxGearOrder=2 \
+Mu=0.5 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=3 HB_Window=no \
+HB_Sol=no ImpApprox=no ShortTL_Delay=1.0 psec ImpMode=1 UseInitCond=no \
+LoadGminDC=no CheckKCL=yes CheckOnlyDeltaV=yes OverloadAlert=no DeviceBypass=no \
+MaxIters=10 MaxItersDC=200 DevOpPtLevel=0 StatusLevel=2 OutputAllPoints=yes \
+NoiseScale=1 ImpEnforcePassivity=yes \
+OutputPlan="Tran1_Output" 
+
+OutputPlan:Tran1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+
+__debug_ImpLFEOff=0 
+
+Vtune=6.6 tune{ 0 to 20 by 0.1 }
+L=13.3 tune{ 10 to 40 by 0.1 }
+Short:I_Probe1  N__9 N__13 Mode=0 SaveCurrent=yes 
+GRM01_T:C7  N__20 N__6 PartNumber=105 
+LQW18AN_8Z:L3  N__4 N__20 PartNumber=63 
+LQW18AN_8Z:L4  0 N__2 PartNumber=82 
+GRM01_T:C8  0 N__4 PartNumber=140 
+GRM01_T:C9  N__6 N__3 PartNumber=323 
+GRM01_T:C10  N__3 0 PartNumber=534 
+GRM01_T:C11  N__22 N__21 PartNumber=67 
+
+#ifndef muRataLibWeb_L
+#define muRataLibWeb_L
+; models
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_L_EIA_confidential/circuit/models/encode.net"
+#endif
+
+
+
+#ifndef muRataLibWeb_C
+#define muRataLibWeb_C
+; models
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#endif
+
+
+OscPort:oscport1  N__3 N__21 Z=1.1 Ohm NumOctaves=5 Steps=10 FundIndex=1 Harm=1 
+MLIN2:TL1  N__22 Vout Subst="MSub1" W=0.362922 mm L=25 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+model MSub1 MSUB H=0.2104 mm Er=4.4 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=0 mm TanD=0 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL2  N__22 N__18 Subst="MSub1" W=0.362922 mm L=25 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 

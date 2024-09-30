@@ -1,0 +1,23 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Wed Apr 17 15:14:22 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\VCO\Simulacion\VCO_wrk\data"
+      Process ID: 19432
+
+Warning detected by hpeesofsim in LinearCollapse '_61_' during analysis.
+    LinearCollapse is disabled because there is 'DC' analysis present.
+
+DC DC1[1] <VCO_lib:s_param:schematic>  
+.
+DC convergence achieved in 38 iterations.
+
+SP SP1[1] <VCO_lib:s_param:schematic>   freq=(500 MHz->4 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.44 seconds.
+

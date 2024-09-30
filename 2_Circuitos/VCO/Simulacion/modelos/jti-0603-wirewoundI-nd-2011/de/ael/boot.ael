@@ -1,0 +1,39 @@
+/*boot.ael*/
+
+//  Inserts a ground as last node of an arbitrary netlist format.
+//  Does not handle multiple %#'s or any nesting within %#
+//  These could be future enhancements.
+defun libsp_patch_netlist_format(fmt)
+{
+  decl newfmt="";
+  decl ln=strlen(fmt);
+  decl state=0;
+  decl ch;
+  while(ln)
+  {
+    ch=leftstr(fmt,1);
+    if(state==0 && ch=="%")
+      state=1;
+    else if(state==1 && ch=="#")
+      state=2;
+    else if(state==1 && !member(ch,list("0","1","2","3","4","5","6","7","8","9")))
+      state=0;
+    else if(state==2 && ch=="%")
+      state=3;
+    else if(state==3 && ch=="e")
+      state=4;
+    else if(state==3 && !member(ch,list("0","1","2","3","4","5","6","7","8","9")))
+      state=2;
+    newfmt=strcat(newfmt,ch);
+    fmt=rightstr(fmt,strlen(fmt)-1);
+    if(state==4)
+    {
+      newfmt=strcat(newfmt," 0 ",fmt);
+      return newfmt;
+    }
+    ln--;
+  }
+  return newfmt;
+}
+
+decl LIBSPComponentNetlistFmt=libsp_patch_netlist_format(CKTComponentNetlistFmt);

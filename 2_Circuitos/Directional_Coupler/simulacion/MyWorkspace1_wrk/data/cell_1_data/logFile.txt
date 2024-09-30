@@ -1,0 +1,21 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Sep 23 15:23:54 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Directional_Coupler\simulacion\MyWorkspace1_wrk\data"
+      Process ID: 32240
+
+
+SP SP1[1] <MyLibrary1_lib:cell_1:schematic>   freq=(100 MHz->2 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    Data in the Touchstone file `C:/Users/AlejandroAlmela/Downloads/hhm22139a2.s4p'
+    does not cover the requested value of `freq'.
+    Therefore, the required data was obtained by extrapolation.
+
+
+Resource usage:
+  Total stopwatch time     =     1.50 seconds.
+

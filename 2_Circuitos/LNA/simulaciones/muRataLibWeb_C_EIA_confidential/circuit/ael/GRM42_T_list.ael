@@ -1,0 +1,55 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GRM42A7U3F100JW31","1:GRM42A7U3F100JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 10[pF], +/-5[%], 100[MHz]-3[GHz]:1",68,"1","GRM42A7U3F100JW31");
+create_constant_form("GRM42A7U3F120JW31","2:GRM42A7U3F120JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 12[pF], +/-5[%], 100[MHz]-3[GHz]:2",68,"2","GRM42A7U3F120JW31");
+create_constant_form("GRM42A7U3F150JW31","3:GRM42A7U3F150JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 15[pF], +/-5[%], 100[MHz]-3[GHz]:3",68,"3","GRM42A7U3F150JW31");
+create_constant_form("GRM42A7U3F180JW31","4:GRM42A7U3F180JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 18[pF], +/-5[%], 100[MHz]-3[GHz]:4",68,"4","GRM42A7U3F180JW31");
+create_constant_form("GRM42A7U3F220JW31","5:GRM42A7U3F220JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 22[pF], +/-5[%], 100[MHz]-3[GHz]:5",68,"5","GRM42A7U3F220JW31");
+create_constant_form("GRM42A7U3F270JW31","6:GRM42A7U3F270JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 27[pF], +/-5[%], 100[MHz]-3[GHz]:6",68,"6","GRM42A7U3F270JW31");
+create_constant_form("GRM42A7U3F330JW31","7:GRM42A7U3F330JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 33[pF], +/-5[%], 100[MHz]-3[GHz]:7",68,"7","GRM42A7U3F330JW31");
+create_constant_form("GRM42A7U3F390JW31","8:GRM42A7U3F390JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 39[pF], +/-5[%], 100[MHz]-3[GHz]:8",68,"8","GRM42A7U3F390JW31");
+create_constant_form("GRM42A7U3F470JW31","9:GRM42A7U3F470JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 47[pF], +/-5[%], 100[MHz]-3[GHz]:9",68,"9","GRM42A7U3F470JW31");
+create_constant_form("GRM42A7U3F560JW31","10:GRM42A7U3F560JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 56[pF], +/-5[%], 100[MHz]-3[GHz]:10",68,"10","GRM42A7U3F560JW31");
+create_constant_form("GRM42A7U3F680JW31","11:GRM42A7U3F680JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 68[pF], +/-5[%], 100[MHz]-3[GHz]:11",68,"11","GRM42A7U3F680JW31");
+create_constant_form("GRM42A7U3F820JW31","12:GRM42A7U3F820JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 82[pF], +/-5[%], 100[MHz]-3[GHz]:12",68,"12","GRM42A7U3F820JW31");
+create_constant_form("GRM42A7U3F101JW31","13:GRM42A7U3F101JW31, 200V and over/ General Purpose, U2J(-55to125[deg]), 3150[V], 100[pF], +/-5[%], 100[MHz]-3[GHz]:13",68,"13","GRM42A7U3F101JW31");
+
+create_form_set("GRM42_T_list" 
+,"GRM42A7U3F100JW31"
+,"GRM42A7U3F120JW31"
+,"GRM42A7U3F150JW31"
+,"GRM42A7U3F180JW31"
+,"GRM42A7U3F220JW31"
+,"GRM42A7U3F270JW31"
+,"GRM42A7U3F330JW31"
+,"GRM42A7U3F390JW31"
+,"GRM42A7U3F470JW31"
+,"GRM42A7U3F560JW31"
+,"GRM42A7U3F680JW31"
+,"GRM42A7U3F820JW31"
+,"GRM42A7U3F101JW31"
+);
+
+create_compound_form("GRM42_T_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GRM42_T_list",-1,prm("GRM42A7U3F100JW31")),
+create_parm("MIN","Minimum",32,"GRM42_T_list",-1,prm("GRM42A7U3F100JW31")),
+create_parm("MAX","Maximum",32,"GRM42_T_list",-1,prm("GRM42A7U3F101JW31")));
+
+create_form_set("GRM42_T_list_opt","NULL" 
+,"GRM42A7U3F100JW31"
+,"GRM42A7U3F120JW31"
+,"GRM42A7U3F150JW31"
+,"GRM42A7U3F180JW31"
+,"GRM42A7U3F220JW31"
+,"GRM42A7U3F270JW31"
+,"GRM42A7U3F330JW31"
+,"GRM42A7U3F390JW31"
+,"GRM42A7U3F470JW31"
+,"GRM42A7U3F560JW31"
+,"GRM42A7U3F680JW31"
+,"GRM42A7U3F820JW31"
+,"GRM42A7U3F101JW31"
+,"GRM42_T_compound"
+);
+
+
+

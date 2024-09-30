@@ -1,0 +1,13 @@
+20160404:
+- BFR182W FC=1 reset to 0.9999
+- BFR193F FC=1 reset to 0.9999
+- BFR35AP FC=1 reset to 0.9999
+- BFR92P FC=1 reset to 0.9999
+- BFR93A FC=1 reset to 0.9999
+- BFP181 FC=1 reset to 0.9999
+- BFP182W FC=1 reset to 0.9999
+- BFP183W FC=1 reset to 0.9999
+- BFP193W FC=1 reset to 0.9999
+- BFP196W FC=1 reset to 0.9999
+- BFP640FESD R=0 replaced by R=1e-12
+- BFP840FESD SGPM Parameter removed for MWO compatibility

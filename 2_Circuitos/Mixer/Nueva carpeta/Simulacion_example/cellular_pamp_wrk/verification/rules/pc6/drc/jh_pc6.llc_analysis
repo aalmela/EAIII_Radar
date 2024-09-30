@@ -1,0 +1,14 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.llc_analysis
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.llc_analysis"
+
+
+master count
+master flatten
+
+slave count
+slave flatten
+.stream return

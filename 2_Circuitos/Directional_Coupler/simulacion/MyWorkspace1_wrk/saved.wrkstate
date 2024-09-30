@@ -1,0 +1,8 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic lib="MyLibrary1_lib" view="schematic" height="1261" cell="cell_2" x1="2399" geom="1,1,2,633,203,966,866,2400,1350" width="2400" y1="-9"/>
+        <DDS name="cell_1.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

@@ -1,0 +1,83 @@
+LVS Report
+Advanced Design System 2017.01
+Copyright 2004 - 2015 Keysight Technologies 1989-2016
+Apr 20 2016
+
+Design
+  Schematic:                         cellular_pamp_lib:pamp:schematic
+  Layout:                            cellular_pamp_lib:pamp:layout
+
+LVS Analysis
+  LVS Analysis:                      Components with physical nets (single technology)
+  Elapsed time                       6.880 (seconds)
+
+Component Mapping
+  Component mapping                  Component name, pin connections and parameter values
+
+Settings
+  Check Parameters Mismatch:         On
+  Use instance name mapping:         Off
+  Use parameter value mapping:       On
+
+Summary:
+  Components Not in Schematic:       0
+  Components Not in Layout:          0
+  Nodal Mismatches:                  0
+  Nodal Mismatches:                  0
+  Parameter Mismatches:              0
+  Component Count Schematic:         13
+  Component Count Layout:            13
+  Wires/Flight-lines in layout:      0
+  Physical/Nodal mismatches:         0
+
+Errors                          0
+  Components not in schematic   0
+  Components not in layout      0
+  Nodal Mismatches              0
+  Parameter Mismatches          0
+
+                                                  Schematic    Layout
+Component Count                                   13           13
+  Term                                            2            2
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   7            7
+  ads_common_cmps:sr_avx_CR_21_F_19960828         2            2
+  cellular_pamp_lib:fet301xp                      1            1
+  cellular_pamp_lib:fet_81xp                      1            1
+
+Component Mappings                                13           13
+  Term                                            P1           P1
+  Term                                            P2           P2
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C1           C1
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C22          C22
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C3           C3
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C5           C5
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C6           C6
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C7           C7
+  ads_common_cmps:sc_atc_100_CDR13BG_G_19960828   C8           C8
+  ads_common_cmps:sr_avx_CR_21_F_19960828         R1           R1
+  ads_common_cmps:sr_avx_CR_21_F_19960828         R2           R2
+  cellular_pamp_lib:fet301xp                      X8           X8
+  cellular_pamp_lib:fet_81xp                      X7           X7
+
+Net Mappings                                      8            8
+  Net                                             N__13        Net_4
+  Net                                             N__42        Net_5
+  Net                                             P2           P2
+  Net                                             X1/N__12     Net_0
+  Net                                             X3/N__13     Net_1
+  Net                                             X4/N__25     Net_3
+  Net                                             X6/N__17     Net_2
+  Net                                             gnd!         P1
+
+Warnings                                                1              
+  Wires/Flight-lines in layout                          0
+  In layout,Pins on gnd! are not physically connected                            
+    In layout,C1.1                                                               
+    In layout,P1.1                                                               
+    In layout,X7.3                                                               
+    In layout,X8.3                                                               
+    In layout,C22.1                                                              
+    In layout,C3.1                                                               
+    In layout,C6.2                                                               
+    In layout,C5.1                                                               
+

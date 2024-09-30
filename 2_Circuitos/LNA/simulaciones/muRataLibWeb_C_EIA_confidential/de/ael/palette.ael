@@ -1,0 +1,518 @@
+//****************************************************************************
+// File:         palette.ael
+// Description:  Load  Library and Set Components pallet
+// Author:       Keysight Technologies Japan, Ltd. 
+// Language:     AEL
+// Created:      2024.02.05 16:37:05
+// (C) Copyright 2005-2016, Keysight Technologies Japan, all rights reserved.
+//****************************************************************************
+
+
+
+
+// Loading AEL files /////////////////////////////////////////////////
+	decl component_list=list(
+		"GA242"
+		,"GA243"
+		,"GA255"
+		,"GA342"
+		,"GA343"
+		,"GA352"
+		,"GA355"
+		,"GC321"
+		,"GC331"
+		,"GC332"
+		,"GC343"
+		,"GC355"
+		,"GCD18"
+		,"GCD21"
+		,"GCE18"
+		,"GCE21"
+		,"GCH03"
+		,"GCH15"
+		,"GCH18"
+		,"GCH21"
+		,"GCH31"
+		,"GCH32"
+		,"GCJ18"
+		,"GCJ21"
+		,"GCJ31"
+		,"GCJ32"
+		,"GCJ43"
+		,"GCJ55"
+		,"GCM03"
+		,"GCM15"
+		,"GCM18"
+		,"GCM21"
+		,"GCM31"
+		,"GCM32"
+		,"GCM43"
+		,"GCM55"
+		,"GCQ15"
+		,"GGD18"
+		,"GGD21"
+		,"GGM15"
+		,"GGM18"
+		,"GGM21"
+		,"GGM31"
+		,"GGM32"
+		,"GJ431"
+		,"GJ821"
+		,"GJ831"
+		,"GJ832"
+		,"GJM02"
+		,"GJM03"
+		,"GJM15"
+		,"GQM15"
+		,"GQM18"
+		,"GQM21"
+		,"GQM22"
+		,"GR321"
+		,"GR331"
+		,"GR332"
+		,"GR343"
+		,"GR355"
+		,"GR431"
+		,"GR432"
+		,"GR442"
+		,"GR443"
+		,"GR455"
+		,"GR721"
+		,"GR731"
+		,"GRJ03"
+		,"GRJ15"
+		,"GRJ18"
+		,"GRJ21"
+		,"GRJ31"
+		,"GRJ32"
+		,"GRJ43"
+		,"GRJ55"
+		,"GRM01"
+		,"GRM02"
+		,"GRM03"
+		,"GRM15"
+		,"GRM18"
+		,"GRM21"
+		,"GRM31"
+		,"GRM32"
+		,"GRM42"
+		,"GRM43"
+		,"GRM55"
+		,"GRMJN"
+		,"GRMMD"
+		,"GRT03"
+		,"GRT15"
+		,"GRT18"
+		,"GRT21"
+		,"GRT31"
+		,"GRT32"
+		,"GXT15"
+		,"GXT18"
+		,"GXT21"
+		,"GXT31"
+		,"GXT32"
+		,"KC355"
+		,"KCA55"
+		,"KCM55"
+		,"KR355"
+		,"KRM21"
+		,"KRM31"
+		,"KRM55"
+		,"LLC15"
+		,"LLL15"
+		,"LLL18"
+		,"LLL1U"
+		,"LLL21"
+		,"LLL31"
+		,"LLR18"
+		,"ZRA21"
+		,"ZRB15"
+		,"ZRB18"
+		,"GCM03_T"
+		,"GCM15_T"
+		,"GCM18_T"
+		,"GCM21_T"
+		,"GCM31_T"
+		,"GJM02_T"
+		,"GJM03_T"
+		,"GJM15_T"
+		,"GRM01_T"
+		,"GRM02_T"
+		,"GRM03_T"
+		,"GRM15_T"
+		,"GRM18_T"
+		,"GRM21_T"
+		,"GRM31_T"
+		,"GRM32_T"
+		,"GRM42_T"
+		,"GRT03_T"
+		,"GRT15_T"
+		,"GRT18_T"
+		,"GQM15_T"
+		,"GQM18_T"
+		,"GQM21_T"
+		,"GQM22_T"
+		,"GCQ15_T"
+		,"GCQ03"
+		,"GQM03"
+		,"GCQ03_T"
+		,"GQM03_T"
+		,"LLL03"
+		,"KRT31"
+	);
+
+	//----Load a component atf file ---------------------------------------------//
+	decl component_name;
+	while(component_list){
+		component_name = car(component_list);   component_list = cdr(component_list);
+		load(strcat(muRataLibWeb_C_CIRCUIT_AEL_DIR, delim, component_name,"_list"));
+		load(strcat(muRataLibWeb_C_CIRCUIT_AEL_DIR, delim, component_name));
+    }
+	//---------------------------------------------------------------------------//
+
+
+
+// Create pallett///////////////////////////////
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRataLibWeb_C Set Up","muRataLibWeb_C Set Up",0,
+		"muRataLibWeb_C_Include","muRataLibWeb_C_Include",strcat(muRataLibWeb_C_BITMAP_DIR,"TechInclude")
+//		IncludeCmpName,IncludeCmpName,strcat(muRataLibWeb_C_BITMAP_DIR,"TechInclude")
+
+	);
+
+	//--------------------------------------
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"GA242","GA242 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA242")
+		,"GA243","GA243 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA243")
+		,"GA255","GA255 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA255")
+		,"GA342","GA342 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA342")
+		,"GA343","GA343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA343")
+		,"GA352","GA352 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA352")
+		,"GA355","GA355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA355")
+		,"GC321","GC321 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC321")
+		,"GC331","GC331 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC331")
+		,"GC332","GC332 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC332")
+		,"GC343","GC343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC343")
+		,"GC355","GC355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC355")
+		,"GCD18","GCD18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCD18")
+		,"GCD21","GCD21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCD21")
+		,"GCE18","GCE18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCE18")
+		,"GCE21","GCE21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCE21")
+		,"GCH03","GCH03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH03")
+		,"GCH15","GCH15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH15")
+		,"GCH18","GCH18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH18")
+		,"GCH21","GCH21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH21")
+		,"GCH31","GCH31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH31")
+		,"GCH32","GCH32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH32")
+		,"GCJ18","GCJ18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ18")
+		,"GCJ21","GCJ21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ21")
+		,"GCJ31","GCJ31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ31")
+		,"GCJ32","GCJ32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ32")
+		,"GCJ43","GCJ43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ43")
+		,"GCJ55","GCJ55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ55")
+		,"GCM03","GCM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM03")
+		,"GCM15","GCM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM15")
+		,"GCM18","GCM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM18")
+		,"GCM21","GCM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM21")
+		,"GCM31","GCM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM31")
+		,"GCM32","GCM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM32")
+		,"GCM43","GCM43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM43")
+		,"GCM55","GCM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM55")
+		,"GCQ15","GCQ15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ15")
+		,"GGD18","GGD18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGD18")
+		,"GGD21","GGD21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGD21")
+		,"GGM15","GGM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM15")
+		,"GGM18","GGM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM18")
+		,"GGM21","GGM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM21")
+		,"GGM31","GGM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM31")
+		,"GGM32","GGM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM32")
+		,"GJ431","GJ431 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ431")
+		,"GJ821","GJ821 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ821")
+		,"GJ831","GJ831 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ831")
+		,"GJ832","GJ832 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ832")
+		,"GJM02","GJM02 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM02")
+		,"GJM03","GJM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM03")
+		,"GJM15","GJM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM15")
+		,"GQM15","GQM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM15")
+		,"GQM18","GQM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM18")
+		,"GQM21","GQM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM21")
+		,"GQM22","GQM22 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM22")
+		,"GR321","GR321 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR321")
+		,"GR331","GR331 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR331")
+		,"GR332","GR332 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR332")
+		,"GR343","GR343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR343")
+		,"GR355","GR355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR355")
+		,"GR431","GR431 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR431")
+		,"GR432","GR432 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR432")
+		,"GR442","GR442 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR442")
+		,"GR443","GR443 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR443")
+		,"GR455","GR455 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR455")
+		,"GR721","GR721 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR721")
+		,"GR731","GR731 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR731")
+		,"GRJ03","GRJ03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ03")
+		,"GRJ15","GRJ15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ15")
+		,"GRJ18","GRJ18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ18")
+		,"GRJ21","GRJ21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ21")
+		,"GRJ31","GRJ31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ31")
+		,"GRJ32","GRJ32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ32")
+		,"GRJ43","GRJ43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ43")
+		,"GRJ55","GRJ55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ55")
+		,"GRM01","GRM01 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM01")
+		,"GRM02","GRM02 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM02")
+		,"GRM03","GRM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM03")
+		,"GRM15","GRM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM15")
+		,"GRM18","GRM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM18")
+		,"GRM21","GRM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM21")
+		,"GRM31","GRM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM31")
+		,"GRM32","GRM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM32")
+		,"GRM42","GRM42 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM42")
+		,"GRM43","GRM43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM43")
+		,"GRM55","GRM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM55")
+		,"GRMJN","GRMJN Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRMJN")
+		,"GRMMD","GRMMD Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRMMD")
+		,"GRT03","GRT03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT03")
+		,"GRT15","GRT15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT15")
+		,"GRT18","GRT18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT18")
+		,"GRT21","GRT21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT21")
+		,"GRT31","GRT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT31")
+		,"GRT32","GRT32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT32")
+		,"GXT15","GXT15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT15")
+		,"GXT18","GXT18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT18")
+		,"GXT21","GXT21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT21")
+		,"GXT31","GXT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT31")
+		,"GXT32","GXT32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT32")
+		,"KC355","KC355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KC355")
+		,"KCA55","KCA55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KCA55")
+		,"KCM55","KCM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KCM55")
+		,"KR355","KR355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KR355")
+		,"KRM21","KRM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM21")
+		,"KRM31","KRM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM31")
+		,"KRM55","KRM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM55")
+		,"LLC15","LLC15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLC15")
+		,"LLL15","LLL15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL15")
+		,"LLL18","LLL18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL18")
+		,"LLL1U","LLL1U Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL1U")
+		,"LLL21","LLL21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL21")
+		,"LLL31","LLL31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL31")
+		,"LLR18","LLR18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLR18")
+		,"ZRA21","ZRA21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRA21")
+		,"ZRB15","ZRB15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRB15")
+		,"ZRB18","ZRB18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRB18")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"GA242","GA242 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA242")
+		,"GA243","GA243 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA243")
+		,"GA255","GA255 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA255")
+		,"GA342","GA342 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA342")
+		,"GA343","GA343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA343")
+		,"GA352","GA352 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA352")
+		,"GA355","GA355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GA355")
+		,"GC321","GC321 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC321")
+		,"GC331","GC331 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC331")
+		,"GC332","GC332 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC332")
+		,"GC343","GC343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC343")
+		,"GC355","GC355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GC355")
+		,"GCD18","GCD18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCD18")
+		,"GCD21","GCD21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCD21")
+		,"GCE18","GCE18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCE18")
+		,"GCE21","GCE21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCE21")
+		,"GCH03","GCH03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH03")
+		,"GCH15","GCH15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH15")
+		,"GCH18","GCH18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH18")
+		,"GCH21","GCH21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH21")
+		,"GCH31","GCH31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH31")
+		,"GCH32","GCH32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCH32")
+		,"GCJ18","GCJ18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ18")
+		,"GCJ21","GCJ21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ21")
+		,"GCJ31","GCJ31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ31")
+		,"GCJ32","GCJ32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ32")
+		,"GCJ43","GCJ43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ43")
+		,"GCJ55","GCJ55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCJ55")
+		,"GCM03","GCM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM03")
+		,"GCM15","GCM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM15")
+		,"GCM18","GCM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM18")
+		,"GCM21","GCM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM21")
+		,"GCM31","GCM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM31")
+		,"GCM32","GCM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM32")
+		,"GCM43","GCM43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM43")
+		,"GCM55","GCM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM55")
+		,"GCQ15","GCQ15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ15")
+		,"GGD18","GGD18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGD18")
+		,"GGD21","GGD21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGD21")
+		,"GGM15","GGM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM15")
+		,"GGM18","GGM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM18")
+		,"GGM21","GGM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM21")
+		,"GGM31","GGM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM31")
+		,"GGM32","GGM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GGM32")
+		,"GJ431","GJ431 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ431")
+		,"GJ821","GJ821 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ821")
+		,"GJ831","GJ831 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ831")
+		,"GJ832","GJ832 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJ832")
+		,"GJM02","GJM02 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM02")
+		,"GJM03","GJM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM03")
+		,"GJM15","GJM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM15")
+		,"GQM15","GQM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM15")
+		,"GQM18","GQM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM18")
+		,"GQM21","GQM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM21")
+		,"GQM22","GQM22 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM22")
+		,"GR321","GR321 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR321")
+		,"GR331","GR331 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR331")
+		,"GR332","GR332 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR332")
+		,"GR343","GR343 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR343")
+		,"GR355","GR355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR355")
+		,"GR431","GR431 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR431")
+		,"GR432","GR432 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR432")
+		,"GR442","GR442 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR442")
+		,"GR443","GR443 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR443")
+		,"GR455","GR455 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR455")
+		,"GR721","GR721 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR721")
+		,"GR731","GR731 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GR731")
+		,"GRJ03","GRJ03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ03")
+		,"GRJ15","GRJ15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ15")
+		,"GRJ18","GRJ18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ18")
+		,"GRJ21","GRJ21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ21")
+		,"GRJ31","GRJ31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ31")
+		,"GRJ32","GRJ32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ32")
+		,"GRJ43","GRJ43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ43")
+		,"GRJ55","GRJ55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRJ55")
+		,"GRM01","GRM01 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM01")
+		,"GRM02","GRM02 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM02")
+		,"GRM03","GRM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM03")
+		,"GRM15","GRM15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM15")
+		,"GRM18","GRM18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM18")
+		,"GRM21","GRM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM21")
+		,"GRM31","GRM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM31")
+		,"GRM32","GRM32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM32")
+		,"GRM42","GRM42 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM42")
+		,"GRM43","GRM43 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM43")
+		,"GRM55","GRM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM55")
+		,"GRMJN","GRMJN Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRMJN")
+		,"GRMMD","GRMMD Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRMMD")
+		,"GRT03","GRT03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT03")
+		,"GRT15","GRT15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT15")
+		,"GRT18","GRT18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT18")
+		,"GRT21","GRT21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT21")
+		,"GRT31","GRT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT31")
+		,"GRT32","GRT32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT32")
+		,"GXT15","GXT15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT15")
+		,"GXT18","GXT18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT18")
+		,"GXT21","GXT21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT21")
+		,"GXT31","GXT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT31")
+		,"GXT32","GXT32 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GXT32")
+		,"KC355","KC355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KC355")
+		,"KCA55","KCA55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KCA55")
+		,"KCM55","KCM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KCM55")
+		,"KR355","KR355 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KR355")
+		,"KRM21","KRM21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM21")
+		,"KRM31","KRM31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM31")
+		,"KRM55","KRM55 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRM55")
+		,"LLC15","LLC15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLC15")
+		,"LLL15","LLL15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL15")
+		,"LLL18","LLL18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL18")
+		,"LLL1U","LLL1U Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL1U")
+		,"LLL21","LLL21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL21")
+		,"LLL31","LLL31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL31")
+		,"LLR18","LLR18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLR18")
+		,"ZRA21","ZRA21 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRA21")
+		,"ZRB15","ZRB15 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRB15")
+		,"ZRB18","ZRB18 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"ZRB18")
+	);
+
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components_T","muRata Components_T",0
+		,"GCM03_T","GCM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM03_T")
+		,"GCM15_T","GCM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM15_T")
+		,"GCM18_T","GCM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM18_T")
+		,"GCM21_T","GCM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM21_T")
+		,"GCM31_T","GCM31_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM31_T")
+		,"GJM02_T","GJM02_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM02_T")
+		,"GJM03_T","GJM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM03_T")
+		,"GJM15_T","GJM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM15_T")
+		,"GRM01_T","GRM01_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM01_T")
+		,"GRM02_T","GRM02_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM02_T")
+		,"GRM03_T","GRM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM03_T")
+		,"GRM15_T","GRM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM15_T")
+		,"GRM18_T","GRM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM18_T")
+		,"GRM21_T","GRM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM21_T")
+		,"GRM31_T","GRM31_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM31_T")
+		,"GRM32_T","GRM32_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM32_T")
+		,"GRM42_T","GRM42_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM42_T")
+		,"GRT03_T","GRT03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT03_T")
+		,"GRT15_T","GRT15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT15_T")
+		,"GRT18_T","GRT18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT18_T")
+		,"GQM15_T","GQM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM15_T")
+		,"GQM18_T","GQM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM18_T")
+		,"GQM21_T","GQM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM21_T")
+		,"GQM22_T","GQM22_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM22_T")
+		,"GCQ15_T","GCQ15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ15_T")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components_T","muRata Components_T",0
+		,"GCM03_T","GCM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM03_T")
+		,"GCM15_T","GCM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM15_T")
+		,"GCM18_T","GCM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM18_T")
+		,"GCM21_T","GCM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM21_T")
+		,"GCM31_T","GCM31_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCM31_T")
+		,"GJM02_T","GJM02_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM02_T")
+		,"GJM03_T","GJM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM03_T")
+		,"GJM15_T","GJM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GJM15_T")
+		,"GRM01_T","GRM01_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM01_T")
+		,"GRM02_T","GRM02_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM02_T")
+		,"GRM03_T","GRM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM03_T")
+		,"GRM15_T","GRM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM15_T")
+		,"GRM18_T","GRM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM18_T")
+		,"GRM21_T","GRM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM21_T")
+		,"GRM31_T","GRM31_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM31_T")
+		,"GRM32_T","GRM32_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM32_T")
+		,"GRM42_T","GRM42_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRM42_T")
+		,"GRT03_T","GRT03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT03_T")
+		,"GRT15_T","GRT15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT15_T")
+		,"GRT18_T","GRT18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GRT18_T")
+		,"GQM15_T","GQM15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM15_T")
+		,"GQM18_T","GQM18_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM18_T")
+		,"GQM21_T","GQM21_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM21_T")
+		,"GQM22_T","GQM22_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM22_T")
+		,"GCQ15_T","GCQ15_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ15_T")
+	);
+
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"GCQ03","GCQ03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ03")
+		,"GQM03","GQM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM03")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"GCQ03","GCQ03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ03")
+		,"GQM03","GQM03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM03")
+	);
+
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components_T","muRata Components_T",0
+		,"GCQ03_T","GCQ03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ03_T")
+		,"GQM03_T","GQM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM03_T")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components_T","muRata Components_T",0
+		,"GCQ03_T","GCQ03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GCQ03_T")
+		,"GQM03_T","GQM03_T Series",strcat(muRataLibWeb_C_BITMAP_DIR,"GQM03_T")
+	);
+
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"LLL03","LLL03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL03")
+		,"KRT31","KRT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRT31")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components","muRata Components",0
+		,"LLL03","LLL03 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"LLL03")
+		,"KRT31","KRT31 Series",strcat(muRataLibWeb_C_BITMAP_DIR,"KRT31")
+	);
+
+

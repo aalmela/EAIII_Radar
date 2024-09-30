@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LLL1U4D80E435ME22","1:LLL1U4D80E435ME22, Low ESL, X6T(-55to105[deg]), 2.5[V], 4300000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","LLL1U4D80E435ME22");
+create_constant_form("LLL1U4R60G435ME22","2:LLL1U4R60G435ME22, Low ESL, X5R(-55to85[deg]), 4[V], 4300000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","LLL1U4R60G435ME22");
+
+create_form_set("LLL1U_list" 
+,"LLL1U4D80E435ME22"
+,"LLL1U4R60G435ME22"
+);
+
+create_compound_form("LLL1U_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LLL1U_list",-1,prm("LLL1U4D80E435ME22")),
+create_parm("MIN","Minimum",32,"LLL1U_list",-1,prm("LLL1U4D80E435ME22")),
+create_parm("MAX","Maximum",32,"LLL1U_list",-1,prm("LLL1U4R60G435ME22")));
+
+create_form_set("LLL1U_list_opt","NULL" 
+,"LLL1U4D80E435ME22"
+,"LLL1U4R60G435ME22"
+,"LLL1U_compound"
+);
+
+
+

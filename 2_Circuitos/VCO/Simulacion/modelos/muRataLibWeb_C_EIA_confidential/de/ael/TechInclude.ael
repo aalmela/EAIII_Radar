@@ -1,0 +1,104 @@
+//****************************************************************************
+// File:        TechInclude.ael
+// Description: component definition file
+// Author:      Keysight Technologies Japan, Ltd. 
+// Language:    AEL
+// Created:     Sep 16 2004
+// (C) Copyright 2004-2016, Keysight Technologies Japan, all rights reserved.
+//****************************************************************************
+
+
+
+decl muRataLibWeb_C_Tech_include_netlist=list
+		("include"
+		,list
+		(
+			list("Noise","Noise",NULL)
+		       ,list("File","File",NULL)
+//		       ,list("Temp","Temp",NULL)
+//             ,list("Global","Global",NULL)
+		)
+		);
+
+
+
+//////////////////////////////////////////////////////////
+///// Netlist Include
+/////  Load  model files in a circuit/model/ directory 
+//////////////////////////////////////////////////////////
+
+
+defun muRataLibWeb_C_Tech_include_netlist_cb(cbP,cbData,instH)
+{
+	decl net;
+	decl modelFileList;
+
+	net = sprintf("#ifndef %s\n#define %s\n","muRataLibWeb_C" ,"muRataLibWeb_C" );
+	net = strcat("\n", net, "; models\n");
+
+	modelFileList = get_dir_files(muRataLibWeb_C_CIRCUIT_MODEL_DIR,"net");
+	while (is_list(modelFileList))
+	{
+		net = strcat(net, sprintf("#include \"%s%s\"\n",muRataLibWeb_C_CIRCUIT_MODEL_DIR,car(modelFileList)));
+		modelFileList = cdr(modelFileList);
+	}
+	net = strcat(net, "#endif\n\n\n");
+	return(net);
+}
+
+
+
+//// list /////////////////////////////////////
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("Nominal","Nominal",16,"Nominal","Nominal");
+//create_constant_form("Best","Best",16,"Best","Best");
+//create_constant_form("Worst","Worst",16,"Worst","Worst");
+create_form_set("TechInclude_Form","Nominal");//,"Best","Worst");
+/////////////////////////////////////////////
+create_item
+(
+
+//	IncludeCmpName  //"TechInclude"
+	"muRataLibWeb_C_Include"  //"TechInclude"
+	,strcat(PROCESSNAME," Technology File Include")
+	,PROCESSNAME
+	,ITEM_UNIQUE
+	,-1
+	,NULL //strcat(COMMON_BMP_INIT,IncludeCmpName)
+	,"Component Parameters"
+	,""
+	,ComponentNetlistFmt
+	,"TechInclude"
+	,ComponentAnnotFmt
+//	,"TechInclude"   //symbolName//
+	,"NetlistInclude"   //symbolName//
+	,3
+	,NULL
+	,16777216
+	,list(dm_create_cb(ITEM_NETLIST_CB, "muRataLibWeb_C_Tech_include_netlist_cb", muRataLibWeb_C_Tech_include_netlist, TRUE))
+/*
+	,create_parm
+	(
+		"File"
+		,"Select Case for Simulation"
+		,PARM_STRING
+		,"TechInclude_Form"
+		,STRING_UNIT
+		,prm("StdForm","Nominal")
+	)
+	,create_parm
+	(
+		"Temp"
+		,"Global Temperature"
+		,PARM_REAL
+		,"StdFileFormSet"
+		,TEMPERATURE_UNIT
+		,prm("StdForm","25.0")
+	)
+*/
+);
+
+//set_design_type(1);
+//library_group("Tech Include", "", 1, IncludeCmpName);
+
+

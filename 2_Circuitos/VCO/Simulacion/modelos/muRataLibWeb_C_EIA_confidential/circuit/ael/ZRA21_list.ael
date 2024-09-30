@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("ZRA21CR61E226ME01","1:ZRA21CR61E226ME01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 25[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","ZRA21CR61E226ME01");
+
+create_form_set("ZRA21_list" 
+,"ZRA21CR61E226ME01"
+);
+
+create_compound_form("ZRA21_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"ZRA21_list",-1,prm("ZRA21CR61E226ME01")),
+create_parm("MIN","Minimum",32,"ZRA21_list",-1,prm("ZRA21CR61E226ME01")),
+create_parm("MAX","Maximum",32,"ZRA21_list",-1,prm("ZRA21CR61E226ME01")));
+
+create_form_set("ZRA21_list_opt","NULL" 
+,"ZRA21CR61E226ME01"
+,"ZRA21_compound"
+);
+
+
+

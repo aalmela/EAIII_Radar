@@ -1,0 +1,1 @@
+create_item("mobile_rx","mobile_rx","X",16,-1,NULL,"Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","mobile_rx","%t%b\n%k=%r%s%24? bin%;%25? oct%;%26? hex%; %e%e","SYM_4Port",3,NULL,0);

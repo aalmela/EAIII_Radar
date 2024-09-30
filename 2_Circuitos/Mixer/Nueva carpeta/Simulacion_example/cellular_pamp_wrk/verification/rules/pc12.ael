@@ -1,0 +1,90 @@
+//
+// Manufacture rules for HP PCD   PC12 process
+//
+
+
+// Declare input design layers
+
+decl lyr_cond = dve_import_layer("cond");
+decl lyr_cond2 = dve_import_layer("cond2");
+decl lyr_hole = dve_import_layer("hole");
+decl lyr_bound = dve_import_layer("bound");
+
+// declare output error layer
+
+decl lyr_error1 = dve_export_layer(101);
+
+// Outlayer
+// 1. Conductor width    12 mil
+
+lyr_error1 += dve_drc( width(lyr_cond) < 12,
+                       "Minimum width of cond is 12 mil"
+                     );
+
+lyr_error1 += dve_drc( width(lyr_cond2) < 12,
+                       "Minimum width of cond2 is 12 mil"
+                     );
+
+// 2. pad-to-pad spacing 12 mil
+// 3. conductory spacing 12 mil
+// 4. cond-to-pad spacing 12 mil
+
+lyr_error1 += dve_drc( spacing(lyr_cond) < 12,
+                    "Minimum spacing of cond is 12 mil"
+                  );
+
+lyr_error1 += dve_drc( spacing(lyr_cond2) < 12,
+                    "Minimum spacing of cond2 is 12 mil"
+                  );
+
+// 5. pad size = FHS + 21 = 25 + 21 = 46 mil
+//               min. FHS = 25 mil
+
+// A via hole is a hole which is contained within the intersection
+// of layer cond and cond2.
+
+// A via pad is an intersection of layer cond and cond2 that
+// contains a via hole.
+
+decl lyr_intersect;
+decl via_hole;
+decl via_pad;
+
+
+lyr_intersect = dve_bool_and( lyr_cond, lyr_cond2);
+
+// derive the via hole layer
+via_hole = dve_bool_and( lyr_intersect, lyr_hole);
+
+// derive the via pad layer
+via_pad = dve_drc( poly_inter_layer(lyr_intersect, via_hole),
+                                    DVE_RN_INTER_CODE, DVE_RV_ENCLOSE_ONLY);
+
+// check the size of via pad  min = 46 mil
+
+lyr_error1 += dve_drc( width(via_pad) < 46,
+                      "Minimum via pad size is 46 mil"
+                    );
+
+// 7. Hole edge to Board edge   50 mil
+
+lyr_error1 += dve_drc( contains( via_hole, lyr_bound) < 50,
+                      "Minimum spacing from hole to board edge is 50 mil"
+                    );
+
+// 10. Cond to Board edge   30 mil
+
+lyr_error1 += dve_drc( contains( lyr_cond, lyr_bound) < 30,
+                      "Minimum spacing from cond to board edge is 30 mil"
+                    );
+
+lyr_error1 += dve_drc( contains( lyr_cond2, lyr_bound) < 30,
+                      "Minimum spacing from cond2 to board edge is 30 mil"
+                    );
+
+// 11. Hole edge to Hole edge  16 mil
+
+lyr_error1 += dve_drc( gap( via_hole) < 16,
+                      "Minimum spacing between hole edges is 16 mil"
+                    );
+

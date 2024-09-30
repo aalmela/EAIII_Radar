@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLE18PK100SN1","1:BLE18PK100SN1, DC Bias Characteristics Improved Type, 6000[mA], 1[MHz]-3[GHz]:1",68,"1","BLE18PK100SN1");
+create_constant_form("BLE18PK160SN1","2:BLE18PK160SN1, DC Bias Characteristics Improved Type, 5000[mA], 1[MHz]-3[GHz]:2",68,"2","BLE18PK160SN1");
+
+create_form_set("BLE18PK_list" 
+,"BLE18PK100SN1"
+,"BLE18PK160SN1"
+);
+
+create_compound_form("BLE18PK_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLE18PK_list",-1,prm("BLE18PK100SN1")),
+create_parm("MIN","Minimum",32,"BLE18PK_list",-1,prm("BLE18PK100SN1")),
+create_parm("MAX","Maximum",32,"BLE18PK_list",-1,prm("BLE18PK160SN1")));
+
+create_form_set("BLE18PK_list_opt","NULL" 
+,"BLE18PK100SN1"
+,"BLE18PK160SN1"
+,"BLE18PK_compound"
+);
+
+
+

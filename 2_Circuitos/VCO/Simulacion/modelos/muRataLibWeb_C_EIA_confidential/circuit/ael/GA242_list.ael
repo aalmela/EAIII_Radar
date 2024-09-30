@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GA242QR7E2471MW01","1:GA242QR7E2471MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 470[pF], +/-20[%], 500[kHz]-3[GHz]:1",68,"1","GA242QR7E2471MW01");
+create_constant_form("GA242QR7E2102MW01","2:GA242QR7E2102MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 1000[pF], +/-20[%], 100[kHz]-3[GHz]:2",68,"2","GA242QR7E2102MW01");
+
+create_form_set("GA242_list" 
+,"GA242QR7E2471MW01"
+,"GA242QR7E2102MW01"
+);
+
+create_compound_form("GA242_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GA242_list",-1,prm("GA242QR7E2471MW01")),
+create_parm("MIN","Minimum",32,"GA242_list",-1,prm("GA242QR7E2471MW01")),
+create_parm("MAX","Maximum",32,"GA242_list",-1,prm("GA242QR7E2102MW01")));
+
+create_form_set("GA242_list_opt","NULL" 
+,"GA242QR7E2471MW01"
+,"GA242QR7E2102MW01"
+,"GA242_compound"
+);
+
+
+

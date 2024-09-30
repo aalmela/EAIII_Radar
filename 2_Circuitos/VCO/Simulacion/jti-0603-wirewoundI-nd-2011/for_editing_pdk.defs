@@ -1,0 +1,6 @@
+# Library Defs for editing the JTI0603WirewoundIND design kit
+# Remove this from the design kit before distributing to customers.
+DEFINE JTI0603WirewoundIND_2011_tech ./JTI0603WirewoundIND_2011_tech
+ASSIGN JTI0603WirewoundIND_2011_tech libMode shared
+DEFINE JTI0603WirewoundIND_2011 ./JTI0603WirewoundIND_2011
+ASSIGN JTI0603WirewoundIND_2011 libMode shared

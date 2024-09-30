@@ -1,0 +1,37 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Thu Apr 18 01:37:57 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\LNA\simulaciones\MyWorkspace_wrk\data"
+      Process ID: 12348
+
+
+NXP SiMKit (loader release 5.3, device release 5.3)
+
+Warning detected by hpeesofsim during netlist flattening.
+    In `X1.HS6_1finger2', parameter Mc=1 is outside legal range 'from [0:0.99] clip warn'.
+Warning detected by hpeesofsim in LinearCollapse '_61_' during analysis.
+    LinearCollapse is disabled because there is 'DC' analysis present.
+
+Model bjt504t, SiMKit release 5.3, Copyright NXP Semiconductors 2000 - 2020.
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 1
+    Number of nodes with no DC path to ground (topology corrected): 1
+
+
+DC DC1[1] <MyLibrary_lib:4_Adapdares_LC:BFU550>  
+.Pt DC convergence is used.
+
+.
+
+DC convergence achieved in 145 iterations.
+
+SP SP1[1] <MyLibrary_lib:4_Adapdares_LC:BFU550>   freq=(400 MHz->2 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.04 seconds.
+

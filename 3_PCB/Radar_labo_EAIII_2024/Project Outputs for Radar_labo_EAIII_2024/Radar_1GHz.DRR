@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Radar_1GHz.PcbDoc   9/9/2024  17:20:21
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer - RF to Bottom Layer - PWR
+ASCII RoundHoles File : Radar_1GHz.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             72        PTH        0.00inch (0.00mm)
+T2      24mil (0.6mm)                                             Round             150       PTH        0.00inch (0.00mm)
+T3      35mil (0.9mm)                                             Round             18        PTH        0.00inch (0.00mm)
+T4      40mil (1.02mm)                                            Round             6         PTH        0.00inch (0.00mm)
+T5      59mil (1.5mm)                                             Round             5         PTH        0.00inch (0.00mm)
+T6      138mil (3.5mm)                                            Round             24        PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              275
+
+Total Processing Time (hh:mm:ss) : 00:00:01

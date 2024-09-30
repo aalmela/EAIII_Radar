@@ -1,0 +1,43 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQW21HNR47J00","1:LQW21HNR47J00, Wound, 470[nH], +/-5[%], 160[mA], 10[MHz]-20[GHz]:1",68,"1","LQW21HNR47J00");
+create_constant_form("LQW21HNR56J00","2:LQW21HNR56J00, Wound, 560[nH], +/-5[%], 150[mA], 10[MHz]-20[GHz]:2",68,"2","LQW21HNR56J00");
+create_constant_form("LQW21HNR68J00","3:LQW21HNR68J00, Wound, 680[nH], +/-5[%], 130[mA], 10[MHz]-20[GHz]:3",68,"3","LQW21HNR68J00");
+create_constant_form("LQW21HNR82J00","4:LQW21HNR82J00, Wound, 820[nH], +/-5[%], 125[mA], 10[MHz]-20[GHz]:4",68,"4","LQW21HNR82J00");
+create_constant_form("LQW21HN1R0J00","5:LQW21HN1R0J00, Wound, 1000[nH], +/-5[%], 115[mA], 10[MHz]-20[GHz]:5",68,"5","LQW21HN1R0J00");
+create_constant_form("LQW21HN1R2J00","6:LQW21HN1R2J00, Wound, 1200[nH], +/-5[%], 100[mA], 10[MHz]-20[GHz]:6",68,"6","LQW21HN1R2J00");
+create_constant_form("LQW21HN1R5J00","7:LQW21HN1R5J00, Wound, 1500[nH], +/-5[%], 85[mA], 10[MHz]-20[GHz]:7",68,"7","LQW21HN1R5J00");
+create_constant_form("LQW21HN1R8J00","8:LQW21HN1R8J00, Wound, 1800[nH], +/-5[%], 80[mA], 10[MHz]-20[GHz]:8",68,"8","LQW21HN1R8J00");
+create_constant_form("LQW21HN2R2J00","9:LQW21HN2R2J00, Wound, 2200[nH], +/-5[%], 75[mA], 10[MHz]-20[GHz]:9",68,"9","LQW21HN2R2J00");
+
+create_form_set("LQW21HN_00_list" 
+,"LQW21HNR47J00"
+,"LQW21HNR56J00"
+,"LQW21HNR68J00"
+,"LQW21HNR82J00"
+,"LQW21HN1R0J00"
+,"LQW21HN1R2J00"
+,"LQW21HN1R5J00"
+,"LQW21HN1R8J00"
+,"LQW21HN2R2J00"
+);
+
+create_compound_form("LQW21HN_00_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQW21HN_00_list",-1,prm("LQW21HNR47J00")),
+create_parm("MIN","Minimum",32,"LQW21HN_00_list",-1,prm("LQW21HNR47J00")),
+create_parm("MAX","Maximum",32,"LQW21HN_00_list",-1,prm("LQW21HN2R2J00")));
+
+create_form_set("LQW21HN_00_list_opt","NULL" 
+,"LQW21HNR47J00"
+,"LQW21HNR56J00"
+,"LQW21HNR68J00"
+,"LQW21HNR82J00"
+,"LQW21HN1R0J00"
+,"LQW21HN1R2J00"
+,"LQW21HN1R5J00"
+,"LQW21HN1R8J00"
+,"LQW21HN2R2J00"
+,"LQW21HN_00_compound"
+);
+
+
+

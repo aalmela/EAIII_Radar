@@ -1,0 +1,5 @@
+# Library Defs for Infineon_RF design kit
+DEFINE Infineon_RF_tech ./Infineon_RF_tech
+ASSIGN Infineon_RF_tech libMode readOnly
+DEFINE Infineon_RF ./Infineon_RF
+ASSIGN Infineon_RF libMode readOnly

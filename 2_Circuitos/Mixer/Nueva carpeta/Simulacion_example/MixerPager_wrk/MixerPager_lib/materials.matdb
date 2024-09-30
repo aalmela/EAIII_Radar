@@ -1,0 +1,9 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors/>
+    <Dielectrics>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="Alumina" electron_path="" thermal_conductivity="25.25" heat_capacity="1.73E+06" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="" er_real="9.6"/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

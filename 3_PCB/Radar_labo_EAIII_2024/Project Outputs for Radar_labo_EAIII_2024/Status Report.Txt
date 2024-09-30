@@ -1,0 +1,31 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Radar_labo_EAIII_2024.PrjPcb]
+   Generated File[Radar_1GHz.GTO]
+   Generated File[Radar_1GHz.GTP]
+   Generated File[Radar_1GHz.GTS]
+   Generated File[Radar_1GHz.GTL]
+   Generated File[Radar_1GHz.GP1]
+   Generated File[Radar_1GHz.GP2]
+   Generated File[Radar_1GHz.GBL]
+   Generated File[Radar_1GHz.GBS]
+   Generated File[Radar_1GHz.GBP]
+   Generated File[Radar_1GHz.GBO]
+   Generated File[Radar_1GHz.GM1]
+   Generated File[Radar_1GHz.GM2]
+   Generated File[Radar_1GHz.GM3]
+   Generated File[Radar_1GHz.GM13]
+   Generated File[Radar_1GHz.GM15]
+   Generated File[Radar_1GHz.GM29]
+   Generated File[Radar_1GHz.GKO]
+   Generated File[Radar_1GHz.GPT]
+   Generated File[Radar_1GHz.GPB]
+   Generated File[Radar_1GHz.RUL]
+   Generated File[Radar_1GHz.EXTREP]
+   Generated File[Radar_1GHz.REP]
+
+
+Files Generated   : 22
+Documents Printed : 0
+
+Finished Output Generation At 17:22:03 On 9/9/2024

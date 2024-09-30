@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM03PG220SZ1","1:BLM03PG220SZ1, Ferrite Bead Single Type, 900[mA], 1[MHz]-3[GHz]:1",68,"1","BLM03PG220SZ1");
+create_constant_form("BLM03PG330SZ1","2:BLM03PG330SZ1, Ferrite Bead Single Type, 750[mA], 1[MHz]-3[GHz]:2",68,"2","BLM03PG330SZ1");
+
+create_form_set("BLM03PG_list" 
+,"BLM03PG220SZ1"
+,"BLM03PG330SZ1"
+);
+
+create_compound_form("BLM03PG_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM03PG_list",-1,prm("BLM03PG220SZ1")),
+create_parm("MIN","Minimum",32,"BLM03PG_list",-1,prm("BLM03PG220SZ1")),
+create_parm("MAX","Maximum",32,"BLM03PG_list",-1,prm("BLM03PG330SZ1")));
+
+create_form_set("BLM03PG_list_opt","NULL" 
+,"BLM03PG220SZ1"
+,"BLM03PG330SZ1"
+,"BLM03PG_compound"
+);
+
+
+

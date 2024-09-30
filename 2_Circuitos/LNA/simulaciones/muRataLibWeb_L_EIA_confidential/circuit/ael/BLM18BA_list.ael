@@ -1,0 +1,52 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM18BA050SH1","1:BLM18BA050SH1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:1",68,"1","BLM18BA050SH1");
+create_constant_form("BLM18BA050SZ1","2:BLM18BA050SZ1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:2",68,"2","BLM18BA050SZ1");
+create_constant_form("BLM18BA100SH1","3:BLM18BA100SH1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:3",68,"3","BLM18BA100SH1");
+create_constant_form("BLM18BA100SZ1","4:BLM18BA100SZ1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:4",68,"4","BLM18BA100SZ1");
+create_constant_form("BLM18BA121SH1","5:BLM18BA121SH1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:5",68,"5","BLM18BA121SH1");
+create_constant_form("BLM18BA121SZ1","6:BLM18BA121SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:6",68,"6","BLM18BA121SZ1");
+create_constant_form("BLM18BA220SH1","7:BLM18BA220SH1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:7",68,"7","BLM18BA220SH1");
+create_constant_form("BLM18BA220SZ1","8:BLM18BA220SZ1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:8",68,"8","BLM18BA220SZ1");
+create_constant_form("BLM18BA470SH1","9:BLM18BA470SH1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:9",68,"9","BLM18BA470SH1");
+create_constant_form("BLM18BA470SZ1","10:BLM18BA470SZ1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:10",68,"10","BLM18BA470SZ1");
+create_constant_form("BLM18BA750SH1","11:BLM18BA750SH1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:11",68,"11","BLM18BA750SH1");
+create_constant_form("BLM18BA750SZ1","12:BLM18BA750SZ1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:12",68,"12","BLM18BA750SZ1");
+
+create_form_set("BLM18BA_list" 
+,"BLM18BA050SH1"
+,"BLM18BA050SZ1"
+,"BLM18BA100SH1"
+,"BLM18BA100SZ1"
+,"BLM18BA121SH1"
+,"BLM18BA121SZ1"
+,"BLM18BA220SH1"
+,"BLM18BA220SZ1"
+,"BLM18BA470SH1"
+,"BLM18BA470SZ1"
+,"BLM18BA750SH1"
+,"BLM18BA750SZ1"
+);
+
+create_compound_form("BLM18BA_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM18BA_list",-1,prm("BLM18BA050SH1")),
+create_parm("MIN","Minimum",32,"BLM18BA_list",-1,prm("BLM18BA050SH1")),
+create_parm("MAX","Maximum",32,"BLM18BA_list",-1,prm("BLM18BA750SZ1")));
+
+create_form_set("BLM18BA_list_opt","NULL" 
+,"BLM18BA050SH1"
+,"BLM18BA050SZ1"
+,"BLM18BA100SH1"
+,"BLM18BA100SZ1"
+,"BLM18BA121SH1"
+,"BLM18BA121SZ1"
+,"BLM18BA220SH1"
+,"BLM18BA220SZ1"
+,"BLM18BA470SH1"
+,"BLM18BA470SZ1"
+,"BLM18BA750SH1"
+,"BLM18BA750SZ1"
+,"BLM18BA_compound"
+);
+
+
+

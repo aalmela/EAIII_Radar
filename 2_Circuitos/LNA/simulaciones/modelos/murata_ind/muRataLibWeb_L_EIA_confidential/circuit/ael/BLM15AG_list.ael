@@ -1,0 +1,52 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM15AG100SH1","1:BLM15AG100SH1, Ferrite Bead Single Type, 1000[mA], 1[MHz]-3[GHz]:1",68,"1","BLM15AG100SH1");
+create_constant_form("BLM15AG100SZ1","2:BLM15AG100SZ1, Ferrite Bead Single Type, 1000[mA], 1[MHz]-3[GHz]:2",68,"2","BLM15AG100SZ1");
+create_constant_form("BLM15AG102SH1","3:BLM15AG102SH1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:3",68,"3","BLM15AG102SH1");
+create_constant_form("BLM15AG102SZ1","4:BLM15AG102SZ1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:4",68,"4","BLM15AG102SZ1");
+create_constant_form("BLM15AG121SH1","5:BLM15AG121SH1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:5",68,"5","BLM15AG121SH1");
+create_constant_form("BLM15AG121SZ1","6:BLM15AG121SZ1, Ferrite Bead Single Type, 550[mA], 1[MHz]-3[GHz]:6",68,"6","BLM15AG121SZ1");
+create_constant_form("BLM15AG221SH1","7:BLM15AG221SH1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:7",68,"7","BLM15AG221SH1");
+create_constant_form("BLM15AG221SZ1","8:BLM15AG221SZ1, Ferrite Bead Single Type, 450[mA], 1[MHz]-3[GHz]:8",68,"8","BLM15AG221SZ1");
+create_constant_form("BLM15AG601SH1","9:BLM15AG601SH1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:9",68,"9","BLM15AG601SH1");
+create_constant_form("BLM15AG601SZ1","10:BLM15AG601SZ1, Ferrite Bead Single Type, 300[mA], 1[MHz]-3[GHz]:10",68,"10","BLM15AG601SZ1");
+create_constant_form("BLM15AG700SH1","11:BLM15AG700SH1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:11",68,"11","BLM15AG700SH1");
+create_constant_form("BLM15AG700SZ1","12:BLM15AG700SZ1, Ferrite Bead Single Type, 600[mA], 1[MHz]-3[GHz]:12",68,"12","BLM15AG700SZ1");
+
+create_form_set("BLM15AG_list" 
+,"BLM15AG100SH1"
+,"BLM15AG100SZ1"
+,"BLM15AG102SH1"
+,"BLM15AG102SZ1"
+,"BLM15AG121SH1"
+,"BLM15AG121SZ1"
+,"BLM15AG221SH1"
+,"BLM15AG221SZ1"
+,"BLM15AG601SH1"
+,"BLM15AG601SZ1"
+,"BLM15AG700SH1"
+,"BLM15AG700SZ1"
+);
+
+create_compound_form("BLM15AG_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM15AG_list",-1,prm("BLM15AG100SH1")),
+create_parm("MIN","Minimum",32,"BLM15AG_list",-1,prm("BLM15AG100SH1")),
+create_parm("MAX","Maximum",32,"BLM15AG_list",-1,prm("BLM15AG700SZ1")));
+
+create_form_set("BLM15AG_list_opt","NULL" 
+,"BLM15AG100SH1"
+,"BLM15AG100SZ1"
+,"BLM15AG102SH1"
+,"BLM15AG102SZ1"
+,"BLM15AG121SH1"
+,"BLM15AG121SZ1"
+,"BLM15AG221SH1"
+,"BLM15AG221SZ1"
+,"BLM15AG601SH1"
+,"BLM15AG601SZ1"
+,"BLM15AG700SH1"
+,"BLM15AG700SZ1"
+,"BLM15AG_compound"
+);
+
+
+

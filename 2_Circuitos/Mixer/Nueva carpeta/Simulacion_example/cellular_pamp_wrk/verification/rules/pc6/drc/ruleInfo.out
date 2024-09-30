@@ -1,0 +1,1508 @@
+Rule Info:
+  dataDir:   	/home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc
+  tech:   	pc6
+  revision:   1
+  dveType:    1
+  status:     0
+  lastLayerNum: 0
+  lastRuleId: 17
+  lastConnId: 0
+  lastTypeId: 0
+  errorCount: 0
+  numImportLayers: 4
+  numExportLayers: 1
+  numOutputRules: 9
+  currentRuleP: 17
+          type:  gap
+
+  Category:  drc
+    Rule id:  1
+       type:  1:dve_import_layer
+     status:  5
+              RUL_RULE_IS_SYSTEM
+              RUL_RULE_IS_DRC
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          0
+       layer name:        lyr_cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 1
+       layer status:      2
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  2
+       type:  1:dve_import_layer
+     status:  5
+              RUL_RULE_IS_SYSTEM
+              RUL_RULE_IS_DRC
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        lyr_cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          3
+       layer name:        cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 1
+       layer status:      2
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  3
+       type:  1:dve_import_layer
+     status:  5
+              RUL_RULE_IS_SYSTEM
+              RUL_RULE_IS_DRC
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          2
+       layer name:        lyr_hole
+       layer number:      5
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 2
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          7
+       layer name:        hole
+       layer number:      5
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 1
+       layer status:      2
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  4
+       type:  1:dve_import_layer
+     status:  5
+              RUL_RULE_IS_SYSTEM
+              RUL_RULE_IS_DRC
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          3
+       layer name:        lyr_bound
+       layer number:      13
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          14
+       layer name:        bound
+       layer number:      13
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 1
+       layer status:      2
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  5
+       type:  2:dve_export_layer
+     status:  5
+              RUL_RULE_IS_SYSTEM
+              RUL_RULE_IS_DRC
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          2
+       layer name:        error101
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 1
+       layer status:      2
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  6
+       type:  37:width
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          0
+       layer name:        lyr_cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    6.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum width of cond is 6 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  7
+       type:  37:width
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        lyr_cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    6.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum width of cond2 is 6 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  8
+       type:  36:spacing
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          0
+       layer name:        lyr_cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    6.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing of cond is 6 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  9
+       type:  36:spacing
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        lyr_cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    6.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing of cond2 is 6 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  10
+       type:  4:dve_bool_and
+     status:  2564
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_WRITTEN
+              RUL_RULE_IS_BOOLEAN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          5
+       layer name:        lyr_intersect
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 3
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          0
+       layer name:        lyr_cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 2:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        lyr_cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 3:
+       type:     FUNC_OPERATOR
+       name:     NULL
+       value:    16
+       funcOperator:  16
+
+      Qualifiers: 
+
+    Rule id:  11
+       type:  4:dve_bool_and
+     status:  2564
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_WRITTEN
+              RUL_RULE_IS_BOOLEAN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          6
+       layer name:        via_hole
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          5
+       layer name:        lyr_intersect
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 3
+       layer status:      4
+       funcOperator:  0
+
+      Parm 2:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          2
+       layer name:        lyr_hole
+       layer number:      5
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 2
+       layer status:      5
+       funcOperator:  0
+
+      Parm 3:
+       type:     FUNC_OPERATOR
+       name:     NULL
+       value:    16
+       funcOperator:  16
+
+      Qualifiers: 
+
+    Rule id:  12
+       type:  44:poly_inter_layer
+     status:  516
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          5
+       layer name:        lyr_intersect
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 3
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          6
+       layer name:        via_hole
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      4
+       funcOperator:  0
+
+      Parm 2:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          7
+       layer name:        via_pad
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 2
+       layer status:      4
+       funcOperator:  0
+
+      Qualifiers: 
+      Qualifier 0:
+       rn: 27
+       rv: 103
+ enclose_only
+
+    Rule id:  13
+       type:  37:width
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          7
+       layer name:        via_pad
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 2
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    25.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum via pad size is 25 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  14
+       type:  28:contains
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          6
+       layer name:        via_hole
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          3
+       layer name:        lyr_bound
+       layer number:      13
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      5
+       funcOperator:  0
+
+      Parm 2:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 3:
+       type:     DISTANCE
+       name:     NULL
+       value:    50.000000
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 5:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing from hole to board edge is 50 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  15
+       type:  28:contains
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          0
+       layer name:        lyr_cond
+       layer number:      1
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          3
+       layer name:        lyr_bound
+       layer number:      13
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      5
+       funcOperator:  0
+
+      Parm 2:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 3:
+       type:     DISTANCE
+       name:     NULL
+       value:    30.000000
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 5:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing from cond to board edge is 30 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  16
+       type:  28:contains
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          1
+       layer name:        lyr_cond2
+       layer number:      2
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 5
+       layer status:      5
+       funcOperator:  0
+
+      Parm 1:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          3
+       layer name:        lyr_bound
+       layer number:      13
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      5
+       funcOperator:  0
+
+      Parm 2:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 3:
+       type:     DISTANCE
+       name:     NULL
+       value:    30.000000
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 5:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing from cond2 to board edge is 30 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+    Rule id:  17
+       type:  31:gap
+     status:  692
+              RUL_RULE_IS_DRC
+              RUL_RULE_IS_EXPORT
+              RUL_RULE_IS_NESTED
+              RUL_RULE_IS_EDGE
+              RUL_RULE_IS_WRITTEN
+     errorStatus:  0
+
+      Parameters: 
+      Parm 0:
+       type:     LAYER
+       name:     NULL
+       value:    
+       layer id:          6
+       layer name:        via_hole
+       layer number:      0
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 4
+       layer status:      4
+       funcOperator:  0
+
+      Parm 1:
+       type:     DRC_OPERATOR
+       name:     NULL
+       value:    lt
+       funcOperator:  9
+
+      Parm 2:
+       type:     DISTANCE
+       name:     NULL
+       value:    16.000000
+       funcOperator:  0
+
+      Parm 3:
+       type:     OUTPUT_LAYER
+       name:     NULL
+       value:    
+       layer id:          4
+       layer name:        lyr_error1
+       layer number:      101
+       layer outputId:    0
+       layer connId:      0
+       layer refCount:    0
+       layer drcRefCount: 10
+       layer status:      12
+       funcOperator:  0
+
+      Parm 4:
+       type:     OUTPUT_MSG
+       name:     NULL
+       value:    Minimum spacing between hole edges is 16 mil
+       funcOperator:  0
+
+      Qualifiers: 
+
+  Category:  connectivity
+  Category:  devices
+  Category:  system
+  Category:  messages
+  Category:  neutral
+  Category:  library
+  Category:  analysis
+  Category:  parameter
+  Category:  correspondence
+  Category:  netclass
+  Category:  clustering
+  Category:  signature
+  Category:  control
+System layers:
+  Layers: 
+    id:           0
+    name:         default
+    number:       0
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           1
+    name:         cond
+    number:       1
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  1
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           2
+    name:         error101
+    number:       101
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  1
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           3
+    name:         cond2
+    number:       2
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  1
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           4
+    name:         resi
+    number:       3
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           5
+    name:         diel
+    number:       4
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           6
+    name:         diel2
+    number:       12
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           7
+    name:         hole
+    number:       5
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  1
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           8
+    name:         bond
+    number:       6
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           9
+    name:         symbol
+    number:       7
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           10
+    name:         text
+    number:       8
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           11
+    name:         leads
+    number:       9
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           12
+    name:         packages
+    number:       10
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           13
+    name:         ports
+    number:       11
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           14
+    name:         bound
+    number:       13
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  1
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           15
+    name:         silk_screen
+    number:       14
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           16
+    name:         silk_screen2
+    number:       31
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           17
+    name:         case_dimensions
+    number:       15
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           18
+    name:         pc1
+    number:       16
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           19
+    name:         pc2
+    number:       17
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           20
+    name:         pc3
+    number:       18
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           21
+    name:         pc4
+    number:       19
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           22
+    name:         pc5
+    number:       20
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           23
+    name:         pc6
+    number:       21
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           24
+    name:         pc7
+    number:       22
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           25
+    name:         pc8
+    number:       23
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           26
+    name:         pcvia1
+    number:       24
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           27
+    name:         pcvia2
+    number:       25
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           28
+    name:         pcvia3
+    number:       26
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           29
+    name:         pcvia4
+    number:       27
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           30
+    name:         pcvia5
+    number:       28
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           31
+    name:         pcvia6
+    number:       29
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           32
+    name:         pcvia7
+    number:       30
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           33
+    name:         solder_mask
+    number:       32
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           34
+    name:         IC_pin_number
+    number:       33
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           35
+    name:         IC_pin1_marker
+    number:       34
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           36
+    name:         hpeesof_region
+    number:       35
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           37
+    name:         momentum_err
+    number:       36
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           38
+    name:         momentum_box
+    number:       37
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+    id:           39
+    name:         momentum_ref_offset
+    number:       38
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  0
+    status:       2
+              RUL_LAYER_IS_SYSTEM
+    NULL
+
+Work layers:
+  Layers: 
+    id:           0
+    name:         lyr_cond
+    number:       1
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  5
+    status:       5
+              RUL_LAYER_IS_IMPORT
+              RUL_LAYER_IS_WORK
+    parentRuleP: 1
+
+    id:           1
+    name:         lyr_cond2
+    number:       2
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  5
+    status:       5
+              RUL_LAYER_IS_IMPORT
+              RUL_LAYER_IS_WORK
+    parentRuleP: 2
+
+    id:           2
+    name:         lyr_hole
+    number:       5
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  2
+    status:       5
+              RUL_LAYER_IS_IMPORT
+              RUL_LAYER_IS_WORK
+    parentRuleP: 3
+
+    id:           3
+    name:         lyr_bound
+    number:       13
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  4
+    status:       5
+              RUL_LAYER_IS_IMPORT
+              RUL_LAYER_IS_WORK
+    parentRuleP: 4
+
+    id:           4
+    name:         lyr_error1
+    number:       101
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  10
+    status:       12
+              RUL_LAYER_IS_WORK
+              RUL_LAYER_IS_EXPORT
+    parentRuleP: 5
+
+    id:           5
+    name:         lyr_intersect
+    number:       0
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  3
+    status:       4
+              RUL_LAYER_IS_WORK
+    parentRuleP: 10
+
+    id:           6
+    name:         via_hole
+    number:       0
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  4
+    status:       4
+              RUL_LAYER_IS_WORK
+    parentRuleP: 11
+
+    id:           7
+    name:         via_pad
+    number:       0
+    outputId:     0
+    connId:       0
+    refCount:     0
+    drcRefCount:  2
+    status:       4
+              RUL_LAYER_IS_WORK
+    parentRuleP: 12
+
+Buffered layers:
+Active edge layers:
+  Errors: 

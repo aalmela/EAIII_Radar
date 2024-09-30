@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("KRM31KR72A105KH01","1:KRM31KR72A105KH01, Metal Terminal General, X7R(-55to125[deg]), 100[V], 1000000[pF], +/-10[%], 1[kHz]-6[GHz]:1",68,"1","KRM31KR72A105KH01");
+create_constant_form("KRM31KR71H225KH01","2:KRM31KR71H225KH01, Metal Terminal General, X7R(-55to125[deg]), 50[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","KRM31KR71H225KH01");
+create_constant_form("KRM31KR72A225KH01","3:KRM31KR72A225KH01, Metal Terminal General, X7R(-55to125[deg]), 100[V], 2200000[pF], +/-10[%], 1[kHz]-6[GHz]:3",68,"3","KRM31KR72A225KH01");
+create_constant_form("KRM31KR71H475KH01","4:KRM31KR71H475KH01, Metal Terminal General, X7R(-55to125[deg]), 50[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","KRM31KR71H475KH01");
+create_constant_form("KRM31KC81E106KH01","5:KRM31KC81E106KH01, Metal Terminal General, X6S(-55to105[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","KRM31KC81E106KH01");
+create_constant_form("KRM31KC8YA106KH01","6:KRM31KC8YA106KH01, Metal Terminal General, X6S(-55to105[deg]), 35[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","KRM31KC8YA106KH01");
+create_constant_form("KRM31FR61E106KH01","7:KRM31FR61E106KH01, Metal Terminal General, X5R(-55to85[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","KRM31FR61E106KH01");
+
+create_form_set("KRM31_list" 
+,"KRM31KR72A105KH01"
+,"KRM31KR71H225KH01"
+,"KRM31KR72A225KH01"
+,"KRM31KR71H475KH01"
+,"KRM31KC81E106KH01"
+,"KRM31KC8YA106KH01"
+,"KRM31FR61E106KH01"
+);
+
+create_compound_form("KRM31_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"KRM31_list",-1,prm("KRM31KR72A105KH01")),
+create_parm("MIN","Minimum",32,"KRM31_list",-1,prm("KRM31KR72A105KH01")),
+create_parm("MAX","Maximum",32,"KRM31_list",-1,prm("KRM31FR61E106KH01")));
+
+create_form_set("KRM31_list_opt","NULL" 
+,"KRM31KR72A105KH01"
+,"KRM31KR71H225KH01"
+,"KRM31KR72A225KH01"
+,"KRM31KR71H475KH01"
+,"KRM31KC81E106KH01"
+,"KRM31KC8YA106KH01"
+,"KRM31FR61E106KH01"
+,"KRM31_compound"
+);
+
+
+

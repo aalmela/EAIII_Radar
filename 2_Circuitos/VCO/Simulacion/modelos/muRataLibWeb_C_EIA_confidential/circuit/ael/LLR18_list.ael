@@ -1,0 +1,28 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LLR185C70G105ME01","1:LLR185C70G105ME01, Low ESL, X7S(-55to125[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","LLR185C70G105ME01");
+create_constant_form("LLR185C70G105ME03","2:LLR185C70G105ME03, Low ESL, X7S(-55to125[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","LLR185C70G105ME03");
+create_constant_form("LLR185C70G105ME05","3:LLR185C70G105ME05, Low ESL, X7S(-55to125[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:3",68,"3","LLR185C70G105ME05");
+create_constant_form("LLR185C70G105ME07","4:LLR185C70G105ME07, Low ESL, X7S(-55to125[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:4",68,"4","LLR185C70G105ME07");
+
+create_form_set("LLR18_list" 
+,"LLR185C70G105ME01"
+,"LLR185C70G105ME03"
+,"LLR185C70G105ME05"
+,"LLR185C70G105ME07"
+);
+
+create_compound_form("LLR18_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LLR18_list",-1,prm("LLR185C70G105ME01")),
+create_parm("MIN","Minimum",32,"LLR18_list",-1,prm("LLR185C70G105ME01")),
+create_parm("MAX","Maximum",32,"LLR18_list",-1,prm("LLR185C70G105ME07")));
+
+create_form_set("LLR18_list_opt","NULL" 
+,"LLR185C70G105ME01"
+,"LLR185C70G105ME03"
+,"LLR185C70G105ME05"
+,"LLR185C70G105ME07"
+,"LLR18_compound"
+);
+
+
+

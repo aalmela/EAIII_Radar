@@ -1,0 +1,9 @@
+// Rule Registry File
+
+dve_set_rule_list(list(
+    "PC5  Manufacturing Rule", "pc5.ael",
+    "PC6  Manufacturing Rule", "pc6.ael",
+    "PC8  Manufacturing Rule", "pc8.ael",
+    "PC10 Manufacturing Rule", "pc10.ael",
+    "PC12 Manufacturing Rule", "pc12.ael"
+ ));

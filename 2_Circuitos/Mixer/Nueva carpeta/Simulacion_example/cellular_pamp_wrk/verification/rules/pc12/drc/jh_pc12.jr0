@@ -1,0 +1,93 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.jr0
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.jr0"
+
+/* INFO FOR JRC COMPILER */
+.noterm .batch
+starsize 100000
+
+RULES jh_pc12
+TITLE " pc12 rules "
+
+/* VERSION NUMBER */
+version
+    jade 2.00
+end_version
+
+/* MODE */
+mode OPJH
+
+/* MAX. NUMBER OF ERRORS */
+maxerrors 100
+
+/* needed for LLC */
+nonest
+
+/* GEM LAYERS ARE UNSORTED */
+unsorted index
+
+!! don't warn about chopping.  !!!! DANGER !!!!! 
+nochopwarn
+
+/* MEMORY TUNING */
+memory
+    real 32000000
+    virtual 48000000
+    overflow 2000000
+    storage 2.5
+    safety 1.2
+end_memory
+
+/* GEM POLYGON SIZE */
+gempolygon 250
+
+/* WINDOW SIZE FOR GEM */
+window
+    binwidth 20.0
+end_window
+
+/* GEM STARTUP COMMANDS */
+dojade
+    jade_select_layer 124 
+    fringe 15.0 0 0
+end_dojade
+
+/* DIRECTORY FOR OPAL VIEW */
+directory ""
+
+/* POST-OPAL COMMANDS */
+nocleanup
+messages
+beep 0
+
+/* DRC LABEL */
+showlabel "$4$1/ "
+
+/* SUMMARY LAYER REPORTING*/
+summary 0 0
+slabel no_drcerrors has_drcerrors
+
+/* DEFAULTS SECTION */
+defaults
+   check
+       epsilon 0.05 all
+   end_check
+end_defaults
+
+/* HISTORY AND STATISTICS for the log file */
+nohistogram
+nostatistics
+afilemode
+
+jade
+    .stream include jh_pc12.jade_design_layers
+    .stream include jh_pc12.jade_operations
+end_jade
+
+compile
+!!--dbg-- .stream include jh_pc12_pdf_2.tek
+exit
+.stream return

@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LLC15SD70E105ME01","1:LLC15SD70E105ME01, Low ESL for Powertrain/Safety for Automotive[AEC-Q200], X7T(-55to125[deg]), 2.5[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","LLC15SD70E105ME01");
+create_constant_form("LLC152D70G105ME01","2:LLC152D70G105ME01, Low ESL for Powertrain/Safety for Automotive[AEC-Q200], X7T(-55to125[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","LLC152D70G105ME01");
+
+create_form_set("LLC15_list" 
+,"LLC15SD70E105ME01"
+,"LLC152D70G105ME01"
+);
+
+create_compound_form("LLC15_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LLC15_list",-1,prm("LLC15SD70E105ME01")),
+create_parm("MIN","Minimum",32,"LLC15_list",-1,prm("LLC15SD70E105ME01")),
+create_parm("MAX","Maximum",32,"LLC15_list",-1,prm("LLC152D70G105ME01")));
+
+create_form_set("LLC15_list_opt","NULL" 
+,"LLC15SD70E105ME01"
+,"LLC152D70G105ME01"
+,"LLC15_compound"
+);
+
+
+

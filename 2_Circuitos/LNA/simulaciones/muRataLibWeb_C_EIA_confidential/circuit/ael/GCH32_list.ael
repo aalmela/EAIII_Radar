@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GCH32ER71H475KE01","1:GCH32ER71H475KE01, Implantable medical device, X7R(-55to125[deg]), 50[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GCH32ER71H475KE01");
+create_constant_form("GCH32ER71A226KE01","2:GCH32ER71A226KE01, Implantable medical device, X7R(-55to125[deg]), 10[V], 22000000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GCH32ER71A226KE01");
+create_constant_form("GCH32ER70J476KE01","3:GCH32ER70J476KE01, Implantable medical device, X7R(-55to125[deg]), 6.3[V], 47000000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GCH32ER70J476KE01");
+
+create_form_set("GCH32_list" 
+,"GCH32ER71H475KE01"
+,"GCH32ER71A226KE01"
+,"GCH32ER70J476KE01"
+);
+
+create_compound_form("GCH32_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GCH32_list",-1,prm("GCH32ER71H475KE01")),
+create_parm("MIN","Minimum",32,"GCH32_list",-1,prm("GCH32ER71H475KE01")),
+create_parm("MAX","Maximum",32,"GCH32_list",-1,prm("GCH32ER70J476KE01")));
+
+create_form_set("GCH32_list_opt","NULL" 
+,"GCH32ER71H475KE01"
+,"GCH32ER71A226KE01"
+,"GCH32ER70J476KE01"
+,"GCH32_compound"
+);
+
+
+

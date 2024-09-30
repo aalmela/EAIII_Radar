@@ -1,0 +1,46 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("ZRB18AR6YA475KE05","1:ZRB18AR6YA475KE05, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 35[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","ZRB18AR6YA475KE05");
+create_constant_form("ZRB18AR6YA475ME05","2:ZRB18AR6YA475ME05, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 35[V], 4700000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","ZRB18AR6YA475ME05");
+create_constant_form("ZRB18AR61E106KE01","3:ZRB18AR61E106KE01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","ZRB18AR61E106KE01");
+create_constant_form("ZRB18AR61E106ME01","4:ZRB18AR61E106ME01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 25[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:4",68,"4","ZRB18AR61E106ME01");
+create_constant_form("ZRB186R60G226ME11","5:ZRB186R60G226ME11, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 4[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:5",68,"5","ZRB186R60G226ME11");
+create_constant_form("ZRB186R60J226ME11","6:ZRB186R60J226ME11, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 6.3[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:6",68,"6","ZRB186R60J226ME11");
+create_constant_form("ZRB188R61A226ME05","7:ZRB188R61A226ME05, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 10[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:7",68,"7","ZRB188R61A226ME05");
+create_constant_form("ZRB18AR61A226ME01","8:ZRB18AR61A226ME01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 10[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:8",68,"8","ZRB18AR61A226ME01");
+create_constant_form("ZRB18AC80E476ME01","9:ZRB18AC80E476ME01, Acoustic noise reduction (interposer), X6S(-55to105[deg]), 2.5[V], 47000000[pF], +/-20[%], 100[Hz]-6[GHz]:9",68,"9","ZRB18AC80E476ME01");
+create_constant_form("ZRB18AR60J476ME01","10:ZRB18AR60J476ME01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 6.3[V], 47000000[pF], +/-20[%], 100[Hz]-6[GHz]:10",68,"10","ZRB18AR60J476ME01");
+
+create_form_set("ZRB18_list" 
+,"ZRB18AR6YA475KE05"
+,"ZRB18AR6YA475ME05"
+,"ZRB18AR61E106KE01"
+,"ZRB18AR61E106ME01"
+,"ZRB186R60G226ME11"
+,"ZRB186R60J226ME11"
+,"ZRB188R61A226ME05"
+,"ZRB18AR61A226ME01"
+,"ZRB18AC80E476ME01"
+,"ZRB18AR60J476ME01"
+);
+
+create_compound_form("ZRB18_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"ZRB18_list",-1,prm("ZRB18AR6YA475KE05")),
+create_parm("MIN","Minimum",32,"ZRB18_list",-1,prm("ZRB18AR6YA475KE05")),
+create_parm("MAX","Maximum",32,"ZRB18_list",-1,prm("ZRB18AR60J476ME01")));
+
+create_form_set("ZRB18_list_opt","NULL" 
+,"ZRB18AR6YA475KE05"
+,"ZRB18AR6YA475ME05"
+,"ZRB18AR61E106KE01"
+,"ZRB18AR61E106ME01"
+,"ZRB186R60G226ME11"
+,"ZRB186R60J226ME11"
+,"ZRB188R61A226ME05"
+,"ZRB18AR61A226ME01"
+,"ZRB18AC80E476ME01"
+,"ZRB18AR60J476ME01"
+,"ZRB18_compound"
+);
+
+
+

@@ -1,0 +1,49 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GCJ55DR73A683KXJ1","1:GCJ55DR73A683KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 1000[V], 68000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","GCJ55DR73A683KXJ1");
+create_constant_form("GCJ55DR72J104KXJ1","2:GCJ55DR72J104KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 630[V], 100000[pF], +/-10[%], 100[Hz]-3[GHz]:2",68,"2","GCJ55DR72J104KXJ1");
+create_constant_form("GCJ55DR73A104KXJ1","3:GCJ55DR73A104KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 1000[V], 100000[pF], +/-10[%], 100[Hz]-3[GHz]:3",68,"3","GCJ55DR73A104KXJ1");
+create_constant_form("GCJ55DR72J154KXJ1","4:GCJ55DR72J154KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 630[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:4",68,"4","GCJ55DR72J154KXJ1");
+create_constant_form("GCJ55DR72J224KXJ1","5:GCJ55DR72J224KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 630[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:5",68,"5","GCJ55DR72J224KXJ1");
+create_constant_form("GCJ55DR72E334KXJ1","6:GCJ55DR72E334KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 250[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:6",68,"6","GCJ55DR72E334KXJ1");
+create_constant_form("GCJ55DR7LV334KW01","7:GCJ55DR7LV334KW01, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 630[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:7",68,"7","GCJ55DR7LV334KW01");
+create_constant_form("GCJ55DR72E474KXJ1","8:GCJ55DR72E474KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 250[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:8",68,"8","GCJ55DR72E474KXJ1");
+create_constant_form("GCJ55DR7LV474KW01","9:GCJ55DR7LV474KW01, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 630[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:9",68,"9","GCJ55DR7LV474KW01");
+create_constant_form("GCJ55DR72E684KXJ1","10:GCJ55DR72E684KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 250[V], 680000[pF], +/-10[%], 100[Hz]-3[GHz]:10",68,"10","GCJ55DR72E684KXJ1");
+create_constant_form("GCJ55DR72E105KXJ1","11:GCJ55DR72E105KXJ1, 200V and over/ Automotive [AEC-Q200], X7R(-55to125[deg]), 250[V], 1000000[pF], +/-10[%], 100[Hz]-3[GHz]:11",68,"11","GCJ55DR72E105KXJ1");
+
+create_form_set("GCJ55_list" 
+,"GCJ55DR73A683KXJ1"
+,"GCJ55DR72J104KXJ1"
+,"GCJ55DR73A104KXJ1"
+,"GCJ55DR72J154KXJ1"
+,"GCJ55DR72J224KXJ1"
+,"GCJ55DR72E334KXJ1"
+,"GCJ55DR7LV334KW01"
+,"GCJ55DR72E474KXJ1"
+,"GCJ55DR7LV474KW01"
+,"GCJ55DR72E684KXJ1"
+,"GCJ55DR72E105KXJ1"
+);
+
+create_compound_form("GCJ55_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GCJ55_list",-1,prm("GCJ55DR73A683KXJ1")),
+create_parm("MIN","Minimum",32,"GCJ55_list",-1,prm("GCJ55DR73A683KXJ1")),
+create_parm("MAX","Maximum",32,"GCJ55_list",-1,prm("GCJ55DR72E105KXJ1")));
+
+create_form_set("GCJ55_list_opt","NULL" 
+,"GCJ55DR73A683KXJ1"
+,"GCJ55DR72J104KXJ1"
+,"GCJ55DR73A104KXJ1"
+,"GCJ55DR72J154KXJ1"
+,"GCJ55DR72J224KXJ1"
+,"GCJ55DR72E334KXJ1"
+,"GCJ55DR7LV334KW01"
+,"GCJ55DR72E474KXJ1"
+,"GCJ55DR7LV474KW01"
+,"GCJ55DR72E684KXJ1"
+,"GCJ55DR72E105KXJ1"
+,"GCJ55_compound"
+);
+
+
+

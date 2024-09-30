@@ -1,0 +1,79 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GXT188R71E224KE01","1:GXT188R71E224KE01, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 25[V], 220000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GXT188R71E224KE01");
+create_constant_form("GXT188C80G105ME01","2:GXT188C80G105ME01, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 4[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","GXT188C80G105ME01");
+create_constant_form("GXT188R71C105KE13","3:GXT188R71C105KE13, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 16[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GXT188R71C105KE13");
+create_constant_form("GXT188R71E105KE13","4:GXT188R71E105KE13, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GXT188R71E105KE13");
+create_constant_form("GXT188C81E225KE13","5:GXT188C81E225KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 25[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GXT188C81E225KE13");
+create_constant_form("GXT188C8YA225KE13","6:GXT188C8YA225KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 35[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","GXT188C8YA225KE13");
+create_constant_form("GXT188R61H225KE13","7:GXT188R61H225KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 50[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","GXT188R61H225KE13");
+create_constant_form("GXT188R6YA225KE13","8:GXT188R6YA225KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 35[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:8",68,"8","GXT188R6YA225KE13");
+create_constant_form("GXT188C81C475KE13","9:GXT188C81C475KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 16[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:9",68,"9","GXT188C81C475KE13");
+create_constant_form("GXT188C81E475KE13","10:GXT188C81E475KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 25[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:10",68,"10","GXT188C81E475KE13");
+create_constant_form("GXT188R61C475KE13","11:GXT188R61C475KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 16[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:11",68,"11","GXT188R61C475KE13");
+create_constant_form("GXT188R61E475KE13","12:GXT188R61E475KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 25[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:12",68,"12","GXT188R61E475KE13");
+create_constant_form("GXT188R6YA475KE13","13:GXT188R6YA475KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 35[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:13",68,"13","GXT188R6YA475KE13");
+create_constant_form("GXT188C80G106ME13","14:GXT188C80G106ME13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 4[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:14",68,"14","GXT188C80G106ME13");
+create_constant_form("GXT188C81A106ME13","15:GXT188C81A106ME13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 10[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:15",68,"15","GXT188C81A106ME13");
+create_constant_form("GXT188C81C106ME13","16:GXT188C81C106ME13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 16[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:16",68,"16","GXT188C81C106ME13");
+create_constant_form("GXT188R60G106ME13","17:GXT188R60G106ME13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 4[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:17",68,"17","GXT188R60G106ME13");
+create_constant_form("GXT188R60J106ME13","18:GXT188R60J106ME13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 6.3[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:18",68,"18","GXT188R60J106ME13");
+create_constant_form("GXT188R61A106KE13","19:GXT188R61A106KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 10[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:19",68,"19","GXT188R61A106KE13");
+create_constant_form("GXT188R61C106KE13","20:GXT188R61C106KE13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 16[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:20",68,"20","GXT188R61C106KE13");
+create_constant_form("GXT188R61E106ME13","21:GXT188R61E106ME13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 25[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:21",68,"21","GXT188R61E106ME13");
+
+create_form_set("GXT18_list" 
+,"GXT188R71E224KE01"
+,"GXT188C80G105ME01"
+,"GXT188R71C105KE13"
+,"GXT188R71E105KE13"
+,"GXT188C81E225KE13"
+,"GXT188C8YA225KE13"
+,"GXT188R61H225KE13"
+,"GXT188R6YA225KE13"
+,"GXT188C81C475KE13"
+,"GXT188C81E475KE13"
+,"GXT188R61C475KE13"
+,"GXT188R61E475KE13"
+,"GXT188R6YA475KE13"
+,"GXT188C80G106ME13"
+,"GXT188C81A106ME13"
+,"GXT188C81C106ME13"
+,"GXT188R60G106ME13"
+,"GXT188R60J106ME13"
+,"GXT188R61A106KE13"
+,"GXT188R61C106KE13"
+,"GXT188R61E106ME13"
+);
+
+create_compound_form("GXT18_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GXT18_list",-1,prm("GXT188R71E224KE01")),
+create_parm("MIN","Minimum",32,"GXT18_list",-1,prm("GXT188R71E224KE01")),
+create_parm("MAX","Maximum",32,"GXT18_list",-1,prm("GXT188R61E106ME13")));
+
+create_form_set("GXT18_list_opt","NULL" 
+,"GXT188R71E224KE01"
+,"GXT188C80G105ME01"
+,"GXT188R71C105KE13"
+,"GXT188R71E105KE13"
+,"GXT188C81E225KE13"
+,"GXT188C8YA225KE13"
+,"GXT188R61H225KE13"
+,"GXT188R6YA225KE13"
+,"GXT188C81C475KE13"
+,"GXT188C81E475KE13"
+,"GXT188R61C475KE13"
+,"GXT188R61E475KE13"
+,"GXT188R6YA475KE13"
+,"GXT188C80G106ME13"
+,"GXT188C81A106ME13"
+,"GXT188C81C106ME13"
+,"GXT188R60G106ME13"
+,"GXT188R60J106ME13"
+,"GXT188R61A106KE13"
+,"GXT188R61C106KE13"
+,"GXT188R61E106ME13"
+,"GXT18_compound"
+);
+
+
+

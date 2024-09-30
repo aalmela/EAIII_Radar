@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("NFZ15SR152SN10","1:NFZ15SR152SN10, Inductor Type, 400[mA], 1[MHz]-3[GHz]:1",68,"1","NFZ15SR152SN10");
+create_constant_form("NFZ15SR262SN10","2:NFZ15SR262SN10, Inductor Type, 300[mA], 1[MHz]-3[GHz]:2",68,"2","NFZ15SR262SN10");
+create_constant_form("NFZ15SR352SN10","3:NFZ15SR352SN10, Inductor Type, 270[mA], 1[MHz]-3[GHz]:3",68,"3","NFZ15SR352SN10");
+
+create_form_set("NFZ15SR_list" 
+,"NFZ15SR152SN10"
+,"NFZ15SR262SN10"
+,"NFZ15SR352SN10"
+);
+
+create_compound_form("NFZ15SR_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"NFZ15SR_list",-1,prm("NFZ15SR152SN10")),
+create_parm("MIN","Minimum",32,"NFZ15SR_list",-1,prm("NFZ15SR152SN10")),
+create_parm("MAX","Maximum",32,"NFZ15SR_list",-1,prm("NFZ15SR352SN10")));
+
+create_form_set("NFZ15SR_list_opt","NULL" 
+,"NFZ15SR152SN10"
+,"NFZ15SR262SN10"
+,"NFZ15SR352SN10"
+,"NFZ15SR_compound"
+);
+
+
+

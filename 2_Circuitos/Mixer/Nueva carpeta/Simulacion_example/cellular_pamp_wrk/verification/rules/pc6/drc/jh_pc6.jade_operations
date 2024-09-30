@@ -1,0 +1,60 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.jade_operations
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.jade_operations"
+
+rule 101 show "Minimum width of cond is 6 mil"
+   width #lyr_cond @lyr_error1 lt 6.000000
+end_rule
+
+rule 101 show "Minimum width of cond2 is 6 mil"
+   width #lyr_cond2 @lyr_error1 lt 6.000000
+end_rule
+
+rule 101 show "Minimum spacing of cond is 6 mil"
+   spacing #lyr_cond @lyr_error1 lt 6.000000
+end_rule
+
+rule 101 show "Minimum spacing of cond2 is 6 mil"
+   spacing #lyr_cond2 @lyr_error1 lt 6.000000
+end_rule
+
+bool lyr_intersect =
+   lyr_cond AND lyr_cond2
+end_bool
+
+bool via_hole =
+   lyr_intersect AND lyr_hole
+end_bool
+
+select via_pad =
+   lyr_intersect
+   list
+   enclose_only
+   ;
+   via_hole
+end_select
+
+rule 101 show "Minimum via pad size is 25 mil"
+   width #via_pad @lyr_error1 lt 25.000000
+end_rule
+
+rule 101 show "Minimum spacing from hole to board edge is 50 mil"
+   contains #via_hole @lyr_error1 #lyr_bound lt 50.000000
+end_rule
+
+rule 101 show "Minimum spacing from cond to board edge is 30 mil"
+   contains #lyr_cond @lyr_error1 #lyr_bound lt 30.000000
+end_rule
+
+rule 101 show "Minimum spacing from cond2 to board edge is 30 mil"
+   contains #lyr_cond2 @lyr_error1 #lyr_bound lt 30.000000
+end_rule
+
+rule 101 show "Minimum spacing between hole edges is 16 mil"
+   gap #via_hole @lyr_error1 lt 16.000000
+end_rule
+
+.stream return

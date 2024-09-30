@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLF02RD331GNE","1:BLF02RD331GNE, Frequency Specified Filters, 330[mA], 1[MHz]-3[GHz]:1",68,"1","BLF02RD331GNE");
+create_constant_form("BLF02RD471GNE","2:BLF02RD471GNE, Frequency Specified Filters, 200[mA], 1[MHz]-3[GHz]:2",68,"2","BLF02RD471GNE");
+
+create_form_set("BLF02RD_list" 
+,"BLF02RD331GNE"
+,"BLF02RD471GNE"
+);
+
+create_compound_form("BLF02RD_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLF02RD_list",-1,prm("BLF02RD331GNE")),
+create_parm("MIN","Minimum",32,"BLF02RD_list",-1,prm("BLF02RD331GNE")),
+create_parm("MAX","Maximum",32,"BLF02RD_list",-1,prm("BLF02RD471GNE")));
+
+create_form_set("BLF02RD_list_opt","NULL" 
+,"BLF02RD331GNE"
+,"BLF02RD471GNE"
+,"BLF02RD_compound"
+);
+
+
+

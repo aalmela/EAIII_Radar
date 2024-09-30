@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM31AJ601SH1","1:BLM31AJ601SH1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:1",68,"1","BLM31AJ601SH1");
+
+create_form_set("BLM31AJ_list" 
+,"BLM31AJ601SH1"
+);
+
+create_compound_form("BLM31AJ_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM31AJ_list",-1,prm("BLM31AJ601SH1")),
+create_parm("MIN","Minimum",32,"BLM31AJ_list",-1,prm("BLM31AJ601SH1")),
+create_parm("MAX","Maximum",32,"BLM31AJ_list",-1,prm("BLM31AJ601SH1")));
+
+create_form_set("BLM31AJ_list_opt","NULL" 
+,"BLM31AJ601SH1"
+,"BLM31AJ_compound"
+);
+
+
+

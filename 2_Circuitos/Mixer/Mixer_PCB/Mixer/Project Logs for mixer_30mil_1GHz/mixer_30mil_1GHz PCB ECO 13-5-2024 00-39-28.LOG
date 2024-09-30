@@ -1,0 +1,6 @@
+Added Component: Designator=*(hibrido_62mil_1GHz)
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Pin To Net: NetName=Net*_4 Pin=*-4
+Added Member To Class: ClassName=mixer_30mil_1GHz Member=Component * hibrido_62mil_1GHz

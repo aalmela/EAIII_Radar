@@ -1,0 +1,46 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM18KN101EH1","1:BLM18KN101EH1, Ferrite Bead Single Type, 1900[mA], 1[MHz]-3[GHz]:1",68,"1","BLM18KN101EH1");
+create_constant_form("BLM18KN102EH1","2:BLM18KN102EH1, Ferrite Bead Single Type, 740[mA], 1[MHz]-3[GHz]:2",68,"2","BLM18KN102EH1");
+create_constant_form("BLM18KN121EH1","3:BLM18KN121EH1, Ferrite Bead Single Type, 1900[mA], 1[MHz]-3[GHz]:3",68,"3","BLM18KN121EH1");
+create_constant_form("BLM18KN221EH1","4:BLM18KN221EH1, Ferrite Bead Single Type, 1400[mA], 1[MHz]-3[GHz]:4",68,"4","BLM18KN221EH1");
+create_constant_form("BLM18KN260EH1","5:BLM18KN260EH1, Ferrite Bead Single Type, 4000[mA], 1[MHz]-3[GHz]:5",68,"5","BLM18KN260EH1");
+create_constant_form("BLM18KN300EH1","6:BLM18KN300EH1, Ferrite Bead Single Type, 2600[mA], 1[MHz]-3[GHz]:6",68,"6","BLM18KN300EH1");
+create_constant_form("BLM18KN331EH1","7:BLM18KN331EH1, Ferrite Bead Single Type, 1100[mA], 1[MHz]-3[GHz]:7",68,"7","BLM18KN331EH1");
+create_constant_form("BLM18KN471EH1","8:BLM18KN471EH1, Ferrite Bead Single Type, 920[mA], 1[MHz]-3[GHz]:8",68,"8","BLM18KN471EH1");
+create_constant_form("BLM18KN601EH1","9:BLM18KN601EH1, Ferrite Bead Single Type, 860[mA], 1[MHz]-3[GHz]:9",68,"9","BLM18KN601EH1");
+create_constant_form("BLM18KN700EH1","10:BLM18KN700EH1, Ferrite Bead Single Type, 2200[mA], 1[MHz]-3[GHz]:10",68,"10","BLM18KN700EH1");
+
+create_form_set("BLM18KN_list" 
+,"BLM18KN101EH1"
+,"BLM18KN102EH1"
+,"BLM18KN121EH1"
+,"BLM18KN221EH1"
+,"BLM18KN260EH1"
+,"BLM18KN300EH1"
+,"BLM18KN331EH1"
+,"BLM18KN471EH1"
+,"BLM18KN601EH1"
+,"BLM18KN700EH1"
+);
+
+create_compound_form("BLM18KN_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM18KN_list",-1,prm("BLM18KN101EH1")),
+create_parm("MIN","Minimum",32,"BLM18KN_list",-1,prm("BLM18KN101EH1")),
+create_parm("MAX","Maximum",32,"BLM18KN_list",-1,prm("BLM18KN700EH1")));
+
+create_form_set("BLM18KN_list_opt","NULL" 
+,"BLM18KN101EH1"
+,"BLM18KN102EH1"
+,"BLM18KN121EH1"
+,"BLM18KN221EH1"
+,"BLM18KN260EH1"
+,"BLM18KN300EH1"
+,"BLM18KN331EH1"
+,"BLM18KN471EH1"
+,"BLM18KN601EH1"
+,"BLM18KN700EH1"
+,"BLM18KN_compound"
+);
+
+
+

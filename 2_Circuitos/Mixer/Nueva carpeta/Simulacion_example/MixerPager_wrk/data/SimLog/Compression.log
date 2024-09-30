@@ -1,0 +1,424 @@
+
+HB HB2[1] <MixerPager_lib:Compression:schematic>   PwrIn=(-45->-15)
+    Number of tones:   1.
+    Number of frequencies:   4.
+    Number of time samples:  8.
+    Number of HB equations (problem size): 161.
+    Auto mode: on.
+    Convergence mode: Fast.
+    Linear solver: direct.
+    PwrIn=-45            0.00% 1/31
+------------------------------------------------------------------------
+Newton solver:				
+Iter	KCL residual	Sol update
+------------------------------------------------------------------------
+0.0*	2.04058 uA               
+1.0 	1.89525 nA               
+1.1 	3.80012 pA  	142.315 pV   
+    PwrIn=-44            3.33% 2/31
+0.0 	245.018 nA               
+0.1 	3.46838 nA               
+0.2 	21.592 pA                
+
+    PwrIn=-43            6.67% 3/31
+0.0 	274.914 nA               
+0.1 	4.39709 nA               
+0.2 	30.5976 pA               
+
+    PwrIn=-42           10.00% 4/31
+0.0 	308.459 nA               
+0.1 	5.57776 nA               
+0.2 	43.3627 pA               
+
+    PwrIn=-41           13.33% 5/31
+0.0 	346.097 nA               
+0.1 	7.07962 nA               
+0.2 	61.4534 pA               
+
+    PwrIn=-40           16.67% 6/31
+0.0 	388.327 nA               
+0.1 	8.99101 nA               
+0.2 	87.0823 pA               
+
+    PwrIn=-39           20.00% 7/31
+0.0 	435.71 nA                
+0.1 	11.4246 nA               
+0.2 	123.368 pA               
+
+    PwrIn=-38           23.33% 8/31
+0.0 	488.875 nA               
+0.1 	14.5236 nA               
+0.2 	174.692 pA               
+
+    PwrIn=-37           26.67% 9/31
+0.0 	548.526 nA               
+0.1 	18.4696 nA               
+0.2 	247.183 pA               
+
+    PwrIn=-36           30.00% 10/31
+0.0 	615.457 nA               
+0.1 	23.4918 nA               
+0.2 	349.36 pA                
+
+    PwrIn=-35           33.33% 11/31
+0.0 	690.554 nA               
+0.1 	29.8772 nA               
+0.2 	492.961 pA               
+
+    PwrIn=-34           36.67% 12/31
+0.0 	774.814 nA               
+0.1 	37.9817 nA               
+0.2 	693.968 pA               
+
+    PwrIn=-33           40.00% 13/31
+0.0 	869.356 nA               
+0.1 	48.2399 nA               
+0.2 	973.778 pA               
+
+    PwrIn=-32           43.33% 14/31
+0.0 	975.433 nA               
+0.1 	61.1711 nA               
+0.2 	1.36036 nA               
+
+    PwrIn=-31           46.67% 15/31
+0.0 	1.09445 uA               
+0.1 	77.3757 nA               
+0.2 	1.889 nA                 
+0.3 	29.3012 pA               
+
+    PwrIn=-30           50.00% 16/31
+0.0 	1.228 uA                 
+0.1 	97.5128 nA               
+0.2 	2.60594 nA               
+0.3 	45.2092 pA               
+
+    PwrIn=-29           53.33% 17/31
+0.0 	1.37784 uA               
+0.1 	122.247 nA               
+0.2 	3.58453 nA               
+0.3 	68.8106 pA               
+
+    PwrIn=-28           56.67% 18/31
+0.0 	1.54596 uA               
+0.1 	152.14 nA                
+0.2 	4.88183 nA               
+0.3 	103.44 pA                
+
+    PwrIn=-27           60.00% 19/31
+0.0 	1.73459 uA               
+0.1 	187.468 nA               
+0.2 	6.56401 nA               
+0.3 	151.812 pA               
+
+    PwrIn=-26           63.33% 20/31
+0.0 	1.94625 uA               
+0.1 	228.749 nA               
+0.2 	8.68323 nA               
+0.3 	215.943 pA               
+
+    PwrIn=-25           66.67% 21/31
+0.0 	2.18372 uA               
+0.1 	278.384 nA               
+0.2 	11.255 nA                
+0.3 	295.026 pA               
+
+    PwrIn=-24           70.00% 22/31
+0.0 	2.45018 uA               
+0.1 	333.098 nA               
+0.2 	14.3034 nA               
+0.3 	386.474 pA               
+
+    PwrIn=-23           73.33% 23/31
+0.0 	2.74914 uA               
+0.1 	390.824 nA               
+0.2 	17.7525 nA               
+0.3 	486.405 pA               
+
+    PwrIn=-22           76.67% 24/31
+0.0 	3.08459 uA               
+0.1 	444.658 nA               
+0.2 	21.5938 nA               
+0.3 	630.744 pA               
+
+    PwrIn=-21           80.00% 25/31
+0.0 	3.46097 uA               
+0.1 	487.139 nA               
+0.2 	25.4051 nA               
+0.3 	810.939 pA               
+
+    PwrIn=-20           83.33% 26/31
+0.0 	3.88327 uA               
+0.1 	511.58 nA                
+0.2 	28.9717 nA               
+0.3 	986.389 pA               
+
+    PwrIn=-19           86.67% 27/31
+0.0 	4.3571 uA                
+0.1 	564.989 nA               
+0.2 	32.5112 nA               
+0.3 	1.14411 nA               
+
+    PwrIn=-18           90.00% 28/31
+0.0 	4.88875 uA               
+0.1 	602.192 nA               
+0.2 	35.6734 nA               
+0.3 	1.36845 nA               
+
+    PwrIn=-17           93.33% 29/31
+0.0 	5.48526 uA               
+0.1 	621.602 nA               
+0.2 	38.5569 nA               
+0.3 	1.63907 nA               
+
+    PwrIn=-16           96.67% 30/31
+0.0 	6.15457 uA               
+0.1 	682.244 nA               
+0.2 	41.0875 nA               
+0.3 	1.91251 nA               
+
+    PwrIn=-15          100.00% 31/31
+0.0 	6.90554 uA               
+0.1 	752.115 nA               
+0.2 	42.6542 nA               
+0.3 	2.12655 nA               
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+Q1.Q1.c                 7.026e-04       >       1.027e-06
+Q1._net199              6.300e-04       >       1.024e-06
+Q1.Q1.b                 2.890e-04       >       1.043e-06
+Q1._net299              2.525e-04       >       1.043e-06
+Q1.Q1.e                 2.387e-04       >       1.004e-06
+
+o Number of waveforms violating the HB truncation error check:
+        5 out of 5 waveforms.
+o Estimated max HB truncation error: 7.026e-04 @ waveform Q1.Q1.c .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.027e-06 for this waveform.
+o A time-domain plot of the Vout waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB1[1] <MixerPager_lib:Compression:schematic>
+    Number of tones:   1.
+    Number of frequencies:   16.
+    Number of time samples:  32.
+    Number of HB equations (problem size): 713.
+    Auto mode: on.
+    Convergence mode: Fast.
+    Linear solver: direct.
+0.0*	1.12468 mA               
+1.0 	2.27929 mA               
+        Samanskii-Newton iteration failed
+1.1*	2.43916 mA               
+2.0*	714.159 uA               
+3.0 	112.767 uA               
+3.1 	33.8616 uA               
+3.2 	10.5662 uA               
+3.3 	3.33261 uA               
+3.4 	1.05689 uA               
+3.5 	336.562 nA               
+3.6 	107.527 nA               
+3.7 	34.4371 nA               
+3.8 	11.0472 nA               
+3.9 	3.5475 nA                
+3.10 	1.13983 nA               
+3.11 	366.34 pA                
+3.12 	117.757 pA               
+3.13 	37.8538 pA  	979.435 pV   
+0.0*	12.1685 pA               
+Numerical noise: 6.201517e-36 mW, -3.220750e+02 dBm
+Next attempt: 1.264911e-06
+0.0 	632.456 nA               
+0.1 	628.798 pA               
+0.2 	588.052 fA               
+Low level gain found: 2.084948e+00, 3.190952e+00 dB
+Success. Next attempt: 3.794733e-06
+0.0 	1.26491 uA               
+0.1 	5.03451 nA               
+0.2 	14.1339 pA               
+Compression = 2.246551e-05 dB, Gain = 3.190929e+00 dB
+Success. Next attempt: 9.486833e-06
+0.0 	2.84605 uA               
+0.1 	29.7889 nA               
+0.2 	209.385 pA               
+0.3 	768.059 fA               
+Compression = 1.551447e-04 dB, Gain = 3.190796e+00 dB
+Success. Next attempt: 2.371708e-05
+0.0 	7.11512 uA               
+0.1 	187.046 nA               
+0.2 	3.29913 nA               
+0.3 	30.5374 pA               
+Compression = 9.841576e-04 dB, Gain = 3.189967e+00 dB
+Success. Next attempt: 5.929271e-05
+0.0 	17.7878 uA               
+0.1 	1.18273 uA               
+0.2 	52.628 nA                
+0.3 	1.24509 nA               
+0.4 	46.8054 pA               
+Compression = 6.163851e-03 dB, Gain = 3.184788e+00 dB
+Success. Next attempt: 1.482318e-04
+0.0 	44.4695 uA               
+0.1 	7.61274 uA               
+0.2 	864.869 nA               
+0.3 	53.6694 nA               
+0.4 	4.9116 nA                
+0.5 	306.539 pA               
+Compression = 3.841705e-02 dB, Gain = 3.152535e+00 dB
+Success. Next attempt: 2.964635e-04
+0.0 	74.1159 uA               
+0.1 	28.3552 uA               
+0.2 	6.61195 uA               
+0.3 	865.184 nA               
+0.4 	153.834 nA               
+0.5 	20.4941 nA               
+0.6 	3.22551 nA               
+0.7 	437.515 pA               
+Compression = 1.519632e-01 dB, Gain = 3.038988e+00 dB
+Success. Next attempt: 4.446953e-04
+0.0 	74.1159 uA               
+0.1 	48.1194 uA               
+0.2 	16.9442 uA               
+0.3 	3.39938 uA               
+0.4 	895.784 nA               
+0.5 	184.656 nA               
+0.6 	42.9608 nA               
+0.7 	9.04144 nA               
+0.8 	1.98005 nA               
+0.9 	414.732 pA               
+Compression = 3.355254e-01 dB, Gain = 2.855426e+00 dB
+Success. Next attempt: 6.670429e-04
+0.0 	111.174 uA               
+0.1 	113.439 uA               
+0.2 	60.2656 uA               
+0.3 	18.5726 uA               
+0.4 	7.12825 uA               
+0.5 	2.27258 uA               
+0.6 	776.278 nA               
+0.7 	251.141 nA               
+0.8 	82.046 nA                
+0.9 	26.3462 nA               
+0.10 	8.42452 nA               
+0.11 	2.68478 nA               
+0.12 	849.469 pA               
+Compression = 7.232974e-01 dB, Gain = 2.467654e+00 dB
+Success. Next attempt: 1.000564e-03
+0.0 	166.761 uA               
+0.1 	271.623 uA               
+0.2 	211.198 uA               
+0.3*	96.5152 uA               
+1.0 	2.06707 uA               
+1.1 	90.4595 nA               
+1.2 	3.97954 nA               
+1.3 	173.711 pA  	3.98703 nV   
+Compression = 1.479949e+00 dB, Gain = 1.711002e+00 dB
+Bracket established
+Bracket: [6.670429e-04, 1.000564e-03]
+Success. Next attempt: 8.338037e-04
+0.0 	83.3804 uA               
+0.1 	9.3197 uA                
+0.2 	1.30898 uA               
+0.3 	101.84 nA                
+0.4 	9.90099 nA               
+0.5 	862.546 pA               
+Compression = 1.082386e+00 dB, Gain = 2.108565e+00 dB
+Bracket established
+Bracket: [6.670429e-04, 8.338037e-04]
+Success. Next attempt: 7.504233e-04
+0.0 	41.6902 uA               
+0.1 	10.7635 uA               
+0.2 	1.84119 uA               
+0.3 	164.066 nA               
+0.4 	22.4784 nA               
+0.5 	2.36187 nA               
+0.6 	279.659 pA               
+Compression = 8.968911e-01 dB, Gain = 2.294061e+00 dB
+Bracket: [7.504233e-04, 8.338037e-04]
+Success. Next attempt: 7.921135e-04
+0.0 	20.8451 uA               
+0.1 	5.82712 uA               
+0.2 	928.126 nA               
+0.3 	78.2034 nA               
+0.4 	9.08868 nA               
+0.5 	880.797 pA               
+Compression = 9.882945e-01 dB, Gain = 2.202657e+00 dB
+Bracket: [7.921135e-04, 8.338037e-04]
+Success. Next attempt: 8.129586e-04
+0.0 	10.4225 uA               
+0.1 	2.47708 uA               
+0.2 	374.201 nA               
+0.3 	29.9812 nA               
+0.4 	3.21209 nA               
+0.5 	295.237 pA               
+Compression = 1.035022e+00 dB, Gain = 2.155929e+00 dB
+Bracket established
+Bracket: [7.921135e-04, 8.129586e-04]
+Success. Next attempt: 8.025360e-04
+0.0 	5.21127 uA               
+0.1 	1.21005 uA               
+0.2 	186.699 nA               
+0.3 	15.2124 nA               
+0.4 	1.70011 nA               
+Compression = 1.011578e+00 dB, Gain = 2.179374e+00 dB
+Bracket established
+Bracket: [7.921135e-04, 8.025360e-04]
+Success. Next attempt: 7.973248e-04
+0.0 	2.60564 uA               
+0.1 	632.155 nA               
+0.2 	98.6867 nA               
+0.3 	8.13616 nA               
+0.4 	928.19 pA                
+Compression = 9.999155e-01 dB, Gain = 2.191036e+00 dB
+Bracket: [7.973248e-04, 8.025360e-04]
+Success. Next attempt: 7.999304e-04
+0.0 	1.30282 uA               
+0.1 	317.846 nA               
+0.2 	49.3678 nA               
+0.3 	4.05372 nA               
+0.4 	457.638 pA               
+Compression = 1.005741e+00 dB, Gain = 2.185211e+00 dB
+Bracket established
+Bracket: [7.973248e-04, 7.999304e-04]
+Success. Next attempt: 7.986276e-04
+0.0 	651.409 nA               
+0.1 	158.48 nA                
+0.2 	24.6774 nA               
+0.3 	2.0304 nA                
+0.4 	230.424 pA               
+Compression = 1.002827e+00 dB, Gain = 2.188125e+00 dB
+Bracket established
+Bracket: [7.973248e-04, 7.986276e-04]
+Success. Next attempt: 7.979762e-04
+0.0 	325.705 nA               
+0.1 	79.6661 nA               
+0.2 	12.424 nA                
+0.3 	1.02375 nA               
+Compression = 1.001371e+00 dB, Gain = 2.189580e+00 dB
+Bracket established
+Bracket: [7.973248e-04, 7.979762e-04]
+Success. Next attempt: 7.976505e-04
+0.0 	162.852 nA               
+0.1 	39.9421 nA               
+0.2 	6.2343 nA                
+0.3 	514.112 pA               
+Compression = 1.000643e+00 dB, Gain = 2.190308e+00 dB
+Bracket established
+Bracket: [7.973248e-04, 7.976505e-04]
+Success. Next attempt: 7.974876e-04
+0.0 	81.4261 nA               
+0.1 	19.9977 nA               
+0.2 	3.12249 nA               
+0.3 	257.592 pA               
+Compression = 1.000279e+00 dB, Gain = 2.190672e+00 dB
+Bracket established
+Bracket: [7.973248e-04, 7.974876e-04]
+Success. 
+Resource usage:
+  Total stopwatch time     =     0.55 seconds.
+

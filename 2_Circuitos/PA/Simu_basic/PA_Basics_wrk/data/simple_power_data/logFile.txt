@@ -1,0 +1,28 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Aug 26 17:10:16 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\PA\Simu_basic\PA_Basics_wrk\data"
+      Process ID: 16612
+
+
+HB HB1[1] <PA_Basics_lib:simple_power:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 88.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	27.7556 aA  	100.0             
+
+Resource usage:
+  Total stopwatch time     =     0.92 seconds.
+

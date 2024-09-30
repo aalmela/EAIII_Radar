@@ -1,0 +1,15 @@
+<!DOCTYPE Substrate>
+<SubstrateModel>
+    <stack BAL_TYPE="NONE" BAL_NUM="0">
+        <material BAL_TYPE="INHERIT" materialname="AIR" BAL_NUM="0"/>
+        <interface BAL_TYPE="NONE" groundplane="1" thickunit="micron" thick="0" materialname="PERFECT_CONDUCTOR" BAL_NUM="0"/>
+        <material BAL_TYPE="INHERIT" thickunit="mil" materialname="Alumina" thick="25" BAL_NUM="0"/>
+        <interface BAL_TYPE="INHERIT" thickunit="micron" thick="" materialname="" BAL_NUM="0"/>
+        <material BAL_TYPE="INHERIT" materialname="AIR" BAL_NUM="0"/>
+    </stack>
+    <layers>
+        <layer precedence="1" bottomrough="" subtype="0" angle="90" expand="0" negative="0" thickunit="micron" processRole="1" pinsOnly="0" index="1" toprough="" thick="0" materialname="PERFECT_CONDUCTOR" sheet="1" layer="1"/>
+    </layers>
+    <vias/>
+    <substrates/>
+</SubstrateModel>

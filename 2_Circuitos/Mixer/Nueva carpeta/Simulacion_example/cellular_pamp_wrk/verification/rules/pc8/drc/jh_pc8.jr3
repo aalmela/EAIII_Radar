@@ -1,0 +1,21 @@
+rulesummary
+rules    "jh_pc8" 
+title    " pc8 rules " 
+compiled "Tue Mar  3 10:22:51 1998" 
+rulelayers
+  layer   1 fringe 15.000 end_layer
+  layer   2 fringe 15.000 end_layer
+  layer   5 fringe 15.000 end_layer
+  layer  13 fringe 15.000 end_layer
+end_rulelayers
+memory
+  real    32000000
+  virtual 48000000
+  storage 2.500
+  safety  1.200
+end_memory
+nocleanup
+end_rulesummary
+
+
+.stream return

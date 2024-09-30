@@ -1,0 +1,46 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM31PG121SH1","1:BLM31PG121SH1, Ferrite Bead Single Type, 3500[mA], 1[MHz]-3[GHz]:1",68,"1","BLM31PG121SH1");
+create_constant_form("BLM31PG121SZ1","2:BLM31PG121SZ1, Ferrite Bead Single Type, 3500[mA], 1[MHz]-3[GHz]:2",68,"2","BLM31PG121SZ1");
+create_constant_form("BLM31PG330SH1","3:BLM31PG330SH1, Ferrite Bead Single Type, 6000[mA], 1[MHz]-3[GHz]:3",68,"3","BLM31PG330SH1");
+create_constant_form("BLM31PG330SZ1","4:BLM31PG330SZ1, Ferrite Bead Single Type, 6000[mA], 1[MHz]-3[GHz]:4",68,"4","BLM31PG330SZ1");
+create_constant_form("BLM31PG391SH1","5:BLM31PG391SH1, Ferrite Bead Single Type, 2000[mA], 1[MHz]-3[GHz]:5",68,"5","BLM31PG391SH1");
+create_constant_form("BLM31PG391SZ1","6:BLM31PG391SZ1, Ferrite Bead Single Type, 2000[mA], 1[MHz]-3[GHz]:6",68,"6","BLM31PG391SZ1");
+create_constant_form("BLM31PG500SH1","7:BLM31PG500SH1, Ferrite Bead Single Type, 3500[mA], 1[MHz]-3[GHz]:7",68,"7","BLM31PG500SH1");
+create_constant_form("BLM31PG500SZ1","8:BLM31PG500SZ1, Ferrite Bead Single Type, 3500[mA], 1[MHz]-3[GHz]:8",68,"8","BLM31PG500SZ1");
+create_constant_form("BLM31PG601SH1","9:BLM31PG601SH1, Ferrite Bead Single Type, 1500[mA], 1[MHz]-3[GHz]:9",68,"9","BLM31PG601SH1");
+create_constant_form("BLM31PG601SZ1","10:BLM31PG601SZ1, Ferrite Bead Single Type, 1500[mA], 1[MHz]-3[GHz]:10",68,"10","BLM31PG601SZ1");
+
+create_form_set("BLM31PG_list" 
+,"BLM31PG121SH1"
+,"BLM31PG121SZ1"
+,"BLM31PG330SH1"
+,"BLM31PG330SZ1"
+,"BLM31PG391SH1"
+,"BLM31PG391SZ1"
+,"BLM31PG500SH1"
+,"BLM31PG500SZ1"
+,"BLM31PG601SH1"
+,"BLM31PG601SZ1"
+);
+
+create_compound_form("BLM31PG_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM31PG_list",-1,prm("BLM31PG121SH1")),
+create_parm("MIN","Minimum",32,"BLM31PG_list",-1,prm("BLM31PG121SH1")),
+create_parm("MAX","Maximum",32,"BLM31PG_list",-1,prm("BLM31PG601SZ1")));
+
+create_form_set("BLM31PG_list_opt","NULL" 
+,"BLM31PG121SH1"
+,"BLM31PG121SZ1"
+,"BLM31PG330SH1"
+,"BLM31PG330SZ1"
+,"BLM31PG391SH1"
+,"BLM31PG391SZ1"
+,"BLM31PG500SH1"
+,"BLM31PG500SZ1"
+,"BLM31PG601SH1"
+,"BLM31PG601SZ1"
+,"BLM31PG_compound"
+);
+
+
+

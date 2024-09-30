@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLF03JD421GZE","1:BLF03JD421GZE, Frequency Specified Filters, 480[mA], 1[MHz]-3[GHz]:1",68,"1","BLF03JD421GZE");
+
+create_form_set("BLF03JD_list" 
+,"BLF03JD421GZE"
+);
+
+create_compound_form("BLF03JD_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLF03JD_list",-1,prm("BLF03JD421GZE")),
+create_parm("MIN","Minimum",32,"BLF03JD_list",-1,prm("BLF03JD421GZE")),
+create_parm("MAX","Maximum",32,"BLF03JD_list",-1,prm("BLF03JD421GZE")));
+
+create_form_set("BLF03JD_list_opt","NULL" 
+,"BLF03JD421GZE"
+,"BLF03JD_compound"
+);
+
+
+

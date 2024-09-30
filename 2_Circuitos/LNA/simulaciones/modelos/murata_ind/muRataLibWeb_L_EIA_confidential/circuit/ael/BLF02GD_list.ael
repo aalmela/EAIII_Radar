@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLF02GD162GNE","1:BLF02GD162GNE, Frequency Specified Filters, 100[mA], 1[MHz]-3[GHz]:1",68,"1","BLF02GD162GNE");
+
+create_form_set("BLF02GD_list" 
+,"BLF02GD162GNE"
+);
+
+create_compound_form("BLF02GD_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLF02GD_list",-1,prm("BLF02GD162GNE")),
+create_parm("MIN","Minimum",32,"BLF02GD_list",-1,prm("BLF02GD162GNE")),
+create_parm("MAX","Maximum",32,"BLF02GD_list",-1,prm("BLF02GD162GNE")));
+
+create_form_set("BLF02GD_list_opt","NULL" 
+,"BLF02GD162GNE"
+,"BLF02GD_compound"
+);
+
+
+

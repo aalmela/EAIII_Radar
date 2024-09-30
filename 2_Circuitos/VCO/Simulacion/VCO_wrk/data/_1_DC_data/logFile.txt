@@ -1,0 +1,487 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Sep 23 19:16:02 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\VCO\Simulacion\VCO_wrk\data"
+      Process ID: 15648
+
+Warning detected by hpeesofsim in Substrate model during netlist flattening.
+    Simulations referencing substrate `MSub1' will not include metal loss
+    because metal thickness is zero.
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 1
+
+
+DC DC1[1] <VCO_lib:1_DC:schematic>  
+.Pt DC convergence is used.
+
+.
+
+DC convergence achieved in 101 iterations.
+
+HB HB1[1] <VCO_lib:1_DC:schematic>
+    Number of tones:   1.
+    Number of frequencies:   10.
+    Number of time samples:  32.
+    Number of HB equations (problem size): 932.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+
+    Oscillator guess type 1
+    Oscillator guess type 2
+
+    oscport1.V=1 mV           0.00% 1/2
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	5.02234 A   	100.0             
+1.0 	281.033 nA  	100.0	281.67 nV    
+    Frequency = 1.136907972 GHz
+    Loop gain = 2.27957217 @    0.00 deg
+
+Fwd oscport1.V=48.3527 mV     0.00% 2/2  Step=1
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	879.429 mA  	100.0             
+    Frequency = 1.135942487 GHz
+    rejected
+
+Fwd oscport1.V=23.5489 mV     0.00% 2/2  Step=0.4761904762
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	90.4686 mA  	100.0             
+1.0 	28.2881 mA  	100.0	74.9764 mV   
+1.1 	16.9552 mA  	100.0	43.5914 mV   
+1.2 	11.8976 mA  	100.0	34.8585 mV   
+1.3*	8.62913 mA  	100.0	83.7232 mV   
+2.0 	2.04324 mA  	100.0	11.4964 mV   
+2.1 	530.427 uA  	100.0	3.1478 mV    
+2.2 	174.23 uA   	100.0	864.219 uV   
+2.3 	48.2784 uA  	100.0	252.196 uV   
+2.4 	15.3389 uA  	100.0	73.966 uV    
+2.5 	4.19081 uA  	100.0	21.4467 uV   
+2.6 	1.35089 uA  	100.0	6.52495 uV   
+    Frequency = 1.1364615 GHz
+    Loop gain = 1.458616137 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.0355118 in 2 iters
+
+Fwd oscport1.V=64.1868 mV     0.01% 2/2  Step=0.4761904762
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	13.2257 mA  	100.0             
+1.0 	3.72994 mA  	100.0	21.5951 mV   
+1.1 	1.06336 mA  	100.0	5.31061 mV   
+1.2 	252.143 uA  	100.0	1.30763 mV   
+1.3 	52.6125 uA  	100.0	286.895 uV   
+1.4 	10.6441 uA  	100.0	57.458 uV    
+    Frequency = 1.139998564 GHz
+    Loop gain = 1.235612732 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.0700419 in 1 iters
+
+Fwd oscport1.V=125.543 mV     0.01% 2/2  Step=0.6734350297
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	17.2072 mA  	100.0             
+1.0 	1.3352 mA   	100.0	5.35874 mV   
+1.1 	239.069 uA  	100.0	1.42211 mV   
+1.2 	54.1098 uA  	100.0	322.567 uV   
+1.3 	12.0188 uA  	100.0	65.8241 uV   
+1.4 	2.57018 uA  	100.0	15.1683 uV   
+    Frequency = 1.145904079 GHz
+    Loop gain = 1.122309404 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.125689 in 1 iters
+
+Fwd oscport1.V=200.692 mV     0.02% 2/2  Step=0.9523809524
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	15.3407 mA  	100.0             
+1.0 	4.76596 mA  	100.0	20.0282 mV   
+1.1 	1.80925 mA  	100.0	8.4598 mV    
+1.2 	865.002 uA  	100.0	4.27709 mV   
+1.3 	440.58 uA   	100.0	2.18719 mV   
+1.4 	228.976 uA  	100.0	1.1351 mV    
+1.5 	120.168 uA  	100.0	594.533 uV   
+1.6 	63.4091 uA  	100.0	313.148 uV   
+1.7 	33.5571 uA  	100.0	165.497 uV   
+1.8 	17.7901 uA  	100.0	87.6426 uV   
+1.9 	9.43959 uA  	100.0	46.4703 uV   
+    Frequency = 1.147866137 GHz
+    Loop gain = 1.066948892 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.197869 in 1 iters
+
+Fwd oscport1.V=305.148 mV     0.03% 2/2  Step=1.346870059
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	303.457 A   	100.0             
+    Frequency = 1.172458141 GHz
+    rejected
+
+Fwd oscport1.V=248.954 mV     0.02% 2/2  Step=0.641366695
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	6.70043 mA  	100.0             
+1.0 	559.013 uA  	100.0	4.30054 mV   
+1.1 	168.812 uA  	100.0	2.03485 mV   
+1.2 	75.7999 uA  	100.0	954.073 uV   
+1.3 	35.7329 uA  	100.0	456.267 uV   
+    Frequency = 1.150172473 GHz
+    Loop gain = 1.048715068 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.251837 in 1 iters
+
+Fwd oscport1.V=307.098 mV     0.03% 2/2  Step=0.641366695
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	3.17611 A   	100.0             
+1.0 	1.1671 A    	100.0	104.357 mV   
+1.1 	809.118 mA  	100.0	12.7124 mV   
+1.2*	622.89 mA   	100.0	104.158 mV   
+2.0 	228.959 mA  	100.0	31.3207 mV   
+2.1 	158.108 mA  	100.0	22.2351 mV   
+2.2 	122.162 mA  	100.0	17.7141 mV   
+2.3 	99.9868 mA  	100.0	9.64596 mV   
+2.4 	84.803 mA   	100.0	8.78583 mV   
+2.5 	73.758 mA   	100.0	4.02665 mV   
+2.6 	65.3067 mA  	100.0	5.11433 mV   
+2.7*	58.6699 mA  	100.0	16.9535 mV   
+3.0 	21.8805 mA  	100.0	6.09207 mV   
+3.1 	15.3117 mA  	100.0	4.30915 mV   
+3.2 	11.9886 mA  	100.0	3.37521 mV   
+3.3 	9.92469 mA  	100.0	2.78828 mV   
+3.4 	8.49815 mA  	100.0	2.38174 mV   
+3.5 	7.44401 mA  	100.0	2.08161 mV   
+3.6 	6.62827 mA  	100.0	1.84978 mV   
+3.7 	5.97525 mA  	100.0	1.66453 mV   
+3.8 	5.43866 mA  	100.0	1.5126 mV    
+3.9 	4.98851 mA  	100.0	1.38535 mV   
+3.10 	4.60444 mA  	100.0	1.27695 mV   
+3.11 	4.27213 mA  	100.0	1.1833 mV    
+3.12 	3.98119 mA  	100.0	1.10141 mV   
+3.13 	3.7239 mA   	100.0	1.02909 mV   
+3.14 	3.49436 mA  	100.0	964.645 uV   
+3.15 	3.28805 mA  	100.0	906.786 uV   
+3.16 	3.10136 mA  	100.0	854.491 uV   
+3.17 	2.93146 mA  	100.0	806.945 uV   
+3.18 	2.77603 mA  	100.0	763.491 uV   
+3.19*	2.63318 mA  	100.0	14.2132 mV   
+4.0 	526.277 uA  	100.0	2.73981 mV   
+4.1 	170.583 uA  	100.0	878.586 uV   
+4.2 	56.4483 uA  	100.0	292.004 uV   
+    Frequency = 1.151141386 GHz
+    Loop gain = 1.03381101 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.307252 in 4 iters
+
+Fwd oscport1.V=358.031 mV     0.04% 2/2  Step=0.641366695
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	25.2328 kA  	100.0             
+1.0 	4.46037 kA  	100.0	48.41 V      
+        Samanskii-Newton iteration failed
+1.1*	4.46037 kA  	100.0	60.3504 V    
+    Frequency = 1.350204562 GHz
+    rejected
+
+Fwd oscport1.V=331.432 mV     0.03% 2/2  Step=0.3054127119
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	2.77856 A   	100.0             
+1.0 	1.0188 A    	100.0	19.5957 mV   
+1.1 	703.673 mA  	100.0	11.6566 mV   
+1.2*	544.114 mA  	100.0	41.3861 mV   
+2.0 	196.517 mA  	100.0	15.0399 mV   
+2.1 	134.245 mA  	100.0	7.37714 mV   
+2.2 	102.43 mA   	100.0	6.26936 mV   
+2.3 	82.9345 mA  	100.0	3.95794 mV   
+2.4 	69.4471 mA  	100.0	3.69834 mV   
+2.5 	59.6663 mA  	100.0	2.58955 mV   
+2.6 	52.1123 mA  	100.0	2.52497 mV   
+2.7*	46.1892 mA  	100.0	18.0785 mV   
+3.0 	13.6404 mA  	100.0	5.09887 mV   
+3.1 	7.78164 mA  	100.0	2.87041 mV   
+3.2 	4.95171 mA  	100.0	1.82253 mV   
+3.3 	3.31911 mA  	100.0	1.21735 mV   
+3.4 	2.29145 mA  	100.0	838.441 uV   
+3.5 	1.61143 mA  	100.0	588.401 uV   
+3.6 	1.14704 mA  	100.0	418.143 uV   
+3.7 	823.235 uA  	100.0	299.702 uV   
+3.8 	594.231 uA  	100.0	216.103 uV   
+3.9 	430.666 uA  	100.0	156.487 uV   
+3.10 	313.022 uA  	100.0	113.664 uV   
+3.11 	227.985 uA  	100.0	82.7423 uV   
+3.12 	166.297 uA  	100.0	60.3295 uV   
+3.13 	121.432 uA  	100.0	44.0393 uV   
+3.14 	88.7405 uA  	100.0	32.1753 uV   
+    Frequency = 1.150629699 GHz
+    Loop gain = 1.025974636 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.332437 in 3 iters
+
+Fwd oscport1.V=355.428 mV     0.04% 2/2  Step=0.3054127119
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	23.4212 mA  	100.0             
+1.0 	3.55298 mA  	100.0	3.28162 mV   
+1.1 	1.47946 mA  	100.0	1.45442 mV   
+1.2 	563.953 uA  	100.0	446.635 uV   
+1.3 	249.032 uA  	100.0	198.155 uV   
+1.4 	104.248 uA  	100.0	81.7812 uV   
+    Frequency = 1.149884279 GHz
+    Loop gain = 1.019041835 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.353917 in 1 iters
+
+Fwd oscport1.V=383.08 mV      0.04% 2/2  Step=0.4319187993
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	2.01385 kA  	100.0             
+    Frequency = 1.158030192 GHz
+    rejected
+
+Fwd oscport1.V=367.804 mV     0.04% 2/2  Step=0.2056756187
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	6.50725 mA  	100.0             
+1.0 	917.363 uA  	100.0	3.18501 mV   
+1.1 	367.913 uA  	100.0	1.19398 mV   
+1.2 	172.947 uA  	100.0	543.461 uV   
+1.3 	84.3038 uA  	100.0	264.566 uV   
+    Frequency = 1.149315916 GHz
+    Loop gain = 1.014479833 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.368882 in 1 iters
+
+Fwd oscport1.V=385.683 mV     0.04% 2/2  Step=0.2056756187
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	119.177 mA  	100.0             
+1.0 	42.3347 mA  	100.0	11.3912 mV   
+1.1 	28.4952 mA  	100.0	7.34375 mV   
+1.2*	21.5078 mA  	100.0	24.9452 mV   
+2.0 	6.63734 mA  	100.0	7.13922 mV   
+2.1 	4.09595 mA  	100.0	4.33159 mV   
+2.2 	2.85584 mA  	100.0	2.87042 mV   
+2.3 	2.08737 mA  	100.0	2.05747 mV   
+2.4 	1.56805 mA  	100.0	1.51428 mV   
+2.5 	1.19824 mA  	100.0	1.15414 mV   
+2.6 	926.966 uA  	100.0	884.874 uV   
+2.7 	723.331 uA  	100.0	690.461 uV   
+2.8 	568.28 uA   	100.0	539.784 uV   
+2.9 	448.69 uA   	100.0	426.562 uV   
+2.10 	355.719 uA  	100.0	337.158 uV   
+2.11 	282.866 uA  	100.0	268.392 uV   
+2.12 	225.508 uA  	100.0	213.536 uV   
+2.13 	180.119 uA  	100.0	170.729 uV   
+2.14 	144.099 uA  	100.0	136.387 uV   
+2.15 	115.418 uA  	100.0	109.338 uV   
+2.16 	92.5427 uA  	100.0	87.5706 uV   
+2.17 	74.2559 uA  	100.0	70.3187 uV   
+    Frequency = 1.14850591 GHz
+    Loop gain = 1.010731778 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.384017 in 2 iters
+
+Fwd oscport1.V=395.563 mV     0.04% 2/2  Step=0.2908692494
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	21.9148 A   	100.0             
+1.0 	8.16977 A   	100.0	505.091 mV   
+1.1 	5.6434 A    	100.0	843.331 mV   
+1.2*	5.32714 A   	100.0	951.546 mV   
+    Frequency = 1.148932759 GHz
+    rejected
+
+Fwd oscport1.V=389.515 mV     0.04% 2/2  Step=0.1385091664
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	130.425 mA  	100.0             
+1.0 	45.4636 mA  	100.0	4.91283 mV   
+1.1 	30.3094 mA  	100.0	2.94522 mV   
+1.2*	22.4907 mA  	100.0	9.33922 mV   
+2.0 	6.10828 mA  	100.0	2.4794 mV    
+2.1 	3.22245 mA  	100.0	1.29613 mV   
+2.2 	1.88862 mA  	100.0	755.207 uV   
+2.3 	1.16023 mA  	100.0	464.179 uV   
+2.4 	730.99 uA   	100.0	292.78 uV    
+2.5 	467.374 uA  	100.0	187.337 uV   
+2.6 	301.516 uA  	100.0	120.917 uV   
+2.7 	195.611 uA  	100.0	78.4722 uV   
+2.8 	127.358 uA  	100.0	51.1029 uV   
+    Frequency = 1.14641445 GHz
+    Loop gain = 1.005374199 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.388726 in 2 iters
+
+Fwd oscport1.V=393.134 mV     0.04% 2/2  Step=0.1385091664
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	10.7554 mA  	100.0             
+1.0 	1.28222 mA  	100.0	1.37637 mV   
+1.1 	262.634 uA  	100.0	388.775 uV   
+1.2 	54.3827 uA  	100.0	79.2175 uV   
+    Frequency = 1.144078304 GHz
+    Loop gain = 0.9996781338 @    0.00 deg
+    Arclength Newton-Raphson converged at 0.392287 in 1 iters
+
+    Calculating solution at 0.3920855466
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0 	356.539 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.1 	78.1442 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.2 	26.6119 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.3 	10.7897 uA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.4 	4.44584 uA  	100.0             
+    Frequency = 1.144211893 GHz
+    Loop gain = 0.9999995659 @    0.00 deg
+    Newton-Raphson converged at 0.3920855466
+
+    Calculating solution at 0.3920845466
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0 	3.45789 uA  	100.0             
+    Frequency = 1.144212396 GHz
+    Loop gain = 1.00000082 @    0.00 deg
+    Newton-Raphson converged at 0.3920845466
+
+    sourceLevel=0              0.00% 1/2
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	712.882 mA  	100.0             
+1.0 	180.729 pA  	100.0	576.477 pV   
+    Frequency = 1.144212038 GHz
+
+    sourceLevel=1            100.00% 2/2
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0 	34.3923 mA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.1 	34.3923 mA  	100.0             
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.2*	34.3923 mA  	100.0             
+1.0 	5.7514 mA   	100.0	10.9999 mV   
+1.1 	1.32941 mA  	100.0	4.36791 mV   
+1.2 	478.866 uA  	100.0	853.693 uV   
+1.3 	140.41 uA   	100.0	270.049 uV   
+1.4 	63.2281 uA  	100.0	150.361 uV   
+1.5 	33.2571 uA  	100.0	84.7731 uV   
+1.6 	18.5297 uA  	100.0	46.537 uV    
+1.7 	10.02 uA    	100.0	25.1172 uV   
+1.8 	5.42851 uA  	100.0	13.5143 uV   
+1.9 	2.91995 uA  	100.0	7.25203 uV   
+1.10 	1.56977 uA  	100.0	3.89018 uV   
+1.11 	842.515 nA  	100.0	2.08587 uV   
+1.12 	452.035 nA  	100.0	1.1184 uV    
+1.13 	242.435 nA  	100.0	599.618 nV   
+1.14 	130.005 nA  	100.0	321.483 nV   
+
+
+    Final oscillation frequency = 1.144550219 GHz
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+Q1.q1.c                 5.799e-03       >       1.191e-06
+Q1._node11              5.713e-03       >       1.162e-06
+Q1.q1.e                 3.355e-03       >       1.399e-06
+Q1.diode_sub.a          1.070e-03       >       1.399e-06
+Q1.q1.b                 7.473e-04       >       2.062e-06
+
+o Number of waveforms violating the HB truncation error check:
+        7 out of 8 waveforms.
+o Estimated max HB truncation error: 5.799e-03 @ waveform Q1.q1.c .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.191e-06 for this waveform.
+o A time-domain plot of the Q1._node11 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    Component `TL2':
+       No ImpMaxFreq is given, and maximum source bandwidth is zero. 
+
+COMPONENT : TL2
+    Characterizing to 500 MHz 
+
+    Use an adaptive sample spacing of 7.812 MHz.
+
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    Component `TL1':
+       No ImpMaxFreq is given, and maximum source bandwidth is zero. 
+
+COMPONENT : TL1
+    Characterizing to 500 MHz 
+
+.
+
+
+TRAN Tran1[1] <VCO_lib:1_DC:schematic>   time=(0 s->100 ns)
+
+
+Resource usage:
+  Total stopwatch time     =     4.52 seconds.
+

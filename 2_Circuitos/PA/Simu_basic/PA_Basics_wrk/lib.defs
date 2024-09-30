@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE PA_Basics_lib PA_Basics_lib
+ASSIGN PA_Basics_lib libMode shared
+INCLUDE $HOME/svn/EAIII_Radar/PA/Simu_basic/BFU5XX_family_design_kit_v2/lib.defs

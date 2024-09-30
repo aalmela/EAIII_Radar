@@ -1,0 +1,284 @@
+defun  _DDSobjectSaveRestore_()
+{
+decl goId, goId2, goId3, goId4, ptId, plyPtId, ddsId, dssId, ddWinId, ddoId, goId1, pageId, markerID, plotId, axisID, traceID, goId0;
+
+ddsId = get_dds();
+
+set(ddsId, "ddsFileVersion", 1.0);
+
+ddoId = get_new(ddsId, "Object");
+// DataDisplay Object:
+	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
+	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
+	dssId = get(ddoId, "DatasetServer");
+// Default Dataset
+	set(ddoId, "DefaultDataset", "BiasPoint");
+set(ddoId, "EnableExpressionUpdates", FALSE);
+pageId = get(ddoId, "CurrentPage");
+if (pageId == NULL) pageId = get_first(ddoId, "Page");
+if (pageId == NULL) pageId = get_new(ddoId, "Page");
+goId0 = get_new(pageId, "Listing");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 1954800845);
+ // Graphical Object:
+ set(goId0, "Right", 6297);
+ set(goId0, "Bottom", 2793);
+ set(goId0, "Left", 537);
+	set(goId0, "Top", 604);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+// Plot base...
+	set(goId0, "LegendOnOff", TRUE);
+	set(goId0, "LeftMargin", 13);
+	set(goId0, "RightMargin", 13);
+	set(goId0, "TopMargin", 240);
+	set(goId0, "BottomMargin", 13);
+// Listing column:
+	set(goId0, "ListingFont", "Arial For CAE");
+	set(goId0, "ListingFontSize", 140);
+	set(goId0, "Format", ddsFormatAutomatic);
+	set(goId0, "NumDigits", 3);
+	set(goId0, "OutlineOnOff", TRUE);
+	set(goId0, "OutlineColor", 0);
+	set(goId0, "LabelOnOff", TRUE);
+	set(goId0, "OutlineLineType", ddsSolidLineType);
+	set(goId0, "OutlineThickness", 14);
+	set(goId0, "VerticalScroll", 0);
+	set(goId0, "ShowIndependentData", TRUE);
+	set(goId0, "SuppressTable", TRUE);
+	set(goId0, "TransposeData", FALSE);
+	set(goId0, "Title", "Table 1: ICE and VBE vs. IBB, VCC=1V");
+	set(goId0, "TitleFont", "Arial For CAE");
+	set(goId0, "TitleFontSize", 140);
+	set(goId0, "TitleColor", 0);
+traceID = get_new(goId0, "Trace", "BiasPoint..ICC.i", "", "");
+// Text trace:
+	if (traceID != NULL) set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 3);
+		set(traceID, "Uid", 1715916279);
+		set(traceID, "UIIndex", 0);
+	}
+traceID = get_new(goId0, "Trace", "BiasPoint..VBE", "", "");
+// Text trace:
+	if (traceID != NULL) set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 5);
+		set(traceID, "Uid", 1962654904);
+		set(traceID, "UIIndex", 0);
+	}
+// Initialize plot
+set(goId0, "InitPlot", 0);
+goId0 = get_new(pageId, "Equation");
+// Expression...
+	set(goId0, "Expression", "Rb= (0.75-VBE)/IBB");
+	set(goId0, "Font", "Arial For CAE");
+	set(goId0, "FontSize", 166);
+	set(goId0, "TextColor", 0);
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+	set(goId0, "OutlineOnOff", FALSE);
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 1585048502);
+ // Graphical Object:
+ set(goId0, "Right", 2401);
+ set(goId0, "Bottom", 6217);
+ set(goId0, "Left", 568);
+	set(goId0, "Top", 5967);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+goId0 = get_new(pageId, "Equation");
+// Expression...
+	set(goId0, "Expression", "Rc=(0.25)/(ICC.i+IBB)");
+	set(goId0, "Font", "Arial For CAE");
+	set(goId0, "FontSize", 166);
+	set(goId0, "TextColor", 0);
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+	set(goId0, "OutlineOnOff", FALSE);
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 1655038217);
+ // Graphical Object:
+ set(goId0, "Right", 2542);
+ set(goId0, "Bottom", 6523);
+ set(goId0, "Left", 578);
+	set(goId0, "Top", 6273);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+goId0 = get_new(pageId, "Listing");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 572962384);
+ // Graphical Object:
+ set(goId0, "Right", 5151);
+ set(goId0, "Bottom", 5757);
+ set(goId0, "Left", 1443);
+	set(goId0, "Top", 3524);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+// Plot base...
+	set(goId0, "LegendOnOff", TRUE);
+	set(goId0, "LeftMargin", 13);
+	set(goId0, "RightMargin", 13);
+	set(goId0, "TopMargin", 240);
+	set(goId0, "BottomMargin", 13);
+// Listing column:
+	set(goId0, "ListingFont", "Arial For CAE");
+	set(goId0, "ListingFontSize", 140);
+	set(goId0, "Format", ddsFormatAutomatic);
+	set(goId0, "NumDigits", 3);
+	set(goId0, "OutlineOnOff", TRUE);
+	set(goId0, "OutlineColor", 0);
+	set(goId0, "LabelOnOff", TRUE);
+	set(goId0, "OutlineLineType", ddsSolidLineType);
+	set(goId0, "OutlineThickness", 14);
+	set(goId0, "VerticalScroll", 0);
+	set(goId0, "ShowIndependentData", TRUE);
+	set(goId0, "SuppressTable", TRUE);
+	set(goId0, "TransposeData", FALSE);
+	set(goId0, "Title", "Table 2: Calculated Rb and Rc");
+	set(goId0, "TitleFont", "Arial For CAE");
+	set(goId0, "TitleFontSize", 140);
+	set(goId0, "TitleColor", 0);
+traceID = get_new(goId0, "Trace", "Rb", "", "");
+// Text trace:
+	if (traceID != NULL) set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 1);
+		set(traceID, "Uid", 2127657141);
+		set(traceID, "UIIndex", 0);
+	}
+traceID = get_new(goId0, "Trace", "Rc", "", "");
+// Text trace:
+	if (traceID != NULL) set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 3);
+		set(traceID, "Uid", 516273405);
+		set(traceID, "UIIndex", 0);
+	}
+// Initialize plot
+set(goId0, "InitPlot", 0);
+goId0 = get_new(pageId, "Box");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 1773869229);
+ // Graphical Object:
+ set(goId0, "Right", 6464);
+ set(goId0, "Bottom", 2330);
+ set(goId0, "Left", 238);
+	set(goId0, "Top", 2136);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 99);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 14);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+goId0 = get_new(pageId, "Box");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 866489618);
+ // Graphical Object:
+ set(goId0, "Right", 5649);
+ set(goId0, "Bottom", 5256);
+ set(goId0, "Left", 1260);
+	set(goId0, "Top", 5077);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 99);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 14);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+goId0 = get_new(pageId, "Text");
+// Text:
+	set(goId0, "String", "Sweeping IBB shows we need IBB=5uA to have\nICC~=500uA. The corresponding VBE is 0.708V.");
+	set(goId0, "Font", "Arial For CAE");
+	set(goId0, "FontSize", 167);
+	set(goId0, "TextColor", 0);
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+	set(goId0, "OutlineOnOff", FALSE);
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 811591423);
+ // Graphical Object:
+ set(goId0, "Right", 4229);
+ set(goId0, "Bottom", 3197);
+ set(goId0, "Left", 579);
+	set(goId0, "Top", 2863);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 1);
+ // Need to add Popup, LocalPopup, Owner...
+// Base Class Object:
+ 			set(pageId, "Name", "page 1");
+ 			set(pageId, "Uid", 1740296439);
+ 	set(pageId, "Invisible", FALSE);
+set(ddoId, "UpdateAllExpressions", TRUE);
+set(ddoId, "EnableExpressionUpdates", TRUE);
+
+ddWinId = get_new(ddsId, "Window");
+	set(ddWinId, "Object", ddoId);
+	set(ddWinId, "CurrentPage", 1740296439);
+	set(ddWinId, "PageViewRect_1740296439", list(-1033, 7011, 7735, 115));
+	set(ddWinId, "Frame", list(63, 21, 812, 662));
+	set(ddWinId, "ForegroundColor", 0);
+	set(ddWinId, "BackgroundColor", 8);
+
+}
+
+_DDSobjectSaveRestore_() ;

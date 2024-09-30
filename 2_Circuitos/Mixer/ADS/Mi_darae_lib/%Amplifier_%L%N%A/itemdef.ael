@@ -1,0 +1,3 @@
+create_item("Amplifier_LNA","Amplifier_LNA","AMP",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","Amplifier_LNA","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","Amplifier_LNA",3,NULL,0,
+create_parm("Gain","Amplifier Gain",65536,"StdFormSet",13,prm("StdForm","10 dB")),
+create_parm("NF","Amplifier Noise Figure",65536,"StdFormSet",13,prm("StdForm","3 dB")));

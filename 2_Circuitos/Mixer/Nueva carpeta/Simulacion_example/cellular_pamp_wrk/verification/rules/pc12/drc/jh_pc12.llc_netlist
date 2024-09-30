@@ -1,0 +1,10 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.llc_netlist
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.llc_netlist"
+.stream echo netlist.out
+    .dump slave flatdev end_dump
+.stream echo out
+.stream return

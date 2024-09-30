@@ -1,0 +1,34 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Jun 24 15:26:28 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 32712
+
+
+HB Env1[1] <Mi_darae_lib:Doppler_Radar:schematic>   time=(0 s->75 ms)
+Pt DC convergence is used.
+Message from hpeesofsim during TRAN analysis `Env1'.
+    Required filter order is calculated to be 10 for component
+                 `RCV_Antenna1.BPF1.CMP1'
+Message from hpeesofsim during TRAN analysis `Env1'.
+    Required filter order is calculated to be 10 for component
+                 `XMIT_Antenna1.BPF1.CMP1'
+Message from hpeesofsim during TRAN analysis `Env1'.
+    Required filter order is calculated to be 10 for component
+                 `DownConvertor1.LPF1.CMP1'
+    Number of tones:   1.
+    Number of frequencies:   2.
+    Number of time samples:  8.
+    Number of HB equations (problem size): 216.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: direct.
+.    time=0 s            0.00% 1/101.    time=750 us         1.00% 2/101.    time=1.5 ms         2.00% 3/101.    time=2.25 ms        3.00% 4/101.    time=3 ms           4.00% 5/101.    time=3.75 ms        5.00% 6/101.    time=4.5 ms         6.00% 7/101.    time=5.25 ms        7.00% 8/101.    time=6 ms           8.00% 9/101.    time=6.75 ms        9.00% 10/101.    time=7.5 ms        10.00% 11/101.    time=8.25 ms       11.00% 12/101.    time=9 ms          12.00% 13/101.    time=9.75 ms       13.00% 14/101.    time=10.5 ms       14.00% 15/101.    time=11.25 ms      15.00% 16/101.    time=12 ms         16.00% 17/101.    time=12.75 ms      17.00% 18/101.    time=13.5 ms       18.00% 19/101.    time=14.25 ms      19.00% 20/101.    time=15 ms         20.00% 21/101.    time=15.75 ms      21.00% 22/101.    time=16.5 ms       22.00% 23/101.    time=17.25 ms      23.00% 24/101.    time=18 ms         24.00% 25/101.    time=18.75 ms      25.00% 26/101.    time=19.5 ms       26.00% 27/101.    time=20.25 ms      27.00% 28/101.    time=21 ms         28.00% 29/101.    time=21.75 ms      29.00% 30/101.    time=22.5 ms       30.00% 31/101.    time=23.25 ms      31.00% 32/101.    time=24 ms         32.00% 33/101.    time=24.75 ms      33.00% 34/101.    time=25.5 ms       34.00% 35/101.    time=26.25 ms      35.00% 36/101.    time=27 ms         36.00% 37/101.    time=27.75 ms      37.00% 38/101.    time=28.5 ms       38.00% 39/101.    time=29.25 ms      39.00% 40/101.    time=30 ms         40.00% 41/101.    time=30.75 ms      41.00% 42/101.    time=31.5 ms       42.00% 43/101.    time=32.25 ms      43.00% 44/101.    time=33 ms         44.00% 45/101.    time=33.75 ms      45.00% 46/101.    time=34.5 ms       46.00% 47/101.    time=35.25 ms      47.00% 48/101.    time=36 ms         48.00% 49/101.    time=36.75 ms      49.00% 50/101.    time=37.5 ms       50.00% 51/101.    time=38.25 ms      51.00% 52/101.    time=39 ms         52.00% 53/101.    time=39.75 ms      53.00% 54/101.    time=40.5 ms       54.00% 55/101.    time=41.25 ms      55.00% 56/101.    time=42 ms         56.00% 57/101.    time=42.75 ms      57.00% 58/101.    time=43.5 ms       58.00% 59/101.    time=44.25 ms      59.00% 60/101.    time=45 ms         60.00% 61/101.    time=45.75 ms      61.00% 62/101.    time=46.5 ms       62.00% 63/101.    time=47.25 ms      63.00% 64/101.    time=48 ms         64.00% 65/101.    time=48.75 ms      65.00% 66/101.    time=49.5 ms       66.00% 67/101.    time=50.25 ms      67.00% 68/101.    time=51 ms         68.00% 69/101.    time=51.75 ms      69.00% 70/101.    time=52.5 ms       70.00% 71/101.    time=53.25 ms      71.00% 72/101.    time=54 ms         72.00% 73/101.    time=54.75 ms      73.00% 74/101.    time=55.5 ms       74.00% 75/101.    time=56.25 ms      75.00% 76/101.    time=57 ms         76.00% 77/101.    time=57.75 ms      77.00% 78/101.    time=58.5 ms       78.00% 79/101.    time=59.25 ms      79.00% 80/101.    time=60 ms         80.00% 81/101.    time=60.75 ms      81.00% 82/101.    time=61.5 ms       82.00% 83/101.    time=62.25 ms      83.00% 84/101.    time=63 ms         84.00% 85/101.    time=63.75 ms      85.00% 86/101.    time=64.5 ms       86.00% 87/101.    time=65.25 ms      87.00% 88/101.    time=66 ms         88.00% 89/101.    time=66.75 ms      89.00% 90/101.    time=67.5 ms       90.00% 91/101.    time=68.25 ms      91.00% 92/101.    time=69 ms         92.00% 93/101.    time=69.75 ms      93.00% 94/101.    time=70.5 ms       94.00% 95/101.    time=71.25 ms      95.00% 96/101.    time=72 ms         96.00% 97/101.    time=72.75 ms      97.00% 98/101.    time=73.5 ms       98.00% 99/101.    time=74.25 ms      99.00% 100/101.    time=75 ms        100.00% 101/101
+
+Resource usage:
+  Total stopwatch time     =     1.55 seconds.
+

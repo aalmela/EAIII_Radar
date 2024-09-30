@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=T1 Old Footprint=SMA-142-0701-851 New Footprint=SMB_V-RJ45
+Change Component Footprint: Designator=T2 Old Footprint=SMA-142-0701-851 New Footprint=SMB_V-RJ45
+Change Component Footprint: Designator=T4 Old Footprint=SMA-142-0701-851 New Footprint=SMB_V-RJ45
+Change Component Footprint: Designator=T5 Old Footprint=SMA-142-0701-851 New Footprint=SMB_V-RJ45
+Change Component Comment : Designator=T1 Old Comment=SMA New Comment=SMB
+Change Component Comment : Designator=T2 Old Comment=SMA New Comment=SMB
+Change Component Comment : Designator=T4 Old Comment=SMA New Comment=SMB
+Change Component Comment : Designator=T5 Old Comment=SMA New Comment=SMB

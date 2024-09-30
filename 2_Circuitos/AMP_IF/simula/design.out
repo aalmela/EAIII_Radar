@@ -1,0 +1,171 @@
+**************************************************************************************
+***                                                                                ***
+*** MPLAB Mindi Version 9.10q (x64) - 1/7/2024 15:31                               ***
+*** Platform: Windows 10                                                           ***
+*** Architecture: x64                                                              ***
+*** Serial Number:                                                                 ***
+*** User:                                                                          ***
+***                                                                                ***
+*** TITLE:   * C:\Users\AlejandroAlmela\svn\EAIII_Radar\AMP_IF\simula\filtro.sxsch***
+*** NETLIST: C:\Users\AlejandroAlmela\svn\EAIII_Radar\AMP_IF\simula\design.net     ***
+***                                                                                ***
+**************************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+.options bjtPSpiceSubNode=1
+.options allowdivzero=1
+.options initCondMode=2
+.options icres=0.002
+.options inhibitAttoISource=1
+#SIMETRIX
+X1 R1_P X1_out X4_vsp 0 X1_out MCP6486 pinnames: inp inn vsp vsn out
+V1 C1_N 0 2.5
+X2 R2_P C2_P X4_vsp 0 C2_P MCP6486 pinnames: inp inn vsp vsn out
+X3 R4_P C4_P X4_vsp 0 C4_P MCP6486 pinnames: inp inn vsp vsn out
+R1 R1_P R7_P 2.7k
+X4 V5_P X4_inn X4_vsp 0 R7_P MCP6486 pinnames: inp inn vsp vsn out
+R2 R2_P R2_N 6.8k
+V4 X4_vsp 0 5
+R3 R2_N X1_out 2.2k
+V5 V5_P 0  AC 1m 0
+R4 R4_P R4_N 15k
+R5 R4_N C2_P 6.8k
+R6 X4_inn 0 100
+R7 R7_P X4_inn 10k
+R8 C4_P 0 1K
+C1 R1_P C1_N 5.6n   
+C2 C2_P R2_N 5.6n   
+C3 R2_P C1_N 2.7n   
+C4 C4_P R4_N 5.6n   
+C5 R4_P C1_N 470p   
+C6 R7_P X4_inn 1n   
+.ac dec 200 100m 1000000
+.SUBCKT MCP6486 1 2 3 4 5
+*#ASSOC Category="Op-amps" symbol=opamp
+*               | | | | |
+*               | | | | Output
+*               | | | Negative Supply
+*               | | Positive Supply
+*               | Inverting Input
+*               Non-inverting Input
+*
+*
+* The following op-amps are covered by this model:
+*      MCP6486/6R/6U/7/9
+*
+*
+* Revision History:
+*      REV A: 14-Jun-22, Initial Input
+*       
+*
+* Recommendations:
+*      Use PSPICE (or SPICE 2G6; other simulators may require translation)
+*      For a quick, effective design, use a combination of: data sheet
+*            specs, bench testing, and simulations with this macromodel
+*      For high impedance circuits, set GMIN=100F in the .OPTIONS statement
+*
+* Supported:
+*      Typical performance for temperature range (-40 to 125) degrees Celsius
+*      DC, AC, Transient, and Noise analyses.
+*      Most specs, including: offsets, DC PSRR, DC CMRR, input impedance,
+*            open loop gain, voltage ranges, supply current, ... , etc.
+*      Temperature effects for Ibias, Iquiescent, Iout short circuit 
+*            current, Vsat on both rails, Slew Rate vs. Temp and P.S.
+*
+* Not Supported:
+*      Some Variation in specs vs. Power Supply Voltage
+*      Vos distribution, Ib distribution for Monte Carlo
+*      Distortion (detailed non-linear behavior)
+*      Some Temperature analysis
+*      Process variation
+*      Behavior outside normal operating region
+*
+*       
+*
+*?@ Start SIMPLIS Encryption LIB_PWM
+*
+*
+* Input Stage
+*
+.ENDS MCP6486
+
+********************************************************************************
+***                                                                          ***
+*** Starting AC analysis at 15:31                                            ***
+***                                                                          ***
+*** Analysis card: .ac dec 200 100m 1000000                                  ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-12
+VNTOL                     1e-06
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-12
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+Model parameters for devices of type Resistor
+=============================================
+Model:       $Resistor    
+
+tce          0            
+
+
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 7206
+Transient iterations = 0
+Transient timepoints = 0
+Accepted timepoints = 0
+Total analysis time = 0.844
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0.031
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 100
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 7106
+PTA iterations = 0
+Number of matrix fill ins = -178
+Number of initial matrix elements = 1101
+Circuit equations = 421
+State vector size = 1162
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0.031
+Total run time = 0.922 seconds
+Analysis concluded 1/7/2024 15:31

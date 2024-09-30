@@ -1,0 +1,8 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE MyLibrary_lib MyLibrary_lib
+ASSIGN MyLibrary_lib libMode shared
+INCLUDE ../Infineon_RF/lib.defs
+INCLUDE ../muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE ../BFU5XX_family_design_kit_v2/lib.defs
+INCLUDE ../muRataLibWeb_L_EIA_confidential/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/LNA/simulaciones/BFU5XX_family_design_kit_v2/lib.defs

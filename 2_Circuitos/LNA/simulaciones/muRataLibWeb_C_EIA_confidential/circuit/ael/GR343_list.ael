@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR343DD72J683KW01","1:GR343DD72J683KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 68000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","GR343DD72J683KW01");
+create_constant_form("GR343DD72W154KW01","2:GR343DD72W154KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:2",68,"2","GR343DD72W154KW01");
+create_constant_form("GR343DD7LQ154KW01","3:GR343DD7LQ154KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:3",68,"3","GR343DD7LQ154KW01");
+create_constant_form("GR343QD72E224KW01","4:GR343QD72E224KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:4",68,"4","GR343QD72E224KW01");
+create_constant_form("GR343QD7LP224KW01","5:GR343QD7LP224KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:5",68,"5","GR343QD7LP224KW01");
+create_constant_form("GR343DD72E334KW01","6:GR343DD72E334KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:6",68,"6","GR343DD72E334KW01");
+create_constant_form("GR343DD7LP334KW01","7:GR343DD7LP334KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:7",68,"7","GR343DD7LP334KW01");
+
+create_form_set("GR343_list" 
+,"GR343DD72J683KW01"
+,"GR343DD72W154KW01"
+,"GR343DD7LQ154KW01"
+,"GR343QD72E224KW01"
+,"GR343QD7LP224KW01"
+,"GR343DD72E334KW01"
+,"GR343DD7LP334KW01"
+);
+
+create_compound_form("GR343_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR343_list",-1,prm("GR343DD72J683KW01")),
+create_parm("MIN","Minimum",32,"GR343_list",-1,prm("GR343DD72J683KW01")),
+create_parm("MAX","Maximum",32,"GR343_list",-1,prm("GR343DD7LP334KW01")));
+
+create_form_set("GR343_list_opt","NULL" 
+,"GR343DD72J683KW01"
+,"GR343DD72W154KW01"
+,"GR343DD7LQ154KW01"
+,"GR343QD72E224KW01"
+,"GR343QD7LP224KW01"
+,"GR343DD72E334KW01"
+,"GR343DD7LP334KW01"
+,"GR343_compound"
+);
+
+
+

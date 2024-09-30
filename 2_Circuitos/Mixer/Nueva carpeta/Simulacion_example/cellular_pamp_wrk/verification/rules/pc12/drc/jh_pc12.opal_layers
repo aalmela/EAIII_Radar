@@ -1,0 +1,9 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.opal_layers
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.opal_layers"
+
+OPALLAYER lyr_error1 = 101 99
+.stream return

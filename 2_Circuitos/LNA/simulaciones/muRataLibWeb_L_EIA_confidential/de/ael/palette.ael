@@ -1,0 +1,512 @@
+//****************************************************************************
+// File:         palette.ael
+// Description:  Load  Library and Set Components pallet
+// Author:       Keysight Technologies Japan, Ltd. 
+// Language:     AEL
+// Created:      2023.10.30 14:32:41
+// (C) Copyright 2005-2016, Keysight Technologies Japan, all rights reserved.
+//****************************************************************************
+
+
+
+
+// Loading AEL files /////////////////////////////////////////////////
+	decl component_list=list(
+		"LQG15HH_02"
+		,"LQG15HN_02"
+		,"LQG15HS_02"
+		,"LQG15HZ_02"
+		,"LQG15WH_02"
+		,"LQG15WZ_02"
+		,"LQG18HH_00"
+		,"LQG18HN_00"
+		,"LQP02HQ_02"
+		,"LQP02TN_02"
+		,"LQP02TQ_02"
+		,"LQP03HQ_02"
+		,"LQP03PN_02"
+		,"LQP03TG_02"
+		,"LQP03TN_02"
+		,"LQP03TN_Z2"
+		,"LQP03TQ_02"
+		,"LQP15MN_02"
+		,"LQW03AW_00"
+		,"LQW04AN_00"
+		,"LQW04AN_10"
+		,"LQW04AN_20"
+		,"LQW04CA_00"
+		,"LQW15AN_00"
+		,"LQW15AN_0Z"
+		,"LQW15AN_10"
+		,"LQW15AN_1Z"
+		,"LQW15AN_80"
+		,"LQW15AN_8Z"
+		,"LQW15AW_80"
+		,"LQW15CA_00"
+		,"LQW15CE_10"
+		,"LQW15CN_00"
+		,"LQW15CN_0Z"
+		,"LQW15CN_10"
+		,"LQW15CN_1Z"
+		,"LQW15DN_00"
+		,"LQW18AN_00"
+		,"LQW18AN_0Z"
+		,"LQW18AN_10"
+		,"LQW18AN_1Z"
+		,"LQW18AN_80"
+		,"LQW18AN_8Z"
+		,"LQW18AS_00"
+		,"LQW18AS_0C"
+		,"LQW18AS_0Z"
+		,"LQW18CA_00"
+		,"LQW18CN_00"
+		,"LQW18CN_0Z"
+		,"LQW21FT_0H"
+		,"LQW21HN_00"
+		,"LQW2BAN_00"
+		,"LQW2BAS_00"
+		,"LQW2BAS_0C"
+		,"LQW2UAS_00"
+		,"LQW2UAS_0C"
+		,"LQW32FT_0H"
+		,"LQW43FT_0H"
+		,"LQW18CN_0H"
+		,"LQP02HV_02"
+		,"BLE18PK"
+		,"BLE18PS"
+		,"BLE32PN"
+		,"BLF02GD"
+		,"BLF02JD"
+		,"BLF02RD"
+		,"BLF03JD"
+		,"BLF03RD"
+		,"BLF03VK"
+		,"BLM02AX"
+		,"BLM02BB"
+		,"BLM02BC"
+		,"BLM02BX"
+		,"BLM02KX"
+		,"BLM02PX"
+		,"BLM03AG"
+		,"BLM03AX"
+		,"BLM03BB"
+		,"BLM03BC"
+		,"BLM03BD"
+		,"BLM03BX"
+		,"BLM03EB"
+		,"BLM03HB"
+		,"BLM03HD"
+		,"BLM03HG"
+		,"BLM03PG"
+		,"BLM03PX"
+		,"BLM15AG"
+		,"BLM15AX"
+		,"BLM15BA"
+		,"BLM15BB"
+		,"BLM15BC"
+		,"BLM15BD"
+		,"BLM15BX"
+		,"BLM15EG"
+		,"BLM15EX"
+		,"BLM15GA"
+		,"BLM15GG"
+		,"BLM15HB"
+		,"BLM15HD"
+		,"BLM15HG"
+		,"BLM15KD"
+		,"BLM15PD"
+		,"BLM15PE"
+		,"BLM15PG"
+		,"BLM15PX"
+		,"BLM18AG"
+		,"BLM18BA"
+		,"BLM18BB"
+		,"BLM18BD"
+		,"BLM18DN"
+		,"BLM18EG"
+		,"BLM18GG"
+		,"BLM18HB"
+		,"BLM18HD"
+		,"BLM18HE"
+		,"BLM18HG"
+		,"BLM18HK"
+		,"BLM18KG"
+		,"BLM18KN"
+		,"BLM18PG"
+		,"BLM18RK"
+		,"BLM18SD"
+		,"BLM18SG"
+		,"BLM18SN"
+		,"BLM18SP"
+		,"BLM18TG"
+		,"BLM21AG"
+		,"BLM21BB"
+		,"BLM21BD"
+		,"BLM21PG"
+		,"BLM21RK"
+		,"BLM21SN"
+		,"BLM21SP"
+		,"BLM31AJ"
+		,"BLM31KN"
+		,"BLM31PG"
+		,"BLM31SN"
+		,"BLM41PG"
+		,"NFZ03SG"
+		,"NFZ15SF"
+		,"NFZ15SG"
+		,"NFZ15SR"
+		,"NFZ18SM"
+		,"NFZ2HBM"
+		,"NFZ2MSM"
+		,"NFZ32BW"
+		,"NFZ32SW"
+		,"NFZ5BBW"
+		,"NFZ2MSD"
+		,"BLE32SN"
+		,"BLM21HE"
+		,"BLT5BPT"
+	);
+
+	//----Load a component atf file ---------------------------------------------//
+	decl component_name;
+	while(component_list){
+		component_name = car(component_list);   component_list = cdr(component_list);
+		load(strcat(muRataLibWeb_L_CIRCUIT_AEL_DIR, delim, component_name,"_list"));
+		load(strcat(muRataLibWeb_L_CIRCUIT_AEL_DIR, delim, component_name));
+    }
+	//---------------------------------------------------------------------------//
+
+
+
+// Create pallett///////////////////////////////
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRataLibWeb_L Set Up","muRataLibWeb_L Set Up",0,
+		"muRataLibWeb_L_Include","muRataLibWeb_L_Include",strcat(muRataLibWeb_L_BITMAP_DIR,"TechInclude")
+//		IncludeCmpName,IncludeCmpName,strcat(muRataLibWeb_L_BITMAP_DIR,"TechInclude")
+
+	);
+
+	//--------------------------------------
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components_L","muRata Components_L",0
+		,"LQG15HH_02","LQG15HH_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HH_02")
+		,"LQG15HN_02","LQG15HN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HN_02")
+		,"LQG15HS_02","LQG15HS_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HS_02")
+		,"LQG15HZ_02","LQG15HZ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HZ_02")
+		,"LQG15WH_02","LQG15WH_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15WH_02")
+		,"LQG15WZ_02","LQG15WZ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15WZ_02")
+		,"LQG18HH_00","LQG18HH_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG18HH_00")
+		,"LQG18HN_00","LQG18HN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG18HN_00")
+		,"LQP02HQ_02","LQP02HQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02HQ_02")
+		,"LQP02TN_02","LQP02TN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02TN_02")
+		,"LQP02TQ_02","LQP02TQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02TQ_02")
+		,"LQP03HQ_02","LQP03HQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03HQ_02")
+		,"LQP03PN_02","LQP03PN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03PN_02")
+		,"LQP03TG_02","LQP03TG_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TG_02")
+		,"LQP03TN_02","LQP03TN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TN_02")
+		,"LQP03TN_Z2","LQP03TN_Z2 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TN_Z2")
+		,"LQP03TQ_02","LQP03TQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TQ_02")
+		,"LQP15MN_02","LQP15MN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP15MN_02")
+		,"LQW03AW_00","LQW03AW_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW03AW_00")
+		,"LQW04AN_00","LQW04AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_00")
+		,"LQW04AN_10","LQW04AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_10")
+		,"LQW04AN_20","LQW04AN_20 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_20")
+		,"LQW04CA_00","LQW04CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04CA_00")
+		,"LQW15AN_00","LQW15AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_00")
+		,"LQW15AN_0Z","LQW15AN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_0Z")
+		,"LQW15AN_10","LQW15AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_10")
+		,"LQW15AN_1Z","LQW15AN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_1Z")
+		,"LQW15AN_80","LQW15AN_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_80")
+		,"LQW15AN_8Z","LQW15AN_8Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_8Z")
+		,"LQW15AW_80","LQW15AW_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AW_80")
+		,"LQW15CA_00","LQW15CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CA_00")
+		,"LQW15CE_10","LQW15CE_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CE_10")
+		,"LQW15CN_00","LQW15CN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_00")
+		,"LQW15CN_0Z","LQW15CN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_0Z")
+		,"LQW15CN_10","LQW15CN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_10")
+		,"LQW15CN_1Z","LQW15CN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_1Z")
+		,"LQW15DN_00","LQW15DN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15DN_00")
+		,"LQW18AN_00","LQW18AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_00")
+		,"LQW18AN_0Z","LQW18AN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_0Z")
+		,"LQW18AN_10","LQW18AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_10")
+		,"LQW18AN_1Z","LQW18AN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_1Z")
+		,"LQW18AN_80","LQW18AN_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_80")
+		,"LQW18AN_8Z","LQW18AN_8Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_8Z")
+		,"LQW18AS_00","LQW18AS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_00")
+		,"LQW18AS_0C","LQW18AS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_0C")
+		,"LQW18AS_0Z","LQW18AS_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_0Z")
+		,"LQW18CA_00","LQW18CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CA_00")
+		,"LQW18CN_00","LQW18CN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_00")
+		,"LQW18CN_0Z","LQW18CN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_0Z")
+		,"LQW21FT_0H","LQW21FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW21FT_0H")
+		,"LQW21HN_00","LQW21HN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW21HN_00")
+		,"LQW2BAN_00","LQW2BAN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAN_00")
+		,"LQW2BAS_00","LQW2BAS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAS_00")
+		,"LQW2BAS_0C","LQW2BAS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAS_0C")
+		,"LQW2UAS_00","LQW2UAS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2UAS_00")
+		,"LQW2UAS_0C","LQW2UAS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2UAS_0C")
+		,"LQW32FT_0H","LQW32FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW32FT_0H")
+		,"LQW43FT_0H","LQW43FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW43FT_0H")
+		,"LQW18CN_0H","LQW18CN_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_0H")
+		,"LQP02HV_02","LQP02HV_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02HV_02")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components_L","muRata Components_L",0
+		,"LQG15HH_02","LQG15HH_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HH_02")
+		,"LQG15HN_02","LQG15HN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HN_02")
+		,"LQG15HS_02","LQG15HS_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HS_02")
+		,"LQG15HZ_02","LQG15HZ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15HZ_02")
+		,"LQG15WH_02","LQG15WH_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15WH_02")
+		,"LQG15WZ_02","LQG15WZ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG15WZ_02")
+		,"LQG18HH_00","LQG18HH_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG18HH_00")
+		,"LQG18HN_00","LQG18HN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQG18HN_00")
+		,"LQP02HQ_02","LQP02HQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02HQ_02")
+		,"LQP02TN_02","LQP02TN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02TN_02")
+		,"LQP02TQ_02","LQP02TQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02TQ_02")
+		,"LQP03HQ_02","LQP03HQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03HQ_02")
+		,"LQP03PN_02","LQP03PN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03PN_02")
+		,"LQP03TG_02","LQP03TG_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TG_02")
+		,"LQP03TN_02","LQP03TN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TN_02")
+		,"LQP03TN_Z2","LQP03TN_Z2 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TN_Z2")
+		,"LQP03TQ_02","LQP03TQ_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP03TQ_02")
+		,"LQP15MN_02","LQP15MN_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP15MN_02")
+		,"LQW03AW_00","LQW03AW_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW03AW_00")
+		,"LQW04AN_00","LQW04AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_00")
+		,"LQW04AN_10","LQW04AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_10")
+		,"LQW04AN_20","LQW04AN_20 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04AN_20")
+		,"LQW04CA_00","LQW04CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW04CA_00")
+		,"LQW15AN_00","LQW15AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_00")
+		,"LQW15AN_0Z","LQW15AN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_0Z")
+		,"LQW15AN_10","LQW15AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_10")
+		,"LQW15AN_1Z","LQW15AN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_1Z")
+		,"LQW15AN_80","LQW15AN_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_80")
+		,"LQW15AN_8Z","LQW15AN_8Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AN_8Z")
+		,"LQW15AW_80","LQW15AW_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15AW_80")
+		,"LQW15CA_00","LQW15CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CA_00")
+		,"LQW15CE_10","LQW15CE_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CE_10")
+		,"LQW15CN_00","LQW15CN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_00")
+		,"LQW15CN_0Z","LQW15CN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_0Z")
+		,"LQW15CN_10","LQW15CN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_10")
+		,"LQW15CN_1Z","LQW15CN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15CN_1Z")
+		,"LQW15DN_00","LQW15DN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW15DN_00")
+		,"LQW18AN_00","LQW18AN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_00")
+		,"LQW18AN_0Z","LQW18AN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_0Z")
+		,"LQW18AN_10","LQW18AN_10 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_10")
+		,"LQW18AN_1Z","LQW18AN_1Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_1Z")
+		,"LQW18AN_80","LQW18AN_80 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_80")
+		,"LQW18AN_8Z","LQW18AN_8Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AN_8Z")
+		,"LQW18AS_00","LQW18AS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_00")
+		,"LQW18AS_0C","LQW18AS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_0C")
+		,"LQW18AS_0Z","LQW18AS_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18AS_0Z")
+		,"LQW18CA_00","LQW18CA_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CA_00")
+		,"LQW18CN_00","LQW18CN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_00")
+		,"LQW18CN_0Z","LQW18CN_0Z Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_0Z")
+		,"LQW21FT_0H","LQW21FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW21FT_0H")
+		,"LQW21HN_00","LQW21HN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW21HN_00")
+		,"LQW2BAN_00","LQW2BAN_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAN_00")
+		,"LQW2BAS_00","LQW2BAS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAS_00")
+		,"LQW2BAS_0C","LQW2BAS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2BAS_0C")
+		,"LQW2UAS_00","LQW2UAS_00 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2UAS_00")
+		,"LQW2UAS_0C","LQW2UAS_0C Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW2UAS_0C")
+		,"LQW32FT_0H","LQW32FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW32FT_0H")
+		,"LQW43FT_0H","LQW43FT_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW43FT_0H")
+		,"LQW18CN_0H","LQW18CN_0H Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQW18CN_0H")
+		,"LQP02HV_02","LQP02HV_02 Series",strcat(muRataLibWeb_L_BITMAP_DIR,"LQP02HV_02")
+	);
+
+
+	de_define_palette_group(SCHEM_WIN,"analogRF_net","muRata Components_FB","muRata Components_FB",0
+		,"BLE18PK","BLE18PK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE18PK")
+		,"BLE18PS","BLE18PS Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE18PS")
+		,"BLE32PN","BLE32PN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE32PN")
+		,"BLF02GD","BLF02GD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02GD")
+		,"BLF02JD","BLF02JD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02JD")
+		,"BLF02RD","BLF02RD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02RD")
+		,"BLF03JD","BLF03JD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03JD")
+		,"BLF03RD","BLF03RD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03RD")
+		,"BLF03VK","BLF03VK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03VK")
+		,"BLM02AX","BLM02AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02AX")
+		,"BLM02BB","BLM02BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BB")
+		,"BLM02BC","BLM02BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BC")
+		,"BLM02BX","BLM02BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BX")
+		,"BLM02KX","BLM02KX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02KX")
+		,"BLM02PX","BLM02PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02PX")
+		,"BLM03AG","BLM03AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03AG")
+		,"BLM03AX","BLM03AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03AX")
+		,"BLM03BB","BLM03BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BB")
+		,"BLM03BC","BLM03BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BC")
+		,"BLM03BD","BLM03BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BD")
+		,"BLM03BX","BLM03BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BX")
+		,"BLM03EB","BLM03EB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03EB")
+		,"BLM03HB","BLM03HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HB")
+		,"BLM03HD","BLM03HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HD")
+		,"BLM03HG","BLM03HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HG")
+		,"BLM03PG","BLM03PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03PG")
+		,"BLM03PX","BLM03PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03PX")
+		,"BLM15AG","BLM15AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15AG")
+		,"BLM15AX","BLM15AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15AX")
+		,"BLM15BA","BLM15BA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BA")
+		,"BLM15BB","BLM15BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BB")
+		,"BLM15BC","BLM15BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BC")
+		,"BLM15BD","BLM15BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BD")
+		,"BLM15BX","BLM15BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BX")
+		,"BLM15EG","BLM15EG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15EG")
+		,"BLM15EX","BLM15EX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15EX")
+		,"BLM15GA","BLM15GA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15GA")
+		,"BLM15GG","BLM15GG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15GG")
+		,"BLM15HB","BLM15HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HB")
+		,"BLM15HD","BLM15HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HD")
+		,"BLM15HG","BLM15HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HG")
+		,"BLM15KD","BLM15KD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15KD")
+		,"BLM15PD","BLM15PD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PD")
+		,"BLM15PE","BLM15PE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PE")
+		,"BLM15PG","BLM15PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PG")
+		,"BLM15PX","BLM15PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PX")
+		,"BLM18AG","BLM18AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18AG")
+		,"BLM18BA","BLM18BA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BA")
+		,"BLM18BB","BLM18BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BB")
+		,"BLM18BD","BLM18BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BD")
+		,"BLM18DN","BLM18DN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18DN")
+		,"BLM18EG","BLM18EG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18EG")
+		,"BLM18GG","BLM18GG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18GG")
+		,"BLM18HB","BLM18HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HB")
+		,"BLM18HD","BLM18HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HD")
+		,"BLM18HE","BLM18HE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HE")
+		,"BLM18HG","BLM18HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HG")
+		,"BLM18HK","BLM18HK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HK")
+		,"BLM18KG","BLM18KG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18KG")
+		,"BLM18KN","BLM18KN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18KN")
+		,"BLM18PG","BLM18PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18PG")
+		,"BLM18RK","BLM18RK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18RK")
+		,"BLM18SD","BLM18SD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SD")
+		,"BLM18SG","BLM18SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SG")
+		,"BLM18SN","BLM18SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SN")
+		,"BLM18SP","BLM18SP Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SP")
+		,"BLM18TG","BLM18TG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18TG")
+		,"BLM21AG","BLM21AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21AG")
+		,"BLM21BB","BLM21BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21BB")
+		,"BLM21BD","BLM21BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21BD")
+		,"BLM21PG","BLM21PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21PG")
+		,"BLM21RK","BLM21RK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21RK")
+		,"BLM21SN","BLM21SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21SN")
+		,"BLM21SP","BLM21SP Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21SP")
+		,"BLM31AJ","BLM31AJ Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31AJ")
+		,"BLM31KN","BLM31KN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31KN")
+		,"BLM31PG","BLM31PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31PG")
+		,"BLM31SN","BLM31SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31SN")
+		,"BLM41PG","BLM41PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM41PG")
+		,"NFZ03SG","NFZ03SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ03SG")
+		,"NFZ15SF","NFZ15SF Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SF")
+		,"NFZ15SG","NFZ15SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SG")
+		,"NFZ15SR","NFZ15SR Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SR")
+		,"NFZ18SM","NFZ18SM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ18SM")
+		,"NFZ2HBM","NFZ2HBM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2HBM")
+		,"NFZ2MSM","NFZ2MSM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2MSM")
+		,"NFZ32BW","NFZ32BW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ32BW")
+		,"NFZ32SW","NFZ32SW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ32SW")
+		,"NFZ5BBW","NFZ5BBW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ5BBW")
+		,"NFZ2MSD","NFZ2MSD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2MSD")
+		,"BLE32SN","BLE32SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE32SN")
+		,"BLM21HE","BLM21HE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21HE")
+		,"BLT5BPT","BLT5BPT Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLT5BPT")
+	);
+
+
+	de_define_palette_group(LAYOUT_WIN,"analogRF_net","muRata Components_FB","muRata Components_FB",0
+		,"BLE18PK","BLE18PK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE18PK")
+		,"BLE18PS","BLE18PS Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE18PS")
+		,"BLE32PN","BLE32PN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE32PN")
+		,"BLF02GD","BLF02GD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02GD")
+		,"BLF02JD","BLF02JD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02JD")
+		,"BLF02RD","BLF02RD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF02RD")
+		,"BLF03JD","BLF03JD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03JD")
+		,"BLF03RD","BLF03RD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03RD")
+		,"BLF03VK","BLF03VK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLF03VK")
+		,"BLM02AX","BLM02AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02AX")
+		,"BLM02BB","BLM02BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BB")
+		,"BLM02BC","BLM02BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BC")
+		,"BLM02BX","BLM02BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02BX")
+		,"BLM02KX","BLM02KX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02KX")
+		,"BLM02PX","BLM02PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM02PX")
+		,"BLM03AG","BLM03AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03AG")
+		,"BLM03AX","BLM03AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03AX")
+		,"BLM03BB","BLM03BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BB")
+		,"BLM03BC","BLM03BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BC")
+		,"BLM03BD","BLM03BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BD")
+		,"BLM03BX","BLM03BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03BX")
+		,"BLM03EB","BLM03EB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03EB")
+		,"BLM03HB","BLM03HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HB")
+		,"BLM03HD","BLM03HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HD")
+		,"BLM03HG","BLM03HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03HG")
+		,"BLM03PG","BLM03PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03PG")
+		,"BLM03PX","BLM03PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM03PX")
+		,"BLM15AG","BLM15AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15AG")
+		,"BLM15AX","BLM15AX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15AX")
+		,"BLM15BA","BLM15BA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BA")
+		,"BLM15BB","BLM15BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BB")
+		,"BLM15BC","BLM15BC Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BC")
+		,"BLM15BD","BLM15BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BD")
+		,"BLM15BX","BLM15BX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15BX")
+		,"BLM15EG","BLM15EG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15EG")
+		,"BLM15EX","BLM15EX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15EX")
+		,"BLM15GA","BLM15GA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15GA")
+		,"BLM15GG","BLM15GG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15GG")
+		,"BLM15HB","BLM15HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HB")
+		,"BLM15HD","BLM15HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HD")
+		,"BLM15HG","BLM15HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15HG")
+		,"BLM15KD","BLM15KD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15KD")
+		,"BLM15PD","BLM15PD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PD")
+		,"BLM15PE","BLM15PE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PE")
+		,"BLM15PG","BLM15PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PG")
+		,"BLM15PX","BLM15PX Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM15PX")
+		,"BLM18AG","BLM18AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18AG")
+		,"BLM18BA","BLM18BA Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BA")
+		,"BLM18BB","BLM18BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BB")
+		,"BLM18BD","BLM18BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18BD")
+		,"BLM18DN","BLM18DN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18DN")
+		,"BLM18EG","BLM18EG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18EG")
+		,"BLM18GG","BLM18GG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18GG")
+		,"BLM18HB","BLM18HB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HB")
+		,"BLM18HD","BLM18HD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HD")
+		,"BLM18HE","BLM18HE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HE")
+		,"BLM18HG","BLM18HG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HG")
+		,"BLM18HK","BLM18HK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18HK")
+		,"BLM18KG","BLM18KG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18KG")
+		,"BLM18KN","BLM18KN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18KN")
+		,"BLM18PG","BLM18PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18PG")
+		,"BLM18RK","BLM18RK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18RK")
+		,"BLM18SD","BLM18SD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SD")
+		,"BLM18SG","BLM18SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SG")
+		,"BLM18SN","BLM18SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SN")
+		,"BLM18SP","BLM18SP Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18SP")
+		,"BLM18TG","BLM18TG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM18TG")
+		,"BLM21AG","BLM21AG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21AG")
+		,"BLM21BB","BLM21BB Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21BB")
+		,"BLM21BD","BLM21BD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21BD")
+		,"BLM21PG","BLM21PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21PG")
+		,"BLM21RK","BLM21RK Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21RK")
+		,"BLM21SN","BLM21SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21SN")
+		,"BLM21SP","BLM21SP Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21SP")
+		,"BLM31AJ","BLM31AJ Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31AJ")
+		,"BLM31KN","BLM31KN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31KN")
+		,"BLM31PG","BLM31PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31PG")
+		,"BLM31SN","BLM31SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM31SN")
+		,"BLM41PG","BLM41PG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM41PG")
+		,"NFZ03SG","NFZ03SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ03SG")
+		,"NFZ15SF","NFZ15SF Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SF")
+		,"NFZ15SG","NFZ15SG Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SG")
+		,"NFZ15SR","NFZ15SR Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ15SR")
+		,"NFZ18SM","NFZ18SM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ18SM")
+		,"NFZ2HBM","NFZ2HBM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2HBM")
+		,"NFZ2MSM","NFZ2MSM Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2MSM")
+		,"NFZ32BW","NFZ32BW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ32BW")
+		,"NFZ32SW","NFZ32SW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ32SW")
+		,"NFZ5BBW","NFZ5BBW Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ5BBW")
+		,"NFZ2MSD","NFZ2MSD Series",strcat(muRataLibWeb_L_BITMAP_DIR,"NFZ2MSD")
+		,"BLE32SN","BLE32SN Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLE32SN")
+		,"BLM21HE","BLM21HE Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLM21HE")
+		,"BLT5BPT","BLT5BPT Series",strcat(muRataLibWeb_L_BITMAP_DIR,"BLT5BPT")
+	);
+
+

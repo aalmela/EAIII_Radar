@@ -1,0 +1,31 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQP03PN2N2C02","1:LQP03PN2N2C02, Film, 2.2[nH], +/-0.2[nH], 1400[mA], 50[MHz]-20[GHz]:1",68,"1","LQP03PN2N2C02");
+create_constant_form("LQP03PN2N7C02","2:LQP03PN2N7C02, Film, 2.7[nH], +/-0.2[nH], 1300[mA], 50[MHz]-20[GHz]:2",68,"2","LQP03PN2N7C02");
+create_constant_form("LQP03PN3N3C02","3:LQP03PN3N3C02, Film, 3.3[nH], +/-0.2[nH], 1200[mA], 50[MHz]-20[GHz]:3",68,"3","LQP03PN3N3C02");
+create_constant_form("LQP03PN3N9C02","4:LQP03PN3N9C02, Film, 3.9[nH], +/-0.2[nH], 1000[mA], 50[MHz]-20[GHz]:4",68,"4","LQP03PN3N9C02");
+create_constant_form("LQP03PN4N7J02","5:LQP03PN4N7J02, Film, 4.7[nH], +/-5[%], 900[mA], 50[MHz]-20[GHz]:5",68,"5","LQP03PN4N7J02");
+
+create_form_set("LQP03PN_02_list" 
+,"LQP03PN2N2C02"
+,"LQP03PN2N7C02"
+,"LQP03PN3N3C02"
+,"LQP03PN3N9C02"
+,"LQP03PN4N7J02"
+);
+
+create_compound_form("LQP03PN_02_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQP03PN_02_list",-1,prm("LQP03PN2N2C02")),
+create_parm("MIN","Minimum",32,"LQP03PN_02_list",-1,prm("LQP03PN2N2C02")),
+create_parm("MAX","Maximum",32,"LQP03PN_02_list",-1,prm("LQP03PN4N7J02")));
+
+create_form_set("LQP03PN_02_list_opt","NULL" 
+,"LQP03PN2N2C02"
+,"LQP03PN2N7C02"
+,"LQP03PN3N3C02"
+,"LQP03PN3N9C02"
+,"LQP03PN4N7J02"
+,"LQP03PN_02_compound"
+);
+
+
+

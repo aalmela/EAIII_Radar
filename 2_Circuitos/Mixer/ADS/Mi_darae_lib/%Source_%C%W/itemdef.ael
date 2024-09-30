@@ -1,0 +1,4 @@
+create_item("Source_CW","Source_CW","CW",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","Source_CW","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","Source_CW",3,NULL,0,
+create_parm("Frequency","Center Frequency",65536,"StdFormSet",0,prm("StdForm","10 GHz")),
+create_parm("Power","Average Power",65536,"StdFormSet",8,prm("StdForm","1 W")),
+create_parm("Resistance","Source Resistance",66048,"StdFormSet",1,prm("StdForm","50 Ohm")));

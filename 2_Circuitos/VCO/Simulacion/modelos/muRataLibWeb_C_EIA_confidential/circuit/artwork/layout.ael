@@ -1,0 +1,283 @@
+//****************************************************************************
+// File:        layout.ael
+// Description: This is the AEL file for the component AEL artwork macros
+// Author:      Keysight Technologies Japan, Ltd. (T.Eda)
+// Created:     2024.02.05 16:37:05
+// Language:    AEL
+// Appl.:       ADS
+// (C) Copyright 2005-2016, Keysight Technologies Japan G.K. , all rights reserved.
+//****************************************************************************
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//
+//
+//defun muRataLibWeb_paramType_C_draw_artwork(
+//	PartNumber,
+//	Type,
+//	Size,
+//	TempCharacteristics,
+//	Value,
+//	Tolerance,
+//	Dimensions,
+//	RatedVoltage,
+//	FreqRange,
+//	LandWidth,
+//	LandLength,
+//	LandSpace,
+//	LandLayer
+//)
+//{
+//
+//	muRataLibWeb_draw_artwork(
+//		Dimensions,
+//		LandWidth,
+//		LandLength,
+//		LandSpace,
+//		LandLayer );
+//
+//}
+//
+//
+//defun muRataLibWeb_paramType_L_draw_artwork(
+//	PartNumber,
+//	Type,
+//	Size,
+//	Value,
+//	Tolerance,
+//	Dimensions,
+//	RatedCurrent,
+//	FreqRange,
+//	LandWidth,
+//	LandLength,
+//	LandSpace,
+//	LandLayer
+//)
+//{
+//
+//	muRataLibWeb_draw_artwork(
+//		Dimensions,
+//		LandWidth,
+//		LandLength,
+//		LandSpace,
+//		LandLayer );
+//
+//}
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+defun muRataLibWeb_basic_CL_draw_artwork(
+	Dimensions,
+	LandWidth,
+	LandLength,
+	LandSpace,
+	LandLayer
+)
+{
+  de_set_global_db_factor();
+
+
+	//Parameter setup
+	// LandWidth  =c
+	// LandLength =b
+	// LandSpace  =a
+
+//	decl PackageLayer = 10; //value independent of Package "packages";
+	decl PackageLayer = 0; //value independent of Package "default"; 2020.8-
+//	decl PortLayer    = 1;  //value independent of port "cond";
+	decl PortLayer;		//2020.8-
+
+//_____ swapped by N6F5 2016/11/25 ___________________________________________
+//	decl PackageLength = 0; // ex.1.6 <-- 1.6x0.8x0.8[mm](Dimensions)
+//	decl PackageWidth  = 0; // ex.0.8 <-- 1.6x0.8x0.8[mm](Dimensions)
+	decl PackageLength = 0; // ex.1.6 <-- 1.6x0.8[mm](Dimensions)
+	decl PackageWidth  = 0; // ex.0.8 <-- 1.6x0.8[mm](Dimensions)
+//~~~~~ swapped by N6F5 2016/11/25 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	decl PO = 0; //port offset
+
+//_____ swapped by N6F5 2016/11/25 ___________________________________________
+//	// package length
+//	PackageLength = val(nth(0, parse(Dimensions, "x")))/1000; //[mm]
+//	PackageWidth  = val(nth(1, parse(Dimensions, "x")))/1000; //[mm]
+	PackageLength = val(nth(0, parse(Dimensions, "x")))/1000; //[mm]
+	PackageWidth  = val(nth(1, parse(Dimensions, "x[")))/1000; //[mm]
+//~~~~~ swapped by N6F5 2016/11/25 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  //draw package on package layer
+  de_set_layer(PackageLayer);
+  de_draw_rect(-PackageLength/2, -PackageWidth/2, PackageLength/2, PackageWidth/2);
+	
+	
+  //draw Land on Land layer
+  de_set_layer(LandLayer);
+  de_draw_rect(-(LandSpace/2+LandLength), -LandWidth/2, -LandSpace/2, +LandWidth/2);
+  de_draw_rect(+(LandSpace/2+LandLength), -LandWidth/2, +LandSpace/2, +LandWidth/2);
+	
+	//2020.8-
+	PortLayer = LandLayer;
+
+  //draw ports on port layer
+  de_set_layer(PortLayer);
+  de_draw_port(-(PackageLength/2+PO), 0, -90, FALSE, 1, 1);
+  de_draw_port(+(PackageLength/2+PO), 0,  90, FALSE, 2, 2);	
+}
+
+// add by Seiji Goto
+// Feb.22, 2022
+//
+//	Dimensions,
+//	LandWidth,
+//	LandLength,
+//	LandSpace,
+//	LandLayer
+defun muRataLibWeb_basic_3T_draw_artwork(
+	Width_A,
+	Length_A,
+	Space_A,
+	Width_B,
+	Length_B,
+	Space_B,
+	ChamferA,
+	ChamferB,
+	Dimensions,
+	LandLayer
+)
+{
+  de_set_global_db_factor();
+
+	//Parameter setup
+	// LandWidth  =c
+	// LandLength =b
+	// LandSpace  =a
+
+//	decl PackageLayer = 10; //value independent of Package "packages";
+	decl PackageLayer = 0; //value independent of Package "default"; //2020.8-
+//	decl PortLayer    = 1;  //value independent of port "cond";
+	decl PortLayer;		//2020.8-
+
+//_____ swapped by N6F5 2016/11/25 ___________________________________________
+//	decl PackageLength = 0; // ex.1.6 <-- 1.6x0.8x0.8[mm](Dimensions)
+//	decl PackageWidth  = 0; // ex.0.8 <-- 1.6x0.8x0.8[mm](Dimensions)
+	decl PackageLength = 0; // ex.1.6 <-- 1.6x0.8[mm](Dimensions)
+	decl PackageWidth  = 0; // ex.0.8 <-- 1.6x0.8[mm](Dimensions)
+//~~~~~ swapped by N6F5 2016/11/25 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	decl POx = 0; //port offset
+	decl POy = 0; //port offset by GOTO
+	
+//_____ swapped by N6F5 2016/11/25 ___________________________________________
+//	// package length
+//	PackageLength = val(nth(0, parse(Dimensions, "x")))/1000; //[mm]
+//	PackageWidth  = val(nth(1, parse(Dimensions, "x")))/1000; //[mm]
+	PackageLength = val(nth(0, parse(Dimensions, "x")))/1000; //[mm]
+	PackageWidth  = val(nth(1, parse(Dimensions, "x[")))/1000; //[mm]
+//~~~~~ swapped by N6F5 2016/11/25 ~~~
+
+//----- by N6F2 GOTO---------------------------------------------------------
+	decl dWidth_A=0;
+	decl dLength_A=0;
+	decl dSpace_A=0;
+	decl dWidth_B=0;
+	decl dLength_B=0;
+	decl dSpace_B=0;
+	decl dChamferA=0;
+	decl dChamferB=0;
+//-------------------------------------------------------------------------------
+	decl dWidth_A= val(Width_A)/1000; //[mm]
+	decl dLength_A= val(Length_A)/1000; //[mm]
+	decl dSpace_A= val(Space_A)/1000; //[mm]
+	decl dWidth_B= val(Width_B)/1000; //[mm]
+	decl dLength_B= val(Length_B)/1000; //[mm]
+	decl dSpace_B= val(Space_B)/1000; //[mm]
+	decl dChamferA= val(ChamferA)/1000; //[mm]
+	decl dChamferB= val(ChamferB)/1000; //[mm]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  //draw package on package layer
+  de_set_layer(PackageLayer);
+  de_draw_rect(-PackageLength/2, -PackageWidth/2, PackageLength/2, PackageWidth/2);
+  
+   //draw Land on Land layer
+  de_set_layer(LandLayer);
+  if( dChamferA == 0 )
+  {
+   	de_draw_rect(-(dSpace_A/2+dLength_A), -dWidth_A/2, -dSpace_A/2, +dWidth_A/2);
+  	de_draw_rect(+(dSpace_A/2+dLength_A), -dWidth_A/2, +dSpace_A/2, +dWidth_A/2);
+  }
+  else
+  {
+  	de_add_polyline();
+  	de_draw_point(-(dSpace_A/2+dLength_A), -dWidth_A/2);
+   	de_draw_point(-(dSpace_A/2+dChamferA), -dWidth_A/2);
+ 	de_draw_point(-dSpace_A/2, -(dWidth_A/2-dChamferA));
+  	de_draw_point(-dSpace_A/2, +(dWidth_A/2-dChamferA));
+   	de_draw_point(-(dSpace_A/2+dChamferA), +dWidth_A/2);
+   	de_draw_point(-(dSpace_A/2+dLength_A), +dWidth_A/2);
+   	de_draw_point(-(dSpace_A/2+dLength_A), -dWidth_A/2);
+  	de_end();
+  	
+   	de_add_polyline();
+  	de_draw_point(+(dSpace_A/2+dLength_A), -dWidth_A/2);
+   	de_draw_point(+(dSpace_A/2+dLength_A), +dWidth_A/2);
+    de_draw_point(+(dSpace_A/2+dChamferA), +dWidth_A/2);  	
+    de_draw_point(+dSpace_A/2, +(dWidth_A/2-dChamferA));  	   	
+    de_draw_point(+dSpace_A/2, -(dWidth_A/2-dChamferA));  	   	   	
+    de_draw_point(+(dSpace_A/2+dChamferA), -dWidth_A/2); 
+  	de_draw_point(+(dSpace_A/2+dLength_A), -dWidth_A/2);    	
+  	de_end();
+  }
+  
+  if( dChamferB == 0 )
+  {
+  	de_draw_rect(-dWidth_B/2, -(dSpace_B/2+dLength_B), +dWidth_B/2, -dSpace_B/2);
+  	de_draw_rect(+dWidth_B/2, +(dSpace_B/2+dLength_B), -dWidth_B/2, +dSpace_B/2);
+ }
+ else
+ {
+    de_add_polyline();
+   	de_draw_point(-dWidth_B/2, -(dSpace_B/2+dLength_B));
+  	de_draw_point(+dWidth_B/2, -(dSpace_B/2+dLength_B));
+   	de_draw_point(+dWidth_B/2, -(dSpace_B/2+dChamferB));
+   	de_draw_point(+(dWidth_B/2-dChamferB), -dSpace_B/2);
+    de_draw_point(-(dWidth_B/2-dChamferB), -dSpace_B/2);
+   	de_draw_point(-dWidth_B/2, -(dSpace_B/2+dChamferB));
+   	de_draw_point(-dWidth_B/2, -(dSpace_B/2+dLength_B)); 
+    de_end(); 
+
+    de_add_polyline();
+   	de_draw_point(+dWidth_B/2, +(dSpace_B/2+dLength_B));
+  	de_draw_point(-dWidth_B/2, +(dSpace_B/2+dLength_B));
+   	de_draw_point(-dWidth_B/2, +(dSpace_B/2+dChamferB));
+   	de_draw_point(-(dWidth_B/2-dChamferB), +dSpace_B/2);
+    de_draw_point(+(dWidth_B/2-dChamferB), +dSpace_B/2);
+   	de_draw_point(+dWidth_B/2, +(dSpace_B/2+dChamferB));
+   	de_draw_point(+dWidth_B/2, +(dSpace_B/2+dLength_B)); 
+    de_end(); 
+    
+  }
+  
+  //2020.8-
+	PortLayer = LandLayer;
+
+  //draw ports on port layer
+  de_set_layer(PortLayer);
+  //de_draw_port(-(PackageLength/2+POx), 0, -90, FALSE, 1, 1); 
+  //de_draw_port(+(PackageLength/2+PO), 0,  90, FALSE, 2, 2);	
+  de_draw_port(-(PackageLength/2+POx), 0, -90);
+  de_draw_port(0, +(PackageWidth/2+POy), 180);
+  de_draw_port(+(PackageLength/2+POx), 0,  90);
+  de_draw_port(0, -(PackageWidth/2+POy) ,0);
+
+  
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+

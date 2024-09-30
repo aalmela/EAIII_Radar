@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GRJ033R60J105ME11","1:GRJ033R60J105ME11, Resin external electrode, X5R(-55to85[deg]), 6.3[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","GRJ033R60J105ME11");
+create_constant_form("GRJ033R61A105ME11","2:GRJ033R61A105ME11, Resin external electrode, X5R(-55to85[deg]), 10[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","GRJ033R61A105ME11");
+
+create_form_set("GRJ03_list" 
+,"GRJ033R60J105ME11"
+,"GRJ033R61A105ME11"
+);
+
+create_compound_form("GRJ03_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GRJ03_list",-1,prm("GRJ033R60J105ME11")),
+create_parm("MIN","Minimum",32,"GRJ03_list",-1,prm("GRJ033R60J105ME11")),
+create_parm("MAX","Maximum",32,"GRJ03_list",-1,prm("GRJ033R61A105ME11")));
+
+create_form_set("GRJ03_list_opt","NULL" 
+,"GRJ033R60J105ME11"
+,"GRJ033R61A105ME11"
+,"GRJ03_compound"
+);
+
+
+

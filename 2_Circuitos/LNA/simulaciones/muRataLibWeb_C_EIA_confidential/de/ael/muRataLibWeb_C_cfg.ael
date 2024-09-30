@@ -1,0 +1,7 @@
+//======USER SETUP======================================================//
+// decl muRataLibWeb_C_Insert_ModelInclude=TRUE; //TRUE or FALSE  //delete:ADS2011
+decl muRataLibWeb_C_boot_info=TRUE;           //TRUE or FALSE
+// decl muRataLibWeb_C_KIKAKU="EIA";             //"JIS"or"EIA"  //delete:ADS2011
+//======================================================================//
+
+

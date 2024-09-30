@@ -1,0 +1,40 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GA352QR7GF101KW31","1:GA352QR7GF101KW31, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 100[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","GA352QR7GF101KW31");
+create_constant_form("GA352QR7GF151KW31","2:GA352QR7GF151KW31, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 150[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","GA352QR7GF151KW31");
+create_constant_form("GA352QR7GF221KW31","3:GA352QR7GF221KW31, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 220[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","GA352QR7GF221KW31");
+create_constant_form("GA352QR7GF331KW31","4:GA352QR7GF331KW31, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 330[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","GA352QR7GF331KW31");
+create_constant_form("GA352QR7GF471KW01","5:GA352QR7GF471KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 470[pF], +/-10[%], 100[kHz]-3[GHz]:5",68,"5","GA352QR7GF471KW01");
+create_constant_form("GA352QR7GF681KW01","6:GA352QR7GF681KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 680[pF], +/-10[%], 100[kHz]-3[GHz]:6",68,"6","GA352QR7GF681KW01");
+create_constant_form("GA352QR7GF102KW01","7:GA352QR7GF102KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","GA352QR7GF102KW01");
+create_constant_form("GA352QR7GF152KW01","8:GA352QR7GF152KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1500[pF], +/-10[%], 100[kHz]-3[GHz]:8",68,"8","GA352QR7GF152KW01");
+
+create_form_set("GA352_list" 
+,"GA352QR7GF101KW31"
+,"GA352QR7GF151KW31"
+,"GA352QR7GF221KW31"
+,"GA352QR7GF331KW31"
+,"GA352QR7GF471KW01"
+,"GA352QR7GF681KW01"
+,"GA352QR7GF102KW01"
+,"GA352QR7GF152KW01"
+);
+
+create_compound_form("GA352_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GA352_list",-1,prm("GA352QR7GF101KW31")),
+create_parm("MIN","Minimum",32,"GA352_list",-1,prm("GA352QR7GF101KW31")),
+create_parm("MAX","Maximum",32,"GA352_list",-1,prm("GA352QR7GF152KW01")));
+
+create_form_set("GA352_list_opt","NULL" 
+,"GA352QR7GF101KW31"
+,"GA352QR7GF151KW31"
+,"GA352QR7GF221KW31"
+,"GA352QR7GF331KW31"
+,"GA352QR7GF471KW01"
+,"GA352QR7GF681KW01"
+,"GA352QR7GF102KW01"
+,"GA352QR7GF152KW01"
+,"GA352_compound"
+);
+
+
+

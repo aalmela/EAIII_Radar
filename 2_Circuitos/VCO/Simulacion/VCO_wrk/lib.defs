@@ -1,0 +1,9 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE VCO_lib VCO_lib
+ASSIGN VCO_lib libMode shared
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/BFU5XX_family_design_kit_v2/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/Infineon_RF/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_L_EIA_confidential/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/jti-0603-wirewoundI-nd-2011/lib.defs
+INCLUDE $HOME/svn/EAIII_Radar/VCO/Simulacion/modelos/jti-0603-wirewoundI-nd-2011/lib.defs

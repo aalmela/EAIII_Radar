@@ -1,0 +1,28 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR443QR73D102KW01","1:GR443QR73D102KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","GR443QR73D102KW01");
+create_constant_form("GR443QR73D222KW01","2:GR443QR73D222KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 2200[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","GR443QR73D222KW01");
+create_constant_form("GR443QR73D332KW01","3:GR443QR73D332KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 3300[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","GR443QR73D332KW01");
+create_constant_form("GR443DR73D472KW01","4:GR443DR73D472KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 4700[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","GR443DR73D472KW01");
+
+create_form_set("GR443_list" 
+,"GR443QR73D102KW01"
+,"GR443QR73D222KW01"
+,"GR443QR73D332KW01"
+,"GR443DR73D472KW01"
+);
+
+create_compound_form("GR443_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR443_list",-1,prm("GR443QR73D102KW01")),
+create_parm("MIN","Minimum",32,"GR443_list",-1,prm("GR443QR73D102KW01")),
+create_parm("MAX","Maximum",32,"GR443_list",-1,prm("GR443DR73D472KW01")));
+
+create_form_set("GR443_list_opt","NULL" 
+,"GR443QR73D102KW01"
+,"GR443QR73D222KW01"
+,"GR443QR73D332KW01"
+,"GR443DR73D472KW01"
+,"GR443_compound"
+);
+
+
+

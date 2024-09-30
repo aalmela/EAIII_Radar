@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+
+   <COMPONENT>
+      <NAME>BFP405</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceb2cb635d</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP405F</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cec037635f</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP405F_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cec037635f</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP405_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceb2cb635d</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP410</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044252f0d6f01256effb7b7291a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP410_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044252f0d6f01256effb7b7291a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP420</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cec25d6360</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP420F</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cecb2f6364</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP420F_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cecb2f6364</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP420_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cec25d6360</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP460</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ced7936368</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP460_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ced7936368</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP520</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cedbc0636a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP520_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cedbc0636a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cedfd0636c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540ESD</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cee1d9636d</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540ESD_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cee1d9636d</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540FESD</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cee3dc636e</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540FESD_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cee3dc636e</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP540_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9cedfd0636c</URL>
+   </COMPONENT>
+
+</COMPONENTS>
+

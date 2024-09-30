@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      AlejandroAlmela
+HostName                       DESKTOP-LHADK87
+ProcessIdentifier              3460
+ProcessCreationTime_UTC        1724361311
+ProcessCreationTime_Readable   Thu Aug 22 18:15:11 2024 Hora estándar de Argentina
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\AlejandroAlmela\svn\EAIII_Radar\PA\Simulacion\PA_BFU590_wrk\PA_BFU590_lib\%H%B1%Tone%Pswp\schematic\sch.oa.cdslck
+TimeEditLocked                 Thu Aug 22 18:15:28 2024 Hora estándar de Argentina

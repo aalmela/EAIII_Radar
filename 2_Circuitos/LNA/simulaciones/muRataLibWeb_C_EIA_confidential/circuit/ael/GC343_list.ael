@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GC343DD72J683KX01","1:GC343DD72J683KX01, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 630[V], 68000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","GC343DD72J683KX01");
+create_constant_form("GC343DD72W154KX01","2:GC343DD72W154KX01, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 450[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:2",68,"2","GC343DD72W154KX01");
+create_constant_form("GC343DD7LQ154KX18","3:GC343DD7LQ154KX18, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 630[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:3",68,"3","GC343DD7LQ154KX18");
+create_constant_form("GC343QD72E224KX01","4:GC343QD72E224KX01, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 250[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:4",68,"4","GC343QD72E224KX01");
+create_constant_form("GC343QD7LP224KX18","5:GC343QD7LP224KX18, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 450[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:5",68,"5","GC343QD7LP224KX18");
+create_constant_form("GC343DD72E334KX01","6:GC343DD72E334KX01, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 250[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:6",68,"6","GC343DD72E334KX01");
+create_constant_form("GC343DD7LP334KX18","7:GC343DD7LP334KX18, 200V and over/ Automotive [AEC-Q200], X7T(-55to125[deg]), 450[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:7",68,"7","GC343DD7LP334KX18");
+
+create_form_set("GC343_list" 
+,"GC343DD72J683KX01"
+,"GC343DD72W154KX01"
+,"GC343DD7LQ154KX18"
+,"GC343QD72E224KX01"
+,"GC343QD7LP224KX18"
+,"GC343DD72E334KX01"
+,"GC343DD7LP334KX18"
+);
+
+create_compound_form("GC343_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GC343_list",-1,prm("GC343DD72J683KX01")),
+create_parm("MIN","Minimum",32,"GC343_list",-1,prm("GC343DD72J683KX01")),
+create_parm("MAX","Maximum",32,"GC343_list",-1,prm("GC343DD7LP334KX18")));
+
+create_form_set("GC343_list_opt","NULL" 
+,"GC343DD72J683KX01"
+,"GC343DD72W154KX01"
+,"GC343DD7LQ154KX18"
+,"GC343QD72E224KX01"
+,"GC343QD7LP224KX18"
+,"GC343DD72E334KX01"
+,"GC343DD7LP334KX18"
+,"GC343_compound"
+);
+
+
+

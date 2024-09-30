@@ -1,0 +1,31 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.nmb
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc12/drc/jh_pc12.nmb"
+.argdefine 1 1
+.argdefine 2 2
+.argdefine 3 3
+.argdefine 4 4
+
+.stream defpath 1 "" "$LLC_RULES_DIR" "$LLC_RESULTS_DIR" "$JADE_LIBRARY";
+.stream setpath 1
+.stream showpath 0
+
+.stream include primes.tek
+.stream include jh_pc12.llc_device_parameters
+.stream include jh_pc12.llc_library
+.stream include jh_pc12.llc_analysis
+.stream include jh_pc12.llc_correspondence
+.stream include jh_pc12.llc_netclass
+.stream include jh_pc12.llc_clustering
+.stream include jh_pc12.llc_signature
+ppm finalreport end_ppm
+.stream include jh_pc12.llc_grx
+.stream include jh_pc12.llc_jh2opal
+.stream include jh_pc12.llc_netlist
+
+exit
+.abort
+.stream return

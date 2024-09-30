@@ -1,0 +1,28 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLE32PN260SH1","1:BLE32PN260SH1, DC Bias Characteristics Improved Type, 10000[mA], 1[MHz]-3[GHz]:1",68,"1","BLE32PN260SH1");
+create_constant_form("BLE32PN260SZ1","2:BLE32PN260SZ1, DC Bias Characteristics Improved Type, 10000[mA], 1[MHz]-3[GHz]:2",68,"2","BLE32PN260SZ1");
+create_constant_form("BLE32PN300SH1","3:BLE32PN300SH1, DC Bias Characteristics Improved Type, 10000[mA], 1[MHz]-3[GHz]:3",68,"3","BLE32PN300SH1");
+create_constant_form("BLE32PN300SZ1","4:BLE32PN300SZ1, DC Bias Characteristics Improved Type, 10000[mA], 1[MHz]-3[GHz]:4",68,"4","BLE32PN300SZ1");
+
+create_form_set("BLE32PN_list" 
+,"BLE32PN260SH1"
+,"BLE32PN260SZ1"
+,"BLE32PN300SH1"
+,"BLE32PN300SZ1"
+);
+
+create_compound_form("BLE32PN_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLE32PN_list",-1,prm("BLE32PN260SH1")),
+create_parm("MIN","Minimum",32,"BLE32PN_list",-1,prm("BLE32PN260SH1")),
+create_parm("MAX","Maximum",32,"BLE32PN_list",-1,prm("BLE32PN300SZ1")));
+
+create_form_set("BLE32PN_list_opt","NULL" 
+,"BLE32PN260SH1"
+,"BLE32PN260SZ1"
+,"BLE32PN300SH1"
+,"BLE32PN300SZ1"
+,"BLE32PN_compound"
+);
+
+
+

@@ -1,0 +1,19 @@
+<EECADAdsLayerMapFile>
+    <Layers>
+        <Layers>
+            <Layer DXFLayer="Default" ADSLayer="default" />
+            <Layer DXFLayer="Package" ADSLayer="packages" />
+            <Layer DXFLayer="Leads" ADSLayer="leads" />
+            <Layer DXFLayer="Annotation" ADSLayer="ads_annotate" />
+            <Layer DXFLayer="Copper" ADSLayer="cond" />
+            <Layer DXFLayer="SolderMask" ADSLayer="solder_mask" />
+            <Layer DXFLayer="SolderPaste" ADSLayer="default" />
+            <Layer DXFLayer="SilkScreen" ADSLayer="silkscreen" />
+            <Layer DXFLayer="KeepOut" ADSLayer="case_dimensions" />
+            <Layer DXFLayer="Docu" ADSLayer="symbol" />
+            <Layer DXFLayer="99_1_0" ADSLayer="Mismatch" />
+            <Layer DXFLayer="99_3_0" ADSLayer="Mismatch" />
+            <Layer DXFLayer="99_2_0" ADSLayer="Mismatch" />
+        </Layers>
+    </Layers>
+</EECADAdsLayerMapFile>

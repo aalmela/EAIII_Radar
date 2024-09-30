@@ -1,0 +1,75 @@
+; Top Design: "PA_BFU590_lib:HB1TonePswp:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PA_BFU590_lib:HB1TonePswp:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: PA_BFU590_lib
+; Cell Name: Sample_PA
+; View Name: schematic
+define Sample_PA ( INPUT  OUTPUT  vdbias  vgbias ) 
+;parameters 
+C:C2  vdbias 0 C=1.0 uF 
+L:L2  vdbias OUTPUT L=18 nH Noise=yes  
+C:C1  vgbias 0 C=1 uF 
+L:L1  vgbias INPUT L=470 nH Noise=yes  
+Short:I_Probe1  OUTPUT N__25 Mode=0 SaveCurrent=yes 
+#uselib "BFU5XX_family_design_kit_v2" , "bfu5xx_v2_lib_BFU580Q_schematic"
+"bfu5xx_v2_lib_BFU580Q_schematic":X1  INPUT N__25 0 
+end Sample_PA
+
+HB:HB1 MaxOrder=4 Freq[1]=RFfreq Order[1]=5 StatusLevel=2 FundOversample=1 \
+Restart=no OutputBudgetIV=no \
+HBSS_WSP=0 SS_Freq=1.0 kHz SweepVar="RFpower" SweepPlan="Coarse" OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      EquationName[1]="Zload" \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=RFfreq Order[1]=5 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+Sample_PA:X1  N__9 N__7 Vinput N__0 
+Short:Iload  N__12 Vload Mode=0 SaveCurrent=yes 
+
+global RFpower=10
+Port:PORT1  Vi 0 Num=1 Z=50 Ohm P[1]=dbmtow(RFpower) Freq[1]=RFfreq    Noise=yes 
+Port:Term1  Vload 0 Num=2 Z=Zload Noise=yes 
+
+RFfreq=862 MHz
+Zload=50
+V_Source:SRC2  N__0 0 Type="V_DC" Vdc=0.8 V SaveCurrent=1 
+V_Source:SRC1  N__2 0 Type="V_DC" Vdc=8 V SaveCurrent=1 
+
+SweepPlan:Coarse SweepPlan[1]="Coarse_seg1" SweepPlan[2]="Coarse__Fine"  
+SweepPlan:Coarse__Fine Sort=no Reverse=no SweepPlan="Fine"
+SweepPlan:Coarse_seg1 Start=-20 Stop=10 Step=5 
+aele Pdel_W=0.5*real(Vload[1]*conj(Iload.i[1]));Pdel_dBm=10*log(Pdel_W)+30;P_In_Watts=0.5*real(Vinput[1]*conj(I_input.i[1]));Gain_Transducer=Pdel_dBm-RFpower;
+Short:DC_Block2  N__5 N__12 Mode=1 
+Short:I_input  N__2 Vinput Mode=0 SaveCurrent=yes 
+Short:DC_Block1  Vi N__13 Mode=1 
+C:C1  N__13 N__6 C=100 pF 
+C:C2  N__6 0 C=3.3 pF 
+C:C3  N__1 N__5 C=100 pF 
+L:L1  N__6 N__9 L=1.5 nH Noise=yes  
+L:L2  N__7 N__1 L=6.8 nH Noise=yes  
+
+SweepPlan:Fine SweepPlan[1]="Fine_seg1" 
+SweepPlan:Fine_seg1 Start=11 Stop=26 Step=2 
+I_Source:SRC3  0 Vload Type="I_1Tone" I[1]=0 Freq[1]=RFfreq  I_USB[1]=1 A  Iac=polar(1,0) mA 

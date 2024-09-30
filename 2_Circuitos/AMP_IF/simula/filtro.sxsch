@@ -1,0 +1,815 @@
+SIMetrixFile type=schematic format=1.0 revision=9
+.Component
+.Schematic
+.SymbolLibrary
+.Symbol
+Attributes format="1.0" revision=9 name="cap" description="Capacitor" catalog="Passives" track=1
+FilledPoly x="0,-71,-71,71,71,0" y="72,72,95,95,72,72"
+FilledPoly x="0,71,71,-71,-71,0" y="167,167,144,144,167,167"
+Segment x1=0 y1=72 x2=0 y2=0
+Segment x1=-72 y1=72 x2=72 y2=72
+Segment x1=-72 y1=72 x2=-72 y2=96
+Segment x1=72 y1=96 x2=72 y2=72
+Segment x1=-72 y1=96 x2=72 y2=96
+Segment x1=-72 y1=144 x2=72 y2=144
+Segment x1=-72 y1=168 x2=-72 y2=144
+Segment x1=72 y1=144 x2=72 y2=168
+Segment x1=-72 y1=168 x2=72 y2=168
+Segment x1=0 y1=168 x2=0 y2=240
+Pin name="N" order=2 x=0 y=240 visible=0
+Pin name="P" order=1 x=0 y=0 visible=0
+Property name="DECSCRIPT" value="inc_dec_passive 1" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INCSCRIPT" value="inc_dec_passive 0" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="PARAMSSCRIPT" value="params_capacitor" autopos=0 x=0 y=900 align="LeftTop" protected=1 visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="REF" value="C?" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="SIMULATOR" value="DUAL" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="TEMPLATE" value="<ref> <nodelist> <value> <paramsvalue> %FORM% <ifd:FORM:ICMODE=0>" autopos=0 x=0 y=360 align="LeftBase" protected=1 visible=0 font="Default"
+Property name="VALUE" value="1n" autopos=1 normal="Right" rotated="Top" font="Default"
+Property name="VALUESCRIPT" value="edit_reactive" autopos=0 x=0 y=600 align="LeftBase" protected=1 visible=0 font="Default"
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="gnd" description="Ground" catalog="Connections;Terminals" track=1
+Segment x1=0 y1=0 x2=0 y2=120
+Segment x1=-120 y1=120 x2=120 y2=120
+Segment x1=-72 y1=156 x2=72 y2=156
+Segment x1=-24 y1=192 x2=24 y2=192
+Pin name="GND" order=1 x=0 y=0 visible=0
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value=0 autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="opamp" description="Operational Amplifier - 5 terminal" catalog="Analog;Amplifiers/Buffers/Comparators" track=1
+Segment x1=0 y1=0 x2=360 y2=240
+Segment x1=0 y1=0 x2=0 y2=480
+Segment x1=240 y1=156 x2=240 y2=0
+Segment x1=294 y1=36 x2=294 y2=84
+Segment x1=270 y1=60 x2=318 y2=60
+Segment x1=60 y1=96 x2=60 y2=144
+Segment x1=-120 y1=120 x2=0 y2=120
+Segment x1=36 y1=120 x2=84 y2=120
+Segment x1=0 y1=480 x2=360 y2=240
+Segment x1=240 y1=324 x2=240 y2=480
+Segment x1=-120 y1=360 x2=0 y2=360
+Segment x1=42 y1=360 x2=78 y2=360
+Segment x1=276 y1=420 x2=312 y2=420
+Pin name="inn" order=2 x=-120 y=360 visible=0
+Pin name="inp" order=1 x=-120 y=120 visible=0
+Pin name="out" order=5 x=360 y=240 visible=0
+Pin name="vsn" order=4 x=240 y=480 visible=0
+Pin name="vsp" order=3 x=240 y=0 visible=0
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="X?" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="VALUE" value="TL072" autopos=1 normal="Bottom" rotated="Right" font="Default" order=2
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="res" description="Resistor (Box shape)" catalog="Passives" track=1
+Segment x1=0 y1=90 x2=0 y2=0
+Segment x1=-36 y1=90 x2=36 y2=90
+Segment x1=-36 y1=270 x2=-36 y2=90
+Segment x1=36 y1=90 x2=36 y2=270
+Segment x1=36 y1=270 x2=-36 y2=270
+Segment x1=0 y1=270 x2=0 y2=360
+Pin name="N" order=2 x=0 y=360 visible=0
+Pin name="P" order=1 x=0 y=0 visible=0
+Property name="DECSCRIPT" value="inc_dec_passive 1" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="INCSCRIPT" value="inc_dec_passive 0" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R?" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMULATOR" value="DUAL" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="VALUE" value="1K" autopos=1 normal="Right" rotated="Top" font="Default"
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="vsrc" description="Fixed Voltage Source" catalog="Sources" track=1
+Arc l=-120 t=120 r=120 b=360 x1=0 y1=360 x2=0 y2=360
+Segment x1=0 y1=0 x2=0 y2=120
+Segment x1=0 y1=156 x2=0 y2=204
+Segment x1=-24 y1=180 x2=24 y2=180
+Segment x1=0 y1=360 x2=0 y2=480
+Pin name="N" order=2 x=0 y=480 visible=0
+Pin name="P" order=1 x=0 y=0 visible=0
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value=5 autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V?" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+.EndSymbol
+.EndSymbolLibrary
+.StyleLibrary
+.EndStyleLibrary
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=360 y=2160 orient="N0"
+Property name="guid" value="{29eb3f73-e894-4693-b97a-fd5b459df212}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=960 y=960 orient="N0"
+Property name="guid" value="{5d480583-d6da-48c5-9867-1e7ac0248572}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=1440 y=3240 orient="N0"
+Property name="guid" value="{63382e5c-5e09-48ae-8ac3-d80f341d0877}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=2280 y=1920 orient="N0"
+Property name="guid" value="{5d9195c1-b262-48b3-8ccd-ce2d346bee24}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=4800 y=1920 orient="N0"
+Property name="guid" value="{2c94126c-5120-49bd-a64f-9b4b701e83d8}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=7080 y=1920 orient="N0"
+Property name="guid" value="{5d9195c1-b262-48b3-8ccd-ce2d346bee24}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Netnames pin1=0
+.EndInstance
+.Instance
+Attributes name="cap" type="symbol" selected=0 x=1440 y=1680 orient="N0"
+Property name="guid" value="{90988347-68a4-4014-a7f2-ddf0be6bff8d}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="REF" value="C1" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="5.6n" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R1_P" pin2="C1_N"
+.EndInstance
+.Instance
+Attributes name="cap" type="symbol" selected=0 x=3720 y=1080 orient="N90"
+Property name="guid" value="{38066afd-d108-4155-89ae-4e5abb0a83de}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="REF" value="C2" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="5.6n" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="C2_P" pin2="R2_N"
+.EndInstance
+.Instance
+Attributes name="cap" type="symbol" selected=0 x=3960 y=1800 orient="N0"
+Property name="guid" value="{deabfa86-a0ba-462a-9a2b-aece418fe6ff}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="REF" value="C3" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="2.7n" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R2_P" pin2="C1_N"
+.EndInstance
+.Instance
+Attributes name="cap" type="symbol" selected=0 x=6000 y=1080 orient="N90"
+Property name="guid" value="{7ee286dc-f187-4af1-9f4c-fe75ef5f3882}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="ref" value="C4" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="5.6n" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="C4_P" pin2="R4_N"
+.EndInstance
+.Instance
+Attributes name="cap" type="symbol" selected=0 x=6240 y=1800 orient="N0"
+Property name="guid" value="{8ec31bbd-a851-4f3f-a994-313860b018c1}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align="LeftTop" visible=0 font="Default"
+Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align="LeftBase" visible=0 font="Default"
+Property name="MODEL" value="C" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align="CentreBase" visible=0 font="User2" overridestyle="PropertySmall"
+Property name="ref" value="C5" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align="LeftBase" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="470p" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R4_P" pin2="C1_N"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=1320 y=1560 orient="N90"
+Property name="guid" value="{5a89df7a-a431-44db-9771-3b786631a221}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R1" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="2.7k" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R1_P" pin2="V5_P"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=3840 y=1560 orient="N90"
+Property name="guid" value="{e03fe2ce-48b4-4aa6-84a1-580baed43051}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R2" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="6.8k" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R2_P" pin2="R2_N"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=3120 y=1680 orient="N90"
+Property name="guid" value="{05d51381-7a56-4f4e-b7f3-05c1fe5d9e73}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R3" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="2.2k" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R2_N" pin2="X1_out"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=6120 y=1560 orient="N90"
+Property name="guid" value="{ec9c9b01-a887-4a52-baa0-402abafafee0}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="ref" value="R4" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="15k" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R4_P" pin2="R4_N"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=5400 y=1680 orient="N90"
+Property name="guid" value="{8e1306f2-f2d8-479f-8884-c2caa8ba8faa}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="ref" value="R5" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="6.8k" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R4_N" pin2="C2_P"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=1800 y=2280 orient="N0"
+Property name="guid" value="{533152d5-46d4-42d0-a6ff-a0c599ca4c78}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R6" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="1K" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="R7_N" pin2="C1_N"
+.EndInstance
+.Instance
+Attributes name="res" type="symbol" selected=0 x=2520 y=2280 orient="N90"
+Property name="guid" value="{bceb1aad-3e92-4eda-82c4-98762d4cdf56}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="R" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="R7" autopos=1 normal="Right" rotated="Bottom" font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value="1K" autopos=1 normal="Right" rotated="Top" font="Default"
+Netnames pin1="X1_out" pin2="R7_N"
+.EndInstance
+.Instance
+Attributes name="vsrc" type="symbol" selected=0 x=1440 y=2760 orient="N0"
+Property name="guid" value="{47129cf3-1103-4af9-b69d-b73a03673c03}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value="2.5" autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V1" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+Netnames pin1="C1_N" pin2=0
+.EndInstance
+.Instance
+Attributes name="vsrc" type="symbol" selected=0 x=960 y=480 orient="N0"
+Property name="guid" value="{a6ffea38-7cdb-42b6-b83b-7daeae4a5c98}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value=5 autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V4" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+Netnames pin1="V4_P" pin2=0
+.EndInstance
+.Instance
+Attributes name="vsrc" type="symbol" selected=0 x=360 y=1680 orient="N0"
+Property name="guid" value="{0d72a3bf-a157-48d8-a5e6-da12c85b01ef}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="value" value=" AC 10m 0" autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V5" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+Netnames pin1="V5_P" pin2=0
+.EndInstance
+.Instance
+Attributes name="opamp" type="symbol" selected=0 x=2040 y=1440 orient="N0"
+Property name="guid" value="{a66ed089-45f8-4d12-bec4-7291161f846c}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="X1" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="value" value="MCP6486" autopos=1 normal="Bottom" rotated="Right" font="Default" order=2
+Netnames pin1="R1_P" pin2="R7_N" pin3="V4_P" pin4=0 pin5="X1_out"
+.EndInstance
+.Instance
+Attributes name="opamp" type="symbol" selected=0 x=4560 y=1440 orient="N0"
+Property name="guid" value="{2293904b-9b9e-45ef-9f6f-aed8689a2eb8}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="ref" value="X2" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="value" value="MCP6486" autopos=1 normal="Bottom" rotated="Right" font="Default" order=2
+Netnames pin1="R2_P" pin2="C2_P" pin3="V4_P" pin4=0 pin5="C2_P"
+.EndInstance
+.Instance
+Attributes name="opamp" type="symbol" selected=0 x=6840 y=1440 orient="N0"
+Property name="guid" value="{f23890f5-720f-4fb0-85f1-246d3dce69f0}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="ref" value="X3" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="value" value="MCP6486" autopos=1 normal="Bottom" rotated="Right" font="Default" order=2
+Netnames pin1="R4_P" pin2="C4_P" pin3="V4_P" pin4=0 pin5="C4_P"
+.EndInstance
+Wire net="V5_P" branch="+:V5#P" x1=360 y1=1560 x2=360 y2=1680
+.Wire
+Attributes x1=360 y1=1560 x2=360 y2=1680
+Property name="BranchFormula" value="+:V5#P" visible=0
+Property name="NetName" value="V5_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V5_P" branch="+:R1#N" x1=360 y1=1560 x2=960 y2=1560
+.Wire
+Attributes x1=360 y1=1560 x2=960 y2=1560
+Property name="BranchFormula" value="+:R1#N" visible=0
+Property name="NetName" value="V5_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:V4#P" x1=960 y1=360 x2=960 y2=480
+.Wire
+Attributes x1=960 y1=360 x2=960 y2=480
+Property name="BranchFormula" value="+:V4#P" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X3#vsp+:X2#vsp+:X1#vsp" x1=960 y1=360 x2=2280 y2=360
+.Wire
+Attributes x1=960 y1=360 x2=2280 y2=360
+Property name="BranchFormula" value="+:X3#vsp+:X2#vsp+:X1#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R1_P" branch="-:R1#P" x1=1320 y1=1560 x2=1440 y2=1560
+.Wire
+Attributes x1=1320 y1=1560 x2=1440 y2=1560
+Property name="BranchFormula" value="-:R1#P" visible=0
+Property name="NetName" value="R1_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R1_P" branch="+:C1#P" x1=1440 y1=1560 x2=1440 y2=1680
+.Wire
+Attributes x1=1440 y1=1560 x2=1440 y2=1680
+Property name="BranchFormula" value="+:C1#P" visible=0
+Property name="NetName" value="R1_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R1_P" branch="+:X1#inp" x1=1440 y1=1560 x2=1920 y2=1560
+.Wire
+Attributes x1=1440 y1=1560 x2=1920 y2=1560
+Property name="BranchFormula" value="+:X1#inp" visible=0
+Property name="NetName" value="R1_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="-:C1#N" x1=1440 y1=1920 x2=1440 y2=2640
+.Wire
+Attributes x1=1440 y1=1920 x2=1440 y2=2640
+Property name="BranchFormula" value="-:C1#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="+:V1#P" x1=1440 y1=2640 x2=1440 y2=2760
+.Wire
+Attributes x1=1440 y1=2640 x2=1440 y2=2760
+Property name="BranchFormula" value="+:V1#P" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="+:R6#N+:C5#N+:C3#N" x1=1440 y1=2640 x2=1800 y2=2640
+.Wire
+Attributes x1=1440 y1=2640 x2=1800 y2=2640
+Property name="BranchFormula" value="+:R6#N+:C5#N+:C3#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R7_N" branch="+:R6#P+:R7#N" x1=1800 y1=1800 x2=1800 y2=2280
+.Wire
+Attributes x1=1800 y1=1800 x2=1800 y2=2280
+Property name="BranchFormula" value="+:R6#P+:R7#N" visible=0
+Property name="NetName" value="R7_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R7_N" branch="+:X1#inn" x1=1800 y1=1800 x2=1920 y2=1800
+.Wire
+Attributes x1=1800 y1=1800 x2=1920 y2=1800
+Property name="BranchFormula" value="+:X1#inn" visible=0
+Property name="NetName" value="R7_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R7_N" branch="+:R7#N" x1=1800 y1=2280 x2=2160 y2=2280
+.Wire
+Attributes x1=1800 y1=2280 x2=2160 y2=2280
+Property name="BranchFormula" value="+:R7#N" visible=0
+Property name="NetName" value="R7_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="+:C5#N+:C3#N" x1=1800 y1=2640 x2=3960 y2=2640
+.Wire
+Attributes x1=1800 y1=2640 x2=3960 y2=2640
+Property name="BranchFormula" value="+:C5#N+:C3#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X1#vsp" x1=2280 y1=360 x2=2280 y2=1440
+.Wire
+Attributes x1=2280 y1=360 x2=2280 y2=1440
+Property name="BranchFormula" value="+:X1#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X3#vsp+:X2#vsp" x1=2280 y1=360 x2=4800 y2=360
+.Wire
+Attributes x1=2280 y1=360 x2=4800 y2=360
+Property name="BranchFormula" value="+:X3#vsp+:X2#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="X1_out" branch="-:X1#out" x1=2400 y1=1680 x2=2640 y2=1680
+.Wire
+Attributes x1=2400 y1=1680 x2=2640 y2=1680
+Property name="BranchFormula" value="-:X1#out" visible=0
+Property name="NetName" value="X1_out" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="X1_out" branch="-:R7#P" x1=2520 y1=2280 x2=2640 y2=2280
+.Wire
+Attributes x1=2520 y1=2280 x2=2640 y2=2280
+Property name="BranchFormula" value="-:R7#P" visible=0
+Property name="NetName" value="X1_out" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="X1_out" branch="+:R7#P" x1=2640 y1=1680 x2=2640 y2=2280
+.Wire
+Attributes x1=2640 y1=1680 x2=2640 y2=2280
+Property name="BranchFormula" value="+:R7#P" visible=0
+Property name="NetName" value="X1_out" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="X1_out" branch="+:R3#N" x1=2640 y1=1680 x2=2760 y2=1680
+.Wire
+Attributes x1=2640 y1=1680 x2=2760 y2=1680
+Property name="BranchFormula" value="+:R3#N" visible=0
+Property name="NetName" value="X1_out" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_N" branch="-:R3#P" x1=3120 y1=1680 x2=3240 y2=1680
+.Wire
+Attributes x1=3120 y1=1680 x2=3240 y2=1680
+Property name="BranchFormula" value="-:R3#P" visible=0
+Property name="NetName" value="R2_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_N" branch="+:R3#P+:R2#N" x1=3240 y1=1080 x2=3240 y2=1680
+.Wire
+Attributes x1=3240 y1=1080 x2=3240 y2=1680
+Property name="BranchFormula" value="+:R3#P+:R2#N" visible=0
+Property name="NetName" value="R2_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_N" branch="+:C2#N" x1=3240 y1=1080 x2=3480 y2=1080
+.Wire
+Attributes x1=3240 y1=1080 x2=3480 y2=1080
+Property name="BranchFormula" value="+:C2#N" visible=0
+Property name="NetName" value="R2_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_N" branch="+:R2#N" x1=3240 y1=1680 x2=3480 y2=1680
+.Wire
+Attributes x1=3240 y1=1680 x2=3480 y2=1680
+Property name="BranchFormula" value="+:R2#N" visible=0
+Property name="NetName" value="R2_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_N" branch="-:R2#N" x1=3480 y1=1560 x2=3480 y2=1680
+.Wire
+Attributes x1=3480 y1=1560 x2=3480 y2=1680
+Property name="BranchFormula" value="-:R2#N" visible=0
+Property name="NetName" value="R2_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="-:C2#P" x1=3720 y1=1080 x2=5040 y2=1080
+.Wire
+Attributes x1=3720 y1=1080 x2=5040 y2=1080
+Property name="BranchFormula" value="-:C2#P" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_P" branch="-:R2#P" x1=3840 y1=1560 x2=3960 y2=1560
+.Wire
+Attributes x1=3840 y1=1560 x2=3960 y2=1560
+Property name="BranchFormula" value="-:R2#P" visible=0
+Property name="NetName" value="R2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_P" branch="+:C3#P" x1=3960 y1=1560 x2=3960 y2=1800
+.Wire
+Attributes x1=3960 y1=1560 x2=3960 y2=1800
+Property name="BranchFormula" value="+:C3#P" visible=0
+Property name="NetName" value="R2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R2_P" branch="+:X2#inp" x1=3960 y1=1560 x2=4440 y2=1560
+.Wire
+Attributes x1=3960 y1=1560 x2=4440 y2=1560
+Property name="BranchFormula" value="+:X2#inp" visible=0
+Property name="NetName" value="R2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="-:C3#N" x1=3960 y1=2040 x2=3960 y2=2640
+.Wire
+Attributes x1=3960 y1=2040 x2=3960 y2=2640
+Property name="BranchFormula" value="-:C3#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="+:C5#N" x1=3960 y1=2640 x2=6240 y2=2640
+.Wire
+Attributes x1=3960 y1=2640 x2=6240 y2=2640
+Property name="BranchFormula" value="+:C5#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="-:X2#inn" x1=4320 y1=1800 x2=4320 y2=2280
+.Wire
+Attributes x1=4320 y1=1800 x2=4320 y2=2280
+Property name="BranchFormula" value="-:X2#inn" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="+:X2#inn" x1=4320 y1=1800 x2=4440 y2=1800
+.Wire
+Attributes x1=4320 y1=1800 x2=4440 y2=1800
+Property name="BranchFormula" value="+:X2#inn" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="-:X2#inn" x1=4320 y1=2280 x2=5040 y2=2280
+.Wire
+Attributes x1=4320 y1=2280 x2=5040 y2=2280
+Property name="BranchFormula" value="-:X2#inn" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X2#vsp" x1=4800 y1=360 x2=4800 y2=1440
+.Wire
+Attributes x1=4800 y1=360 x2=4800 y2=1440
+Property name="BranchFormula" value="+:X2#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X3#vsp" x1=4800 y1=360 x2=7080 y2=360
+.Wire
+Attributes x1=4800 y1=360 x2=7080 y2=360
+Property name="BranchFormula" value="+:X3#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="-:X2#out" x1=4920 y1=1680 x2=5040 y2=1680
+.Wire
+Attributes x1=4920 y1=1680 x2=5040 y2=1680
+Property name="BranchFormula" value="-:X2#out" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="+:R5#N+:X2#out+:X2#inn" x1=5040 y1=1080 x2=5040 y2=1680
+.Wire
+Attributes x1=5040 y1=1080 x2=5040 y2=1680
+Property name="BranchFormula" value="+:R5#N+:X2#out+:X2#inn" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C2_P" branch="+:X2#inn" x1=5040 y1=1680 x2=5040 y2=2280
+.Wire
+Attributes x1=5040 y1=1680 x2=5040 y2=2280
+Property name="BranchFormula" value="+:X2#inn" visible=0
+Property name="NetName" value="C2_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_N" branch="-:R5#P" x1=5400 y1=1680 x2=5520 y2=1680
+.Wire
+Attributes x1=5400 y1=1680 x2=5520 y2=1680
+Property name="BranchFormula" value="-:R5#P" visible=0
+Property name="NetName" value="R4_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_N" branch="+:R5#P+:R4#N" x1=5520 y1=1080 x2=5520 y2=1680
+.Wire
+Attributes x1=5520 y1=1080 x2=5520 y2=1680
+Property name="BranchFormula" value="+:R5#P+:R4#N" visible=0
+Property name="NetName" value="R4_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_N" branch="+:C4#N" x1=5520 y1=1080 x2=5760 y2=1080
+.Wire
+Attributes x1=5520 y1=1080 x2=5760 y2=1080
+Property name="BranchFormula" value="+:C4#N" visible=0
+Property name="NetName" value="R4_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_N" branch="+:R4#N" x1=5520 y1=1680 x2=5760 y2=1680
+.Wire
+Attributes x1=5520 y1=1680 x2=5760 y2=1680
+Property name="BranchFormula" value="+:R4#N" visible=0
+Property name="NetName" value="R4_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_N" branch="-:R4#N" x1=5760 y1=1560 x2=5760 y2=1680
+.Wire
+Attributes x1=5760 y1=1560 x2=5760 y2=1680
+Property name="BranchFormula" value="-:R4#N" visible=0
+Property name="NetName" value="R4_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="-:C4#P" x1=6000 y1=1080 x2=7320 y2=1080
+.Wire
+Attributes x1=6000 y1=1080 x2=7320 y2=1080
+Property name="BranchFormula" value="-:C4#P" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_P" branch="-:R4#P" x1=6120 y1=1560 x2=6240 y2=1560
+.Wire
+Attributes x1=6120 y1=1560 x2=6240 y2=1560
+Property name="BranchFormula" value="-:R4#P" visible=0
+Property name="NetName" value="R4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_P" branch="+:C5#P" x1=6240 y1=1560 x2=6240 y2=1800
+.Wire
+Attributes x1=6240 y1=1560 x2=6240 y2=1800
+Property name="BranchFormula" value="+:C5#P" visible=0
+Property name="NetName" value="R4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="R4_P" branch="+:X3#inp" x1=6240 y1=1560 x2=6720 y2=1560
+.Wire
+Attributes x1=6240 y1=1560 x2=6720 y2=1560
+Property name="BranchFormula" value="+:X3#inp" visible=0
+Property name="NetName" value="R4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C1_N" branch="-:C5#N" x1=6240 y1=2040 x2=6240 y2=2640
+.Wire
+Attributes x1=6240 y1=2040 x2=6240 y2=2640
+Property name="BranchFormula" value="-:C5#N" visible=0
+Property name="NetName" value="C1_N" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="-:X3#inn" x1=6600 y1=1800 x2=6600 y2=2280
+.Wire
+Attributes x1=6600 y1=1800 x2=6600 y2=2280
+Property name="BranchFormula" value="-:X3#inn" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="+:X3#inn" x1=6600 y1=1800 x2=6720 y2=1800
+.Wire
+Attributes x1=6600 y1=1800 x2=6720 y2=1800
+Property name="BranchFormula" value="+:X3#inn" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="-:X3#inn" x1=6600 y1=2280 x2=7320 y2=2280
+.Wire
+Attributes x1=6600 y1=2280 x2=7320 y2=2280
+Property name="BranchFormula" value="-:X3#inn" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="V4_P" branch="+:X3#vsp" x1=7080 y1=360 x2=7080 y2=1440
+.Wire
+Attributes x1=7080 y1=360 x2=7080 y2=1440
+Property name="BranchFormula" value="+:X3#vsp" visible=0
+Property name="NetName" value="V4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="-:X3#out" x1=7200 y1=1680 x2=7320 y2=1680
+.Wire
+Attributes x1=7200 y1=1680 x2=7320 y2=1680
+Property name="BranchFormula" value="-:X3#out" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="-:C4#P" x1=7320 y1=1080 x2=7320 y2=1680
+.Wire
+Attributes x1=7320 y1=1080 x2=7320 y2=1680
+Property name="BranchFormula" value="-:C4#P" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="+:X3#inn" x1=7320 y1=1680 x2=7320 y2=2280
+.Wire
+Attributes x1=7320 y1=1680 x2=7320 y2=2280
+Property name="BranchFormula" value="+:X3#inn" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire net="C4_P" branch="" x1=7320 y1=1680 x2=7560 y2=1680
+.Wire
+Attributes x1=7320 y1=1680 x2=7560 y2=1680
+Property name="BranchFormula" value="" visible=0
+Property name="NetName" value="C4_P" visible=0
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Text value=".simulator SIMETRIX\n.ac dec 200 100m 1000000\n.simulator DEFAULT\n"
+LicenseInfo version="9.10q" feats="Basic|Micron|Schematic|Advanced|Multistep|Monte|Sim|Plugindevices|Demo|Rtn|SIMPLIS_IF|beta" serial="unknown" user="unknown" code="unknown" binarch="x64" system="WINNT/10.0/x64/16735670272/4/1/8/223268386" product="MPLAB Mindi"
+SimulatorMode value="simetrix"
+View x=86 y=196 snapgrid=120 offsetx=503 offsety=519 zoomlevel=31 zoom=9
+Property name="CreateProduct" value="MPLAB® Mindi™ Analog Simulator" type="value"
+Property name="GUID" value="{e57423fb-ac7b-462c-a9c7-c7b95eb5eed1}" type="value"
+Property name="UserVersion" value=2 type="value"
+Property name="WriteLog" value="2/2/81405/81405" type="value"
+.EndSchematic
+.EndComponent

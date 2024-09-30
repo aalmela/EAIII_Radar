@@ -1,0 +1,51 @@
+; Top Design: "MyLibrary1_lib:cell_2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary1_lib:cell_2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#uselib "BFU5XX_family_design_kit_v2" , "bfu5xx_v2_lib_BFU550A_schematic"
+"bfu5xx_v2_lib_BFU550A_schematic":X1  N__4 vce 0 
+R:R1  N__6 N__3 R=10.4 kOhm 
+R:R2  N__6 N__5 R=15 Ohm 
+Port:Term1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__9 0 Num=2 Z=50 Ohm Noise=yes 
+Short:DC_Block1  N__2 N__4 Mode=1 
+Short:DC_Block2  vce N__9 Mode=1 
+V_Source:SRC1  N__6 0 Type="V_DC" Vdc=3.3 V SaveCurrent=1 
+Short:I_Probe1  N__5 N__11 Mode=0 SaveCurrent=yes 
+Short:DC_Feed2  N__3 N__4 Mode=-1 
+Short:DC_Feed3  N__11 vce Mode=-1 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=yes SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 NoiseInputPort=1 NoiseOutputPort=2 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.1 GHz Stop=10.0 GHz Step=1.0 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
+OutputPlan="DC1_Output" 
+
+OutputPlan:DC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+

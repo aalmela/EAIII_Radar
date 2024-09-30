@@ -1,0 +1,9 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic x1="-1" view="schematic" y1="-8" cell="Sparam_vs_Spice" width="1366" lib="MyLibrary_lib" height="697" geom="1,0,3,401,31,687,688,1366,768"/>
+        <Schematic x1="-1" view="schematic" y1="-8" cell="3_Adapta_NFmin" width="1366" lib="MyLibrary_lib" height="697" geom="1,0,2,253,31,687,688,1366,768"/>
+        <Schematic x1="-1" view="schematic" y1="-8" cell="1_DC_transistor" width="1366" lib="MyLibrary_lib" height="697" geom="1,0,2,273,51,687,688,1366,768"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

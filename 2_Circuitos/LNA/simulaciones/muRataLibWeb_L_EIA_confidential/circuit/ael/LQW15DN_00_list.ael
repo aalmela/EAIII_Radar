@@ -1,0 +1,22 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQW15DN100M00","1:LQW15DN100M00, Wound, 10000[nH], +/-20[%], 120[mA], 50[MHz]-20[GHz]:1",68,"1","LQW15DN100M00");
+create_constant_form("LQW15DN150M00","2:LQW15DN150M00, Wound, 15000[nH], +/-20[%], 100[mA], 50[MHz]-20[GHz]:2",68,"2","LQW15DN150M00");
+
+create_form_set("LQW15DN_00_list" 
+,"LQW15DN100M00"
+,"LQW15DN150M00"
+);
+
+create_compound_form("LQW15DN_00_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQW15DN_00_list",-1,prm("LQW15DN100M00")),
+create_parm("MIN","Minimum",32,"LQW15DN_00_list",-1,prm("LQW15DN100M00")),
+create_parm("MAX","Maximum",32,"LQW15DN_00_list",-1,prm("LQW15DN150M00")));
+
+create_form_set("LQW15DN_00_list_opt","NULL" 
+,"LQW15DN100M00"
+,"LQW15DN150M00"
+,"LQW15DN_00_compound"
+);
+
+
+

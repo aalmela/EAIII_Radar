@@ -1,0 +1,9 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <DDS name="simple_power.dds"/>
+        <DDS name="power_sweep.dds"/>
+        <DDS name="dciv.dds"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

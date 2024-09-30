@@ -1,0 +1,396 @@
+/* Rules    : jh_pc8                                                       */
+/* Title    :  pc8 rules                                                   */
+/* Compiled : Tue Mar  3 10:22:51 1998                                     */
+
+/* JRC: Jade Rules Compiler                                                */
+/*      Version 2.105 : Feb  17, 1998                                      */
+/*      Host: HP 9000 -- UX                                                */
+/*      Compiled and linked on Tue Feb 17 13:16:44 PST 1998                */
+/* (c) Copyright 1988-9,1990-7 Alan J. Fletcher */
+
+.message 'Rules jh_pc8 :  pc8 rules '
+.message 'Compiled : Tue Mar  3 10:22:51 1998 '
+
+/* jade_version 2.00 mode 4 */
+mode opjh
+.noprompt .noecho
+.nobdchk
+.maxerrors 100
+.beep 0
+
+work_directory ''
+cellmode '$1/' '.def'
+  nocleanup
+  status
+
+/* patch -- until dojade generates sorted file */
+unsorted index
+      1 0   2 0   5 0  13 0
+   ;
+
+.stream gdbout $1.jo2
+
+.noeoftoken .noeofwarn
+.stream include $3$2.jr1
+.eoftoken
+
+/* system memory control */
+storage           2.500
+safety            1.200
+real              32000000
+virtual           48000000
+reserve           500000
+overflow          2000000
+
+window
+  binwidth 20
+  infinity_bloat 10000
+end_window
+
+  opalpolygonmax 250 chopangle 10
+
+simple
+
+  osjuser
+  slayer              0   0  
+  sscale 10.000 soffset 5.000
+  slabel no_drcerrors has_drcerrors
+  player 0   pscale  10.000  poffset 5.000 pstack 0 pformat "%4.4lg"
+  pdef 24
+    %24 holecount
+    %23 ratio
+    %22 bbox_yc
+    %21 bbox_xc
+    %20 bbox_yf
+    %19 bbox_xf
+    %18 bbox
+    %17 avg
+    %16 cnt
+    %15 tot
+    %14 max
+    %13 min
+    %12 -avg
+    %11 -cnt
+    %10 -tot
+    %9 -max
+    %8 -min
+    %7 +avg
+    %6 +cnt
+    %5 +tot
+    %4 +max
+    %3 +min
+    %2 plgnum
+    %1 area
+  ;
+
+  messages
+  nostatistics
+  nohistogram
+  dvertex
+
+
+/* merge 1   truly NEEDED */
+merge 1   edgemode_default
+
+    level 0
+      layers 1  /* lyr_cond */ 
+ ; 
+
+    level 1
+      layers 2  /* lyr_cond2 */ 
+ ; 
+
+      /* lyr_intersect truly NEEDED */
+    extract  TAB       AFILE layer 256 
+                       collectholeparm
+                       end_extract /* lyr_intersect */
+
+      /* lyr_cond_M truly NEEDED */
+    extract  TOP       AFILE layer 259 
+                       collectholeparm
+                       end_extract /* lyr_cond_M */
+
+      /* lyr_cond2_M truly NEEDED */
+    extract  BOT       AFILE layer 260 
+                       collectholeparm
+                       end_extract /* lyr_cond2_M */
+
+
+end_merge_group /* 1 */
+
+/* merge 2   truly NEEDED */
+merge 2   edgemode_default
+
+    level 0
+      layers 256  /* lyr_intersect */ 
+ ; 
+
+    level 1
+      layers 5  /* lyr_hole */ 
+ ; 
+
+      /* via_hole truly NEEDED */
+    extract  TAB       AFILE layer 257 
+                       collectholeparm
+                       end_extract /* via_hole */
+
+
+end_merge_group /* 2 */
+
+/* merge 3   truly NEEDED */
+merge 3   edgemode_default
+
+    level 0
+      layers 256  /* lyr_intersect */ 
+ ; 
+
+    level 1
+      layers 257  /* via_hole */ 
+ ; 
+
+      /* via_pad truly NEEDED */
+    extract  TLIST     T_PSM_ENC1 ;
+                       AFILE layer 258 
+                       collectholeparm
+                       end_extract /* via_pad */
+
+
+end_merge_group /* 3 */
+
+/* merge 4   truly NEEDED */
+merge 4   edgemode_default
+
+    level 0
+      layers 13  /* lyr_bound */ 
+ ; 
+
+      /* lyr_bound_M truly NEEDED */
+    extract  TOP       AFILE layer 261 
+                       collectholeparm
+                       end_extract /* lyr_bound_M */
+
+
+end_merge_group /* 4 */
+
+drc   5 
+
+    level 0
+      segments 1 
+      layers 259  /* lyr_cond_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum width of cond is 8 mil'
+
+        type 22 /* Rule type : WIDTH  */
+
+        both level 0 source 0 result 1
+        both polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 8.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                samepoly
+                ;
+
+    end_rule
+
+
+    rule 101 label 126 '$4$1/ Minimum spacing of cond is 8 mil'
+
+        type 12 /* Rule type : SPACING  */
+
+        both level 0 source 0 result 1
+        both polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 8.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                anypoly
+                ;
+
+    end_rule
+
+end_drc_group /* 5 */
+
+drc   6 
+
+    level 0
+      segments 1 
+      layers 260  /* lyr_cond2_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum width of cond2 is 8 mil'
+
+        type 22 /* Rule type : WIDTH  */
+
+        both level 0 source 0 result 1
+        both polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 8.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                samepoly
+                ;
+
+    end_rule
+
+
+    rule 101 label 126 '$4$1/ Minimum spacing of cond2 is 8 mil'
+
+        type 12 /* Rule type : SPACING  */
+
+        both level 0 source 0 result 1
+        both polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 8.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                anypoly
+                ;
+
+    end_rule
+
+end_drc_group /* 6 */
+
+drc   7 
+
+    level 0
+      segments 1 
+      layers 258  /* via_pad */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum via pad size is 40 mil'
+
+        type 22 /* Rule type : WIDTH  */
+
+        both level 0 source 0 result 1
+        both polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 40.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                samepoly
+                ;
+
+    end_rule
+
+end_drc_group /* 7 */
+
+drc   8 
+
+    level 0
+      segments 1 
+      layers 257  /* via_hole */ 
+ ; 
+
+    level 1
+      segments 1 
+      layers 261  /* lyr_bound_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum spacing from hole to board edge is 50 mil'
+
+        type 4 /* Rule type : CONTAINS  */
+
+        from level 0 source 0 result 1
+        from polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        to   level 1 source 0 result 1
+        to   polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 50.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                anyseparate
+                diffpoly
+                ;
+
+    end_rule
+
+
+    rule 101 label 126 '$4$1/ Minimum spacing between hole edges is 16 mil'
+
+        type 13 /* Rule type : GAP  */
+
+        both level 0 source 0 result 1
+        both polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 16.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                diffpoly
+                ;
+
+    end_rule
+
+end_drc_group /* 8 */
+
+drc   9 
+
+    level 0
+      segments 1 
+      layers 259  /* lyr_cond_M */ 
+ ; 
+
+    level 1
+      segments 1 
+      layers 261  /* lyr_bound_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum spacing from cond to board edge is 30 mil'
+
+        type 4 /* Rule type : CONTAINS  */
+
+        from level 0 source 0 result 1
+        from polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        to   level 1 source 0 result 1
+        to   polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 30.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                anyseparate
+                diffpoly
+                ;
+
+    end_rule
+
+end_drc_group /* 9 */
+
+drc   10
+
+    level 0
+      segments 1 
+      layers 260  /* lyr_cond2_M */ 
+ ; 
+
+    level 1
+      segments 1 
+      layers 261  /* lyr_bound_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Minimum spacing from cond2 to board edge is 30 mil'
+
+        type 4 /* Rule type : CONTAINS  */
+
+        from level 0 source 0 result 1
+        from polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        to   level 1 source 0 result 1
+        to   polarity OUTSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 30.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                anyseparate
+                diffpoly
+                ;
+
+    end_rule
+
+end_drc_group /* 10 */
+
+
+
+end_simple

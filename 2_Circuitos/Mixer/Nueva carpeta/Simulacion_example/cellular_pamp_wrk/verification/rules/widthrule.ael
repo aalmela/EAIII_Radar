@@ -1,0 +1,21 @@
+//
+// WWFTE custom width rule for pc5
+//
+
+
+// Declare input design layer
+
+decl lyr_cond = dve_import_layer("cond");
+
+// declare output error layer
+
+decl lyr_error1 = dve_export_layer(101);
+
+// 
+// 1. Conductor width     5 mil
+
+lyr_error1 += dve_drc( width(lyr_cond) < 5,
+                       "Minimum width of cond is 5 mil"
+                     );
+
+

@@ -1,0 +1,32 @@
+.title Name of Spice
+.include macro_models/MCP6486.txt
+.options GMIN=1e-07
+
+*Stage 1
+
+R11 in1 10 2.87kOhm
+C11 10 500 5.6nF
+X11 10 out1 Vdd1 0 out1 MCP6486
+V+stage1 Vdd1 0 3.3V 
+
+*Stage 2
+
+R21 out1 20 2.32kOhm
+C21 20 out2 5.6nF
+R22 20 22 7.15kOhm
+C23 22 500 2.7nF
+X21 22 out2 Vdd2 0 out2 MCP6486
+V+stage2 Vdd2 0 3.3V 
+
+*Stage 3
+
+R31 out2 30 6.81kOhm
+C31 30 out 5.6nF
+R32 30 32 14.0kOhm
+C33 32 500 0.47nF
+X31 32 out Vdd3 0 out MCP6486
+V+stage3 Vdd3 0 3.3V 
+
+.options TEMP = 25C
+.options TNOM = 25C
+.end

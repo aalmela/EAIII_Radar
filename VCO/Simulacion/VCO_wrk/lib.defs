@@ -1,3 +1,0 @@
-INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
-DEFINE VCO_lib VCO_lib
-ASSIGN VCO_lib libMode shared

@@ -1,0 +1,255 @@
+//****************************************************************************
+// File:        GRJ18.ael (create_item_C.ael)
+// Description: component definition file
+// Author:      Keysight Technologies Japan, Ltd. 
+// Created:     2024.02.05 16:37:05
+// Language:    AEL
+// (C) Copyright 2004-2016, Keysight Technologies Japan G.K. , all rights reserved.
+//****************************************************************************
+
+
+// Item definition /////////////////////////////////////////////////
+set_simulator_type(-1);
+create_item
+(
+	"GRJ18"	//name//
+	,"RF Capacitor"		//label//
+	,"C"		//prefix//
+	,ITEM_BOM_ITEM		//attribute//
+	,-1					//priority//
+	,NULL				//iconName//
+	,"Component Parameters"	//dialogName//
+	,""					//dialogData//
+	,ComponentNetlistFmt      //netlistformat// CmpModelNetlistFmt or ComponentNetlistFmt
+	,"GRJ18"            //netlistData//
+	,ComponentAnnotFmt       //displayFormat//
+	,"SYM_C"    //symbolName(Obsolete)//
+	,2                               //artworkType,0 = no artwork,1 = fixed artwork,2 = ael generated artwork(Obsolete)//
+	,"muRataLibWeb_GRJ18_draw_artwork"  //artworkData, For fixed artwork,a layout artwork design name, For macro artwork, an AEL artwork generation function (Obsolete)// 
+	,ITEM_PRIMITIVE_EX                //extraAttribute//
+////////////////////////////////////////////////////////////////////
+
+// Parmameter definition ///////////////////////////////////////////
+	,create_parm
+	(
+		"PartNumber"
+		,"Component Part Number"
+		,PARM_STRING
+		,"GRJ18_list_opt"
+		,STRING_UNIT
+		,prm("NULL","NULL")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "PartNumber", TRUE))
+	)
+	,create_parm
+	(
+		"Type"
+		,"Type or Use"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "Type", TRUE))
+	)
+	,create_parm
+	(
+		"Size"
+		,"Size Code"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED | PARM_NOT_EDITED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm", "\"1608[mm]/0603[inch]\"")
+	)
+	,create_parm
+	(
+		"TempCharacteristics"
+		,"Temp Characteristics"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "TempCharacteristics", TRUE))
+	)
+	,create_parm
+	(
+		"RatedVoltage"
+		,"Rated Voltage"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "RatedVoltage", TRUE))
+	)
+	,create_parm
+	(
+		"Value"
+		,"Capacitance"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "Value", TRUE))
+	)
+	,create_parm
+	(
+		"Tolerance"
+		,"Tolerance"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "Tolerance", TRUE))
+	)
+	,create_parm
+	(
+		"Dimensions"
+		,"LxWxH"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED | PARM_NOT_EDITED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm", "\"1.6x0.8[mm]\"")
+	)
+	,create_parm
+	(
+		"FreqRange"
+		,"Frequency Range"
+		,PARM_STRING | PARM_NO_DISPLAY | PARM_NOT_NETLISTED
+		,"StdFormSet"
+		,STRING_UNIT
+		,prm("StdForm","")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_C_paramType_C_cb", "FreqRange", TRUE))
+	)
+	// for artwork 
+	,create_parm
+	(
+		"LandWidth"
+		,"Width of the land ( 0.6 mm < LandWidth < 0.8 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","0.7 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_GRJ18_lay_cb", "LandWidth", TRUE))
+	)
+	,create_parm
+	(
+		"LandLength"
+		,"Length of the land ( 0.6 mm < LandLength < 0.7 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","0.65 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_GRJ18_lay_cb", "LandLength", TRUE))
+
+	)
+	,create_parm
+	(
+		"LandSpace"
+		,"Space of the land ( 0.6 mm < LandSpace < 0.8 mm )"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"StdFormSet"
+		,LENGTH_UNIT
+		,prm("StdForm","0.7 mm")
+		,list(dm_create_cb(PARM_MODIFIED_CB, "muRataLibWeb_GRJ18_lay_cb", "LandSpace", TRUE))
+
+	)
+	,create_parm
+	(
+		"LandLayer"
+		,"Layer of the pad"
+		,PARM_NOT_NETLISTED|PARM_NO_DISPLAY
+		,"smt_pad_layer"
+		,UNITLESS_UNIT
+//		,prm("layer_text_form","\"bond\"")
+		,prm("layer_text_form","\"bond:drawing\"")
+	)
+);
+
+////////////////////////////////////////////////////////////////////
+// Callback function
+////////////////////////////////////////////////////////////////////
+
+defun muRataLibWeb_GRJ18_lay_cb(cbP, clientData, callData)
+{
+	decl dependentParmData=NULL;
+
+
+	//get parameter value
+	decl LandWidth  = pcb_get_mks(callData, "LandWidth");
+	decl LandLength = pcb_get_mks(callData, "LandLength");
+	decl LandSpace  = pcb_get_mks(callData, "LandSpace");
+
+	decl LandWidth_MIN  = 0.6 mm;
+	decl LandLength_MIN = 0.6 mm;
+	decl LandSpace_MIN  = 0.6 mm;
+
+	decl LandWidth_MAX  = 0.8 mm;
+	decl LandLength_MAX = 0.7 mm;
+	decl LandSpace_MAX  = 0.8 mm;
+
+	// check value range ---
+	if(LandWidth < LandWidth_MIN )
+		LandWidth = LandWidth_MIN;
+	elseif(LandWidth > LandWidth_MAX )
+		LandWidth = LandWidth_MAX;
+
+	// check value range ---
+	if(LandLength < LandLength_MIN )
+		LandLength = LandLength_MIN;
+	elseif(LandLength > LandLength_MAX )
+		LandLength = LandLength_MAX;
+
+	// check value range ---
+	if(LandSpace < LandSpace_MIN )
+		LandSpace = LandSpace_MIN;
+	elseif(LandSpace > LandSpace_MAX )
+		LandSpace = LandSpace_MAX;
+
+	// Return the values ////
+	dependentParmData = pcb_set_mks(dependentParmData, "LandWidth"  ,LandWidth);
+	dependentParmData = pcb_set_mks(dependentParmData, "LandLength" ,LandLength);
+	dependentParmData = pcb_set_mks(dependentParmData, "LandSpace"  ,LandSpace);
+	return dependentParmData;
+
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+// Artwork data
+////////////////////////////////////////////////////////////////////
+
+
+defun muRataLibWeb_GRJ18_draw_artwork(
+//	PartNumber,
+//	Type,
+//	Size,
+//	TempCharacteristics,
+//	Value,
+//	Tolerance,
+//	Dimensions,
+//	RatedVoltage,
+//	FreqRange,
+	PartNumber,
+	Type,
+	Size,
+	TempCharacteristics,
+	RatedVoltage,
+	Value,
+	Tolerance,
+	Dimensions,
+	FreqRange,
+	LandWidth,
+	LandLength,
+	LandSpace,
+	LandLayer
+)
+{
+	// artwork ...  ./circuit/artwork/layout.ael
+	muRataLibWeb_basic_CL_draw_artwork(
+		Dimensions,
+		LandWidth,
+		LandLength,
+		LandSpace,
+		LandLayer );
+		
+}
+

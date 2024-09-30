@@ -1,0 +1,43 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GGM188R72A103KA37","1:GGM188R72A103KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 10000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GGM188R72A103KA37");
+create_constant_form("GGM188R72A223KA37","2:GGM188R72A223KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 22000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GGM188R72A223KA37");
+create_constant_form("GGM188R71E224KA55","3:GGM188R71E224KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 220000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GGM188R71E224KA55");
+create_constant_form("GGM188R71H224KA64","4:GGM188R71H224KA64, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 220000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GGM188R71H224KA64");
+create_constant_form("GGM188R71C474KA55","5:GGM188R71C474KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 470000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GGM188R71C474KA55");
+create_constant_form("GGM188R71E474KA64","6:GGM188R71E474KA64, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 470000[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","GGM188R71E474KA64");
+create_constant_form("GGM188R71C105KA64","7:GGM188R71C105KA64, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","GGM188R71C105KA64");
+create_constant_form("GGM188R71E105KA64","8:GGM188R71E105KA64, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:8",68,"8","GGM188R71E105KA64");
+create_constant_form("GGM188R70J225KE22","9:GGM188R70J225KE22, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 6.3[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:9",68,"9","GGM188R70J225KE22");
+
+create_form_set("GGM18_list" 
+,"GGM188R72A103KA37"
+,"GGM188R72A223KA37"
+,"GGM188R71E224KA55"
+,"GGM188R71H224KA64"
+,"GGM188R71C474KA55"
+,"GGM188R71E474KA64"
+,"GGM188R71C105KA64"
+,"GGM188R71E105KA64"
+,"GGM188R70J225KE22"
+);
+
+create_compound_form("GGM18_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GGM18_list",-1,prm("GGM188R72A103KA37")),
+create_parm("MIN","Minimum",32,"GGM18_list",-1,prm("GGM188R72A103KA37")),
+create_parm("MAX","Maximum",32,"GGM18_list",-1,prm("GGM188R70J225KE22")));
+
+create_form_set("GGM18_list_opt","NULL" 
+,"GGM188R72A103KA37"
+,"GGM188R72A223KA37"
+,"GGM188R71E224KA55"
+,"GGM188R71H224KA64"
+,"GGM188R71C474KA55"
+,"GGM188R71E474KA64"
+,"GGM188R71C105KA64"
+,"GGM188R71E105KA64"
+,"GGM188R70J225KE22"
+,"GGM18_compound"
+);
+
+
+

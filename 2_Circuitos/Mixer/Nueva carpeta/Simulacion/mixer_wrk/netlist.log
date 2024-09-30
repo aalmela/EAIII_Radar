@@ -1,0 +1,30 @@
+; Top Design: "mixer_lib:rat_race_discreto:rat_race"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="mixer_lib:rat_race_discreto:rat_race" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+LQW18AN_00:L4  N__4 0 PartNumber=27 
+LQW18AN_00:L1  P3 P1 PartNumber=27 
+LQW18AN_00:L3  P2 P4 PartNumber=27 
+LQW18AN_00:L2  P3 P2 PartNumber=27 
+GRM15:C14  0 P3 PartNumber=272 
+GRM15:C13  0 P2 PartNumber=275 
+GRM15:C11  P1 0 PartNumber=114 
+GRM15:C10  P1 N__4 PartNumber=114 
+GRM15:C9  N__4 P4 PartNumber=114 
+GRM15:C8  P4 0 PartNumber=114 
+
+#ifndef muRataLibWeb_C
+#define muRataLibWeb_C
+; models
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#endif
+
+
+
+#ifndef muRataLibWeb_L
+#define muRataLibWeb_L
+; models
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/VCO/Simulacion/modelos/muRataLibWeb_L_EIA_confidential/circuit/models/encode.net"
+#endif
+
+

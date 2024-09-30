@@ -1,0 +1,8 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_netlist_devices
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_netlist_devices"
+
+.stream return

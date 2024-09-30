@@ -1,0 +1,7 @@
+<!DOCTYPE Technology>
+<Lpp_List>
+    <LPP layer="0" rgb="16711680" protect="0" mode="2" purpose="drawing" visible="1" alpha="35" line="0" fill="18"/>
+    <LPP layer="Default" rgb="16711680" protect="0" mode="2" purpose="drawing" visible="1" alpha="105" line="0" fill="18"/>
+    <LPP layer="silkscreen2" rgb="16776960" protect="0" mode="2" purpose="drawing" visible="1" alpha="35" line="0" fill="18"/>
+    <LPP layer="silkscreen" rgb="16711680" protect="0" mode="2" purpose="drawing" visible="1" alpha="35" line="0" fill="18"/>
+</Lpp_List>

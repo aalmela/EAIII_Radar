@@ -1,0 +1,100 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Thu Apr 25 16:54:31 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 10380
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'Tran' analysis present.
+
+SP SP2[1] <Mi_darae_lib:mixer_diode:schematic>   freq=(0 Hz->4 GHz)
+
+
+COMPONENT : TL26
+    Characterizing to 8 GHz 
+
+COMPONENT : TL27
+    Characterizing to 8 GHz 
+
+COMPONENT : TL28
+    Characterizing to 8 GHz 
+
+COMPONENT : TL29
+    Characterizing to 8 GHz 
+
+COMPONENT : TL31
+    Characterizing to 8 GHz 
+
+COMPONENT : TL32
+    Characterizing to 8 GHz 
+
+COMPONENT : TL33
+    Characterizing to 8 GHz 
+
+COMPONENT : TL34
+    Characterizing to 8 GHz 
+
+COMPONENT : TL20
+    Characterizing to 8 GHz 
+
+COMPONENT : TL19
+    Characterizing to 8 GHz 
+
+COMPONENT : TL18
+    Characterizing to 8 GHz 
+
+COMPONENT : TL17
+    Characterizing to 8 GHz 
+
+COMPONENT : TL12
+    Characterizing to 8 GHz 
+
+COMPONENT : TL11
+    Characterizing to 8 GHz 
+
+COMPONENT : TL10
+    Characterizing to 8 GHz 
+
+COMPONENT : TL9
+    Characterizing to 8 GHz 
+
+COMPONENT : TL25
+    Characterizing to 8 GHz 
+
+COMPONENT : TL8
+    Characterizing to 8 GHz 
+
+COMPONENT : TL4
+    Characterizing to 8 GHz 
+
+COMPONENT : TL2
+    Characterizing to 8 GHz 
+
+COMPONENT : TL30
+    Characterizing to 8 GHz 
+
+COMPONENT : TL5
+    Characterizing to 8 GHz 
+
+COMPONENT : TL6
+    Characterizing to 8 GHz 
+
+COMPONENT : TL7
+    Characterizing to 8 GHz 
+Pt DC convergence is used.
+
+.
+
+
+TRAN Tran1[1] <Mi_darae_lib:mixer_diode:schematic>   time=(10 ns->16 ns)
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    MaxTimeStep reduced to  6.250e-11 to resolve source bandwidth.
+
+
+Resource usage:
+  Total stopwatch time     =     1.04 seconds.
+

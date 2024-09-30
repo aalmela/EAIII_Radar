@@ -1,0 +1,6 @@
+# Library Defs for muRataLibWeb_C design kit
+DEFINE muRataLibWeb_C_tech ./muRataLibWeb_C_tech
+ASSIGN muRataLibWeb_C_tech libMode readOnly
+DEFINE muRataLibWeb_C ./muRataLibWeb_C
+ASSIGN muRataLibWeb_C libMode readOnly
+

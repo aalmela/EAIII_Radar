@@ -1,0 +1,5 @@
+jobName=pamp_drc
+jobType=drc
+designName=cellular_pamp_lib:pamp:layout
+ruleFilePath=c:/prj2ws/converted/prj2ws/actual/examples/RF_Board/cellular_pamp_wrk/verification/rules/pc5.ael
+addInfo=""

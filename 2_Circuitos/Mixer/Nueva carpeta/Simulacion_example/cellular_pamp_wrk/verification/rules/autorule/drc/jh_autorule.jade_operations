@@ -1,0 +1,12 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.jade_operations
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.jade_operations"
+
+rule 101 show "Width of layer cond must be >= 5.00"
+   width #lyr_cond @lyr_error lt 5.000000
+end_rule
+
+.stream return

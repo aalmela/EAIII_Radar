@@ -1,0 +1,134 @@
+/* Rules    : jh_autorule                                                  */
+/* Title    :  autorule rules                                              */
+/* Compiled : Tue Mar  3 14:55:43 1998                                     */
+
+/* JRC: Jade Rules Compiler                                                */
+/*      Version 2.105 : Feb  17, 1998                                      */
+/*      Host: HP 9000 -- UX                                                */
+/*      Compiled and linked on Tue Feb 17 13:16:44 PST 1998                */
+/* (c) Copyright 1988-9,1990-7 Alan J. Fletcher */
+
+.message 'Rules jh_autorule :  autorule rules '
+.message 'Compiled : Tue Mar  3 14:55:43 1998 '
+
+/* jade_version 2.00 mode 4 */
+mode opjh
+.noprompt .noecho
+.nobdchk
+.maxerrors 100
+.beep 0
+
+work_directory ''
+cellmode '$1/' '.def'
+  nocleanup
+  status
+
+/* patch -- until dojade generates sorted file */
+unsorted index
+      1 0
+   ;
+
+.stream gdbout $1.jo2
+
+.noeoftoken .noeofwarn
+.stream include $3$2.jr1
+.eoftoken
+
+/* system memory control */
+storage           2.500
+safety            1.200
+real              32000000
+virtual           48000000
+reserve           500000
+overflow          2000000
+
+window
+  binwidth 20
+  infinity_bloat 10000
+end_window
+
+  opalpolygonmax 250 chopangle 10
+
+simple
+
+  osjuser
+  slayer              0   0  
+  sscale 10.000 soffset 5.000
+  slabel no_drcerrors has_drcerrors
+  player 0   pscale  10.000  poffset 5.000 pstack 0 pformat "%4.4lg"
+  pdef 24
+    %24 holecount
+    %23 ratio
+    %22 bbox_yc
+    %21 bbox_xc
+    %20 bbox_yf
+    %19 bbox_xf
+    %18 bbox
+    %17 avg
+    %16 cnt
+    %15 tot
+    %14 max
+    %13 min
+    %12 -avg
+    %11 -cnt
+    %10 -tot
+    %9 -max
+    %8 -min
+    %7 +avg
+    %6 +cnt
+    %5 +tot
+    %4 +max
+    %3 +min
+    %2 plgnum
+    %1 area
+  ;
+
+  messages
+  nostatistics
+  nohistogram
+  dvertex
+
+
+/* merge 1   truly NEEDED */
+merge 1   edgemode_default
+
+    level 0
+      layers 1  /* lyr_cond */ 
+ ; 
+
+      /* lyr_cond_M truly NEEDED */
+    extract  TOP       AFILE layer 256 
+                       collectholeparm
+                       end_extract /* lyr_cond_M */
+
+
+end_merge_group /* 1 */
+
+drc   2 
+
+    level 0
+      segments 1 
+      layers 256  /* lyr_cond_M */ 
+ ; 
+
+    dvertex_default
+    rule 101 label 126 '$4$1/ Width of layer cond must be >= 5.00'
+
+        type 22 /* Rule type : WIDTH  */
+
+        both level 0 source 0 result 1
+        both polarity INSIDE   template OPPOSITE ROUND curvature 0.000
+        both CLEARANCE LT 5.000000 epsilon 0.050
+        both hitsymmetric offset 0 0.000
+             qualifiers
+                separate
+                samepoly
+                ;
+
+    end_rule
+
+end_drc_group /* 2 */
+
+
+
+end_simple

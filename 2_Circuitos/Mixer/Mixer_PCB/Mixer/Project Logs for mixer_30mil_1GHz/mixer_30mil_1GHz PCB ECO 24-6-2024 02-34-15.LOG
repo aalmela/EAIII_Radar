@@ -1,0 +1,5 @@
+Added Component: Designator=U2(SOT363_NXP)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "NXP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=mixer_1GHz_rat_race_discreto Member=Component U2 BGA2866,115

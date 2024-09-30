@@ -1,0 +1,94 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("KCA55L7UMF101KH01","1:KCA55L7UMF101KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 100[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","KCA55L7UMF101KH01");
+create_constant_form("KCA55L7UMF101KL01","2:KCA55L7UMF101KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 100[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","KCA55L7UMF101KL01");
+create_constant_form("KCA55L7UMF151KH01","3:KCA55L7UMF151KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 150[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","KCA55L7UMF151KH01");
+create_constant_form("KCA55L7UMF151KL01","4:KCA55L7UMF151KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 150[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","KCA55L7UMF151KL01");
+create_constant_form("KCA55L7UMF221KH01","5:KCA55L7UMF221KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 220[pF], +/-10[%], 100[kHz]-3[GHz]:5",68,"5","KCA55L7UMF221KH01");
+create_constant_form("KCA55L7UMF221KL01","6:KCA55L7UMF221KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 220[pF], +/-10[%], 100[kHz]-3[GHz]:6",68,"6","KCA55L7UMF221KL01");
+create_constant_form("KCA55L7UMF331KH01","7:KCA55L7UMF331KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 330[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","KCA55L7UMF331KH01");
+create_constant_form("KCA55L7UMF331KL01","8:KCA55L7UMF331KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 330[pF], +/-10[%], 100[kHz]-3[GHz]:8",68,"8","KCA55L7UMF331KL01");
+create_constant_form("KCA55L7UMF471KH01","9:KCA55L7UMF471KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 470[pF], +/-10[%], 100[kHz]-3[GHz]:9",68,"9","KCA55L7UMF471KH01");
+create_constant_form("KCA55L7UMF471KL01","10:KCA55L7UMF471KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 470[pF], +/-10[%], 100[kHz]-3[GHz]:10",68,"10","KCA55L7UMF471KL01");
+create_constant_form("KCA55L7UMF681KH01","11:KCA55L7UMF681KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 680[pF], +/-10[%], 100[kHz]-3[GHz]:11",68,"11","KCA55L7UMF681KH01");
+create_constant_form("KCA55L7UMF681KL01","12:KCA55L7UMF681KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 680[pF], +/-10[%], 100[kHz]-3[GHz]:12",68,"12","KCA55L7UMF681KL01");
+create_constant_form("KCA55L7UMF102KH01","13:KCA55L7UMF102KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:13",68,"13","KCA55L7UMF102KH01");
+create_constant_form("KCA55L7UMF102KL01","14:KCA55L7UMF102KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:14",68,"14","KCA55L7UMF102KL01");
+create_constant_form("KCA55L7UMF152KH01","15:KCA55L7UMF152KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 1500[pF], +/-10[%], 100[kHz]-3[GHz]:15",68,"15","KCA55L7UMF152KH01");
+create_constant_form("KCA55L7UMF152KL01","16:KCA55L7UMF152KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 1500[pF], +/-10[%], 100[kHz]-3[GHz]:16",68,"16","KCA55L7UMF152KL01");
+create_constant_form("KCA55L7UMF222KH01","17:KCA55L7UMF222KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 2200[pF], +/-10[%], 100[kHz]-3[GHz]:17",68,"17","KCA55L7UMF222KH01");
+create_constant_form("KCA55L7UMF222KL01","18:KCA55L7UMF222KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 2200[pF], +/-10[%], 100[kHz]-3[GHz]:18",68,"18","KCA55L7UMF222KL01");
+create_constant_form("KCA55L7UMF332KH01","19:KCA55L7UMF332KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 3300[pF], +/-10[%], 100[kHz]-3[GHz]:19",68,"19","KCA55L7UMF332KH01");
+create_constant_form("KCA55L7UMF332KL01","20:KCA55L7UMF332KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 3300[pF], +/-10[%], 100[kHz]-3[GHz]:20",68,"20","KCA55L7UMF332KL01");
+create_constant_form("KCA55Q7UMF472KH01","21:KCA55Q7UMF472KH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 4700[pF], +/-10[%], 100[kHz]-3[GHz]:21",68,"21","KCA55Q7UMF472KH01");
+create_constant_form("KCA55Q7UMF472KL01","22:KCA55Q7UMF472KL01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 4700[pF], +/-10[%], 100[kHz]-3[GHz]:22",68,"22","KCA55Q7UMF472KL01");
+create_constant_form("KCA55T7UMF682MH01","23:KCA55T7UMF682MH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 6800[pF], +/-20[%], 100[kHz]-3[GHz]:23",68,"23","KCA55T7UMF682MH01");
+create_constant_form("KCA55T7UMF682ML01","24:KCA55T7UMF682ML01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 6800[pF], +/-20[%], 100[kHz]-3[GHz]:24",68,"24","KCA55T7UMF682ML01");
+create_constant_form("KCA55W7UMF103MH01","25:KCA55W7UMF103MH01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 10000[pF], +/-20[%], 100[kHz]-3[GHz]:25",68,"25","KCA55W7UMF103MH01");
+create_constant_form("KCA55W7UMF103ML01","26:KCA55W7UMF103ML01, Metal terminal/ Automotive [AEC-Q200], U2J(-55to125[deg]), 250[Vac], 10000[pF], +/-20[%], 100[kHz]-3[GHz]:26",68,"26","KCA55W7UMF103ML01");
+
+create_form_set("KCA55_list" 
+,"KCA55L7UMF101KH01"
+,"KCA55L7UMF101KL01"
+,"KCA55L7UMF151KH01"
+,"KCA55L7UMF151KL01"
+,"KCA55L7UMF221KH01"
+,"KCA55L7UMF221KL01"
+,"KCA55L7UMF331KH01"
+,"KCA55L7UMF331KL01"
+,"KCA55L7UMF471KH01"
+,"KCA55L7UMF471KL01"
+,"KCA55L7UMF681KH01"
+,"KCA55L7UMF681KL01"
+,"KCA55L7UMF102KH01"
+,"KCA55L7UMF102KL01"
+,"KCA55L7UMF152KH01"
+,"KCA55L7UMF152KL01"
+,"KCA55L7UMF222KH01"
+,"KCA55L7UMF222KL01"
+,"KCA55L7UMF332KH01"
+,"KCA55L7UMF332KL01"
+,"KCA55Q7UMF472KH01"
+,"KCA55Q7UMF472KL01"
+,"KCA55T7UMF682MH01"
+,"KCA55T7UMF682ML01"
+,"KCA55W7UMF103MH01"
+,"KCA55W7UMF103ML01"
+);
+
+create_compound_form("KCA55_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"KCA55_list",-1,prm("KCA55L7UMF101KH01")),
+create_parm("MIN","Minimum",32,"KCA55_list",-1,prm("KCA55L7UMF101KH01")),
+create_parm("MAX","Maximum",32,"KCA55_list",-1,prm("KCA55W7UMF103ML01")));
+
+create_form_set("KCA55_list_opt","NULL" 
+,"KCA55L7UMF101KH01"
+,"KCA55L7UMF101KL01"
+,"KCA55L7UMF151KH01"
+,"KCA55L7UMF151KL01"
+,"KCA55L7UMF221KH01"
+,"KCA55L7UMF221KL01"
+,"KCA55L7UMF331KH01"
+,"KCA55L7UMF331KL01"
+,"KCA55L7UMF471KH01"
+,"KCA55L7UMF471KL01"
+,"KCA55L7UMF681KH01"
+,"KCA55L7UMF681KL01"
+,"KCA55L7UMF102KH01"
+,"KCA55L7UMF102KL01"
+,"KCA55L7UMF152KH01"
+,"KCA55L7UMF152KL01"
+,"KCA55L7UMF222KH01"
+,"KCA55L7UMF222KL01"
+,"KCA55L7UMF332KH01"
+,"KCA55L7UMF332KL01"
+,"KCA55Q7UMF472KH01"
+,"KCA55Q7UMF472KL01"
+,"KCA55T7UMF682MH01"
+,"KCA55T7UMF682ML01"
+,"KCA55W7UMF103MH01"
+,"KCA55W7UMF103ML01"
+,"KCA55_compound"
+);
+
+
+

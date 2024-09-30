@@ -1,0 +1,28 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GJ831CC81E105KA01","1:GJ831CC81E105KA01, Acoustic noise reduction, X6S(-55to105[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GJ831CC81E105KA01");
+create_constant_form("GJ8319R61H225KA12","2:GJ8319R61H225KA12, Acoustic noise reduction, X5R(-55to85[deg]), 50[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GJ8319R61H225KA12");
+create_constant_form("GJ831CR71H475KA12","3:GJ831CR71H475KA12, Acoustic noise reduction, X7R(-55to125[deg]), 50[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GJ831CR71H475KA12");
+create_constant_form("GJ831CR61E106KE83","4:GJ831CR61E106KE83, Acoustic noise reduction, X5R(-55to85[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GJ831CR61E106KE83");
+
+create_form_set("GJ831_list" 
+,"GJ831CC81E105KA01"
+,"GJ8319R61H225KA12"
+,"GJ831CR71H475KA12"
+,"GJ831CR61E106KE83"
+);
+
+create_compound_form("GJ831_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GJ831_list",-1,prm("GJ831CC81E105KA01")),
+create_parm("MIN","Minimum",32,"GJ831_list",-1,prm("GJ831CC81E105KA01")),
+create_parm("MAX","Maximum",32,"GJ831_list",-1,prm("GJ831CR61E106KE83")));
+
+create_form_set("GJ831_list_opt","NULL" 
+,"GJ831CC81E105KA01"
+,"GJ8319R61H225KA12"
+,"GJ831CR71H475KA12"
+,"GJ831CR61E106KE83"
+,"GJ831_compound"
+);
+
+
+

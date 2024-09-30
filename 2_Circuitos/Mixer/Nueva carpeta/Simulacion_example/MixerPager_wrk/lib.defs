@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/ads.defs
+DEFINE MixerPager_lib MixerPager_lib
+ASSIGN MixerPager_lib writePath MixerPager_lib
+ASSIGN MixerPager_lib libMode shared

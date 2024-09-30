@@ -1,0 +1,237 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+
+   <COMPONENT>
+      <NAME>BFP193</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6ee60f1f6a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP193W</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceae34635b</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP193W_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceae34635b</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP193_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6ee60f1f6a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP196</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP196W</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceb0a1635c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP196W_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ceb0a1635c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP196_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP450</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ced1886365</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP450_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c9ced1886365</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP650</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016200e37cdc</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP650_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016200e37cdc</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP750</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a30442b8709d7012b9ba3e64e1018</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP750_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a30442b8709d7012b9ba3e64e1018</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP760</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044382e4f0601384c2334461be9</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP760_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044382e4f0601384c2334461be9</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFQ19S</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFQ19S_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR106</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6fc9e427c4</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR106_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6fc9e427c4</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR193F</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=19.0dB OIP3=29.0dBm OP1dB=14.8dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016214557ce5</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR193W</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012457de062d0980</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR193W_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012457de062d0980</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR380F</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e01250198e3567d10</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR380F_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e01250198e3567d10</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR93A</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f8a25259c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR93AW</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012457de043d097f</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR93AW_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012457de043d097f</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR93A_SPARA</NAME>
+      <DESCRIPTION>High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f8a25259c</URL>
+   </COMPONENT>
+
+</COMPONENTS>
+

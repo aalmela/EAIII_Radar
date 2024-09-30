@@ -1,0 +1,70 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR331BD72J103KW01","1:GR331BD72J103KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 10000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","GR331BD72J103KW01");
+create_constant_form("GR331AD72W103KW01","2:GR331AD72W103KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 10000[pF], +/-10[%], 100[Hz]-3[GHz]:2",68,"2","GR331AD72W103KW01");
+create_constant_form("GR331AD7LQ103KW01","3:GR331AD7LQ103KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 10000[pF], +/-10[%], 100[Hz]-3[GHz]:3",68,"3","GR331AD7LQ103KW01");
+create_constant_form("GR331CD72J153KW03","4:GR331CD72J153KW03, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 15000[pF], +/-10[%], 100[Hz]-3[GHz]:4",68,"4","GR331CD72J153KW03");
+create_constant_form("GR331AD72W153KW01","5:GR331AD72W153KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 15000[pF], +/-10[%], 100[Hz]-3[GHz]:5",68,"5","GR331AD72W153KW01");
+create_constant_form("GR331AD7LQ153KW01","6:GR331AD7LQ153KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 15000[pF], +/-10[%], 100[Hz]-3[GHz]:6",68,"6","GR331AD7LQ153KW01");
+create_constant_form("GR331BD72W223KW01","7:GR331BD72W223KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 22000[pF], +/-10[%], 100[Hz]-3[GHz]:7",68,"7","GR331BD72W223KW01");
+create_constant_form("GR331BD7LQ223KW01","8:GR331BD7LQ223KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 22000[pF], +/-10[%], 100[Hz]-3[GHz]:8",68,"8","GR331BD7LQ223KW01");
+create_constant_form("GR331AD72E333KW01","9:GR331AD72E333KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 33000[pF], +/-10[%], 100[Hz]-3[GHz]:9",68,"9","GR331AD72E333KW01");
+create_constant_form("GR331BD72W333KW01","10:GR331BD72W333KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 33000[pF], +/-10[%], 100[Hz]-3[GHz]:10",68,"10","GR331BD72W333KW01");
+create_constant_form("GR331AD7LP333KW01","11:GR331AD7LP333KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 33000[pF], +/-10[%], 100[Hz]-3[GHz]:11",68,"11","GR331AD7LP333KW01");
+create_constant_form("GR331BD7LQ333KW01","12:GR331BD7LQ333KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 33000[pF], +/-10[%], 100[Hz]-3[GHz]:12",68,"12","GR331BD7LQ333KW01");
+create_constant_form("GR331BD72E473KW01","13:GR331BD72E473KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 47000[pF], +/-10[%], 100[Hz]-3[GHz]:13",68,"13","GR331BD72E473KW01");
+create_constant_form("GR331CD72W473KW03","14:GR331CD72W473KW03, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 47000[pF], +/-10[%], 100[Hz]-3[GHz]:14",68,"14","GR331CD72W473KW03");
+create_constant_form("GR331BD7LP473KW01","15:GR331BD7LP473KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 47000[pF], +/-10[%], 100[Hz]-3[GHz]:15",68,"15","GR331BD7LP473KW01");
+create_constant_form("GR331CD7LQ473KW01","16:GR331CD7LQ473KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 47000[pF], +/-10[%], 100[Hz]-3[GHz]:16",68,"16","GR331CD7LQ473KW01");
+create_constant_form("GR331CD72E683KW03","17:GR331CD72E683KW03, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 68000[pF], +/-10[%], 100[Hz]-3[GHz]:17",68,"17","GR331CD72E683KW03");
+create_constant_form("GR331CD7LP683KW01","18:GR331CD7LP683KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 68000[pF], +/-10[%], 100[Hz]-3[GHz]:18",68,"18","GR331CD7LP683KW01");
+
+create_form_set("GR331_list" 
+,"GR331BD72J103KW01"
+,"GR331AD72W103KW01"
+,"GR331AD7LQ103KW01"
+,"GR331CD72J153KW03"
+,"GR331AD72W153KW01"
+,"GR331AD7LQ153KW01"
+,"GR331BD72W223KW01"
+,"GR331BD7LQ223KW01"
+,"GR331AD72E333KW01"
+,"GR331BD72W333KW01"
+,"GR331AD7LP333KW01"
+,"GR331BD7LQ333KW01"
+,"GR331BD72E473KW01"
+,"GR331CD72W473KW03"
+,"GR331BD7LP473KW01"
+,"GR331CD7LQ473KW01"
+,"GR331CD72E683KW03"
+,"GR331CD7LP683KW01"
+);
+
+create_compound_form("GR331_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR331_list",-1,prm("GR331BD72J103KW01")),
+create_parm("MIN","Minimum",32,"GR331_list",-1,prm("GR331BD72J103KW01")),
+create_parm("MAX","Maximum",32,"GR331_list",-1,prm("GR331CD7LP683KW01")));
+
+create_form_set("GR331_list_opt","NULL" 
+,"GR331BD72J103KW01"
+,"GR331AD72W103KW01"
+,"GR331AD7LQ103KW01"
+,"GR331CD72J153KW03"
+,"GR331AD72W153KW01"
+,"GR331AD7LQ153KW01"
+,"GR331BD72W223KW01"
+,"GR331BD7LQ223KW01"
+,"GR331AD72E333KW01"
+,"GR331BD72W333KW01"
+,"GR331AD7LP333KW01"
+,"GR331BD7LQ333KW01"
+,"GR331BD72E473KW01"
+,"GR331CD72W473KW03"
+,"GR331BD7LP473KW01"
+,"GR331CD7LQ473KW01"
+,"GR331CD72E683KW03"
+,"GR331CD7LP683KW01"
+,"GR331_compound"
+);
+
+
+

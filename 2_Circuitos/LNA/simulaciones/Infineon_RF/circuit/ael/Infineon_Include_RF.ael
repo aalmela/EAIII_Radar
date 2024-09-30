@@ -1,0 +1,29 @@
+set_simulator_type(1);
+
+defun Infineon_Include_RF_netlist_cb (cbP, clientData, callData)
+{
+    decl modelfileName="";
+    decl netlistString="";
+
+    modelfileName = strcat(Infineon_RF_CIRCUIT_MODEL_DIR, "RF.net");
+    netlistString = strcat(netlistString, "#include \"", modelfileName, "\"\n");
+    return(netlistString);
+}
+create_item(
+  "Infineon_Include_RF",            	    // name
+  "Infineon Netlist Include RF",          // label
+  "Infineon_Include_RF",                  // prefix
+  ITEM_UNIQUE|ITEM_NOT_NETLIST_IF_SUB,    // attribute
+  -1,                                     // priority
+  NULL,                                   // iconName
+  standard_dialog,                        // dialogName
+  NULL,                                   // dialogData
+  ComponentNetlistFmt,                    // netlistFormat
+  "Infineon_Include_RF",                  // netlistData
+  ComponentAnnotFmt,                      // displayFormat
+  "SYM_IFX_INCLUDE_RF",                   // symbolName
+  no_artwork,                             // artworkType
+  NULL,                                   // artworkData
+  0,                                      // extraAttrib
+  list (dm_create_cb (ITEM_NETLIST_CB, "Infineon_Include_RF_netlist_cb", NULL, TRUE))
+);

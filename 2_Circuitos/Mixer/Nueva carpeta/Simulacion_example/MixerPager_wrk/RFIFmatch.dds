@@ -1,0 +1,590 @@
+defun  _DDSobjectSaveRestore_()
+{
+decl goId, goId2, goId3, goId4, ptId, plyPtId, ddsId, dssId, ddWinId, ddoId, goId1, pageId, markerID, plotId, axisID, traceID, goId0;
+
+ddsId = get_dds();
+
+set(ddsId, "ddsFileVersion", 1.0);
+
+ddoId = get_new(ddsId, "Object");
+// DataDisplay Object:
+	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
+	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
+	dssId = get(ddoId, "DatasetServer");
+// Default Dataset
+	set(ddoId, "DefaultDataset", "RFIFmatch");
+set(ddoId, "EnableExpressionUpdates", FALSE);
+pageId = get(ddoId, "CurrentPage");
+if (pageId == NULL) pageId = get_first(ddoId, "Page");
+if (pageId == NULL) pageId = get_new(ddoId, "Page");
+goId0 = get_new(pageId, "Text");
+// Text:
+	set(goId0, "String", "Normalized input impedance to match at RF.");
+	set(goId0, "Font", "Arial For CAE");
+	set(goId0, "FontSize", 166);
+	set(goId0, "TextColor", 0);
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+	set(goId0, "OutlineOnOff", FALSE);
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 1820762708);
+ // Graphical Object:
+ set(goId0, "Right", 2776);
+ set(goId0, "Bottom", 5820);
+ set(goId0, "Left", -534);
+	set(goId0, "Top", 5654);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 0);
+ // Need to add Popup, LocalPopup, Owner...
+goId0 = get_new(pageId, "Text");
+// Text:
+	set(goId0, "String", "Normalized output impedance to match at IF.");
+	set(goId0, "Font", "Arial For CAE");
+	set(goId0, "FontSize", 166);
+	set(goId0, "TextColor", 0);
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+	set(goId0, "OutlineOnOff", FALSE);
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 119220713);
+ // Graphical Object:
+ set(goId0, "Right", 7006);
+ set(goId0, "Bottom", 5819);
+ set(goId0, "Left", 3670);
+	set(goId0, "Top", 5653);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 0);
+ // Need to add Popup, LocalPopup, Owner...
+goId0 = get_new(pageId, "SmithChart");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 762143348);
+ // Graphical Object:
+ set(goId0, "Right", 3505);
+ set(goId0, "Bottom", 4514);
+ set(goId0, "Left", -245);
+	set(goId0, "Top", 764);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+// Plot base...
+	set(goId0, "LegendOnOff", TRUE);
+	set(goId0, "LeftMargin", 500);
+	set(goId0, "RightMargin", 100);
+	set(goId0, "TopMargin", 125);
+	set(goId0, "BottomMargin", 500);
+	set(goId0, "Title", "");
+	set(goId0, "TitleFont", "Arial For CAE");
+	set(goId0, "TitleFontSize", 140);
+	set(goId0, "TitleColor", 0);
+axisID = get_new(goId0, "Axis", ddsXaxis, "xAxis");
+// Axis...
+	if (axisID != NULL) {
+		 set(axisID, "Uid", 1986680822);
+		 set(axisID, "Color", 104);
+		 set(axisID, "UserLabel", "");
+		 set(axisID, "LabelColor", 0);
+		 set(axisID, "TicksOnOff", TRUE);
+		 set(axisID, "GridOnOff", TRUE);
+		 set(axisID, "LabelsOnOff", TRUE);
+		 set(axisID, "FontSize", 140);
+		 set(axisID, "LineThick", 14);
+		 set(axisID, "LineType", 0);
+		 set(axisID, "TickFontSize", 140);
+		 set(axisID, "AutoscaleOnOff", TRUE);
+		 set(axisID, "MinValue", -1);
+		 set(axisID, "MaxValue", 1);
+		 set(axisID, "StepSize", 1);
+		 set(axisID, "Logarithmic", FALSE);
+		 set(axisID, "Font", "Arial For CAE");
+		 set(axisID, "Format", ddsFormatAutomatic);
+		 set(axisID, "NumDigits", 3);
+	}
+//Polar axis...
+	if (axisID != NULL) {
+		set(axisID, "DisplayAllIndependentData", TRUE);
+		set(axisID, "IndepStart", -1);
+		set(axisID, "IndepStop", 1);
+	}
+//Smith chart axis...
+	if (axisID != NULL) {
+		set(axisID, "ImpedanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
+		set(axisID, "AdmittanceColor", 104);
+		set(axisID, "AdmittanceLineThickness", 14);
+		set(axisID, "AdmittanceLineType", 0);
+	}
+axisID = get_new(goId0, "Axis", ddsYaxis, "yAxis");
+// Axis...
+	if (axisID != NULL) {
+		 set(axisID, "Uid", 353490855);
+		 set(axisID, "Color", 104);
+		 set(axisID, "UserLabel", "");
+		 set(axisID, "LabelColor", 0);
+		 set(axisID, "TicksOnOff", TRUE);
+		 set(axisID, "GridOnOff", TRUE);
+		 set(axisID, "LabelsOnOff", TRUE);
+		 set(axisID, "FontSize", 140);
+		 set(axisID, "LineThick", 14);
+		 set(axisID, "LineType", 0);
+		 set(axisID, "TickFontSize", 140);
+		 set(axisID, "AutoscaleOnOff", TRUE);
+		 set(axisID, "MinValue", -1);
+		 set(axisID, "MaxValue", 1);
+		 set(axisID, "StepSize", 1);
+		 set(axisID, "Logarithmic", FALSE);
+		 set(axisID, "Font", "Arial For CAE");
+		 set(axisID, "Format", ddsFormatAutomatic);
+		 set(axisID, "NumDigits", 3);
+	}
+//Polar axis...
+	if (axisID != NULL) {
+		set(axisID, "DisplayAllIndependentData", TRUE);
+		set(axisID, "IndepStart", -1);
+		set(axisID, "IndepStop", 1);
+	}
+//Smith chart axis...
+	if (axisID != NULL) {
+		set(axisID, "ImpedanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
+		set(axisID, "AdmittanceColor", 104);
+		set(axisID, "AdmittanceLineThickness", 14);
+		set(axisID, "AdmittanceLineType", 0);
+	}
+traceID = get_new(goId0, "Trace", "RFIFmatch1..S(1,1)", "xAxis", "yAxis");
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 1);
+		set(traceID, "Uid", 1071469540);
+		set(traceID, "UIIndex", 0);
+	}
+// Rect trace:
+	if (traceID != NULL) {
+		 set(traceID, "LineThick", 1);
+		 set(traceID, "LineType", ddsSolidLineType);
+		 set(traceID, "FillPattern", -1);
+		 set(traceID, "SymbolType", ddsCircleSymbol);
+		 set(traceID, "SymbolsOnOff", TRUE);
+		 set(traceID, "AlwaysDisplayTransitions", FALSE);
+		 set(traceID, "SpectralArrowheadsOnOff", TRUE);
+		 set(traceID, "LabelSubtracesOnOff", TRUE);
+		 set(traceID, "FillHistogramsOnOff", FALSE);
+		 set(traceID, "Format", ddsFormatAutomatic);
+		 set(traceID, "NumDigits", 3);
+		 set(traceID, "Font", "Arial For CAE");
+		 set(traceID, "FontSize", 112);
+		 set(traceID, "LineColorAutoSequence", FALSE);
+		 set(traceID, "LineTypeAutoSequence", FALSE);
+		 set(traceID, "SymbolTypeAutoSequence", FALSE);
+		 set(traceID, "LineColorAutoSequenceOrder", 3);
+		 set(traceID, "LineTypeAutoSequenceOrder", 1);
+		 set(traceID, "SymbolTypeAutoSequenceOrder", 2);
+	}
+markerID = get_new(traceID, "MarkerNew", "m1", "900000000.00000000000000000000000000000000", 0, "");
+// Base Class Object:
+ 			set(markerID, "Name", "default");
+ 			set(markerID, "Uid", 375430312);
+ // Graphical Object:
+ set(markerID, "Right", 3537);
+ set(markerID, "Bottom", 5019);
+ set(markerID, "Left", 866);
+	set(markerID, "Top", 3446);
+ set(markerID, "Zrot", 0.000000);
+ set(markerID, "Yrot", 0.000000);
+ set(markerID, "Xrot", 0.000000);
+ set(markerID, "Status", 0);
+ set(markerID, "LineColor", 0);
+ set(markerID, "LineType", 0);
+ set(markerID, "LineWidth", 0);
+ // Need to add Popup, LocalPopup, Owner...
+// Marker:
+	if (markerID != NULL) {
+		set(markerID, "DataScript", "trcdata");
+		set(markerID, "DeltaModeStatus", 0);
+		set(markerID, "Format", 0);
+		set(markerID, "NumDigits", 3);
+		set(markerID, "ComplexNumberFormat", 1);
+		set(markerID, "AuxFormat", 0);
+		set(markerID, "AuxNumDigits", 3);
+		set(markerID, "AuxType", 0);
+		set(markerID, "AuxZ", "1");
+		set(markerID, "AuxComplexNumberFormat", 0);
+	}
+// More marker:
+	if (markerID != NULL) {
+		set(markerID, "MkrLabelFont", "Arial For CAE");
+		set(markerID, "MkrLabelFontSize", 166);
+		set(markerID, "MkrLabelColor", 0);
+		set(markerID, "MkrReadoutFont", "Arial For CAE");
+		set(markerID, "MkrReadoutFontSize", 166);
+		set(markerID, "MkrReadoutColor", 0);
+		set(markerID, "MkrReadoutLeft", -164);
+		set(markerID, "MkrReadoutRight", 2555);
+		set(markerID, "MkrReadoutBottom", 5316);
+		set(markerID, "MkrReadoutTop", 4604);
+		set(markerID, "MkrIndicatorColor", 0);
+	}
+// Initialize plot
+set(goId0, "InitPlot", 0);
+goId0 = get_new(pageId, "SmithChart");
+// Base Class Object:
+ 			set(goId0, "Name", "default");
+ 			set(goId0, "Uid", 654053971);
+ // Graphical Object:
+ set(goId0, "Right", 7204);
+ set(goId0, "Bottom", 4546);
+ set(goId0, "Left", 3454);
+	set(goId0, "Top", 796);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Box...
+	set(goId0, "FillPattern", -1);
+	set(goId0, "FillColor", 0);
+// Plot base...
+	set(goId0, "LegendOnOff", TRUE);
+	set(goId0, "LeftMargin", 500);
+	set(goId0, "RightMargin", 100);
+	set(goId0, "TopMargin", 125);
+	set(goId0, "BottomMargin", 500);
+	set(goId0, "Title", "");
+	set(goId0, "TitleFont", "Arial For CAE");
+	set(goId0, "TitleFontSize", 140);
+	set(goId0, "TitleColor", 0);
+axisID = get_new(goId0, "Axis", ddsXaxis, "xAxis");
+// Axis...
+	if (axisID != NULL) {
+		 set(axisID, "Uid", 1403049167);
+		 set(axisID, "Color", 104);
+		 set(axisID, "UserLabel", "");
+		 set(axisID, "LabelColor", 0);
+		 set(axisID, "TicksOnOff", TRUE);
+		 set(axisID, "GridOnOff", TRUE);
+		 set(axisID, "LabelsOnOff", TRUE);
+		 set(axisID, "FontSize", 140);
+		 set(axisID, "LineThick", 14);
+		 set(axisID, "LineType", 0);
+		 set(axisID, "TickFontSize", 140);
+		 set(axisID, "AutoscaleOnOff", TRUE);
+		 set(axisID, "MinValue", -1);
+		 set(axisID, "MaxValue", 1);
+		 set(axisID, "StepSize", 1);
+		 set(axisID, "Logarithmic", FALSE);
+		 set(axisID, "Font", "Arial For CAE");
+		 set(axisID, "Format", ddsFormatAutomatic);
+		 set(axisID, "NumDigits", 3);
+	}
+//Polar axis...
+	if (axisID != NULL) {
+		set(axisID, "DisplayAllIndependentData", TRUE);
+		set(axisID, "IndepStart", -1);
+		set(axisID, "IndepStop", 1);
+	}
+//Smith chart axis...
+	if (axisID != NULL) {
+		set(axisID, "ImpedanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
+		set(axisID, "AdmittanceColor", 104);
+		set(axisID, "AdmittanceLineThickness", 14);
+		set(axisID, "AdmittanceLineType", 0);
+	}
+axisID = get_new(goId0, "Axis", ddsYaxis, "yAxis");
+// Axis...
+	if (axisID != NULL) {
+		 set(axisID, "Uid", 181359385);
+		 set(axisID, "Color", 104);
+		 set(axisID, "UserLabel", "");
+		 set(axisID, "LabelColor", 0);
+		 set(axisID, "TicksOnOff", TRUE);
+		 set(axisID, "GridOnOff", TRUE);
+		 set(axisID, "LabelsOnOff", TRUE);
+		 set(axisID, "FontSize", 140);
+		 set(axisID, "LineThick", 14);
+		 set(axisID, "LineType", 0);
+		 set(axisID, "TickFontSize", 140);
+		 set(axisID, "AutoscaleOnOff", TRUE);
+		 set(axisID, "MinValue", -1);
+		 set(axisID, "MaxValue", 1);
+		 set(axisID, "StepSize", 1);
+		 set(axisID, "Logarithmic", FALSE);
+		 set(axisID, "Font", "Arial For CAE");
+		 set(axisID, "Format", ddsFormatAutomatic);
+		 set(axisID, "NumDigits", 3);
+	}
+//Polar axis...
+	if (axisID != NULL) {
+		set(axisID, "DisplayAllIndependentData", TRUE);
+		set(axisID, "IndepStart", -1);
+		set(axisID, "IndepStop", 1);
+	}
+//Smith chart axis...
+	if (axisID != NULL) {
+		set(axisID, "ImpedanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
+		set(axisID, "AdmittanceColor", 104);
+		set(axisID, "AdmittanceLineThickness", 14);
+		set(axisID, "AdmittanceLineType", 0);
+	}
+traceID = get_new(goId0, "Trace", "RFIFmatch1..S(2,2)", "xAxis", "yAxis");
+// Trace:
+	if (traceID != NULL) {
+		set(traceID, "TraceType", ddsAutomaticTraceType);
+		set(traceID, "Color", 1);
+		set(traceID, "Uid", 1009609504);
+		set(traceID, "UIIndex", 0);
+	}
+// Rect trace:
+	if (traceID != NULL) {
+		 set(traceID, "LineThick", 1);
+		 set(traceID, "LineType", ddsSolidLineType);
+		 set(traceID, "FillPattern", -1);
+		 set(traceID, "SymbolType", ddsTriangleSymbol);
+		 set(traceID, "SymbolsOnOff", TRUE);
+		 set(traceID, "AlwaysDisplayTransitions", FALSE);
+		 set(traceID, "SpectralArrowheadsOnOff", TRUE);
+		 set(traceID, "LabelSubtracesOnOff", TRUE);
+		 set(traceID, "FillHistogramsOnOff", FALSE);
+		 set(traceID, "Format", ddsFormatAutomatic);
+		 set(traceID, "NumDigits", 3);
+		 set(traceID, "Font", "Arial For CAE");
+		 set(traceID, "FontSize", 112);
+		 set(traceID, "LineColorAutoSequence", FALSE);
+		 set(traceID, "LineTypeAutoSequence", FALSE);
+		 set(traceID, "SymbolTypeAutoSequence", FALSE);
+		 set(traceID, "LineColorAutoSequenceOrder", 3);
+		 set(traceID, "LineTypeAutoSequenceOrder", 1);
+		 set(traceID, "SymbolTypeAutoSequenceOrder", 2);
+	}
+markerID = get_new(traceID, "MarkerNew", "m2", "45000000.00000000000000000000000000000000", 0, "");
+// Base Class Object:
+ 			set(markerID, "Name", "default");
+ 			set(markerID, "Uid", 437967528);
+ // Graphical Object:
+ set(markerID, "Right", 4751);
+ set(markerID, "Bottom", 10182);
+ set(markerID, "Left", 680);
+	set(markerID, "Top", 7656);
+ set(markerID, "Zrot", 0.000000);
+ set(markerID, "Yrot", 0.000000);
+ set(markerID, "Xrot", 0.000000);
+ set(markerID, "Status", 0);
+ set(markerID, "LineColor", 0);
+ set(markerID, "LineType", 0);
+ set(markerID, "LineWidth", 0);
+ // Need to add Popup, LocalPopup, Owner...
+// Marker:
+	if (markerID != NULL) {
+		set(markerID, "DataScript", "trcdata");
+		set(markerID, "DeltaModeStatus", 0);
+		set(markerID, "Format", 0);
+		set(markerID, "NumDigits", 3);
+		set(markerID, "ComplexNumberFormat", 1);
+		set(markerID, "AuxFormat", 0);
+		set(markerID, "AuxNumDigits", 3);
+		set(markerID, "AuxType", 0);
+		set(markerID, "AuxZ", "1");
+		set(markerID, "AuxComplexNumberFormat", 0);
+	}
+// More marker:
+	if (markerID != NULL) {
+		set(markerID, "MkrLabelFont", "Arial For CAE");
+		set(markerID, "MkrLabelFontSize", 167);
+		set(markerID, "MkrLabelColor", 0);
+		set(markerID, "MkrReadoutFont", "Arial For CAE");
+		set(markerID, "MkrReadoutFontSize", 167);
+		set(markerID, "MkrReadoutColor", 0);
+		set(markerID, "MkrReadoutLeft", 3885);
+		set(markerID, "MkrReadoutRight", 6579);
+		set(markerID, "MkrReadoutBottom", 5295);
+		set(markerID, "MkrReadoutTop", 4579);
+		set(markerID, "MkrIndicatorColor", 0);
+	}
+// Initialize plot
+set(goId0, "InitPlot", 0);
+goId0 = get_new(pageId, "Polyline");
+// Polyline:
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -371);
+set(plyPtId, "Y", 5026);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -388);
+set(plyPtId, "Y", 5026);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -567);
+set(plyPtId, "Y", 5026);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -453);
+set(plyPtId, "Y", 5630);
+// Base Class Object:
+ 			set(goId0, "Name", "");
+ 			set(goId0, "Uid", 1935425350);
+ // Graphical Object:
+ set(goId0, "Right", 0);
+ set(goId0, "Bottom", 5630);
+ set(goId0, "Left", -567);
+	set(goId0, "Top", 5026);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Line...
+	set(goId0, "StartX", -371);
+	set(goId0, "StartY", 5026);
+	set(goId0, "EndX", -453);
+	set(goId0, "EndY", 5630);
+goId0 = get_new(pageId, "Polyline");
+// Polyline:
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3732);
+set(plyPtId, "Y", 5002);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3891);
+set(plyPtId, "Y", 5064);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3749);
+set(plyPtId, "Y", 5152);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3740);
+set(plyPtId, "Y", 4997);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3740);
+set(plyPtId, "Y", 5006);
+// Base Class Object:
+ 			set(goId0, "Name", "");
+ 			set(goId0, "Uid", 191057399);
+ // Graphical Object:
+ set(goId0, "Right", 3891);
+ set(goId0, "Bottom", 5152);
+ set(goId0, "Left", 3732);
+	set(goId0, "Top", 4997);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Line...
+	set(goId0, "StartX", 3732);
+	set(goId0, "StartY", 5002);
+	set(goId0, "EndX", 3740);
+	set(goId0, "EndY", 5006);
+goId0 = get_new(pageId, "Polyline");
+// Polyline:
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3712);
+set(plyPtId, "Y", 5056);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3490);
+set(plyPtId, "Y", 5056);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", 3674);
+set(plyPtId, "Y", 5654);
+// Base Class Object:
+ 			set(goId0, "Name", "");
+ 			set(goId0, "Uid", 1016635429);
+ // Graphical Object:
+ set(goId0, "Right", 3712);
+ set(goId0, "Bottom", 5654);
+ set(goId0, "Left", 3490);
+	set(goId0, "Top", 5056);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Line...
+	set(goId0, "StartX", 3712);
+	set(goId0, "StartY", 5056);
+	set(goId0, "EndX", 3674);
+	set(goId0, "EndY", 5654);
+goId0 = get_new(pageId, "Polyline");
+// Polyline:
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -352);
+set(plyPtId, "Y", 4952);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -193);
+set(plyPtId, "Y", 5014);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -335);
+set(plyPtId, "Y", 5102);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -344);
+set(plyPtId, "Y", 4947);
+plyPtId = get_new(goId0, "Point");
+set(plyPtId, "X", -344);
+set(plyPtId, "Y", 4956);
+// Base Class Object:
+ 			set(goId0, "Name", "");
+ 			set(goId0, "Uid", 1395161215);
+ // Graphical Object:
+ set(goId0, "Right", 0);
+ set(goId0, "Bottom", 5102);
+ set(goId0, "Left", -352);
+	set(goId0, "Top", 4947);
+ set(goId0, "Zrot", 0.000000);
+ set(goId0, "Yrot", 0.000000);
+ set(goId0, "Xrot", 0.000000);
+ set(goId0, "Status", 0);
+ set(goId0, "LineColor", 0);
+ set(goId0, "LineType", 0);
+ set(goId0, "LineWidth", 7);
+ // Need to add Popup, LocalPopup, Owner...
+// Line...
+	set(goId0, "StartX", -352);
+	set(goId0, "StartY", 4952);
+	set(goId0, "EndX", -344);
+	set(goId0, "EndY", 4956);
+// Base Class Object:
+ 			set(pageId, "Name", "page 1");
+ 			set(pageId, "Uid", 522998783);
+ 	set(pageId, "Invisible", FALSE);
+set(ddoId, "UpdateAllExpressions", TRUE);
+set(ddoId, "EnableExpressionUpdates", TRUE);
+
+ddWinId = get_new(ddsId, "Window");
+	set(ddWinId, "Object", ddoId);
+	set(ddWinId, "CurrentPage", 522998783);
+	set(ddWinId, "PageViewRect_522998783", list(-1270, 7674, 7408, -451));
+	set(ddWinId, "Frame", list(38, 9, 756, 712));
+	set(ddWinId, "ForegroundColor", 0);
+	set(ddWinId, "BackgroundColor", 8);
+
+}
+
+_DDSobjectSaveRestore_() ;

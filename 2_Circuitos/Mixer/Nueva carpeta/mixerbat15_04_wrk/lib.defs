@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE mixerbat15_04_lib mixerbat15_04_lib
+ASSIGN mixerbat15_04_lib libMode shared
+DEFINE mixerbat15_04_lib mixerbat15_04_lib
+ASSIGN mixerbat15_04_lib libMode shared

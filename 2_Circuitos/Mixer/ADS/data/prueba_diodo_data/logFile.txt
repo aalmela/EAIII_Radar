@@ -1,0 +1,102 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Tue Jun 18 17:41:54 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 22104
+
+
+HB HB2[1] <Mi_darae_lib:prueba_diodo:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 143.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------
+Newton solver:				Linear solver:
+Iter	KCL residual	Sol update	Iters	Residual
+------------------------------------------------------------------------
+0 	12.7577 mA               
+1 	13.9215 mA  	697.718 mV  	  3	3.446e-06   
+2 	26.9545 mA  	770.044 mV  	  3	2.104e-02   
+3 	14.5124 mA  	551.699 mV  	  6	6.849e-04   
+4 	958.183 uA  	276.618 mV  	  7	6.024e-04   
+5 	32.3715 uA  	2.46273 mV  	  9	1.123e-04   
+6 	46.9647 nA  	39.3408 uV  	  7	3.275e-04   
+7 	33.245 pA   	106.176 nV  	  8	6.950e-04   
+8 	610.776 aA  	966.754 pV  	 10	1.358e-05   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             5.321e-04       >       1.576e-06
+X2.N__3                 4.622e-04       >       1.125e-06
+
+o Number of waveforms violating the HB truncation error check:
+        2 out of 2 waveforms.
+o Estimated max HB truncation error: 5.321e-04 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.576e-06 for this waveform.
+o A time-domain plot of the N__10 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB2[1] <Mi_darae_lib:prueba_diodo:schematic>
+    Number of tones:   2.
+    Number of frequencies:   15.
+    Number of time samples:  64.
+    Number of HB equations (HB problem size): 377.
+    Number of SS/noise equations (SS/noise problem size): 754.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------
+Newton solver:				Linear solver:
+Iter	KCL residual	Sol update	Iters	Residual
+------------------------------------------------------------------------
+0 	766.077 uA               
+1 	449.86 uA   	8.79002 mV  	  3	5.878e-02   
+2 	34.3016 uA  	9.71158 mV  	  9	4.079e-02   
+3 	188.996 nA  	368.005 uV  	 14	3.322e-03   
+4 	84.3956 pA  	2.86357 uV  	 17	5.968e-04   
+5 	95.5343 fA  	2.30008 nV  	 16	9.745e-04   
+
+HB_NOISE HB2[1] <Mi_darae_lib:prueba_diodo:schematic>
+
+    Noise Freq=10 MHz  NFssb=7.053dB  NFdsb=0.7708dB  Conv Gain=-24.18dB
+
+    Noise Freq=10 MHz  NFssb=7.053dB  NFdsb=0.7708dB  Conv Gain=-24.18dB
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             2.048e-05       >       1.576e-06
+X2.N__3                 1.761e-05       >       1.125e-06
+
+o Number of waveforms violating the HB truncation error check:
+        2 out of 2 waveforms.
+o Estimated max HB truncation error: 2.048e-05 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.576e-06 for this waveform.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     0.49 seconds.
+

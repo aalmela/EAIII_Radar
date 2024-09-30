@@ -1,0 +1,102 @@
+//--------------------------------------------------------------------------//
+defun muRataLibWeb_C_paramType_C_cb(cbP, clientData, callData)
+{
+	decl dependentParmData=NULL;
+	decl PartNumber = pcb_get_form_value(callData,"PartNumber");
+
+	//-------------------------------
+	decl Type = "";
+	decl TempCharacteristics = "";
+	decl RatedVoltage = "";
+	decl Value = "";
+	decl Tolerance = "";
+	decl FreqRange = "";
+	//-------------------------------
+
+
+//	if(stripstr(PartNumber) != "NULL" && PartNumber != NULL  )	//delete:2011.12.19
+//	if(PartNumber != NULL  && stripstr(PartNumber) != "NULL"   )	//add:2011.12.19
+	if(PartNumber != NULL )
+	{
+		if(stripstr(PartNumber) != "NULL" ){
+			decl list = parse(PartNumber,":");   /// 1:a,b,c,d:1-->a,b,c,d
+			if(listlen(list) > 2){
+				list = delete_nth(listlen(list)-1,list);
+				list = cdr(list);
+				PartNumber = fmt_tokens(list);
+			}
+			
+			decl newInfo = parse(PartNumber,",");
+
+			if(listlen(newInfo) > 1){
+				Type = strcat("\"",stripstr(nth(1,newInfo)),"\"");
+				TempCharacteristics = strcat("\"",stripstr(nth(2,newInfo)),"\"");
+				RatedVoltage = strcat("\"",stripstr(nth(3,newInfo)),"\"");
+				Value = strcat("\"",stripstr(nth(4,newInfo)),"\"");
+				Tolerance = strcat("\"",stripstr(nth(5,newInfo)),"\"");
+				FreqRange = strcat("\"",stripstr(nth(6,newInfo)),"\"");
+			}
+		}
+	}
+
+	// Return the values ////
+	dependentParmData = pcb_set_string(dependentParmData,"Type" ,Type);
+	dependentParmData = pcb_set_string(dependentParmData,"TempCharacteristics" ,TempCharacteristics);
+	dependentParmData = pcb_set_string(dependentParmData,"RatedVoltage" ,RatedVoltage);
+	dependentParmData = pcb_set_string(dependentParmData,"Value" ,Value);
+	dependentParmData = pcb_set_string(dependentParmData,"Tolerance" ,Tolerance);
+	dependentParmData = pcb_set_string(dependentParmData,"FreqRange" ,FreqRange);
+	return dependentParmData;
+}
+
+
+//--------------------------------------------------------------------------//
+defun muRataLibWeb_C_paramType_C_T_cb(cbP, clientData, callData)
+{
+	decl dependentParmData=NULL;
+	decl PartNumber = pcb_get_form_value(callData,"PartNumber");
+
+	//-------------------------------
+	decl Type = "";
+	decl TempCharacteristics = "";
+	decl RatedVoltage = "";
+	decl Value = "";
+	decl Tolerance = "";
+	decl FreqRange = "";
+	//-------------------------------
+
+
+//	if(stripstr(PartNumber) != "NULL" && PartNumber != NULL  )	//delete:2011.12.19
+//	if(PartNumber != NULL  && stripstr(PartNumber) != "NULL"   )	//add:2011.12.19
+	if(PartNumber != NULL )
+	{
+		if(stripstr(PartNumber) != "NULL" ){
+			decl list = parse(PartNumber,":");   /// 1:a,b,c,d:1-->a,b,c,d
+			if(listlen(list) > 2){
+				list = delete_nth(listlen(list)-1,list);
+				list = cdr(list);
+				PartNumber = fmt_tokens(list);
+			}
+			
+			decl newInfo = parse(PartNumber,",");
+
+			if(listlen(newInfo) > 1){
+				Type = strcat("\"",stripstr(nth(1,newInfo)),"\"");
+				TempCharacteristics = strcat("\"",stripstr(nth(2,newInfo)),"\"");
+				RatedVoltage = strcat("\"",stripstr(nth(3,newInfo)),"\"");
+				Value = strcat("\"",stripstr(nth(4,newInfo)),"\"");
+				Tolerance = strcat("\"",stripstr(nth(5,newInfo)),"\"");
+				FreqRange = strcat("\"",stripstr(nth(6,newInfo)),"\"");
+			}
+		}
+	}
+
+	// Return the values ////
+	dependentParmData = pcb_set_string(dependentParmData,"Type" ,Type);
+	dependentParmData = pcb_set_string(dependentParmData,"TempCharacteristics" ,TempCharacteristics);
+	dependentParmData = pcb_set_string(dependentParmData,"RatedVoltage" ,RatedVoltage);
+	dependentParmData = pcb_set_string(dependentParmData,"Value" ,Value);
+	dependentParmData = pcb_set_string(dependentParmData,"Tolerance" ,Tolerance);
+	dependentParmData = pcb_set_string(dependentParmData,"FreqRange" ,FreqRange);
+	return dependentParmData;
+}

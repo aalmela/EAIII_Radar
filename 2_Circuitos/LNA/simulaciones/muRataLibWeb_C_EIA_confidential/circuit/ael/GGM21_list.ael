@@ -1,0 +1,76 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GGM21BR72A473KA37","1:GGM21BR72A473KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 47000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GGM21BR72A473KA37");
+create_constant_form("GGM21BR72A104KA37","2:GGM21BR72A104KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 100000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GGM21BR72A104KA37");
+create_constant_form("GGM21BR71H224KA37","3:GGM21BR71H224KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 220000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GGM21BR71H224KA37");
+create_constant_form("GGM219R71E474KA55","4:GGM219R71E474KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 470000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GGM219R71E474KA55");
+create_constant_form("GGM21BR71H474KA55","5:GGM21BR71H474KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 470000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GGM21BR71H474KA55");
+create_constant_form("GGM21BC72A105KE36","6:GGM21BC72A105KE36, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 100[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","GGM21BC72A105KE36");
+create_constant_form("GGM219R71C105KA37","7:GGM219R71C105KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","GGM219R71C105KA37");
+create_constant_form("GGM21BR71E105KA56","8:GGM21BR71E105KA56, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:8",68,"8","GGM21BR71E105KA56");
+create_constant_form("GGM21BR71H105KA03","9:GGM21BR71H105KA03, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:9",68,"9","GGM21BR71H105KA03");
+create_constant_form("GGM21BR7YA105KA55","10:GGM21BR7YA105KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 35[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:10",68,"10","GGM21BR7YA105KA55");
+create_constant_form("GGM21BC7YA225KE02","11:GGM21BC7YA225KE02, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 35[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:11",68,"11","GGM21BC7YA225KE02");
+create_constant_form("GGM21BR71A225KA37","12:GGM21BR71A225KA37, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 10[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:12",68,"12","GGM21BR71A225KA37");
+create_constant_form("GGM21BR71C225KA64","13:GGM21BR71C225KA64, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:13",68,"13","GGM21BR71C225KA64");
+create_constant_form("GGM21BR71E225KA73","14:GGM21BR71E225KA73, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:14",68,"14","GGM21BR71E225KA73");
+create_constant_form("GGM21BC71A475KA73","15:GGM21BC71A475KA73, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 10[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:15",68,"15","GGM21BC71A475KA73");
+create_constant_form("GGM21BC71E475KE36","16:GGM21BC71E475KE36, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 25[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:16",68,"16","GGM21BC71E475KE36");
+create_constant_form("GGM21BC7YA475KE36","17:GGM21BC7YA475KE36, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 35[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:17",68,"17","GGM21BC7YA475KE36");
+create_constant_form("GGM21BR71C475KA73","18:GGM21BR71C475KA73, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:18",68,"18","GGM21BR71C475KA73");
+create_constant_form("GGM21BR70J106KE22","19:GGM21BR70J106KE22, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 6.3[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:19",68,"19","GGM21BR70J106KE22");
+create_constant_form("GGM21BR71A106KE22","20:GGM21BR71A106KE22, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 10[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:20",68,"20","GGM21BR71A106KE22");
+
+create_form_set("GGM21_list" 
+,"GGM21BR72A473KA37"
+,"GGM21BR72A104KA37"
+,"GGM21BR71H224KA37"
+,"GGM219R71E474KA55"
+,"GGM21BR71H474KA55"
+,"GGM21BC72A105KE36"
+,"GGM219R71C105KA37"
+,"GGM21BR71E105KA56"
+,"GGM21BR71H105KA03"
+,"GGM21BR7YA105KA55"
+,"GGM21BC7YA225KE02"
+,"GGM21BR71A225KA37"
+,"GGM21BR71C225KA64"
+,"GGM21BR71E225KA73"
+,"GGM21BC71A475KA73"
+,"GGM21BC71E475KE36"
+,"GGM21BC7YA475KE36"
+,"GGM21BR71C475KA73"
+,"GGM21BR70J106KE22"
+,"GGM21BR71A106KE22"
+);
+
+create_compound_form("GGM21_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GGM21_list",-1,prm("GGM21BR72A473KA37")),
+create_parm("MIN","Minimum",32,"GGM21_list",-1,prm("GGM21BR72A473KA37")),
+create_parm("MAX","Maximum",32,"GGM21_list",-1,prm("GGM21BR71A106KE22")));
+
+create_form_set("GGM21_list_opt","NULL" 
+,"GGM21BR72A473KA37"
+,"GGM21BR72A104KA37"
+,"GGM21BR71H224KA37"
+,"GGM219R71E474KA55"
+,"GGM21BR71H474KA55"
+,"GGM21BC72A105KE36"
+,"GGM219R71C105KA37"
+,"GGM21BR71E105KA56"
+,"GGM21BR71H105KA03"
+,"GGM21BR7YA105KA55"
+,"GGM21BC7YA225KE02"
+,"GGM21BR71A225KA37"
+,"GGM21BR71C225KA64"
+,"GGM21BR71E225KA73"
+,"GGM21BC71A475KA73"
+,"GGM21BC71E475KE36"
+,"GGM21BC7YA475KE36"
+,"GGM21BR71C475KA73"
+,"GGM21BR70J106KE22"
+,"GGM21BR71A106KE22"
+,"GGM21_compound"
+);
+
+
+

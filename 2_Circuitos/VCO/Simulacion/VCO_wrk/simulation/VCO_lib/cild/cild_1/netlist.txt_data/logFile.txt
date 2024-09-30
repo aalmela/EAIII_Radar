@@ -1,0 +1,52 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Sep 23 19:12:14 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\VCO\Simulacion\VCO_wrk\simulation\VCO_lib\cild\cild_1"
+      Process ID: 22276
+
+Parsing the netlist ...
+Flattening the netlist ...
+
+OPTIM Optim1[1] <netlist.txt>  optIter=(0->25)
+
+AC Optim1[1].ZcGammaExt[0] <netlist.txt>  optIter=0  freq=1 GHz
+Iteration/Trial #0:
+  CurrentEF: 0.231387704696964
+  Optimization variables:
+    Width = 1
+
+AC Optim1[1].ZcGammaExt[1] <netlist.txt>  optIter=1  freq=1 GHz
+Iteration/Trial #1:
+  CurrentEF: 0.000475162932119925
+  Optimization variables:
+    Width = 377.6420384397909e-03
+
+AC Optim1[1].ZcGammaExt[2] <netlist.txt>  optIter=2  freq=1 GHz
+Iteration/Trial #2:
+  CurrentEF: 5.13021666712606e-12
+  Optimization variables:
+    Width = 362.9241763201797e-03
+
+AC Optim1[1].ZcGammaExt[3] <netlist.txt>  optIter=3  freq=1 GHz
+Iteration/Trial #3:
+  CurrentEF: 1.4808936748421e-13
+  Optimization variables:
+    Width = 362.922429044395e-03
+
+AC Optim1[1].ZcGammaExt[4] <netlist.txt>  optIter=4  freq=1 GHz
+Iteration/Trial #4:
+  CurrentEF: 9.16357159378813e-14
+  Optimization variables:
+    Width = 362.9224831869891e-03
+Optim1[1] terminated due to no more improvement 
+
+SP Optim1[1].FinalAnalysis1[1].SP1[1] <netlist.txt>   freq=1 GHz
+
+Checking for unresolved variables ...
+Flushing data (please wait) ...
+     ... data flush done.
+

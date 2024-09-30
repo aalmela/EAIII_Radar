@@ -1,0 +1,39 @@
+; Top Design: "Mi_darae_lib:medicion_rat_race_ideal:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Mi_darae_lib:medicion_rat_race_ideal:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.5 GHz Stop=1.5 GHz Step=0.010 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+
+;#@# autodisplay="S_Params_Quad_dB_Smith"
+Port:Term1  N__3 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
+Port:Term3  N__7 0 Num=3 Z=50 Ohm Noise=yes 
+Port:Term4  N__9 0 Num=4 Z=50 Ohm Noise=yes 
+
+global L=11.25/f
+global f=950000000 tune{ 600000000 to 1125000000 by 100000000 }
+global C2=2*C1
+global C1=1/(444.28*f)
+L:L9  N__0 0 L=L Noise=yes  
+L:L8  N__5 N__9 L=L Noise=yes  
+L:L7  N__7 N__3 L=L Noise=yes  
+L:L6  N__7 N__5 L=L Noise=yes  
+C:C21  0 N__3 C=C1 
+C:C12  N__7 0 C=C2 
+C:C25  N__5 0 C=C2 
+C:C26  0 N__9 C=C1 
+C:C27  N__3 N__0 C=C1 
+C:C28  N__0 N__9 C=C1 

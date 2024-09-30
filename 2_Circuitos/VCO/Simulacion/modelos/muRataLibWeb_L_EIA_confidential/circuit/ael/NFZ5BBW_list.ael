@@ -1,0 +1,58 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("NFZ5BBW100LZ10","1:NFZ5BBW100LZ10, Inductor Type, 3000[mA], 1[MHz]-3[GHz]:1",68,"1","NFZ5BBW100LZ10");
+create_constant_form("NFZ5BBW140LZ10","2:NFZ5BBW140LZ10, Inductor Type, 2600[mA], 1[MHz]-3[GHz]:2",68,"2","NFZ5BBW140LZ10");
+create_constant_form("NFZ5BBW141LZ10","3:NFZ5BBW141LZ10, Inductor Type, 1050[mA], 1[MHz]-3[GHz]:3",68,"3","NFZ5BBW141LZ10");
+create_constant_form("NFZ5BBW170LZ10","4:NFZ5BBW170LZ10, Inductor Type, 2500[mA], 1[MHz]-3[GHz]:4",68,"4","NFZ5BBW170LZ10");
+create_constant_form("NFZ5BBW220LZ10","5:NFZ5BBW220LZ10, Inductor Type, 2300[mA], 1[MHz]-3[GHz]:5",68,"5","NFZ5BBW220LZ10");
+create_constant_form("NFZ5BBW2R9LZ10","6:NFZ5BBW2R9LZ10, Inductor Type, 4000[mA], 1[MHz]-3[GHz]:6",68,"6","NFZ5BBW2R9LZ10");
+create_constant_form("NFZ5BBW310LZ10","7:NFZ5BBW310LZ10, Inductor Type, 2000[mA], 1[MHz]-3[GHz]:7",68,"7","NFZ5BBW310LZ10");
+create_constant_form("NFZ5BBW450LZ10","8:NFZ5BBW450LZ10, Inductor Type, 1650[mA], 1[MHz]-3[GHz]:8",68,"8","NFZ5BBW450LZ10");
+create_constant_form("NFZ5BBW4R5LZ10","9:NFZ5BBW4R5LZ10, Inductor Type, 3400[mA], 1[MHz]-3[GHz]:9",68,"9","NFZ5BBW4R5LZ10");
+create_constant_form("NFZ5BBW520LZ10","10:NFZ5BBW520LZ10, Inductor Type, 1610[mA], 1[MHz]-3[GHz]:10",68,"10","NFZ5BBW520LZ10");
+create_constant_form("NFZ5BBW610LZ10","11:NFZ5BBW610LZ10, Inductor Type, 1600[mA], 1[MHz]-3[GHz]:11",68,"11","NFZ5BBW610LZ10");
+create_constant_form("NFZ5BBW6R7LZ10","12:NFZ5BBW6R7LZ10, Inductor Type, 3100[mA], 1[MHz]-3[GHz]:12",68,"12","NFZ5BBW6R7LZ10");
+create_constant_form("NFZ5BBW7R6LZ10","13:NFZ5BBW7R6LZ10, Inductor Type, 3100[mA], 1[MHz]-3[GHz]:13",68,"13","NFZ5BBW7R6LZ10");
+create_constant_form("NFZ5BBW970LZ10","14:NFZ5BBW970LZ10, Inductor Type, 1200[mA], 1[MHz]-3[GHz]:14",68,"14","NFZ5BBW970LZ10");
+
+create_form_set("NFZ5BBW_list" 
+,"NFZ5BBW100LZ10"
+,"NFZ5BBW140LZ10"
+,"NFZ5BBW141LZ10"
+,"NFZ5BBW170LZ10"
+,"NFZ5BBW220LZ10"
+,"NFZ5BBW2R9LZ10"
+,"NFZ5BBW310LZ10"
+,"NFZ5BBW450LZ10"
+,"NFZ5BBW4R5LZ10"
+,"NFZ5BBW520LZ10"
+,"NFZ5BBW610LZ10"
+,"NFZ5BBW6R7LZ10"
+,"NFZ5BBW7R6LZ10"
+,"NFZ5BBW970LZ10"
+);
+
+create_compound_form("NFZ5BBW_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"NFZ5BBW_list",-1,prm("NFZ5BBW100LZ10")),
+create_parm("MIN","Minimum",32,"NFZ5BBW_list",-1,prm("NFZ5BBW100LZ10")),
+create_parm("MAX","Maximum",32,"NFZ5BBW_list",-1,prm("NFZ5BBW970LZ10")));
+
+create_form_set("NFZ5BBW_list_opt","NULL" 
+,"NFZ5BBW100LZ10"
+,"NFZ5BBW140LZ10"
+,"NFZ5BBW141LZ10"
+,"NFZ5BBW170LZ10"
+,"NFZ5BBW220LZ10"
+,"NFZ5BBW2R9LZ10"
+,"NFZ5BBW310LZ10"
+,"NFZ5BBW450LZ10"
+,"NFZ5BBW4R5LZ10"
+,"NFZ5BBW520LZ10"
+,"NFZ5BBW610LZ10"
+,"NFZ5BBW6R7LZ10"
+,"NFZ5BBW7R6LZ10"
+,"NFZ5BBW970LZ10"
+,"NFZ5BBW_compound"
+);
+
+
+

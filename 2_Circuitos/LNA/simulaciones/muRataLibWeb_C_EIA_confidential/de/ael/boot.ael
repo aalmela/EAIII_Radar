@@ -1,0 +1,127 @@
+//****************************************************************************
+//
+// File:        boot.ael(2016.08.23)
+// Description: Start up script for ADS Design Kit
+// Author:      Keysight Technologies Japan, Ltd. 
+// Language:    AEL
+// Created:     2024.02.05 16:37:05
+// (C) Copyright 2004-2016, Keysight Technologies Japan, all rights reserved.
+//****************************************************************************
+
+//#voc(CmdOp)
+
+ create_constant_form("NULL","NULL",68,"NULL","NULL");  //add:2010.11.2
+
+// ---------------------------------------------------------------------//
+// Warning: Do not delete this function.
+// ---------------------------------------------------------------------//
+//decl COMPANY_NAME="muRataLibWeb_C";
+decl gParmCBDebug = FALSE;
+decl gParmCBReturnPrecision = "%.6g";
+decl delim=api_get_directory_delimiter();
+decl HOME=expandenv("$HOME");
+
+//-- Get a PDK information from (PDK)\design_kit\ads.lib ----------------//
+decl muRataLibWeb_C_DK_NAME    = nth(0, designKitRecord);
+decl muRataLibWeb_C_DK_DIR     = expandenv(nth(1, designKitRecord));
+decl muRataLibWeb_C_DK_Version = expandenv(nth(3, designKitRecord));
+
+fprintf(stderr, "Loading %s design kit\n", muRataLibWeb_C_DK_NAME);
+
+// ---------------------------------------------------------------------//
+
+// TechInclude component name ==== used in exebeforesim.ael===//
+decl IncludeCmpName = "MURATAInclude";       //MURATAInclude:TechInclude
+//decl IncludeCmpName = strcat(muRataLibWeb_C_DK_NAME, "_Include");
+decl PROCESSNAME    = "muRata"; //TechInclude.ael
+//decl PROCESSNAME    = muRataLibWeb_C_DK_NAME; //TechInclude.ael
+//============================================================//
+
+
+//======Load USER SETUP======================================================//
+load(sprintf("%sde/ael/muRataLibWeb_C_cfg"         , muRataLibWeb_C_DK_DIR));
+//======================================================================//
+
+
+// Set components environment ------------------------------------------//
+// Warning: Do not delete this function.
+// ---------------------------------------------------------------------//
+decl muRataLibWeb_C_CONFIG_DIR          = sprintf("%sconfig/"         , muRataLibWeb_C_DK_DIR);
+//decl muRataLibWeb_C_CIRCUIT_AEL_DIR     = sprintf("%scircuit/ael/%s"  , muRataLibWeb_C_DK_DIR,muRataLibWeb_C_KIKAKU);  //delete:ADS2011
+decl muRataLibWeb_C_CIRCUIT_AEL_DIR     = sprintf("%scircuit/ael/"    , muRataLibWeb_C_DK_DIR);  
+decl muRataLibWeb_C_CIRCUIT_REC_DIR     = sprintf("%scircuit/records/", muRataLibWeb_C_DK_DIR);
+decl muRataLibWeb_C_CIRCUIT_MODEL_DIR   = sprintf("%scircuit/models/" , muRataLibWeb_C_DK_DIR);
+//decl muRataLibWeb_C_CIRCUIT_LOAD_DIR    = sprintf("%scircuit/load/"   , muRataLibWeb_C_DK_DIR);
+decl muRataLibWeb_C_CIRCUIT_SYMBOLS_DIR = sprintf("%scircuit/symbols/", muRataLibWeb_C_DK_DIR);
+decl muRataLibWeb_C_DE_AEL_DIR          = sprintf("%sde/ael/"         , muRataLibWeb_C_DK_DIR);
+decl muRataLibWeb_C_UTIL_DIR            = sprintf("%sutilities/"      , muRataLibWeb_C_DK_DIR);
+decl muRataLibWeb_C_ARTWORK_DIR         = sprintf("%scircuit/artwork/", muRataLibWeb_C_DK_DIR); // artwork
+
+
+decl muRataLibWeb_C_BITMAP_DIR;
+        if(delim=="/") // For Unix Version.....
+            muRataLibWeb_C_BITMAP_DIR=sprintf("%scircuit/bitmaps/%s/", muRataLibWeb_C_DK_DIR,"unix");
+        else           //For PC Version.....
+            muRataLibWeb_C_BITMAP_DIR=sprintf("%scircuit/bitmaps/%s/", muRataLibWeb_C_DK_DIR,"pc");
+
+
+
+// ---------------------------------------------------------------------//
+// Load Component Library file  ----------------------------------------//
+// Warning: Do not delete this function.
+// ---------------------------------------------------------------------//
+
+load(strcat(muRataLibWeb_C_DE_AEL_DIR, "TechInclude")); // Load TechInclude component  
+load(strcat(muRataLibWeb_C_DE_AEL_DIR, "palette"));     // Load components and palette group
+load(strcat(muRataLibWeb_C_DE_AEL_DIR, "value_cb"));    // Load callback function
+
+load(strcat(muRataLibWeb_C_ARTWORK_DIR, "layout"));     // Load artwork function
+
+
+// ---------------------------------------------------------------------//
+// Load Utilit files (utilities) ---------------------------------------//
+// Warning: Do not delete this function.
+// ---------------------------------------------------------------------//
+load(strcat(muRataLibWeb_C_UTIL_DIR,"tools"));
+//load(strcat(muRataLibWeb_C_UTIL_DIR,"netinclude"));  // delete:ADS2011
+
+
+// Insert ModelInclude before simulation -------------------------------//
+// Warning: Do not delete this function.
+// ---------------------------------------------------------------------//
+
+// delete:ADS2011
+// defun user_netlist_initialize(){
+// 	muRataLibWeb_C_netlist_initialize();
+// }
+
+// delete:ADS2011
+
+//// message //////////////////////////////////////
+//	if(muRataLibWeb_C_boot_info){
+//		decl file = strcat(muRataLibWeb_C_DK_DIR,delim,"verinfo.txt");
+//
+//		// if There is a file ,show a message.
+//	//	if( is_file(file) ){
+//			decl msg_list=muRataLibWeb_C_FUNC_load_file_to_list(file);
+//			decl msg_partslist=list();
+//			decl msg_line;
+//			decl verinfo="";
+//			while(msg_list)
+//			{ 
+//				msg_line=stripstr(car(msg_list));
+//				msg_list=cdr(msg_list);
+//				if(msg_line!=NULL)
+//				{
+//					verinfo=strcat(verinfo,"\n",msg_line);
+//				}
+//			}
+//
+//			//Message Setting//
+//			de_info(strcat("---- Set ", PROCESSNAME ," Component library ---- \n",verinfo));
+//	//	}
+//	}
+//
+
+
+

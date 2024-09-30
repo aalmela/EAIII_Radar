@@ -1,0 +1,7 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc5/drc/jh_pc5.llc_mask_devices
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc5/drc/jh_pc5.llc_mask_devices"
+.stream return

@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GXT32EC81A476KE13","1:GXT32EC81A476KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 10[V], 47000000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GXT32EC81A476KE13");
+create_constant_form("GXT32EC81C476KE13","2:GXT32EC81C476KE13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 16[V], 47000000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GXT32EC81C476KE13");
+create_constant_form("GXT32ER70J476KE13","3:GXT32ER70J476KE13, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 6.3[V], 47000000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GXT32ER70J476KE13");
+
+create_form_set("GXT32_list" 
+,"GXT32EC81A476KE13"
+,"GXT32EC81C476KE13"
+,"GXT32ER70J476KE13"
+);
+
+create_compound_form("GXT32_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GXT32_list",-1,prm("GXT32EC81A476KE13")),
+create_parm("MIN","Minimum",32,"GXT32_list",-1,prm("GXT32EC81A476KE13")),
+create_parm("MAX","Maximum",32,"GXT32_list",-1,prm("GXT32ER70J476KE13")));
+
+create_form_set("GXT32_list_opt","NULL" 
+,"GXT32EC81A476KE13"
+,"GXT32EC81C476KE13"
+,"GXT32ER70J476KE13"
+,"GXT32_compound"
+);
+
+
+

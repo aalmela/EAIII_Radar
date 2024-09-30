@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=p4 Pin=L4-1
+Removed Pin From Net: NetName=p3 Pin=L7-2
+Removed Pin From Net: NetName=p4 Pin=U1-1
+Removed Pin From Net: NetName=p3 Pin=U1-2
+Added Pin To Net: NetName=p3 Pin=L4-1
+Added Pin To Net: NetName=p4 Pin=L7-2
+Added Pin To Net: NetName=p3 Pin=U1-1
+Added Pin To Net: NetName=p4 Pin=U1-2
+Added Member To Class: ClassName=mixer_1GHz_rat_race_discreto Member=Component L5 LQW18

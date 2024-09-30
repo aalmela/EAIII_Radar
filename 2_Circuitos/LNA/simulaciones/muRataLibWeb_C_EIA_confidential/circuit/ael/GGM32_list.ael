@@ -1,0 +1,40 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GGM32DC72A475KE02","1:GGM32DC72A475KE02, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 100[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GGM32DC72A475KE02");
+create_constant_form("GGM32ER71H475KA55","2:GGM32ER71H475KA55, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GGM32ER71H475KA55");
+create_constant_form("GGM32EC71H106KA03","3:GGM32EC71H106KA03, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 50[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GGM32EC71H106KA03");
+create_constant_form("GGM32EC7YA106KA03","4:GGM32EC7YA106KA03, Water repellent/ Automotive [AEC-Q200], X7S(-55to125[deg]), 35[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GGM32EC7YA106KA03");
+create_constant_form("GGM32ER71E106KA57","5:GGM32ER71E106KA57, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GGM32ER71E106KA57");
+create_constant_form("GGM32ER71A226KE12","6:GGM32ER71A226KE12, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 10[V], 22000000[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","GGM32ER71A226KE12");
+create_constant_form("GGM32ER71C226KE19","7:GGM32ER71C226KE19, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 16[V], 22000000[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","GGM32ER71C226KE19");
+create_constant_form("GGM32ER70J476KE19","8:GGM32ER70J476KE19, Water repellent/ Automotive [AEC-Q200], X7R(-55to125[deg]), 6.3[V], 47000000[pF], +/-10[%], 100[Hz]-6[GHz]:8",68,"8","GGM32ER70J476KE19");
+
+create_form_set("GGM32_list" 
+,"GGM32DC72A475KE02"
+,"GGM32ER71H475KA55"
+,"GGM32EC71H106KA03"
+,"GGM32EC7YA106KA03"
+,"GGM32ER71E106KA57"
+,"GGM32ER71A226KE12"
+,"GGM32ER71C226KE19"
+,"GGM32ER70J476KE19"
+);
+
+create_compound_form("GGM32_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GGM32_list",-1,prm("GGM32DC72A475KE02")),
+create_parm("MIN","Minimum",32,"GGM32_list",-1,prm("GGM32DC72A475KE02")),
+create_parm("MAX","Maximum",32,"GGM32_list",-1,prm("GGM32ER70J476KE19")));
+
+create_form_set("GGM32_list_opt","NULL" 
+,"GGM32DC72A475KE02"
+,"GGM32ER71H475KA55"
+,"GGM32EC71H106KA03"
+,"GGM32EC7YA106KA03"
+,"GGM32ER71E106KA57"
+,"GGM32ER71A226KE12"
+,"GGM32ER71C226KE19"
+,"GGM32ER70J476KE19"
+,"GGM32_compound"
+);
+
+
+

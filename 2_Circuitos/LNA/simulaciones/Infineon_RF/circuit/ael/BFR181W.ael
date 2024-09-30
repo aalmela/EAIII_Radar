@@ -1,0 +1,16 @@
+create_item(
+"BFR181W",               //name  	 
+"BFR181W",               //label 	 
+"Q",                     //prefix	 
+NULL,                    //attibute	 
+-1,                      //priority	 
+NULL,                    //icon name	 
+standard_dialog,         //dialog code	 
+"BJT",                   //dialog data	 
+ComponentNetlistFmt,     //Netlist Format 
+"BFR181W",               //Netlist Data   
+ComponentAnnotFmt,       //display Format 
+"SYM_BJT_1E",            //Symbol Name    
+0,                       //Artwork Type   
+NULL,                    //Artwork Data (SOT323)
+0);                      //extra Attribute

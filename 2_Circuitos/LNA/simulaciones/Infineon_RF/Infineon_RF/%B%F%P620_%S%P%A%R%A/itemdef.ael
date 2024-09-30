@@ -1,0 +1,1003 @@
+set_simulator_type(1); 
+set_design_type(analogRFnet); 
+
+
+/*---------forms and formset------------------*/
+
+create_constant_form("linear","Linear",0, "\"linear\"","linear");
+create_constant_form("spline","Cubic Spline",0, "\"spline\"","spline");
+create_constant_form("cubic","Cubic",0, "\"cubic\"","cubic");
+create_constant_form("value_lookup","Value Lookup",0, "\"value_lookup\"","value_lookup");
+create_constant_form("ceiling_value_lookup","Ceiling Value Lookup",0, "\"ceiling_value_lookup\"","ceiling_value_lookup");
+create_constant_form("floor_value_lookup","Floor Value Lookup",0, "\"floor_value_lookup\"","floor_value_lookup");
+create_constant_form("databased","Data Based",0, "\"\"","");
+create_constant_form("ri","Rectangular",0, "\"ri\"","ri");
+create_constant_form("ma","Polar",0, "\"ma\"","ma");
+create_constant_form("db","DB",0, "\"db\"","db");
+create_constant_form("interpMode","Interpolation Mode",0, "\"interpMode\"","interpMode");
+create_constant_form("constant","Constant",0, "\"constant\"","constant");
+create_constant_form("yes","Yes",0, "1","yes");
+create_constant_form("no","No",0, "0","no");
+
+create_form_set("interpm_form","linear","spline","cubic","value_lookup","ceiling_value_lookup","floor_value_lookup");
+create_form_set("interpd_form","databased","ri","ma","db");
+create_form_set("extrapm_form","interpMode","constant");
+create_form_set("checkpass_form","yes","no");
+
+
+
+/*---------global variables------------------*/
+
+decl type_default = "VCE=1.0V IC=10mA"; 
+
+/*---------forms and formset------------------*/
+
+create_constant_form("VCE=1.0V IC=10mA","VCE=1.0V IC=10mA", 0, " ", "VCE=1.0V IC=10mA");
+create_constant_form("VCE=1.0V IC=15mA","VCE=1.0V IC=15mA", 0, " ", "VCE=1.0V IC=15mA");
+create_constant_form("VCE=1.0V IC=2.0mA","VCE=1.0V IC=2.0mA", 0, " ", "VCE=1.0V IC=2.0mA");
+create_constant_form("VCE=1.0V IC=20mA","VCE=1.0V IC=20mA", 0, " ", "VCE=1.0V IC=20mA");
+create_constant_form("VCE=1.0V IC=25mA","VCE=1.0V IC=25mA", 0, " ", "VCE=1.0V IC=25mA");
+create_constant_form("VCE=1.0V IC=30mA","VCE=1.0V IC=30mA", 0, " ", "VCE=1.0V IC=30mA");
+create_constant_form("VCE=1.0V IC=35mA","VCE=1.0V IC=35mA", 0, " ", "VCE=1.0V IC=35mA");
+create_constant_form("VCE=1.0V IC=4.0mA","VCE=1.0V IC=4.0mA", 0, " ", "VCE=1.0V IC=4.0mA");
+create_constant_form("VCE=1.0V IC=40mA","VCE=1.0V IC=40mA", 0, " ", "VCE=1.0V IC=40mA");
+create_constant_form("VCE=1.0V IC=45mA","VCE=1.0V IC=45mA", 0, " ", "VCE=1.0V IC=45mA");
+create_constant_form("VCE=1.0V IC=5.0mA","VCE=1.0V IC=5.0mA", 0, " ", "VCE=1.0V IC=5.0mA");
+create_constant_form("VCE=1.0V IC=50mA","VCE=1.0V IC=50mA", 0, " ", "VCE=1.0V IC=50mA");
+create_constant_form("VCE=1.0V IC=55mA","VCE=1.0V IC=55mA", 0, " ", "VCE=1.0V IC=55mA");
+create_constant_form("VCE=1.0V IC=6.0mA","VCE=1.0V IC=6.0mA", 0, " ", "VCE=1.0V IC=6.0mA");
+create_constant_form("VCE=1.0V IC=60mA","VCE=1.0V IC=60mA", 0, " ", "VCE=1.0V IC=60mA");
+create_constant_form("VCE=1.0V IC=70mA","VCE=1.0V IC=70mA", 0, " ", "VCE=1.0V IC=70mA");
+create_constant_form("VCE=1.0V IC=8.0mA","VCE=1.0V IC=8.0mA", 0, " ", "VCE=1.0V IC=8.0mA");
+create_constant_form("VCE=1.0V IC=80mA","VCE=1.0V IC=80mA", 0, " ", "VCE=1.0V IC=80mA");
+create_constant_form("VCE=1.5V IC=1.0mA","VCE=1.5V IC=1.0mA", 0, " ", "VCE=1.5V IC=1.0mA");
+create_constant_form("VCE=1.5V IC=10mA","VCE=1.5V IC=10mA", 0, " ", "VCE=1.5V IC=10mA");
+create_constant_form("VCE=1.5V IC=15mA","VCE=1.5V IC=15mA", 0, " ", "VCE=1.5V IC=15mA");
+create_constant_form("VCE=1.5V IC=2.0mA","VCE=1.5V IC=2.0mA", 0, " ", "VCE=1.5V IC=2.0mA");
+create_constant_form("VCE=1.5V IC=20mA","VCE=1.5V IC=20mA", 0, " ", "VCE=1.5V IC=20mA");
+create_constant_form("VCE=1.5V IC=25mA","VCE=1.5V IC=25mA", 0, " ", "VCE=1.5V IC=25mA");
+create_constant_form("VCE=1.5V IC=30mA","VCE=1.5V IC=30mA", 0, " ", "VCE=1.5V IC=30mA");
+create_constant_form("VCE=1.5V IC=35mA","VCE=1.5V IC=35mA", 0, " ", "VCE=1.5V IC=35mA");
+create_constant_form("VCE=1.5V IC=4.0mA","VCE=1.5V IC=4.0mA", 0, " ", "VCE=1.5V IC=4.0mA");
+create_constant_form("VCE=1.5V IC=40mA","VCE=1.5V IC=40mA", 0, " ", "VCE=1.5V IC=40mA");
+create_constant_form("VCE=1.5V IC=45mA","VCE=1.5V IC=45mA", 0, " ", "VCE=1.5V IC=45mA");
+create_constant_form("VCE=1.5V IC=5.0mA","VCE=1.5V IC=5.0mA", 0, " ", "VCE=1.5V IC=5.0mA");
+create_constant_form("VCE=1.5V IC=50mA","VCE=1.5V IC=50mA", 0, " ", "VCE=1.5V IC=50mA");
+create_constant_form("VCE=1.5V IC=55mA","VCE=1.5V IC=55mA", 0, " ", "VCE=1.5V IC=55mA");
+create_constant_form("VCE=1.5V IC=6.0mA","VCE=1.5V IC=6.0mA", 0, " ", "VCE=1.5V IC=6.0mA");
+create_constant_form("VCE=1.5V IC=60mA","VCE=1.5V IC=60mA", 0, " ", "VCE=1.5V IC=60mA");
+create_constant_form("VCE=1.5V IC=70mA","VCE=1.5V IC=70mA", 0, " ", "VCE=1.5V IC=70mA");
+create_constant_form("VCE=1.5V IC=8.0mA","VCE=1.5V IC=8.0mA", 0, " ", "VCE=1.5V IC=8.0mA");
+create_constant_form("VCE=1.5V IC=80mA","VCE=1.5V IC=80mA", 0, " ", "VCE=1.5V IC=80mA");
+create_constant_form("VCE=2.0V IC=1.0mA","VCE=2.0V IC=1.0mA", 0, " ", "VCE=2.0V IC=1.0mA");
+create_constant_form("VCE=2.0V IC=10mA","VCE=2.0V IC=10mA", 0, " ", "VCE=2.0V IC=10mA");
+create_constant_form("VCE=2.0V IC=15mA","VCE=2.0V IC=15mA", 0, " ", "VCE=2.0V IC=15mA");
+create_constant_form("VCE=2.0V IC=2.0mA","VCE=2.0V IC=2.0mA", 0, " ", "VCE=2.0V IC=2.0mA");
+create_constant_form("VCE=2.0V IC=20mA","VCE=2.0V IC=20mA", 0, " ", "VCE=2.0V IC=20mA");
+create_constant_form("VCE=2.0V IC=25mA","VCE=2.0V IC=25mA", 0, " ", "VCE=2.0V IC=25mA");
+create_constant_form("VCE=2.0V IC=30mA","VCE=2.0V IC=30mA", 0, " ", "VCE=2.0V IC=30mA");
+create_constant_form("VCE=2.0V IC=35mA","VCE=2.0V IC=35mA", 0, " ", "VCE=2.0V IC=35mA");
+create_constant_form("VCE=2.0V IC=4.0mA","VCE=2.0V IC=4.0mA", 0, " ", "VCE=2.0V IC=4.0mA");
+create_constant_form("VCE=2.0V IC=40mA","VCE=2.0V IC=40mA", 0, " ", "VCE=2.0V IC=40mA");
+create_constant_form("VCE=2.0V IC=45mA","VCE=2.0V IC=45mA", 0, " ", "VCE=2.0V IC=45mA");
+create_constant_form("VCE=2.0V IC=5.0mA","VCE=2.0V IC=5.0mA", 0, " ", "VCE=2.0V IC=5.0mA");
+create_constant_form("VCE=2.0V IC=50mA","VCE=2.0V IC=50mA", 0, " ", "VCE=2.0V IC=50mA");
+create_constant_form("VCE=2.0V IC=55mA","VCE=2.0V IC=55mA", 0, " ", "VCE=2.0V IC=55mA");
+create_constant_form("VCE=2.0V IC=6.0mA","VCE=2.0V IC=6.0mA", 0, " ", "VCE=2.0V IC=6.0mA");
+create_constant_form("VCE=2.0V IC=60mA","VCE=2.0V IC=60mA", 0, " ", "VCE=2.0V IC=60mA");
+create_constant_form("VCE=2.0V IC=70mA","VCE=2.0V IC=70mA", 0, " ", "VCE=2.0V IC=70mA");
+create_constant_form("VCE=2.0V IC=8.0mA","VCE=2.0V IC=8.0mA", 0, " ", "VCE=2.0V IC=8.0mA");
+create_constant_form("VCE=2.0V IC=80mA","VCE=2.0V IC=80mA", 0, " ", "VCE=2.0V IC=80mA");
+create_constant_form("VCE=2.3V IC=1.0mA","VCE=2.3V IC=1.0mA", 0, " ", "VCE=2.3V IC=1.0mA");
+create_constant_form("VCE=2.3V IC=10mA","VCE=2.3V IC=10mA", 0, " ", "VCE=2.3V IC=10mA");
+create_constant_form("VCE=2.3V IC=15mA","VCE=2.3V IC=15mA", 0, " ", "VCE=2.3V IC=15mA");
+create_constant_form("VCE=2.3V IC=2.0mA","VCE=2.3V IC=2.0mA", 0, " ", "VCE=2.3V IC=2.0mA");
+create_constant_form("VCE=2.3V IC=20mA","VCE=2.3V IC=20mA", 0, " ", "VCE=2.3V IC=20mA");
+create_constant_form("VCE=2.3V IC=25mA","VCE=2.3V IC=25mA", 0, " ", "VCE=2.3V IC=25mA");
+create_constant_form("VCE=2.3V IC=30mA","VCE=2.3V IC=30mA", 0, " ", "VCE=2.3V IC=30mA");
+create_constant_form("VCE=2.3V IC=35mA","VCE=2.3V IC=35mA", 0, " ", "VCE=2.3V IC=35mA");
+create_constant_form("VCE=2.3V IC=4.0mA","VCE=2.3V IC=4.0mA", 0, " ", "VCE=2.3V IC=4.0mA");
+create_constant_form("VCE=2.3V IC=40mA","VCE=2.3V IC=40mA", 0, " ", "VCE=2.3V IC=40mA");
+create_constant_form("VCE=2.3V IC=45mA","VCE=2.3V IC=45mA", 0, " ", "VCE=2.3V IC=45mA");
+create_constant_form("VCE=2.3V IC=5.0mA","VCE=2.3V IC=5.0mA", 0, " ", "VCE=2.3V IC=5.0mA");
+create_constant_form("VCE=2.3V IC=50mA","VCE=2.3V IC=50mA", 0, " ", "VCE=2.3V IC=50mA");
+create_constant_form("VCE=2.3V IC=55mA","VCE=2.3V IC=55mA", 0, " ", "VCE=2.3V IC=55mA");
+create_constant_form("VCE=2.3V IC=6.0mA","VCE=2.3V IC=6.0mA", 0, " ", "VCE=2.3V IC=6.0mA");
+create_constant_form("VCE=2.3V IC=60mA","VCE=2.3V IC=60mA", 0, " ", "VCE=2.3V IC=60mA");
+create_constant_form("VCE=2.3V IC=70mA","VCE=2.3V IC=70mA", 0, " ", "VCE=2.3V IC=70mA");
+create_constant_form("VCE=2.3V IC=8.0mA","VCE=2.3V IC=8.0mA", 0, " ", "VCE=2.3V IC=8.0mA");
+create_constant_form("VCE=2.3V IC=80mA","VCE=2.3V IC=80mA", 0, " ", "VCE=2.3V IC=80mA");
+
+create_form_set("formset_type", "VCE=1.0V IC=10mA", "VCE=1.0V IC=15mA", "VCE=1.0V IC=2.0mA", "VCE=1.0V IC=20mA", "VCE=1.0V IC=25mA", "VCE=1.0V IC=30mA", "VCE=1.0V IC=35mA", "VCE=1.0V IC=4.0mA", "VCE=1.0V IC=40mA", "VCE=1.0V IC=45mA", "VCE=1.0V IC=5.0mA", "VCE=1.0V IC=50mA", "VCE=1.0V IC=55mA", "VCE=1.0V IC=6.0mA", "VCE=1.0V IC=60mA", "VCE=1.0V IC=70mA", "VCE=1.0V IC=8.0mA", "VCE=1.0V IC=80mA", "VCE=1.5V IC=1.0mA", "VCE=1.5V IC=10mA", "VCE=1.5V IC=15mA", "VCE=1.5V IC=2.0mA", "VCE=1.5V IC=20mA", "VCE=1.5V IC=25mA", "VCE=1.5V IC=30mA", "VCE=1.5V IC=35mA", "VCE=1.5V IC=4.0mA", "VCE=1.5V IC=40mA", "VCE=1.5V IC=45mA", "VCE=1.5V IC=5.0mA", "VCE=1.5V IC=50mA", "VCE=1.5V IC=55mA", "VCE=1.5V IC=6.0mA", "VCE=1.5V IC=60mA", "VCE=1.5V IC=70mA", "VCE=1.5V IC=8.0mA", "VCE=1.5V IC=80mA", "VCE=2.0V IC=1.0mA", "VCE=2.0V IC=10mA", "VCE=2.0V IC=15mA", "VCE=2.0V IC=2.0mA", "VCE=2.0V IC=20mA", "VCE=2.0V IC=25mA", "VCE=2.0V IC=30mA", "VCE=2.0V IC=35mA", "VCE=2.0V IC=4.0mA", "VCE=2.0V IC=40mA", "VCE=2.0V IC=45mA", "VCE=2.0V IC=5.0mA", "VCE=2.0V IC=50mA", "VCE=2.0V IC=55mA", "VCE=2.0V IC=6.0mA", "VCE=2.0V IC=60mA", "VCE=2.0V IC=70mA", "VCE=2.0V IC=8.0mA", "VCE=2.0V IC=80mA", "VCE=2.3V IC=1.0mA", "VCE=2.3V IC=10mA", "VCE=2.3V IC=15mA", "VCE=2.3V IC=2.0mA", "VCE=2.3V IC=20mA", "VCE=2.3V IC=25mA", "VCE=2.3V IC=30mA", "VCE=2.3V IC=35mA", "VCE=2.3V IC=4.0mA", "VCE=2.3V IC=40mA", "VCE=2.3V IC=45mA", "VCE=2.3V IC=5.0mA", "VCE=2.3V IC=50mA", "VCE=2.3V IC=55mA", "VCE=2.3V IC=6.0mA", "VCE=2.3V IC=60mA", "VCE=2.3V IC=70mA", "VCE=2.3V IC=8.0mA", "VCE=2.3V IC=80mA");
+
+
+
+/*-------modified value parameter callback function--------*/
+defun BFP620_parm_modifiedValue_cb ( cbP, parmName, itemInfoP ) 
+{ 
+  decl parmList = NULL; 
+  decl type; 
+  type = pcb_get_form_value(itemInfoP, "Type");
+ 
+ if(parmName == "Type")
+  {
+    if(type == "VCE=1.0V IC=10mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_10mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=15mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_15mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=2.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_2.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=20mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_20mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=25mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_25mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=30mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_30mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=35mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_35mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=4.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_4.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=40mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_40mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=45mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_45mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=5.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_5.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=50mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_50mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=55mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_55mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=6.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_6.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=60mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_60mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=70mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_70mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=8.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_8.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.0V IC=80mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.0V_IC_80mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=1.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_1.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=10mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_10mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=15mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_15mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=2.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_2.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=20mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_20mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=25mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_25mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=30mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_30mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=35mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_35mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=4.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_4.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=40mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_40mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=45mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_45mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=5.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_5.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=50mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_50mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=55mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_55mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=6.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_6.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=60mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_60mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=70mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_70mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=8.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_8.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=1.5V IC=80mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_1.5V_IC_80mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=1.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_1.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=10mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_10mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=15mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_15mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=2.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_2.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=20mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_20mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=25mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_25mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=30mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_30mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=35mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_35mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=4.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_4.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=40mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_40mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=45mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_45mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=5.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_5.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=50mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_50mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=55mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_55mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=6.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_6.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=60mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_60mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=70mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_70mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=8.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_8.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.0V IC=80mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.0V_IC_80mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=1.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_1.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=10mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_10mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=15mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_15mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=2.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_2.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=20mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_20mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=25mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_25mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=30mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_30mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=35mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_35mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=4.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_4.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=40mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_40mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=45mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_45mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=5.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_5.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=50mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_50mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=55mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_55mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=6.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_6.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=60mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_60mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=70mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_70mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=8.0mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_8.0mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+    else if(type == "VCE=2.3V IC=80mA")
+    {
+      parmList = pcb_set_string(parmList, "File", "\"BFP620_w_noise_VCE_2.3V_IC_80mA.s2p\"");
+      parmList = pcb_set_string(parmList, "Temp", "25");
+      parmList = pcb_set_form_value(parmList, "InterpMode", "Linear");
+      parmList = pcb_set_form_value(parmList, "InterpDom", "");
+      parmList = pcb_set_form_value(parmList, "ExtrapMode", "Constant");
+      parmList = pcb_set_form_value(parmList, "CheckPassivity", "No");
+      parmList = pcb_set_string(parmList, "Package", "\"SOT343\"");
+    } 
+  }
+  return(parmList);
+}
+
+decl BFP620_SPCompNetlistFmt = ""; 
+decl BFP620_net=" "; 
+BFP620_net = strcat(Infineon_RF_CIRCUIT_MODEL_DIR, "BFP620_cktName.net");
+BFP620_SPCompNetlistFmt= strcat("#include \"",BFP620_net, "\" \n%d:%t%# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p%:%k%?[%1i]%;=%p %;%;%e%e");
+
+create_item("BFP620_SPARA" , 	 //Component name 
+	     "Description", 	 //Description 
+	     "SNP", 	 //Instance Prefix 
+	     NULL, 	 //attribute 
+	     NULL, 	 //priority 
+	     NULL, 	 //iconName 
+	     standard_dialog, 	 //dialogCode 
+	     " ", 	 //dialogData 
+	     BFP620_SPCompNetlistFmt, 	 //netlistFormat 
+	     "BFP620_cktName", 	 //netlistData 
+	     ComponentAnnotFmt, 	 //displayFormat 
+	     "symbol", 	 //symbolName 
+	     no_artwork, //artworkType
+	     NULL, 	 //artworkData 
+	     ITEM_PRIMITIVE_EX 	 //extraAttribute 
+	     ,create_parm("File", 	 //Param name 
+		        "VCE=1.0V IC=10mA", 	 //Param Desc 
+		        PARM_STRING | PARM_NO_DISPLAY,	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm("StdForm", "\"BFP620_w_noise_VCE_1.0V_IC_10mA.s2p\"")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "File", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Temp", 	 //Param name 
+		        "Temperature", 	 //Param Desc 
+		        PARM_NO_DISPLAY | PARM_NOT_EDITED,	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        TEMPERATURE_UNIT,
+		        prm("StdForm", "25")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "Temp", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("InterpMode", 	 //Param name 
+		        "Interpolation Mode", 	 //Param Desc 
+		        PARM_NO_DISPLAY | PARM_NOT_EDITED,	 //attrib 
+		          "interpm_form", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm("linear")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "InterpMode", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("InterpDom", 	 //Param name 
+		        "Interpolation Domain", 	 //Param Desc 
+		        PARM_NO_DISPLAY,	 //attrib 
+		          "interpd_form", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm("StdForm", "")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "InterpDom", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("ExtrapMode", 	 //Param name 
+		        "Extrapolation Mode", 	 //Param Desc 
+		        PARM_NO_DISPLAY,	 //attrib 
+		          "extrapm_form", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm("constant")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "ExtrapMode", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("CheckPassivity", 	 //Param name 
+		        "CheckPasssivity", 	 //Param Desc 
+		        PARM_NO_DISPLAY,	 //attrib 
+		          "checkpass_form", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm("no")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "CheckPassivity", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+	     ,create_parm("Package", 	 //Param name 
+		        "Package name", 	 //Param Desc 
+		        PARM_NO_DISPLAY | PARM_NOT_EDITED | PARM_NOT_NETLISTED,	 //attrib 
+		        "StdFileFormSet", 	 //formset 
+		        STRING_UNIT,
+		        prm("StdForm", "\"SOT343\"")
+			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "Package", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+
+	     ,create_parm("Type", 	 //Param name 
+		        "Component type",	 //Param Desc 
+		        PARM_NOT_NETLISTED | PARM_DISCRETE_VALUE,
+		        "formset_type", 	 //formset 
+		        UNITLESS_UNIT,
+		        prm(type_default)		 //defaultValue 
+ 			  ,list(dm_create_cb(PARM_MODIFIED_CB,	 //parameter modified value 
+						  "BFP620_parm_modifiedValue_cb", 	 // function name 
+						  "Type", 		 //clientData 
+						   TRUE 
+				 )
+			  )
+	     )
+);

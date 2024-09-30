@@ -1,0 +1,5 @@
+create_item("Target_Model_Doppler","Target_Model_Doppler","Target",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","Target_Model_Doppler","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","Target_Model_Doppler",3,NULL,0,
+create_parm("CrossSection","Target Cross Section (m*m)",65536,"StdFormSet",-1,prm("StdForm","1")),
+create_parm("Range","Range to Target (m)",65536,"StdFormSet",11,prm("StdForm","100")),
+create_parm("Velocity","Target Velocity (m/s)",65536,"StdFormSet",-1,prm("StdForm","10")),
+create_parm("Frequency","Carrier Frequency",65536,"StdFormSet",0,prm("StdForm","10 GHz")));

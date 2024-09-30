@@ -1,0 +1,28 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.mask_layout_tech_def
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.mask_layout_tech_def"
+
+define
+
+    !! Needed only if bulk is required
+    all gnd
+
+    !! apply these JADE rules to ALL cells
+    jade_rules all "jh_autorule" end_jade_rules
+
+    .stream include jh_autorule.jade_design_layers
+    .stream include jh_autorule.llc_design_layers
+
+    !! send the following layers to JADE
+    .stream include jh_autorule.llc_dojade_layers
+
+    !! get the following layers from JADE
+    .stream include jh_autorule.llc_fromjade_layers
+
+    !! conduct and connect layers
+    .stream include jh_autorule.llc_connectivity
+end_define 
+.stream return

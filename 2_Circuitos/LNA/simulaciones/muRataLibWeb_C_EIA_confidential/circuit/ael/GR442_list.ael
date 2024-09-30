@@ -1,0 +1,40 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR442QR73D101KW01","1:GR442QR73D101KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 100[pF], +/-10[%], 5[MHz]-3[GHz]:1",68,"1","GR442QR73D101KW01");
+create_constant_form("GR442QR73D151KW01","2:GR442QR73D151KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 150[pF], +/-10[%], 5[MHz]-3[GHz]:2",68,"2","GR442QR73D151KW01");
+create_constant_form("GR442QR73D221KW01","3:GR442QR73D221KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 220[pF], +/-10[%], 3[MHz]-3[GHz]:3",68,"3","GR442QR73D221KW01");
+create_constant_form("GR442QR73D331KW01","4:GR442QR73D331KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 330[pF], +/-10[%], 1[MHz]-3[GHz]:4",68,"4","GR442QR73D331KW01");
+create_constant_form("GR442QR73D471KW01","5:GR442QR73D471KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 470[pF], +/-10[%], 500[kHz]-3[GHz]:5",68,"5","GR442QR73D471KW01");
+create_constant_form("GR442QR73D681KW01","6:GR442QR73D681KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 680[pF], +/-10[%], 300[kHz]-3[GHz]:6",68,"6","GR442QR73D681KW01");
+create_constant_form("GR442QR73D102KW01","7:GR442QR73D102KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","GR442QR73D102KW01");
+create_constant_form("GR442QR73D152KW01","8:GR442QR73D152KW01, 200V and over/ Information Devices, X7R(-55to125[deg]), 2000[V], 1500[pF], +/-10[%], 100[kHz]-3[GHz]:8",68,"8","GR442QR73D152KW01");
+
+create_form_set("GR442_list" 
+,"GR442QR73D101KW01"
+,"GR442QR73D151KW01"
+,"GR442QR73D221KW01"
+,"GR442QR73D331KW01"
+,"GR442QR73D471KW01"
+,"GR442QR73D681KW01"
+,"GR442QR73D102KW01"
+,"GR442QR73D152KW01"
+);
+
+create_compound_form("GR442_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR442_list",-1,prm("GR442QR73D101KW01")),
+create_parm("MIN","Minimum",32,"GR442_list",-1,prm("GR442QR73D101KW01")),
+create_parm("MAX","Maximum",32,"GR442_list",-1,prm("GR442QR73D152KW01")));
+
+create_form_set("GR442_list_opt","NULL" 
+,"GR442QR73D101KW01"
+,"GR442QR73D151KW01"
+,"GR442QR73D221KW01"
+,"GR442QR73D331KW01"
+,"GR442QR73D471KW01"
+,"GR442QR73D681KW01"
+,"GR442QR73D102KW01"
+,"GR442QR73D152KW01"
+,"GR442_compound"
+);
+
+
+

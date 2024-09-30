@@ -1,0 +1,26 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon May 27 00:41:25 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\LNA\simulaciones\MyWorkspace_wrk\data"
+      Process ID: 24580
+
+Warning detected by hpeesofsim in LinearCollapse '_61_' during analysis.
+    LinearCollapse is disabled because there is 'DC' analysis present.
+Pt DC convergence is used.
+
+SP SP1[1] <MyLibrary_lib:3_Adapta_NFmin_BFP460:schematic>   freq=(400 MHz->2 GHz)
+
+
+DC DC1[1] <MyLibrary_lib:3_Adapta_NFmin_BFP460:schematic>  
+.
+.
+
+DC convergence achieved in 96 iterations.
+
+Resource usage:
+  Total stopwatch time     =     2.15 seconds.
+

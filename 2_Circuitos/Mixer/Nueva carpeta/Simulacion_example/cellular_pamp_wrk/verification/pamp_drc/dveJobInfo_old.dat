@@ -1,0 +1,5 @@
+jobName=pamp_drc
+jobType=drc
+designName=pamp
+ruleFilePath=/home/karlk/ads10.daily/cellular_pamp/verification/rules/pc5.ael
+addInfo=""

@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GRMJN7R61C206ME05","1:GRMJN7R61C206ME05, General Purpose, X5R(-55to85[deg]), 16[V], 20000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","GRMJN7R61C206ME05");
+create_constant_form("GRMJN7R61C226ME05","2:GRMJN7R61C226ME05, General Purpose, X5R(-55to85[deg]), 16[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","GRMJN7R61C226ME05");
+create_constant_form("GRMJN7R60J436ME05","3:GRMJN7R60J436ME05, General Purpose, X5R(-55to85[deg]), 6.3[V], 43000000[pF], +/-20[%], 100[Hz]-6[GHz]:3",68,"3","GRMJN7R60J436ME05");
+
+create_form_set("GRMJN_list" 
+,"GRMJN7R61C206ME05"
+,"GRMJN7R61C226ME05"
+,"GRMJN7R60J436ME05"
+);
+
+create_compound_form("GRMJN_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GRMJN_list",-1,prm("GRMJN7R61C206ME05")),
+create_parm("MIN","Minimum",32,"GRMJN_list",-1,prm("GRMJN7R61C206ME05")),
+create_parm("MAX","Maximum",32,"GRMJN_list",-1,prm("GRMJN7R60J436ME05")));
+
+create_form_set("GRMJN_list_opt","NULL" 
+,"GRMJN7R61C206ME05"
+,"GRMJN7R61C226ME05"
+,"GRMJN7R60J436ME05"
+,"GRMJN_compound"
+);
+
+
+

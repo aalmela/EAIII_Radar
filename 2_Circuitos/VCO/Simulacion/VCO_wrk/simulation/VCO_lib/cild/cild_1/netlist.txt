@@ -1,0 +1,35 @@
+Options EnableOptim=yes
+
+model Subst2 Substrate N=4 H[1]=(Thickness_1 mm)-(max(0,M2__Thickness mm)+0)+max(0,M2__Thickness mm)+max(max(0,-(cond__Thickness mm)),0) Er[1]=FR_4_Prepreg__Er__Real tanD[1]=FR_4_Prepreg__Er__TanD Cond[1]=5.8e7 T[1]=cond__Thickness mm OneOverEtchFactor[1]=cot(PI/180*(cond__Angle)) LayerType[1]="signal" H[2]=(0.001065)-(0+max(0,-(M2__Thickness mm)))+0+max(0,-(M2__Thickness mm)) Er[2]=4.6 tanD[2]=0.01 Cond[2]=5.8e7 T[2]=M2__Thickness mm OneOverEtchFactor[2]=cot(PI/180*(90.0)) LayerType[2]="ground" H[3]=(0.0002104)-(0+0)+1.52e-05 Er[3]=FR_4_Prepreg__Er__Real tanD[3]=FR_4_Prepreg__Er__TanD Cond[3]=5.8e7 T[3]=-1.52e-05 OneOverEtchFactor[3]=cot(PI/180*(90.0)) LayerType[3]="blank" Cond[4]=5.8e7 T[4]=-3.5e-05 OneOverEtchFactor[4]=cot(PI/180*(90.0)) LayerType[4]="blank" DielectricLossModel=1 FreqForEpsrTanD=1000000000 Hz LowFreqForTanD=1000 Hz HighFreqForTanD=1000000000000 Hz
+define PC_Line__TL3 ( P1 P2 )
+parameters Length=100 um W__1=10 um S__1=10 um
+PC_Line:TL3  P1 P2 N=1 S=0 Subst="Subst2" Length=Length W[1]=W__1 Layer[1]=1 ReuseRLGC=0 W_FileFormat=0
+end PC_Line__TL3
+
+PC_Line__TL3:TL3  N__1 N__2 Length=Length mm W__1=Width mm S__1=0
+
+
+AC:ZcGammaExt WriteZcGamma=1 SweepVar="freq" SweepPlan="ZcGammaExt_stim"
+SweepPlan: ZcGammaExt_stim Start=1e+09 Hz Stop=1e+09 Hz Step=1 Hz
+Length=10
+Width=1 opt{max(1.01*2*abs((cond__Thickness mm)/(1 mm)*cot(PI/180*(cond__Angle))),0.1*1) to 10*1}
+cond__Thickness=0.035
+cond__Angle=90
+M2__Thickness=0.0152
+Thickness_1=0.2104
+FR_4_Prepreg__Er__Real=4.6
+FR_4_Prepreg__Er__TanD=0.01
+Optim:Optim1  OptimType="DFP" ErrorForm="L2" MaxIters=25 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="SP1" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTemp=0.1 NumShootsPerIter=20 EnableCockpit=no SaveAllTrials=no
+OptimGoal:OptimGoal1 Expr="mag(TL3.TL3.Zc)" SimInstanceName="ZcGammaExt" Weight=1.0 \
+SpecLimitLine[1]="OptimGoal1_limit1"
+SpecLimitLine:"OptimGoal1_limit1" Type="Inside" Min=50 Max=50 Weight=1.0
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="ZcGammaExt_stim" OutputPlan="SP1_Output"
+OutputPlan:SP1_Output \
+Type="Output" \
+UseEquationNestLevel=yes \
+EquationNestLevel=2 \
+UseSavedEquationNestLevel=yes \
+SavedEquationNestLevel=2
+Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes
+Port:Term2  N__2 0 Num=2 Z=50 Ohm Noise=yes

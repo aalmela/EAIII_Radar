@@ -1,0 +1,67 @@
+
+JADE/LLC Version 1.707 : Feb 17, 1998 
+Compiled and linked on Tue Feb 17 13:42:16 PST 1998 
+Host: HP 9000 -- UX                                               
+ 
+*-----------------------------------------------------------*
+| JADE VLSI Design Rule  Checking Program                   |
+| JH/LLC : Jade Hierarchical Verification                   |
+|          Layout and Logic Comparison Module               |
+|                                                           |
+| Fletcher Automation,                       (408) 996-1110 |
+| 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+|                                                           |
+| (c) Copyright 1988-9,1990-7              Alan J. Fletcher |
+| Fletcher Automation Research               (408) 996-1110 |
+| 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+|                                                           |
+| RESTRICTED RIGHTS LEGEND                                  |
+|                                                           |
+|  Use, duplication, or disclosure by the U.S. Government   |
+|  is subject to restrictions as set forth in sub-paragraph |
+|  (c)(1)(ii) of the Rights in Technical Data and Computer  |
+|  Software clause in DFARS 252.227-7013.                   |
+|                                                           |
+|  Rights for non-DOD U.S.  Government Departments and      |
+|  Agencies are as set forth in FAR 52.227-19(c)(1,2).      |
+*-----------------------------------------------------------*
+
+Start      Time = <Thu Mar  5 12:52:34 1998>
+
+This program is licenced to:
+          
+    HP EEsof
+        
+    RESTRICTED RIGHTS LEGEND
+      
+       Use, duplication, or disclosure by the U.S. Government is subject to
+       restrictions as set forth in sub-paragraph (c)(1)(ii) of the Rights in
+       Technical Data and Computer Software clause in DFARS 252.227-7013.
+      
+       Rights for non-DOD U.S.  Government Departments and Agencies
+       are as set forth in FAR 52.227-19(c)(1,2).
+        
+for use on CPU hpsrkrk (machine 9000/780) until 3/5/1998 unix 889217552
+
+licenced modules (01000000): any 
+
+LOAD      pamp      
+
+SMASH     pamp      
+
+DOJADE    drc_result/000000  
+
+Showfacets Summary :
+
+==== SHOW facet drc_result/000000 xy -15.00 -440.00  : xy 1407.50 645.00  REPORT ====
+
+
+==== SHOW facet drc_result/000000 xy -15.00 -440.00  : xy 1407.50 645.00  REPORT ====
+
+
+
+*** exit level : note  ***
+
+Command error summary : no errors
+
+End        Time = <Thu Mar  5 12:52:37 1998> Secs 3 

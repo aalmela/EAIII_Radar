@@ -1,0 +1,64 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR355DD72J104KW01","1:GR355DD72J104KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 100000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","GR355DD72J104KW01");
+create_constant_form("GR355DD72J154KW01","2:GR355DD72J154KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 150000[pF], +/-10[%], 100[Hz]-3[GHz]:2",68,"2","GR355DD72J154KW01");
+create_constant_form("GR355XD72J224KW05","3:GR355XD72J224KW05, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:3",68,"3","GR355XD72J224KW05");
+create_constant_form("GR355DD72W224KW01","4:GR355DD72W224KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:4",68,"4","GR355DD72W224KW01");
+create_constant_form("GR355DD7LQ224KW01","5:GR355DD7LQ224KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 220000[pF], +/-10[%], 100[Hz]-3[GHz]:5",68,"5","GR355DD7LQ224KW01");
+create_constant_form("GR355DD72W334KW01","6:GR355DD72W334KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:6",68,"6","GR355DD72W334KW01");
+create_constant_form("GR355DD7LQ334KW01","7:GR355DD7LQ334KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 330000[pF], +/-10[%], 100[Hz]-3[GHz]:7",68,"7","GR355DD7LQ334KW01");
+create_constant_form("GR355DD72E474KW01","8:GR355DD72E474KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:8",68,"8","GR355DD72E474KW01");
+create_constant_form("GR355DD72W474KW01","9:GR355DD72W474KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:9",68,"9","GR355DD72W474KW01");
+create_constant_form("GR355DD7LP474KW01","10:GR355DD7LP474KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:10",68,"10","GR355DD7LP474KW01");
+create_constant_form("GR355DD7LQ474KW01","11:GR355DD7LQ474KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 470000[pF], +/-10[%], 100[Hz]-3[GHz]:11",68,"11","GR355DD7LQ474KW01");
+create_constant_form("GR355XD7LQ564KW05","12:GR355XD7LQ564KW05, 200V and over/ General Purpose, X7T(-55to125[deg]), 630[V], 560000[pF], +/-10[%], 100[Hz]-3[GHz]:12",68,"12","GR355XD7LQ564KW05");
+create_constant_form("GR355DD72E684KW01","13:GR355DD72E684KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 680000[pF], +/-10[%], 100[Hz]-3[GHz]:13",68,"13","GR355DD72E684KW01");
+create_constant_form("GR355DD7LP684KW01","14:GR355DD7LP684KW01, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 680000[pF], +/-10[%], 100[Hz]-3[GHz]:14",68,"14","GR355DD7LP684KW01");
+create_constant_form("GR355XD72E105KW05","15:GR355XD72E105KW05, 200V and over/ General Purpose, X7T(-55to125[deg]), 250[V], 1000000[pF], +/-10[%], 100[Hz]-3[GHz]:15",68,"15","GR355XD72E105KW05");
+create_constant_form("GR355XD7LP105KW05","16:GR355XD7LP105KW05, 200V and over/ General Purpose, X7T(-55to125[deg]), 450[V], 1000000[pF], +/-10[%], 100[Hz]-3[GHz]:16",68,"16","GR355XD7LP105KW05");
+
+create_form_set("GR355_list" 
+,"GR355DD72J104KW01"
+,"GR355DD72J154KW01"
+,"GR355XD72J224KW05"
+,"GR355DD72W224KW01"
+,"GR355DD7LQ224KW01"
+,"GR355DD72W334KW01"
+,"GR355DD7LQ334KW01"
+,"GR355DD72E474KW01"
+,"GR355DD72W474KW01"
+,"GR355DD7LP474KW01"
+,"GR355DD7LQ474KW01"
+,"GR355XD7LQ564KW05"
+,"GR355DD72E684KW01"
+,"GR355DD7LP684KW01"
+,"GR355XD72E105KW05"
+,"GR355XD7LP105KW05"
+);
+
+create_compound_form("GR355_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR355_list",-1,prm("GR355DD72J104KW01")),
+create_parm("MIN","Minimum",32,"GR355_list",-1,prm("GR355DD72J104KW01")),
+create_parm("MAX","Maximum",32,"GR355_list",-1,prm("GR355XD7LP105KW05")));
+
+create_form_set("GR355_list_opt","NULL" 
+,"GR355DD72J104KW01"
+,"GR355DD72J154KW01"
+,"GR355XD72J224KW05"
+,"GR355DD72W224KW01"
+,"GR355DD7LQ224KW01"
+,"GR355DD72W334KW01"
+,"GR355DD7LQ334KW01"
+,"GR355DD72E474KW01"
+,"GR355DD72W474KW01"
+,"GR355DD7LP474KW01"
+,"GR355DD7LQ474KW01"
+,"GR355XD7LQ564KW05"
+,"GR355DD72E684KW01"
+,"GR355DD7LP684KW01"
+,"GR355XD72E105KW05"
+,"GR355XD7LP105KW05"
+,"GR355_compound"
+);
+
+
+

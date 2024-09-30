@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQW43FT100M0H","1:LQW43FT100M0H, Wound, 10000[nH], +/-20[%], 1000[mA], 0.1[MHz]-20[GHz]:1",68,"1","LQW43FT100M0H");
+create_constant_form("LQW43FT180M0H","2:LQW43FT180M0H, Wound, 18000[nH], +/-20[%], 845[mA], 0.1[MHz]-20[GHz]:2",68,"2","LQW43FT180M0H");
+create_constant_form("LQW43FT220M0H","3:LQW43FT220M0H, Wound, 22000[nH], +/-20[%], 700[mA], 0.1[MHz]-20[GHz]:3",68,"3","LQW43FT220M0H");
+
+create_form_set("LQW43FT_0H_list" 
+,"LQW43FT100M0H"
+,"LQW43FT180M0H"
+,"LQW43FT220M0H"
+);
+
+create_compound_form("LQW43FT_0H_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQW43FT_0H_list",-1,prm("LQW43FT100M0H")),
+create_parm("MIN","Minimum",32,"LQW43FT_0H_list",-1,prm("LQW43FT100M0H")),
+create_parm("MAX","Maximum",32,"LQW43FT_0H_list",-1,prm("LQW43FT220M0H")));
+
+create_form_set("LQW43FT_0H_list_opt","NULL" 
+,"LQW43FT100M0H"
+,"LQW43FT180M0H"
+,"LQW43FT220M0H"
+,"LQW43FT_0H_compound"
+);
+
+
+

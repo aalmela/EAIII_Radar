@@ -1,0 +1,79 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Sun Jun 23 19:10:15 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 26572
+
+
+HB HB1[1] <Mi_darae_lib:mixer_rat_race_discreto:schematic>
+    Number of tones:   1.
+    Number of frequencies:   16.
+    Number of time samples:  64.
+    Number of HB equations (HB problem size): 992.
+    Number of SS/noise equations (SS/noise problem size): 1984.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	316.258 mA  	100.0             
+1.0 	114.769 mA  	100.0	9.98393 mV   
+1.1 	78.3778 mA  	100.0	7.59395 mV   
+1.2*	59.9219 mA  	100.0	25.1997 mV   
+2.0 	19.9826 mA  	100.0	8.11422 mV   
+2.1 	12.7206 mA  	100.0	5.54895 mV   
+2.2 	9.11685 mA  	100.0	4.05127 mV   
+2.3 	6.92404 mA  	100.0	3.10134 mV   
+2.4 	5.46133 mA  	100.0	2.42184 mV   
+2.5 	4.41683 mA  	100.0	1.92367 mV   
+2.6 	3.63991 mA  	100.0	1.55912 mV   
+2.7 	3.04259 mA  	100.0	1.27948 mV   
+2.8 	2.57185 mA  	100.0	1.06431 mV   
+2.9 	2.19245 mA  	100.0	893.073 uV   
+2.10 	1.88269 mA  	100.0	756.939 uV   
+2.11 	1.62757 mA  	100.0	645.48 uV    
+2.12 	1.41417 mA  	100.0	552.952 uV   
+2.13*	1.23488 mA  	100.0	3.63396 mV   
+3.0 	95.9052 uA  	100.0	268.793 uV   
+3.1 	15.4789 uA  	100.0	42.5192 uV   
+3.2 	2.60352 uA  	100.0	7.06201 uV   
+3.3 	440.613 nA  	100.0	1.18606 uV   
+3.4 	74.5907 nA  	100.0	199.824 nV   
+3.5 	12.6283 nA  	100.0	33.7078 nV   
+.
+HB_NOISE HB1[1] <Mi_darae_lib:mixer_rat_race_discreto:schematic>
+
+    Noise Freq=10 MHz  NFssb=5.721dB  NFdsb=2.553dB  Conv Gain=-6.992dB
+
+    Noise Freq=10 MHz  NFssb=5.721dB  NFdsb=2.553dB  Conv Gain=-6.992dB
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X4.N__3                 7.727e-06       >       1.176e-06
+X4.DIODE1.a             3.724e-06       >       1.014e-06
+X3.DIODE1.a             3.008e-06       >       1.168e-06
+X3.N__3                 2.994e-06       >       1.006e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 7.727e-06 @ waveform X4.N__3 .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.176e-06 for this waveform.
+o A time-domain plot of the X3.N__3 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     2.59 seconds.
+

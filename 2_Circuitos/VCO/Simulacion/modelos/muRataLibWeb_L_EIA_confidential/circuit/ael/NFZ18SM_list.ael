@@ -1,0 +1,28 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("NFZ18SM121SZ10","1:NFZ18SM121SZ10, Inductor Type, 1250[mA], 1[MHz]-3[GHz]:1",68,"1","NFZ18SM121SZ10");
+create_constant_form("NFZ18SM251SZ10","2:NFZ18SM251SZ10, Inductor Type, 1100[mA], 1[MHz]-3[GHz]:2",68,"2","NFZ18SM251SZ10");
+create_constant_form("NFZ18SM501SZ10","3:NFZ18SM501SZ10, Inductor Type, 950[mA], 1[MHz]-3[GHz]:3",68,"3","NFZ18SM501SZ10");
+create_constant_form("NFZ18SM701SZ10","4:NFZ18SM701SZ10, Inductor Type, 800[mA], 1[MHz]-3[GHz]:4",68,"4","NFZ18SM701SZ10");
+
+create_form_set("NFZ18SM_list" 
+,"NFZ18SM121SZ10"
+,"NFZ18SM251SZ10"
+,"NFZ18SM501SZ10"
+,"NFZ18SM701SZ10"
+);
+
+create_compound_form("NFZ18SM_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"NFZ18SM_list",-1,prm("NFZ18SM121SZ10")),
+create_parm("MIN","Minimum",32,"NFZ18SM_list",-1,prm("NFZ18SM121SZ10")),
+create_parm("MAX","Maximum",32,"NFZ18SM_list",-1,prm("NFZ18SM701SZ10")));
+
+create_form_set("NFZ18SM_list_opt","NULL" 
+,"NFZ18SM121SZ10"
+,"NFZ18SM251SZ10"
+,"NFZ18SM501SZ10"
+,"NFZ18SM701SZ10"
+,"NFZ18SM_compound"
+);
+
+
+

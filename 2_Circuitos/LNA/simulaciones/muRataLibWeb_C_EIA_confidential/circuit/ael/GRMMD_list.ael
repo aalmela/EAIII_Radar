@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GRMMDXR60J105ME05","1:GRMMDXR60J105ME05, Ultra-small, X5R(-55to85[deg]), 6.3[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:1",68,"1","GRMMDXR60J105ME05");
+
+create_form_set("GRMMD_list" 
+,"GRMMDXR60J105ME05"
+);
+
+create_compound_form("GRMMD_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GRMMD_list",-1,prm("GRMMDXR60J105ME05")),
+create_parm("MIN","Minimum",32,"GRMMD_list",-1,prm("GRMMDXR60J105ME05")),
+create_parm("MAX","Maximum",32,"GRMMD_list",-1,prm("GRMMDXR60J105ME05")));
+
+create_form_set("GRMMD_list_opt","NULL" 
+,"GRMMDXR60J105ME05"
+,"GRMMD_compound"
+);
+
+
+

@@ -1,0 +1,18 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor thermal_conductivity_in_z="" real="5.8e7 Siemens/m" name="Copper" electron_path="" imag="" tc2="" thermal_conductivity="401" heat_capacity="2.49E+06" mur_imag="" tc1="" tnom="" mur_real="1" parmtype="1"/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="SolderMask" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="" er_real="3.3"/>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="FR_4_Prepreg" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="0.01" er_real="4.6"/>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="FR_4_Core" electron_path="" thermal_conductivity="" heat_capacity="" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="0.01" er_real="4.6"/>
+        <Dielectric loss_type="1" valuefreq="9.61 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="GaAs" electron_path="" thermal_conductivity="52" heat_capacity="1.73E+06" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="0.00028" er_real="12.9"/>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="Alumina" electron_path="" thermal_conductivity="25.25" heat_capacity="1.73E+06" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="" er_real="9.6"/>
+        <Dielectric loss_type="1" valuefreq="1 GHz" thermal_conductivity_in_z="" lowfreq="1 KHz" name="SiliconDioxide" electron_path="" thermal_conductivity="1.4" heat_capacity="" mur_imag="" highfreq="1 THz" mur_real="1" er_imag="" er_loss="" er_real="3.9"/>
+    </Dielectrics>
+    <Semiconductors>
+        <Semiconductor thermal_conductivity_in_z="" name="Silicon" electron_path="" thermal_conductivity="{25 156.1425 40 146.2506 55 137.4056 70 129.4560}" heat_capacity="1.63+06" doping="p" mur_imag="" resistivity="1.2e3 Ohm.cm" mur_real="1" er_real="11.9"/>
+    </Semiconductors>
+    <roughness/>
+</Materials>

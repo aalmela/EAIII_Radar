@@ -1,0 +1,105 @@
+; Top Design: "MixerPager_lib:SimFromLayout:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MixerPager_lib:SimFromLayout:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: MixerPager_lib
+; Cell Name: MixerLayout
+; View Name: layout
+define MixerLayout ( N__22  N__26  N__46  N__14  N__51  N__29 ) 
+;parameters 
+MLIN2:TL6  N__13 N__52 Subst="FR4" W=10 mil L=5 mil Temp=27.0 Mod=1 
+MLIN2:TL23  N__15 N__14 Subst="FR4" W=10 mil L=50 mil Temp=27.0 Mod=1 
+MCORN:Corn1  N__53 N__15 Subst="FR4" W=10 mil Temp=27.0 
+MLIN2:TL22  N__18 N__54 Subst="FR4" W=10 mil L=75 mil Temp=27.0 Mod=1 
+MLIN2:TL16  N__19 N__55 Subst="FR4" W=10 mil L=15 mil Temp=27.0 Mod=1 
+MLIN2:TL5  N__21 N__20 Subst="FR4" W=10 mil L=50 mil Temp=27.0 Mod=1 
+MLIN2:TL1  N__22 N__56 Subst="FR4" W=50 mil L=500 mil Temp=27.0 Mod=1 
+MLIN2:TL2  N__57 N__23 Subst="FR4" W=10 mil L=30 mil Temp=27.0 Mod=1 
+MTEE:Tee1  N__23 N__21 N__25 Subst="FR4" W1=10 mil W2=10 mil W3=10 mil Temp=27.0 
+MLIN2:TL3  N__25 N__58 Subst="FR4" W=10 mil L=15 mil Temp=27.0 Mod=1 
+MLIN2:TL4  N__59 N__26 Subst="FR4" W=50 mil L=500 mil Temp=27.0 Mod=1 
+MTEE:Tee2  N__20 N__27 N__13 Subst="FR4" W1=10 mil W2=10 mil W3=10 mil Temp=27.0 
+MLIN2:TL7  N__27 N__28 Subst="FR4" W=10 mil L=30 mil Temp=27.0 Mod=1 
+MLIN2:TL11  N__31 N__30 Subst="FR4" W=10 mil L=25 mil Temp=27.0 Mod=1 
+MCROS:Cros1  N__30 N__34 N__33 N__32 Subst="FR4" W1=10 mil W2=10 mil W3=10 mil W4=10 mil 
+MLIN2:TL12  N__32 N__60 Subst="FR4" W=10 mil L=15 mil Temp=27.0 Mod=1 
+MLIN2:TL13  N__34 N__61 Subst="FR4" W=10 mil L=15 mil Temp=27.0 Mod=1 
+MLIN2:TL15  N__62 N__36 Subst="FR4" W=30 mil L=40 mil Temp=27.0 Mod=1 
+MTEE:Tee5  N__63 N__39 N__38 Subst="FR4" W1=10 mil W2=10 mil W3=30 mil Temp=27.0 
+MLIN2:TL19  N__39 N__41 Subst="FR4" W=10 mil L=90.08 mil Temp=27.0 Mod=1 
+MCROS:Cros2  N__41 N__71 N__18 N__42 Subst="FR4" W1=10 mil W2=10 mil W3=10 mil W4=10 mil 
+MLIN2:TL18  N__42 N__65 Subst="FR4" W=10 mil L=18 mil Temp=27.0 Mod=1 
+MTEE:Tee4  N__45 N__44 N__19 Subst="FR4" W1=10 mil W2=10 mil W3=10 mil Temp=27.0 
+MLIN2:TL20  N__44 N__66 Subst="FR4" W=10 mil L=65 mil Temp=27.0 Mod=1 
+MLIN2:TL21  N__67 N__46 Subst="FR4" W=50 mil L=500 mil Temp=27.0 Mod=1 
+MLIN2:TL14  N__33 N__45 Subst="FR4" W=10 mil L=100.075 mil Temp=27.0 Mod=1 
+MLIN2:TL10  N__48 N__68 Subst="FR4" W=15 mil L=64.5 mil Temp=27.0 Mod=1 
+MTEE:Tee3  N__50 N__48 N__49 Subst="FR4" W1=20 mil W2=15 mil W3=30 mil Temp=27.0 
+MLIN2:TL8  N__69 N__49 Subst="FR4" W=30 mil L=5 mil Temp=27.0 Mod=1 
+MLIN2:TL9  N__50 N__70 Subst="FR4" W=20 mil L=30 mil Temp=27.0 Mod=1 
+MLIN2:TL17  N__38 N__36 Subst="FR4" W=10 mil L=15 mil Temp=27.0 Mod=1 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:Decoup2  N__71 0 family="sc_mrt_MC_GRM36X7R016_K_19960828" PART_NUM=1 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:C2  N__66 N__67 family="sc_mrt_MC_GRM39C0G050_J_19960828" PART_NUM=0 
+#uselib "SMT_InductorLibrary" , "slIndQ_19971030" 
+slIndQ_19971030:L2  N__55 N__65 family="sl_cft_1008CS_J_19950814" PART_NUM=8 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:C4  N__58 N__59 family="sc_mrt_MC_GRM39C0G050_C_19960828" PART_NUM=0 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:C1  N__56 N__57 family="sc_mrt_MC_GRM39C0G050_C_19960828" PART_NUM=4 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:C5  N__60 N__51 family="sc_mrt_MC_GRM39C0G050_J_19960828" PART_NUM=5 
+#uselib "SMT_CapacitorLibrary" , "scMrtmc_19960828" 
+scMrtmc_19960828:Decoup1  0 N__70 family="sc_mrt_MC_GRM36X7R016_K_19960828" PART_NUM=1 
+#uselib "SMT_ResistorLibrary" , "srTfrDiscrete_19971030" 
+srTfrDiscrete_19971030:R2  N__68 N__63 family="sr_dal_CRCW_0603_J_19950814" PART_NUM=70 
+#uselib "SMT_ResistorLibrary" , "srTfrDiscrete_19971030" 
+srTfrDiscrete_19971030:R3  N__54 N__53 family="sr_dal_CRCW_0603_J_19950814" PART_NUM=40 
+#uselib "SMT_InductorLibrary" , "slIndQ_19971030" 
+slIndQ_19971030:L1  N__52 N__69 family="sl_cft_0805CS_M_19950814" PART_NUM=1 
+#uselib "SMT_ResistorLibrary" , "srTfrDiscrete_19971030" 
+srTfrDiscrete_19971030:R1  N__61 N__62 family="sr_dal_CRCW_0603_J_19950814" PART_NUM=58 
+end MixerLayout
+
+MixerLayout:X1  N__4 N__1 Vout N__3 0 0 
+
+LOPwr=0
+Frf=900
+Flo=855
+model FR4 MSUB H=28 mil Er=4.8 Mur=1 Cond=5.8e7 Hu=10e4 mil T=0 mil TanD=0 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+aele P_IF=dBm(mix(Vout,{-1,1}));
+Port:PORT1  N__1 0 Num=1 Z=50 Ohm P[1]=dbmtow(LOPwr) Freq[1]=Flo MHz    Noise=yes 
+V_Source:VCC  N__3 0 Type="V_DC" Vdc=1.0 V SaveCurrent=1 
+Port:PORT2  N__4 0 Num=2 Z=50 Ohm P[1]=dbmtow(-50) Freq[1]=Frf MHz    Noise=yes 
+Port:Term3  Vout 0 Num=3 Z=50 Ohm Noise=yes 
+HB:HB1 MaxOrder=4 Freq[1]=Flo MHz Freq[2]=Frf MHz Order[1]=7 Order[2]=3 StatusLevel=2 FundOversample=1 \
+Restart=no UseAllSS_Freqs=yes UseOutFile=no HBSS_WSP=0 UseInFile=no SweepVar="LOPwr" SweepPlan="HB1_stim" OutputPlan="HB1_Output" ConvMode=2 MaxIters=10 ArcLevelMaxStep=0.0 MaxStepRatio=100 MaxShrinkage=1.0e-5 ArcMaxStep=0.0 \
+
+
+SweepPlan: HB1_stim Start=-30 Stop=-5 Step=5 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=Flo MHz Order[1]=7 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+

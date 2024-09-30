@@ -1,0 +1,115 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GCH21A5C2J100FX01","1:GCH21A5C2J100FX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 10[pF], +/-1[%], 100[MHz]-3[GHz]:1",68,"1","GCH21A5C2J100FX01");
+create_constant_form("GCH21A5C2J100GX01","2:GCH21A5C2J100GX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 10[pF], +/-2[%], 100[MHz]-3[GHz]:2",68,"2","GCH21A5C2J100GX01");
+create_constant_form("GCH21A5C2J100JX01","3:GCH21A5C2J100JX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 10[pF], +/-5[%], 100[MHz]-3[GHz]:3",68,"3","GCH21A5C2J100JX01");
+create_constant_form("GCH21B5C2J681FX01","4:GCH21B5C2J681FX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 680[pF], +/-1[%], 100[MHz]-3[GHz]:4",68,"4","GCH21B5C2J681FX01");
+create_constant_form("GCH21B5C2J681GX01","5:GCH21B5C2J681GX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 680[pF], +/-2[%], 100[MHz]-3[GHz]:5",68,"5","GCH21B5C2J681GX01");
+create_constant_form("GCH21B5C2J681JX01","6:GCH21B5C2J681JX01, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 680[pF], +/-5[%], 100[MHz]-3[GHz]:6",68,"6","GCH21B5C2J681JX01");
+create_constant_form("GCH21B5C2J152JX0A","7:GCH21B5C2J152JX0A, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 1500[pF], +/-5[%], 1[MHz]-1[GHz]:7",68,"7","GCH21B5C2J152JX0A");
+create_constant_form("GCH21B5C2J182JX0A","8:GCH21B5C2J182JX0A, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 1800[pF], +/-5[%], 100[kHz]-1[GHz]:8",68,"8","GCH21B5C2J182JX0A");
+create_constant_form("GCH2165C2A222JE01","9:GCH2165C2A222JE01, Implantable medical device, C0G(-55to125[deg]), 100[V], 2200[pF], +/-5[%], 1[MHz]-6[GHz]:9",68,"9","GCH2165C2A222JE01");
+create_constant_form("GCH21B5C2J222JX0A","10:GCH21B5C2J222JX0A, 200V and over/ Implantable medical device, C0G(-55to125[deg]), 630[V], 2200[pF], +/-5[%], 100[kHz]-1[GHz]:10",68,"10","GCH21B5C2J222JX0A");
+create_constant_form("GCH2165C2A332JE01","11:GCH2165C2A332JE01, Implantable medical device, C0G(-55to125[deg]), 100[V], 3300[pF], +/-5[%], 1[MHz]-6[GHz]:11",68,"11","GCH2165C2A332JE01");
+create_constant_form("GCH2165C1H472JE01","12:GCH2165C1H472JE01, Implantable medical device, C0G(-55to125[deg]), 50[V], 4700[pF], +/-5[%], 1[MHz]-6[GHz]:12",68,"12","GCH2165C1H472JE01");
+create_constant_form("GCH2195C1H682JE01","13:GCH2195C1H682JE01, Implantable medical device, C0G(-55to125[deg]), 50[V], 6800[pF], +/-5[%], 1[MHz]-6[GHz]:13",68,"13","GCH2195C1H682JE01");
+create_constant_form("GCH2195C1H103JE01","14:GCH2195C1H103JE01, Implantable medical device, C0G(-55to125[deg]), 50[V], 10000[pF], +/-5[%], 1[MHz]-6[GHz]:14",68,"14","GCH2195C1H103JE01");
+create_constant_form("GCH2195C1H153JE01","15:GCH2195C1H153JE01, Implantable medical device, C0G(-55to125[deg]), 50[V], 15000[pF], +/-5[%], 1[MHz]-6[GHz]:15",68,"15","GCH2195C1H153JE01");
+create_constant_form("GCH21B5C1H223JE01","16:GCH21B5C1H223JE01, Implantable medical device, C0G(-55to125[deg]), 50[V], 22000[pF], +/-5[%], 1[MHz]-6[GHz]:16",68,"16","GCH21B5C1H223JE01");
+create_constant_form("GCH21BR72A473KE01","17:GCH21BR72A473KE01, Implantable medical device, X7R(-55to125[deg]), 100[V], 47000[pF], +/-10[%], 100[Hz]-6[GHz]:17",68,"17","GCH21BR72A473KE01");
+create_constant_form("GCH21BR72A104KE01","18:GCH21BR72A104KE01, Implantable medical device, X7R(-55to125[deg]), 100[V], 100000[pF], +/-10[%], 100[Hz]-6[GHz]:18",68,"18","GCH21BR72A104KE01");
+create_constant_form("GCH21BR71H474KE01","19:GCH21BR71H474KE01, Implantable medical device, X7R(-55to125[deg]), 50[V], 470000[pF], +/-10[%], 100[Hz]-6[GHz]:19",68,"19","GCH21BR71H474KE01");
+create_constant_form("GCH21BC72A105KE11","20:GCH21BC72A105KE11, Implantable medical device, X7S(-55to125[deg]), 100[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:20",68,"20","GCH21BC72A105KE11");
+create_constant_form("GCH21BR71E105KE01","21:GCH21BR71E105KE01, Implantable medical device, X7R(-55to125[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:21",68,"21","GCH21BR71E105KE01");
+create_constant_form("GCH21BR71H105KE01","22:GCH21BR71H105KE01, Implantable medical device, X7R(-55to125[deg]), 50[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:22",68,"22","GCH21BR71H105KE01");
+create_constant_form("GCH21BR7YA105KE01","23:GCH21BR7YA105KE01, Implantable medical device, X7R(-55to125[deg]), 35[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:23",68,"23","GCH21BR7YA105KE01");
+create_constant_form("GCH21BR71C225KE01","24:GCH21BR71C225KE01, Implantable medical device, X7R(-55to125[deg]), 16[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:24",68,"24","GCH21BR71C225KE01");
+create_constant_form("GCH21BR71E225KE01","25:GCH21BR71E225KE01, Implantable medical device, X7R(-55to125[deg]), 25[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:25",68,"25","GCH21BR71E225KE01");
+create_constant_form("GCH21BC71A475KE01","26:GCH21BC71A475KE01, Implantable medical device, X7S(-55to125[deg]), 10[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:26",68,"26","GCH21BC71A475KE01");
+create_constant_form("GCH21BC71E475KE11","27:GCH21BC71E475KE11, Implantable medical device, X7S(-55to125[deg]), 25[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:27",68,"27","GCH21BC71E475KE11");
+create_constant_form("GCH21BC7YA475KE11","28:GCH21BC7YA475KE11, Implantable medical device, X7S(-55to125[deg]), 35[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:28",68,"28","GCH21BC7YA475KE11");
+create_constant_form("GCH21BR71C475KE01","29:GCH21BR71C475KE01, Implantable medical device, X7R(-55to125[deg]), 16[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:29",68,"29","GCH21BR71C475KE01");
+create_constant_form("GCH21BR61C106KE11","30:GCH21BR61C106KE11, Implantable medical device, X5R(-55to85[deg]), 16[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:30",68,"30","GCH21BR61C106KE11");
+create_constant_form("GCH21BR70J106KE01","31:GCH21BR70J106KE01, Implantable medical device, X7R(-55to125[deg]), 6.3[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:31",68,"31","GCH21BR70J106KE01");
+create_constant_form("GCH21BR71A106KE01","32:GCH21BR71A106KE01, Implantable medical device, X7R(-55to125[deg]), 10[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:32",68,"32","GCH21BR71A106KE01");
+create_constant_form("GCH21BR60J226ME11","33:GCH21BR60J226ME11, Implantable medical device, X5R(-55to85[deg]), 6.3[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:33",68,"33","GCH21BR60J226ME11");
+
+create_form_set("GCH21_list" 
+,"GCH21A5C2J100FX01"
+,"GCH21A5C2J100GX01"
+,"GCH21A5C2J100JX01"
+,"GCH21B5C2J681FX01"
+,"GCH21B5C2J681GX01"
+,"GCH21B5C2J681JX01"
+,"GCH21B5C2J152JX0A"
+,"GCH21B5C2J182JX0A"
+,"GCH2165C2A222JE01"
+,"GCH21B5C2J222JX0A"
+,"GCH2165C2A332JE01"
+,"GCH2165C1H472JE01"
+,"GCH2195C1H682JE01"
+,"GCH2195C1H103JE01"
+,"GCH2195C1H153JE01"
+,"GCH21B5C1H223JE01"
+,"GCH21BR72A473KE01"
+,"GCH21BR72A104KE01"
+,"GCH21BR71H474KE01"
+,"GCH21BC72A105KE11"
+,"GCH21BR71E105KE01"
+,"GCH21BR71H105KE01"
+,"GCH21BR7YA105KE01"
+,"GCH21BR71C225KE01"
+,"GCH21BR71E225KE01"
+,"GCH21BC71A475KE01"
+,"GCH21BC71E475KE11"
+,"GCH21BC7YA475KE11"
+,"GCH21BR71C475KE01"
+,"GCH21BR61C106KE11"
+,"GCH21BR70J106KE01"
+,"GCH21BR71A106KE01"
+,"GCH21BR60J226ME11"
+);
+
+create_compound_form("GCH21_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GCH21_list",-1,prm("GCH21A5C2J100FX01")),
+create_parm("MIN","Minimum",32,"GCH21_list",-1,prm("GCH21A5C2J100FX01")),
+create_parm("MAX","Maximum",32,"GCH21_list",-1,prm("GCH21BR60J226ME11")));
+
+create_form_set("GCH21_list_opt","NULL" 
+,"GCH21A5C2J100FX01"
+,"GCH21A5C2J100GX01"
+,"GCH21A5C2J100JX01"
+,"GCH21B5C2J681FX01"
+,"GCH21B5C2J681GX01"
+,"GCH21B5C2J681JX01"
+,"GCH21B5C2J152JX0A"
+,"GCH21B5C2J182JX0A"
+,"GCH2165C2A222JE01"
+,"GCH21B5C2J222JX0A"
+,"GCH2165C2A332JE01"
+,"GCH2165C1H472JE01"
+,"GCH2195C1H682JE01"
+,"GCH2195C1H103JE01"
+,"GCH2195C1H153JE01"
+,"GCH21B5C1H223JE01"
+,"GCH21BR72A473KE01"
+,"GCH21BR72A104KE01"
+,"GCH21BR71H474KE01"
+,"GCH21BC72A105KE11"
+,"GCH21BR71E105KE01"
+,"GCH21BR71H105KE01"
+,"GCH21BR7YA105KE01"
+,"GCH21BR71C225KE01"
+,"GCH21BR71E225KE01"
+,"GCH21BC71A475KE01"
+,"GCH21BC71E475KE11"
+,"GCH21BC7YA475KE11"
+,"GCH21BR71C475KE01"
+,"GCH21BR61C106KE11"
+,"GCH21BR70J106KE01"
+,"GCH21BR71A106KE01"
+,"GCH21BR60J226ME11"
+,"GCH21_compound"
+);
+
+
+

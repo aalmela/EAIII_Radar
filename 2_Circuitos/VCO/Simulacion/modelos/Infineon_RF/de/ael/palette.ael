@@ -1,0 +1,985 @@
+/*	                                         
+    New Palette Definition for Infineon Designkit	                
+*/	                                                                
+
+// SCHEMATIC	                                                        
+dk_define_palette_group(SCHEM_WIN,"analogRF_net",	                
+    "Infineon RF Components ",                       //Palette Name	
+    "Infineon RF Components Design Kit",             //Palette Label	
+    0,                                                 //Position	
+
+    "Infineon_Include_RF",                           //Item Label	
+    "Infineon Technologies Include",                 //Item Label	
+    strcat(Infineon_RF_BITMAP_DIR,"Infineon_Include_RF")  //Item Bitmap	
+   
+,
+
+   "BFP181", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP181"),
+
+   "BFP182W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP182W"),
+
+   "BFP183", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183"),
+
+   "BFP183W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183W"),
+
+   "BFP193", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193"),
+
+   "BFP193W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193W"),
+
+   "BFP196", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196"),
+
+   "BFP196W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196W"),
+
+   "BFP405", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405"),
+
+   "BFP405F", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405F"),
+
+   "BFP410", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP410"),
+
+   "BFP420", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420"),
+
+   "BFP420F", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420F"),
+
+   "BFP450", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP450"),
+
+   "BFP460", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP460"),
+
+   "BFP520", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP520"),
+
+   "BFP540", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540"),
+
+   "BFP540ESD", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540ESD"),
+
+   "BFP540FESD", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540FESD"),
+
+   "BFP620", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.5dB OIP3=25.5dBm OP1dB=14.5dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620"),
+
+   "BFP620F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.0dB OIP3=25.0dBm OP1dB=14.0dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620F"),
+
+   "BFP640", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=24.0dB OIP3=26.5dBm OP1dB=13.0dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640"),
+
+   "BFP640ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.65dB Gmax=25.0dB OIP3=27.0dBm OP1dB=12.0dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640ESD"),
+
+   "BFP640F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=23.0dB OIP3=27.5dBm OP1dB=13.5dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640F"),
+
+   "BFP640FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.55dB Gmax=26.5dB OIP3=26.0dBm OP1dB=11.5dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640FESD"),
+
+   "BFP650", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP650"),
+
+   "BFP720", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720"),
+
+   "BFP720ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=6.5dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720ESD"),
+
+   "BFP720F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720F"),
+
+   "BFP720FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=7.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720FESD"),
+
+   "BFP740", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.0dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740"),
+
+   "BFP740ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=25.0dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740ESD"),
+
+   "BFP740F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740F"),
+
+   "BFP740FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=24.5dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740FESD"),
+
+   "BFP750", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP750"),
+
+   "BFP760", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP760"),
+
+   "BFP780", 
+   "Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP780"),
+
+   "BFP840ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=21.0dBm OP1dB=4.5dBm fT=80.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840ESD"),
+
+   "BFP840FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.55dB Gmax=27.5dB OIP3=21.0dBm OP1dB=4.5dBm fT=85.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840FESD"),
+
+   "BFP842ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=3.25V ICmax=40.0mA NFmin=0.4dB Gmax=23.5dB OIP3=24.5dBm OP1dB=8.0dBm fT=57.0GHz Ptot=120.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP842ESD"),
+
+   "BFP843", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25 V ICmax=55.0mA NFmin=0.9dB Gmax=22.5dB OIP3=24.0dBm OP1dB=7.0dBm fT=- Ptot=125.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843"),
+
+   "BFP843F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.9dB Gmax=23.5dB OIP3=23.5dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843F"),
+
+   "BFQ19S", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ19S"),
+
+   "BFQ790", 
+   "Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ790"),
+
+   "BFR106", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR106"),
+
+   "BFR181W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR181W"),
+
+   "BFR182", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182"),
+
+   "BFR182W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182W"),
+
+   "BFR193F", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=19.0dB OIP3=29.0dBm OP1dB=14.8dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193F"),
+
+   "BFR193W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193W"),
+
+   "BFR340F", 
+   "Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR340F"),
+
+   "BFR35AP", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR35AP"),
+
+   "BFR380F", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR380F"),
+
+   "BFR740L3RH", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=4.0V ICmax=30.0mA NFmin=0.5dB Gmax=24.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR740L3RH"),
+
+   "BFR840L3RHESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.5dB Gmax=26.5dB OIP3=17.0dBm OP1dB=4.0dBm fT=75.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR840L3RHESD"),
+
+   "BFR843EL3", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.95dB Gmax=24.0dB OIP3=21.0dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR843EL3"),
+
+   "BFR92P", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR92P"),
+
+   "BFR93A", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93A"),
+
+   "BFR93AW", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93AW")
+);
+	                                         
+                                                                        
+// LAYOUT	                                                        
+dk_define_palette_group(LAYOUT_WIN,"analogRF_net",	                
+    "Infineon RF Components ",                     //Palette Name	
+    "Infineon RF Components Design Kit",           //Palette Label	
+    0                                                 //Position	
+   
+,
+
+   "BFP181", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP181"),
+
+   "BFP182W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP182W"),
+
+   "BFP183", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183"),
+
+   "BFP183W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183W"),
+
+   "BFP193", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193"),
+
+   "BFP193W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193W"),
+
+   "BFP196", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196"),
+
+   "BFP196W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196W"),
+
+   "BFP405", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405"),
+
+   "BFP405F", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405F"),
+
+   "BFP410", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP410"),
+
+   "BFP420", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420"),
+
+   "BFP420F", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420F"),
+
+   "BFP450", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP450"),
+
+   "BFP460", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP460"),
+
+   "BFP520", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP520"),
+
+   "BFP540", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540"),
+
+   "BFP540ESD", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540ESD"),
+
+   "BFP540FESD", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540FESD"),
+
+   "BFP620", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.5dB OIP3=25.5dBm OP1dB=14.5dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620"),
+
+   "BFP620F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.0dB OIP3=25.0dBm OP1dB=14.0dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620F"),
+
+   "BFP640", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=24.0dB OIP3=26.5dBm OP1dB=13.0dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640"),
+
+   "BFP640ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.65dB Gmax=25.0dB OIP3=27.0dBm OP1dB=12.0dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640ESD"),
+
+   "BFP640F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=23.0dB OIP3=27.5dBm OP1dB=13.5dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640F"),
+
+   "BFP640FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.55dB Gmax=26.5dB OIP3=26.0dBm OP1dB=11.5dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640FESD"),
+
+   "BFP650", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP650"),
+
+   "BFP720", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720"),
+
+   "BFP720ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=6.5dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720ESD"),
+
+   "BFP720F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720F"),
+
+   "BFP720FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=7.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720FESD"),
+
+   "BFP740", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.0dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740"),
+
+   "BFP740ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=25.0dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740ESD"),
+
+   "BFP740F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740F"),
+
+   "BFP740FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=24.5dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740FESD"),
+
+   "BFP750", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP750"),
+
+   "BFP760", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP760"),
+
+   "BFP780", 
+   "Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP780"),
+
+   "BFP840ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=21.0dBm OP1dB=4.5dBm fT=80.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840ESD"),
+
+   "BFP840FESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.55dB Gmax=27.5dB OIP3=21.0dBm OP1dB=4.5dBm fT=85.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840FESD"),
+
+   "BFP842ESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=3.25V ICmax=40.0mA NFmin=0.4dB Gmax=23.5dB OIP3=24.5dBm OP1dB=8.0dBm fT=57.0GHz Ptot=120.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP842ESD"),
+
+   "BFP843", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25 V ICmax=55.0mA NFmin=0.9dB Gmax=22.5dB OIP3=24.0dBm OP1dB=7.0dBm fT=- Ptot=125.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843"),
+
+   "BFP843F", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.9dB Gmax=23.5dB OIP3=23.5dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843F"),
+
+   "BFQ19S", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ19S"),
+
+   "BFQ790", 
+   "Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ790"),
+
+   "BFR106", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR106"),
+
+   "BFR181W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR181W"),
+
+   "BFR182", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182"),
+
+   "BFR182W", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182W"),
+
+   "BFR193F", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=19.0dB OIP3=29.0dBm OP1dB=14.8dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193F"),
+
+   "BFR193W", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193W"),
+
+   "BFR340F", 
+   "Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR340F"),
+
+   "BFR35AP", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR35AP"),
+
+   "BFR380F", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR380F"),
+
+   "BFR740L3RH", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=4.0V ICmax=30.0mA NFmin=0.5dB Gmax=24.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR740L3RH"),
+
+   "BFR840L3RHESD", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.5dB Gmax=26.5dB OIP3=17.0dBm OP1dB=4.0dBm fT=75.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR840L3RHESD"),
+
+   "BFR843EL3", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.95dB Gmax=24.0dB OIP3=21.0dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR843EL3"),
+
+   "BFR92P", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR92P"),
+
+   "BFR93A", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93A"),
+
+   "BFR93AW", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93AW")
+);
+/*	                                         
+                                                                        
+    New Palette Definition for Infineon Sparameter Designkit	        
+*/	                                                                
+                                                                        
+// SCHEMATIC	                                                        
+dk_define_palette_group(SCHEM_WIN,"analogRF_net",	                
+    "Infineon RF Sparam ",                       //Palette Name	
+    "Infineon RF Sparam Design Kit",             //Palette Label	
+    1                                            //Position	        
+   
+,
+
+   "BFP181_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP181_SPARA"),
+
+   "BFP182W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP182W_SPARA"),
+
+   "BFP183W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183W_SPARA"),
+
+   "BFP183_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183_SPARA"),
+
+   "BFP193W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193W_SPARA"),
+
+   "BFP193_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193_SPARA"),
+
+   "BFP196W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196W_SPARA"),
+
+   "BFP196_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196_SPARA"),
+
+   "BFP405F_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405F_SPARA"),
+
+   "BFP405_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405_SPARA"),
+
+   "BFP410_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP410_SPARA"),
+
+   "BFP420F_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420F_SPARA"),
+
+   "BFP420_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420_SPARA"),
+
+   "BFP450_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP450_SPARA"),
+
+   "BFP460_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP460_SPARA"),
+
+   "BFP520_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP520_SPARA"),
+
+   "BFP540ESD_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540ESD_SPARA"),
+
+   "BFP540FESD_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540FESD_SPARA"),
+
+   "BFP540_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540_SPARA"),
+
+   "BFP620F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.0dB OIP3=25.0dBm OP1dB=14.0dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620F_SPARA"),
+
+   "BFP620_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.5dB OIP3=25.5dBm OP1dB=14.5dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620_SPARA"),
+
+   "BFP640ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.65dB Gmax=25.0dB OIP3=27.0dBm OP1dB=12.0dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640ESD_SPARA"),
+
+   "BFP640FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.55dB Gmax=26.5dB OIP3=26.0dBm OP1dB=11.5dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640FESD_SPARA"),
+
+   "BFP640F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=23.0dB OIP3=27.5dBm OP1dB=13.5dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640F_SPARA"),
+
+   "BFP640_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=24.0dB OIP3=26.5dBm OP1dB=13.0dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640_SPARA"),
+
+   "BFP650_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP650_SPARA"),
+
+   "BFP720ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=6.5dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720ESD_SPARA"),
+
+   "BFP720FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=7.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720FESD_SPARA"),
+
+   "BFP720F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720F_SPARA"),
+
+   "BFP720_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720_SPARA"),
+
+   "BFP740ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=25.0dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740ESD_SPARA"),
+
+   "BFP740FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=24.5dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740FESD_SPARA"),
+
+   "BFP740F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740F_SPARA"),
+
+   "BFP740_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.0dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740_SPARA"),
+
+   "BFP750_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP750_SPARA"),
+
+   "BFP760_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP760_SPARA"),
+
+   "BFP780_SPARA", 
+   "Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP780_SPARA"),
+
+   "BFP840ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=21.0dBm OP1dB=4.5dBm fT=80.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840ESD_SPARA"),
+
+   "BFP840FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.55dB Gmax=27.5dB OIP3=21.0dBm OP1dB=4.5dBm fT=85.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840FESD_SPARA"),
+
+   "BFP842ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=3.25V ICmax=40.0mA NFmin=0.4dB Gmax=23.5dB OIP3=24.5dBm OP1dB=8.0dBm fT=57.0GHz Ptot=120.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP842ESD_SPARA"),
+
+   "BFP843F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.9dB Gmax=23.5dB OIP3=23.5dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843F_SPARA"),
+
+   "BFP843_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25 V ICmax=55.0mA NFmin=0.9dB Gmax=22.5dB OIP3=24.0dBm OP1dB=7.0dBm fT=- Ptot=125.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843_SPARA"),
+
+   "BFQ19S_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ19S_SPARA"),
+
+   "BFQ790_SPARA", 
+   "Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ790_SPARA"),
+
+   "BFR106_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR106_SPARA"),
+
+   "BFR181W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR181W_SPARA"),
+
+   "BFR182W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182W_SPARA"),
+
+   "BFR182_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182_SPARA"),
+
+   "BFR193W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193W_SPARA"),
+
+   "BFR340F_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR340F_SPARA"),
+
+   "BFR35AP_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR35AP_SPARA"),
+
+   "BFR380F_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR380F_SPARA"),
+
+   "BFR740L3RH_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=4.0V ICmax=30.0mA NFmin=0.5dB Gmax=24.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR740L3RH_SPARA"),
+
+   "BFR840L3RHESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.5dB Gmax=26.5dB OIP3=17.0dBm OP1dB=4.0dBm fT=75.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR840L3RHESD_SPARA"),
+
+   "BFR843EL3_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.95dB Gmax=24.0dB OIP3=21.0dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR843EL3_SPARA"),
+
+   "BFR92P_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR92P_SPARA"),
+
+   "BFR93AW_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93AW_SPARA"),
+
+   "BFR93A_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93A_SPARA")
+);
+	                                         
+                                                                        
+// LAYOUT	                                                        
+dk_define_palette_group(LAYOUT_WIN,"analogRF_net",	                
+    "Infineon RF Sparam ",                     //Palette Name	        
+    "Infineon RF Sparam Design Kit",           //Palette Label	
+    1                                            //Position	        
+   
+,
+
+   "BFP181_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP181_SPARA"),
+
+   "BFP182W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP182W_SPARA"),
+
+   "BFP183W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183W_SPARA"),
+
+   "BFP183_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP183_SPARA"),
+
+   "BFP193W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=20.5dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193W_SPARA"),
+
+   "BFP193_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.0dB Gmax=18.0dB OIP3=29.5dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP193_SPARA"),
+
+   "BFP196W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=150.0mA NFmin=1.3dB Gmax=19.0dB OIP3=32.0dBm OP1dB=19.0dBm fT=7.5GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196W_SPARA"),
+
+   "BFP196_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT143-4-1 package, Key parameters: VCE0max= ICmax= NFmin= Gmax= OIP3= OP1dB= fT= Ptot=",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP196_SPARA"),
+
+   "BFP405F_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=22.5dB OIP3=14.0dBm OP1dB=0.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405F_SPARA"),
+
+   "BFP405_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=12.0mA NFmin=1.25dB Gmax=23.0dB OIP3=15.0dBm OP1dB=5.0dBm fT=25.0GHz Ptot=55.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP405_SPARA"),
+
+   "BFP410_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=40.0mA NFmin=1.2dB Gmax=21.5dB OIP3=23.5dBm OP1dB=10.5dBm fT=25.0GHz Ptot=150.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP410_SPARA"),
+
+   "BFP420F_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=19.5dB OIP3=24.0dBm OP1dB=10.5dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420F_SPARA"),
+
+   "BFP420_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=35.0mA NFmin=1.1dB Gmax=21.0dB OIP3=22.0dBm OP1dB=12.0dBm fT=25.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP420_SPARA"),
+
+   "BFP450_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=100.0mA NFmin=1.25dB Gmax=15.5dB OIP3=29.0dBm OP1dB=19.0dBm fT=24.0GHz Ptot=450.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP450_SPARA"),
+
+   "BFP460_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=50.0mA NFmin=1.1dB Gmax=17.5dB OIP3=27.5dBm OP1dB=11.5dBm fT=22.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP460_SPARA"),
+
+   "BFP520_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=2.5V ICmax=40.0mA NFmin=0.95dB Gmax=23.5dB OIP3=25.0dBm OP1dB=12.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP520_SPARA"),
+
+   "BFP540ESD_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540ESD_SPARA"),
+
+   "BFP540FESD_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=20.0dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540FESD_SPARA"),
+
+   "BFP540_SPARA", 
+   "Low Noise Si Transistor up to 5 GHz, SOT343 package, Key parameters: VCE0max=4.5V ICmax=80.0mA NFmin=0.9dB Gmax=21.5dB OIP3=24.5dBm OP1dB=11.0dBm fT=30.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP540_SPARA"),
+
+   "BFP620F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.0dB OIP3=25.0dBm OP1dB=14.0dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620F_SPARA"),
+
+   "BFP620_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.3V ICmax=80.0mA NFmin=0.7dB Gmax=21.5dB OIP3=25.5dBm OP1dB=14.5dBm fT=65.0GHz Ptot=185.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP620_SPARA"),
+
+   "BFP640ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.65dB Gmax=25.0dB OIP3=27.0dBm OP1dB=12.0dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640ESD_SPARA"),
+
+   "BFP640FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.1V ICmax=50.0mA NFmin=0.55dB Gmax=26.5dB OIP3=26.0dBm OP1dB=11.5dBm fT=46.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640FESD_SPARA"),
+
+   "BFP640F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=23.0dB OIP3=27.5dBm OP1dB=13.5dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640F_SPARA"),
+
+   "BFP640_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=50.0mA NFmin=0.65dB Gmax=24.0dB OIP3=26.5dBm OP1dB=13.0dBm fT=40.0GHz Ptot=200.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP640_SPARA"),
+
+   "BFP650_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=150.0mA NFmin=0.8dB Gmax=21.5dB OIP3=29.5dBm OP1dB=18.0dBm fT=37.0GHz Ptot=500.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP650_SPARA"),
+
+   "BFP720ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=6.5dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720ESD_SPARA"),
+
+   "BFP720FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=25.0mA NFmin=0.6dB Gmax=27.0dB OIP3=22.0dBm OP1dB=7.0dBm fT=45.0GHz Ptot=100.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720FESD_SPARA"),
+
+   "BFP720F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720F_SPARA"),
+
+   "BFP720_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=20.0mA NFmin=0.5dB Gmax=26.0dB OIP3=20.5dBm OP1dB=6.0dBm fT=45.0GHz Ptot=80.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP720_SPARA"),
+
+   "BFP740ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=25.0dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740ESD_SPARA"),
+
+   "BFP740FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.2V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=24.5dBm OP1dB=10.0dBm fT=47.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740FESD_SPARA"),
+
+   "BFP740F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740F_SPARA"),
+
+   "BFP740_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=45.0mA NFmin=0.5dB Gmax=27.0dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP740_SPARA"),
+
+   "BFP750_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343 package, Key parameters: VCE0max=4.0V ICmax=90.0mA NFmin=0.9dB Gmax=22.5dB OIP3=30.0dBm OP1dB=16.0dBm fT=41.0GHz Ptot=360.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP750_SPARA"),
+
+   "BFP760_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT343-4-2 package, Key parameters: VCE0max=4.0V ICmax=70.0mA NFmin=0.5dB Gmax=25.0dB OIP3=31.5dBm OP1dB=14.5dBm fT=45.0GHz Ptot=240.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP760_SPARA"),
+
+   "BFP780_SPARA", 
+   "Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP780_SPARA"),
+
+   "BFP840ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.6dB Gmax=27.0dB OIP3=21.0dBm OP1dB=4.5dBm fT=80.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840ESD_SPARA"),
+
+   "BFP840FESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP-4-1 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.55dB Gmax=27.5dB OIP3=21.0dBm OP1dB=4.5dBm fT=85.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP840FESD_SPARA"),
+
+   "BFP842ESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=3.25V ICmax=40.0mA NFmin=0.4dB Gmax=23.5dB OIP3=24.5dBm OP1dB=8.0dBm fT=57.0GHz Ptot=120.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP842ESD_SPARA"),
+
+   "BFP843F_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSFP package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.9dB Gmax=23.5dB OIP3=23.5dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843F_SPARA"),
+
+   "BFP843_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, SOT343 package, Key parameters: VCE0max=2.25 V ICmax=55.0mA NFmin=0.9dB Gmax=22.5dB OIP3=24.0dBm OP1dB=7.0dBm fT=- Ptot=125.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFP843_SPARA"),
+
+   "BFQ19S_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT89 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=11.5dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.5GHz Ptot=1.0W",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ19S_SPARA"),
+
+   "BFQ790_SPARA", 
+   "Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFQ790_SPARA"),
+
+   "BFR106_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=210.0mA NFmin=1.8dB Gmax=13.0dB OIP3=32.0dBm OP1dB=22.0dBm fT=5.0GHz Ptot=700.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR106_SPARA"),
+
+   "BFR181W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR181W_SPARA"),
+
+   "BFR182W_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182W_SPARA"),
+
+   "BFR182_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR182_SPARA"),
+
+   "BFR193W_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=80.0mA NFmin=1.3dB Gmax=16.0dB OIP3=30.0dBm OP1dB=15.0dBm fT=8.0GHz Ptot=580.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR193W_SPARA"),
+
+   "BFR340F_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR340F_SPARA"),
+
+   "BFR35AP_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR35AP_SPARA"),
+
+   "BFR380F_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=80.0mA NFmin=1.1dB Gmax=13.5dB OIP3=29.0dBm OP1dB=17.0dBm fT=14.0GHz Ptot=380.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR380F_SPARA"),
+
+   "BFR740L3RH_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=4.0V ICmax=30.0mA NFmin=0.5dB Gmax=24.5dB OIP3=25.0dBm OP1dB=11.0dBm fT=42.0GHz Ptot=160.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR740L3RH_SPARA"),
+
+   "BFR840L3RHESD_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=35.0mA NFmin=0.5dB Gmax=26.5dB OIP3=17.0dBm OP1dB=4.0dBm fT=75.0GHz Ptot=75.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR840L3RHESD_SPARA"),
+
+   "BFR843EL3_SPARA", 
+   "Ultra Low Noise SiGe:C Transistors up to 12 GHz, TSLP-3-9 package, Key parameters: VCE0max=2.25V ICmax=55.0mA NFmin=0.95dB Gmax=24.0dB OIP3=21.0dBm OP1dB=- fT=- Ptot=-",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR843EL3_SPARA"),
+
+   "BFR92P_SPARA", 
+   "Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR92P_SPARA"),
+
+   "BFR93AW_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=15.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93AW_SPARA"),
+
+   "BFR93A_SPARA", 
+   "High Linearity Si- and SiGe:C-Transistors up to 6 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=90.0mA NFmin=1.5dB Gmax=14.5dB OIP3=30.0dBm OP1dB=15.0dBm fT=6.0GHz Ptot=300.0mW",
+    strcat(Infineon_RF_BITMAP_DIR,"BFR93A_SPARA")
+);

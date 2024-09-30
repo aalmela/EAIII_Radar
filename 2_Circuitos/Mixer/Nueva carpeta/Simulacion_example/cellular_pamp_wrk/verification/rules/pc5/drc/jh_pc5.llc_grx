@@ -1,0 +1,18 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc5/drc/jh_pc5.llc_grx
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc5/drc/jh_pc5.llc_grx"
+
+.message "#############  DUMMY GRAPHICS ###################"
+!!DOC Defines standard menu colors, grahics control, patterns
+!!! WARNING -- this file should NOT be modified by users !!!!
+
+graphics
+    jvmap
+    cullsize 0
+    open
+    setup
+end_graphics
+.stream return

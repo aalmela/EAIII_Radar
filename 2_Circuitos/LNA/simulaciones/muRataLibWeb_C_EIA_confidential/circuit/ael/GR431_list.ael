@@ -1,0 +1,43 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GR431A7U2J102JWC2","1:GR431A7U2J102JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 1000[pF], +/-5[%], 1[MHz]-3[GHz]:1",68,"1","GR431A7U2J102JWC2");
+create_constant_form("GR431A7U2J122JWC2","2:GR431A7U2J122JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 1200[pF], +/-5[%], 1[MHz]-3[GHz]:2",68,"2","GR431A7U2J122JWC2");
+create_constant_form("GR431A7U2J152JWC2","3:GR431A7U2J152JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 1500[pF], +/-5[%], 1[MHz]-3[GHz]:3",68,"3","GR431A7U2J152JWC2");
+create_constant_form("GR431A7U2J182JWC2","4:GR431A7U2J182JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 1800[pF], +/-5[%], 1[MHz]-3[GHz]:4",68,"4","GR431A7U2J182JWC2");
+create_constant_form("GR431A7U2J222JWC2","5:GR431A7U2J222JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 2200[pF], +/-5[%], 1[MHz]-3[GHz]:5",68,"5","GR431A7U2J222JWC2");
+create_constant_form("GR431B7U2J272JWC2","6:GR431B7U2J272JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 2700[pF], +/-5[%], 1[MHz]-3[GHz]:6",68,"6","GR431B7U2J272JWC2");
+create_constant_form("GR431B7U2J332JWC2","7:GR431B7U2J332JWC2, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 3300[pF], +/-5[%], 1[MHz]-3[GHz]:7",68,"7","GR431B7U2J332JWC2");
+create_constant_form("GR431C7U2J392JWC1","8:GR431C7U2J392JWC1, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 3900[pF], +/-5[%], 1[MHz]-3[GHz]:8",68,"8","GR431C7U2J392JWC1");
+create_constant_form("GR431C7U2J472JWC1","9:GR431C7U2J472JWC1, 200V and over/ Information Devices, U2J(-55to125[deg]), 630[V], 4700[pF], +/-5[%], 1[MHz]-3[GHz]:9",68,"9","GR431C7U2J472JWC1");
+
+create_form_set("GR431_list" 
+,"GR431A7U2J102JWC2"
+,"GR431A7U2J122JWC2"
+,"GR431A7U2J152JWC2"
+,"GR431A7U2J182JWC2"
+,"GR431A7U2J222JWC2"
+,"GR431B7U2J272JWC2"
+,"GR431B7U2J332JWC2"
+,"GR431C7U2J392JWC1"
+,"GR431C7U2J472JWC1"
+);
+
+create_compound_form("GR431_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GR431_list",-1,prm("GR431A7U2J102JWC2")),
+create_parm("MIN","Minimum",32,"GR431_list",-1,prm("GR431A7U2J102JWC2")),
+create_parm("MAX","Maximum",32,"GR431_list",-1,prm("GR431C7U2J472JWC1")));
+
+create_form_set("GR431_list_opt","NULL" 
+,"GR431A7U2J102JWC2"
+,"GR431A7U2J122JWC2"
+,"GR431A7U2J152JWC2"
+,"GR431A7U2J182JWC2"
+,"GR431A7U2J222JWC2"
+,"GR431B7U2J272JWC2"
+,"GR431B7U2J332JWC2"
+,"GR431C7U2J392JWC1"
+,"GR431C7U2J472JWC1"
+,"GR431_compound"
+);
+
+
+

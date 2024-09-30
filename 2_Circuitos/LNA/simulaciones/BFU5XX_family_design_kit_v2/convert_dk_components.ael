@@ -1,0 +1,46 @@
+// Design Kit Component Conversion Script
+
+de_new_library("BFU5XX_family_design_kit_v2", "/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2");
+
+de_add_library_to_def_file("BFU5XX_family_design_kit_v2", "./BFU5XX_family_design_kit_v2", READ_ONLY_LIB_MODE, "/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/lib.defs");
+de_add_library_to_def_file("BFU5XX_family_design_kit_v2", "./BFU5XX_family_design_kit_v2", SHARED_LIB_MODE, "/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/for_editing_pdk.defs");
+
+// Create and populate configuration file
+de_create_library_config_file("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "DESIGN_KIT_NAME", "BFU5XX_family_design_kit_v2");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "DESIGN_KIT_ROOT", "../");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "BOOT_AEL", "../de/ael/boot");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "VERSION", "1");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "ADSLIBCONFIG_DIRECTORY", "../circuit/config");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "BIN_DIRECTORY", "..//bin/$SIMARCH$COMPILER_VER");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "DOC_DIRECTORY", "../doc");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "DRC_DIRECTORY", "../drc/rules");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "EXPRESSIONS_DIRECTORY", "../expressions/ael");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "TEMPLATES_DIRECTORY", "../circuit/templates/library");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "DDS_TEMPLATES_DIRECTORY", "../circuit/templates");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "NETLIST_EXPORTER_DIRECTORY", "../netlist_exp");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "VERILOGA_DIRECTORY", "../veriloga");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "INPUT_DATA_PATH", "../circuit/data;../circuit/models");
+de_set_library_config_file_var("/home/nlv03837/ads2011/work/ENCODED/BFU5XX_family_design_kit_v2/BFU5XX_family_design_kit_v2", "LIB_BROWSER_CTL", "../circuit/records/BFU5XX_family_design_kit_v2.ctl");
+// Convert library components
+convert_item_to_oa("bfu5xx_v2_lib_BFU550_X_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU550_X_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU550W_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU550W_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU550A_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU550A_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU550_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU550_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU530_XR_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU530_XR_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU530_X_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU530_X_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU530W_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU530W_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU530A_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU530A_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU530_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU530_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU520XR_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU520XR_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU520X_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU520X_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU520W_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU520W_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU520A_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU520A_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU520_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU520_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU550_XR_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU550_XR_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU590Q_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU590Q_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU590G_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU590G_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU580Q_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU580Q_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+convert_item_to_oa("bfu5xx_v2_lib_BFU580G_schematic", "BFU5XX_family_design_kit_v2", "bfu5xx_v2_lib_BFU580G_schematic", TRUE, TRUE, "BFU5XX_family_design_kit_v2");
+
+de_close_all_libraries_and_lib_def_files();

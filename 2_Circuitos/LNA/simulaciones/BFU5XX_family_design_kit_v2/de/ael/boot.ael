@@ -1,0 +1,36 @@
+// boot.ael - This file resides in the de/ael directory of the design
+// kit. It is loaded by the design kit infrastructure software if it is
+// listed in the file ads.lib in one of 4 predefined locations, one of
+// which is $HOME/hpeesof/design_kit. This file is used to load other
+// AEL files such as palette.ael. It is also used to set up some
+// global variables for use in other files.
+// One global variable that is available by default:
+// designKitRecord - this is a list which contains the 4 fields from
+//                   ads.lib (kit name, path, boot file, version).
+// As soon as the design kit load process has finished, this variable
+// is unset, so save the values as a variable with a different name if
+// you want access to them later.
+//
+// The following debug print statements can be used to view the values of 
+// these variables:
+//
+// To print a field in the list:
+fputs(stderr, designKitRecord[0]);
+// Now save the path variable so it is available for later use.
+// Any variables declared in this file must be unique to this design kit.
+// If you copy this boot file to make another design kit, these names must
+// be changed.
+decl BFU5XX_family_design_kit_v2_PATH = designKitRecord[1];
+// To view the path variable:
+fputs(stderr, BFU5XX_family_design_kit_v2_PATH);
+// Comment out all debug print statements before shipping your design kit.
+// These path names will be used later to load other files.
+decl BFU5XX_family_design_kit_v2_BITMAP_DIR = sprintf("%s/circuit/bitmaps/%s/",BFU5XX_family_design_kit_v2_PATH,
+                      on_PC?"pc":"unix");
+decl BFU5XX_family_design_kit_v2_CIRCUIT_AEL_DIR = sprintf("%s/circuit/ael/",BFU5XX_family_design_kit_v2_PATH);
+decl BFU5XX_family_design_kit_v2_CIRCUIT_MODEL_DIR = sprintf("%s/circuit/models/",BFU5XX_family_design_kit_v2_PATH);
+decl BFU5XX_family_design_kit_v2_DE_AEL_DIR = sprintf("%s/de/ael/",BFU5XX_family_design_kit_v2_PATH);
+
+// Load the circuit/ael files
+load(strcat(BFU5XX_family_design_kit_v2_PATH,"/circuit/ael/BFU5XX_family_design_kit_v2_encode_def.ael"));
+load(strcat(BFU5XX_family_design_kit_v2_PATH,"/circuit/ael/BFU5XX_family_design_kit_v2_encode_item.ael"));

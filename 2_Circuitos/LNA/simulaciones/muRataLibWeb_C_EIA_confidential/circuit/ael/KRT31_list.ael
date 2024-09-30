@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("KRT31KC8YA106KH01","1:KRT31KC8YA106KH01, Metal terminal/ Automotive [AEC-Q200], X6S(-55to105[deg]), 35[V], 10000000[pF], +/-10[%], 100[Hz]-3[GHz]:1",68,"1","KRT31KC8YA106KH01");
+
+create_form_set("KRT31_list" 
+,"KRT31KC8YA106KH01"
+);
+
+create_compound_form("KRT31_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"KRT31_list",-1,prm("KRT31KC8YA106KH01")),
+create_parm("MIN","Minimum",32,"KRT31_list",-1,prm("KRT31KC8YA106KH01")),
+create_parm("MAX","Maximum",32,"KRT31_list",-1,prm("KRT31KC8YA106KH01")));
+
+create_form_set("KRT31_list_opt","NULL" 
+,"KRT31KC8YA106KH01"
+,"KRT31_compound"
+);
+
+
+

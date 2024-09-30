@@ -1,0 +1,42 @@
+; Top Design: "MyLibrary_lib:1_DC_transistor:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:1_DC_transistor:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+#include "C:/Users/AlejandroAlmela/svn/EAIII_Radar/LNA/simulaciones/Infineon_RF//circuit/models/RF.net"
+#uselib "BFU5XX_family_design_kit_v2" , "bfu5xx_v2_lib_BFU550A_schematic"
+"bfu5xx_v2_lib_BFU550A_schematic":X1  B C 0 
+
+;#@# autodisplay="BJT_curve_tracer"
+ParamSweep:Sweep1 SimInstanceName[1]="DC1" StatusLevel=2 SweepVar="IBB" SweepPlan="Sweep1_stim" 
+
+SweepPlan: Sweep1_stim Start=100 uA Stop=400 uA Step=25 uA 
+
+
+VCE =0 V
+IBB =0 A
+DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
+SweepVar="VCE" SweepPlan="DC1_stim" OutputPlan="DC1_Output" 
+
+SweepPlan: DC1_stim Start=0 Stop=5 Step=0.01 
+
+OutputPlan:DC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+I_Source:SRC3  0 B Type="I_DC" Idc=IBB 
+V_Source:SRC4  N__4 0 Type="V_DC" Vdc=VCE SaveCurrent=1 
+Short:IC  N__4 C Mode=0 SaveCurrent=yes 

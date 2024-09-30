@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE MyLibrary1_lib MyLibrary1_lib
+ASSIGN MyLibrary1_lib libMode shared
+INCLUDE $HOME/svn/EAIII_Radar/LNA/BFU5XX_family_design_kit_v2/lib.defs

@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=Net*_3 Pin=D1-3
+Removed Pin From Net: NetName=Net*_4 Pin=D2-1
+Removed Pin From Net: NetName=Net*_1 Pin=P1-1
+Removed Pin From Net: NetName=Net*_2 Pin=P2-1
+Change Component Footprint: Designator=* Old Footprint=hibrido_62mil_1GHz New Footprint=ratrace_30mil_1GHz
+Change Component Comment : Designator=* Old Comment=hibrido_62mil_1GHz New Comment=RatRace
+Added Pin To Net: NetName=Net*_4 Pin=D1-3
+Added Pin To Net: NetName=Net*_2 Pin=D2-1
+Added Pin To Net: NetName=Net*_3 Pin=P1-1
+Added Pin To Net: NetName=Net*_1 Pin=P2-1

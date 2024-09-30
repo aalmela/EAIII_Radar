@@ -1,0 +1,8 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.llc_clustering
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule/drc/jh_autorule.llc_clustering"
+
+.stream return

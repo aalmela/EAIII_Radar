@@ -1,0 +1,14 @@
+DRC Rules Export File for PCB: C:\Users\AlejandroAlmela\svn\EAIII_Radar\Completo\Radar_labo_EAIII_2024 (8-9-2024 10-32-14)\mixer_30mil_1GHz (4-7-2024 21-56-30)\Radar_1GHz.PcbDoc
+RuleKind=Width|RuleName=GND_Width|Scope=Board|Minimum=0.01
+RuleKind=Width|RuleName=Width_1|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=poly_top|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_fi|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_dc|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_lna|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_pa|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_vco|Scope=Board|Minimum=19.69
+RuleKind=Clearance|RuleName=poly_0|Scope=Board|Minimum=19.69
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.00
+RuleKind=Width|RuleName=RF50R|Scope=Board|Minimum=14.50
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00

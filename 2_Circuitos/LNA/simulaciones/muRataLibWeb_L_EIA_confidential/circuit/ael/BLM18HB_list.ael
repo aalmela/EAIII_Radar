@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM18HB121SZ1","1:BLM18HB121SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:1",68,"1","BLM18HB121SZ1");
+create_constant_form("BLM18HB221SZ1","2:BLM18HB221SZ1, Ferrite Bead Single Type, 100[mA], 1[MHz]-3[GHz]:2",68,"2","BLM18HB221SZ1");
+create_constant_form("BLM18HB331SZ1","3:BLM18HB331SZ1, Ferrite Bead Single Type, 50[mA], 1[MHz]-3[GHz]:3",68,"3","BLM18HB331SZ1");
+
+create_form_set("BLM18HB_list" 
+,"BLM18HB121SZ1"
+,"BLM18HB221SZ1"
+,"BLM18HB331SZ1"
+);
+
+create_compound_form("BLM18HB_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM18HB_list",-1,prm("BLM18HB121SZ1")),
+create_parm("MIN","Minimum",32,"BLM18HB_list",-1,prm("BLM18HB121SZ1")),
+create_parm("MAX","Maximum",32,"BLM18HB_list",-1,prm("BLM18HB331SZ1")));
+
+create_form_set("BLM18HB_list_opt","NULL" 
+,"BLM18HB121SZ1"
+,"BLM18HB221SZ1"
+,"BLM18HB331SZ1"
+,"BLM18HB_compound"
+);
+
+
+

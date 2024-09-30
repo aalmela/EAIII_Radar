@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      AlejandroAlmela
+HostName                       DESKTOP-LHADK87
+ProcessIdentifier              24356
+ProcessCreationTime_UTC        1716905998
+ProcessCreationTime_Readable   Tue May 28 11:19:58 2024 Hora estándar de Argentina
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\Users\AlejandroAlmela\svn\EAIII_Radar\LNA\simulaciones\MyWorkspace_wrk\MyLibrary_lib\3_%Adapta_%N%Fmin\layout\layout.oa.cdslck
+TimeEditLocked                 Tue May 28 15:16:57 2024 Hora estándar de Argentina

@@ -1,0 +1,20 @@
+//
+// WWFTE custom width rule for pc5
+//
+
+// Declare design layer to apply rule to:
+
+
+
+// declare output error layer:
+
+
+
+// 
+// 1. Conductor width     5 mil
+//type in the ael drc command to check for width < 5 mil:
+
+
+
+
+//end of file

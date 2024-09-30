@@ -1,0 +1,40 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Fri Jun 21 15:46:06 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 25848
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'Tran' analysis present.
+
+SP SP1[1] <Mi_darae_lib:Ring_rat_race:schematic>   freq=(0 Hz->4 GHz)
+
+
+COMPONENT : Curve4
+    Characterizing to 8 GHz 
+
+COMPONENT : Curve3
+    Characterizing to 8 GHz 
+
+COMPONENT : Curve5
+    Characterizing to 8 GHz 
+
+COMPONENT : Curve2
+    Characterizing to 8 GHz 
+Pt DC convergence is used.
+
+.
+
+
+TRAN Tran1[1] <Mi_darae_lib:Ring_rat_race:schematic>   time=(10 ns->16 ns)
+Warning detected by hpeesofsim during TRAN analysis `Tran1'.
+    MaxTimeStep reduced to  6.250e-11 to resolve source bandwidth.
+
+
+Resource usage:
+  Total stopwatch time     =     5.23 seconds.
+

@@ -1,0 +1,6 @@
+# Library Defs for editing the BFU5XX_family_design_kit_v2 design kit
+# Remove this from the design kit before distributing to customers.
+DEFINE BFU5XX_family_design_kit_v2_tech ./BFU5XX_family_design_kit_v2_tech
+ASSIGN BFU5XX_family_design_kit_v2_tech libMode shared
+DEFINE BFU5XX_family_design_kit_v2 ./BFU5XX_family_design_kit_v2
+ASSIGN BFU5XX_family_design_kit_v2 libMode shared

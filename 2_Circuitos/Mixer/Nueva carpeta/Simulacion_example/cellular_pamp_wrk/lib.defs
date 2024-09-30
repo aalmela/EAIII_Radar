@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/ads.defs
+DEFINE cellular_pamp_lib cellular_pamp_lib
+ASSIGN cellular_pamp_lib writePath cellular_pamp_lib
+ASSIGN cellular_pamp_lib libMode shared

@@ -1,0 +1,6 @@
+create_text_form("StdForm","Standard",0,"%v","%v",NULL,NULL,NULL,NULL);
+create_text_form("FileBasedForm","File Based",0,"%v","%v",NULL,NULL,NULL,NULL);
+create_form_set("StdFileFormSet","StdForm","FileBasedForm");
+
+create_item("C_atc","C_atc","C",16,-1,NULL,"Component Parameters",NULL,"%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","C_atc","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","SYM_C",3,NULL,0,
+create_parm("C_","Capacitance",68608,"StdFileFormSet",4,prm("StdForm","1.0 pF")));

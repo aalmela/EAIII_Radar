@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM03AG100SZ1","1:BLM03AG100SZ1, Ferrite Bead Single Type, 500[mA], 1[MHz]-3[GHz]:1",68,"1","BLM03AG100SZ1");
+create_constant_form("BLM03AG102SZ1","2:BLM03AG102SZ1, Ferrite Bead Single Type, 100[mA], 1[MHz]-3[GHz]:2",68,"2","BLM03AG102SZ1");
+create_constant_form("BLM03AG121SZ1","3:BLM03AG121SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:3",68,"3","BLM03AG121SZ1");
+create_constant_form("BLM03AG241SZ1","4:BLM03AG241SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:4",68,"4","BLM03AG241SZ1");
+create_constant_form("BLM03AG601SZ1","5:BLM03AG601SZ1, Ferrite Bead Single Type, 100[mA], 1[MHz]-3[GHz]:5",68,"5","BLM03AG601SZ1");
+create_constant_form("BLM03AG700SZ1","6:BLM03AG700SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:6",68,"6","BLM03AG700SZ1");
+create_constant_form("BLM03AG800SZ1","7:BLM03AG800SZ1, Ferrite Bead Single Type, 200[mA], 1[MHz]-3[GHz]:7",68,"7","BLM03AG800SZ1");
+
+create_form_set("BLM03AG_list" 
+,"BLM03AG100SZ1"
+,"BLM03AG102SZ1"
+,"BLM03AG121SZ1"
+,"BLM03AG241SZ1"
+,"BLM03AG601SZ1"
+,"BLM03AG700SZ1"
+,"BLM03AG800SZ1"
+);
+
+create_compound_form("BLM03AG_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM03AG_list",-1,prm("BLM03AG100SZ1")),
+create_parm("MIN","Minimum",32,"BLM03AG_list",-1,prm("BLM03AG100SZ1")),
+create_parm("MAX","Maximum",32,"BLM03AG_list",-1,prm("BLM03AG800SZ1")));
+
+create_form_set("BLM03AG_list_opt","NULL" 
+,"BLM03AG100SZ1"
+,"BLM03AG102SZ1"
+,"BLM03AG121SZ1"
+,"BLM03AG241SZ1"
+,"BLM03AG601SZ1"
+,"BLM03AG700SZ1"
+,"BLM03AG800SZ1"
+,"BLM03AG_compound"
+);
+
+
+

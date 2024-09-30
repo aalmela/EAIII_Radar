@@ -1,0 +1,12 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.jade_design_layers
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc6/drc/jh_pc6.jade_design_layers"
+
+design lyr_cond = 1 end_design
+design lyr_cond2 = 2 end_design
+design lyr_hole = 5 end_design
+design lyr_bound = 13 end_design
+.stream return

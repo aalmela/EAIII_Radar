@@ -1,0 +1,571 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GRT0335C1E1R0CA02","1:GRT0335C1E1R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 1[pF], +/-0.25[pF], 100[MHz]-20[GHz]:1",68,"1","GRT0335C1E1R0CA02");
+create_constant_form("GRT0335C1H1R0CA02","2:GRT0335C1H1R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 1[pF], +/-0.25[pF], 100[MHz]-20[GHz]:2",68,"2","GRT0335C1H1R0CA02");
+create_constant_form("GRT0335C2A1R0CA02","3:GRT0335C2A1R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 1[pF], +/-0.25[pF], 100[MHz]-20[GHz]:3",68,"3","GRT0335C2A1R0CA02");
+create_constant_form("GRT0335C1E2R0CA02","4:GRT0335C1E2R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 2[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:4",68,"4","GRT0335C1E2R0CA02");
+create_constant_form("GRT0335C1H2R0CA02","5:GRT0335C1H2R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 2[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:5",68,"5","GRT0335C1H2R0CA02");
+create_constant_form("GRT0335C2A2R0CA02","6:GRT0335C2A2R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 2[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:6",68,"6","GRT0335C2A2R0CA02");
+create_constant_form("GRT0335C1E3R0CA02","7:GRT0335C1E3R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 3[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:7",68,"7","GRT0335C1E3R0CA02");
+create_constant_form("GRT0335C1H3R0CA02","8:GRT0335C1H3R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 3[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:8",68,"8","GRT0335C1H3R0CA02");
+create_constant_form("GRT0335C2A3R0CA02","9:GRT0335C2A3R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 3[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:9",68,"9","GRT0335C2A3R0CA02");
+create_constant_form("GRT0335C1E4R0CA02","10:GRT0335C1E4R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 4[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:10",68,"10","GRT0335C1E4R0CA02");
+create_constant_form("GRT0335C1H4R0CA02","11:GRT0335C1H4R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 4[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:11",68,"11","GRT0335C1H4R0CA02");
+create_constant_form("GRT0335C2A4R0CA02","12:GRT0335C2A4R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 4[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:12",68,"12","GRT0335C2A4R0CA02");
+create_constant_form("GRT0335C1E5R0CA02","13:GRT0335C1E5R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 5[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:13",68,"13","GRT0335C1E5R0CA02");
+create_constant_form("GRT0335C1H5R0CA02","14:GRT0335C1H5R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 5[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:14",68,"14","GRT0335C1H5R0CA02");
+create_constant_form("GRT0335C2A5R0CA02","15:GRT0335C2A5R0CA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 5[pF], +/-0.25[pF], 100[MHz]-8.5[GHz]:15",68,"15","GRT0335C2A5R0CA02");
+create_constant_form("GRT0335C1E6R0DA02","16:GRT0335C1E6R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 6[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:16",68,"16","GRT0335C1E6R0DA02");
+create_constant_form("GRT0335C1H6R0DA02","17:GRT0335C1H6R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 6[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:17",68,"17","GRT0335C1H6R0DA02");
+create_constant_form("GRT0335C2A6R0DA02","18:GRT0335C2A6R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 6[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:18",68,"18","GRT0335C2A6R0DA02");
+create_constant_form("GRT0335C1E7R0DA02","19:GRT0335C1E7R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 7[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:19",68,"19","GRT0335C1E7R0DA02");
+create_constant_form("GRT0335C1H7R0DA02","20:GRT0335C1H7R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 7[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:20",68,"20","GRT0335C1H7R0DA02");
+create_constant_form("GRT0335C2A7R0DA02","21:GRT0335C2A7R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 7[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:21",68,"21","GRT0335C2A7R0DA02");
+create_constant_form("GRT0335C1E8R0DA02","22:GRT0335C1E8R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 8[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:22",68,"22","GRT0335C1E8R0DA02");
+create_constant_form("GRT0335C1H8R0DA02","23:GRT0335C1H8R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 8[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:23",68,"23","GRT0335C1H8R0DA02");
+create_constant_form("GRT0335C2A8R0DA02","24:GRT0335C2A8R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 8[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:24",68,"24","GRT0335C2A8R0DA02");
+create_constant_form("GRT0335C1E9R0DA02","25:GRT0335C1E9R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 9[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:25",68,"25","GRT0335C1E9R0DA02");
+create_constant_form("GRT0335C1H9R0DA02","26:GRT0335C1H9R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 9[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:26",68,"26","GRT0335C1H9R0DA02");
+create_constant_form("GRT0335C2A9R0DA02","27:GRT0335C2A9R0DA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 9[pF], +/-0.5[pF], 100[MHz]-8.5[GHz]:27",68,"27","GRT0335C2A9R0DA02");
+create_constant_form("GRT0335C1E100FA02","28:GRT0335C1E100FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 10[pF], +/-1[%], 100[MHz]-8.5[GHz]:28",68,"28","GRT0335C1E100FA02");
+create_constant_form("GRT0335C1E100GA02","29:GRT0335C1E100GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 10[pF], +/-2[%], 100[MHz]-8.5[GHz]:29",68,"29","GRT0335C1E100GA02");
+create_constant_form("GRT0335C1E100JA02","30:GRT0335C1E100JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 10[pF], +/-5[%], 100[MHz]-8.5[GHz]:30",68,"30","GRT0335C1E100JA02");
+create_constant_form("GRT0335C1H100GA02","31:GRT0335C1H100GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 10[pF], +/-2[%], 100[MHz]-8.5[GHz]:31",68,"31","GRT0335C1H100GA02");
+create_constant_form("GRT0335C1H100JA02","32:GRT0335C1H100JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 10[pF], +/-5[%], 100[MHz]-8.5[GHz]:32",68,"32","GRT0335C1H100JA02");
+create_constant_form("GRT0335C2A100FA02","33:GRT0335C2A100FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 10[pF], +/-1[%], 100[MHz]-8.5[GHz]:33",68,"33","GRT0335C2A100FA02");
+create_constant_form("GRT0335C2A100GA02","34:GRT0335C2A100GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 10[pF], +/-2[%], 100[MHz]-8.5[GHz]:34",68,"34","GRT0335C2A100GA02");
+create_constant_form("GRT0335C2A100JA02","35:GRT0335C2A100JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 10[pF], +/-5[%], 100[MHz]-8.5[GHz]:35",68,"35","GRT0335C2A100JA02");
+create_constant_form("GRT0335C1E120FA02","36:GRT0335C1E120FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 12[pF], +/-1[%], 100[MHz]-8.5[GHz]:36",68,"36","GRT0335C1E120FA02");
+create_constant_form("GRT0335C1E120GA02","37:GRT0335C1E120GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 12[pF], +/-2[%], 100[MHz]-8.5[GHz]:37",68,"37","GRT0335C1E120GA02");
+create_constant_form("GRT0335C1E120JA02","38:GRT0335C1E120JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 12[pF], +/-5[%], 100[MHz]-8.5[GHz]:38",68,"38","GRT0335C1E120JA02");
+create_constant_form("GRT0335C1H120FA02","39:GRT0335C1H120FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 12[pF], +/-1[%], 100[MHz]-8.5[GHz]:39",68,"39","GRT0335C1H120FA02");
+create_constant_form("GRT0335C1H120GA02","40:GRT0335C1H120GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 12[pF], +/-2[%], 100[MHz]-8.5[GHz]:40",68,"40","GRT0335C1H120GA02");
+create_constant_form("GRT0335C1H120JA02","41:GRT0335C1H120JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 12[pF], +/-5[%], 100[MHz]-8.5[GHz]:41",68,"41","GRT0335C1H120JA02");
+create_constant_form("GRT0335C2A120FA02","42:GRT0335C2A120FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 12[pF], +/-1[%], 100[MHz]-8.5[GHz]:42",68,"42","GRT0335C2A120FA02");
+create_constant_form("GRT0335C2A120GA02","43:GRT0335C2A120GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 12[pF], +/-2[%], 100[MHz]-8.5[GHz]:43",68,"43","GRT0335C2A120GA02");
+create_constant_form("GRT0335C2A120JA02","44:GRT0335C2A120JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 12[pF], +/-5[%], 100[MHz]-8.5[GHz]:44",68,"44","GRT0335C2A120JA02");
+create_constant_form("GRT0335C1E150FA02","45:GRT0335C1E150FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 15[pF], +/-1[%], 100[MHz]-8.5[GHz]:45",68,"45","GRT0335C1E150FA02");
+create_constant_form("GRT0335C1E150GA02","46:GRT0335C1E150GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 15[pF], +/-2[%], 100[MHz]-8.5[GHz]:46",68,"46","GRT0335C1E150GA02");
+create_constant_form("GRT0335C1E150JA02","47:GRT0335C1E150JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 15[pF], +/-5[%], 100[MHz]-8.5[GHz]:47",68,"47","GRT0335C1E150JA02");
+create_constant_form("GRT0335C1H150FA02","48:GRT0335C1H150FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 15[pF], +/-1[%], 100[MHz]-8.5[GHz]:48",68,"48","GRT0335C1H150FA02");
+create_constant_form("GRT0335C1H150GA02","49:GRT0335C1H150GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 15[pF], +/-2[%], 100[MHz]-8.5[GHz]:49",68,"49","GRT0335C1H150GA02");
+create_constant_form("GRT0335C1H150JA02","50:GRT0335C1H150JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 15[pF], +/-5[%], 100[MHz]-8.5[GHz]:50",68,"50","GRT0335C1H150JA02");
+create_constant_form("GRT0335C2A150FA02","51:GRT0335C2A150FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 15[pF], +/-1[%], 100[MHz]-8.5[GHz]:51",68,"51","GRT0335C2A150FA02");
+create_constant_form("GRT0335C2A150GA02","52:GRT0335C2A150GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 15[pF], +/-2[%], 100[MHz]-8.5[GHz]:52",68,"52","GRT0335C2A150GA02");
+create_constant_form("GRT0335C2A150JA02","53:GRT0335C2A150JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 15[pF], +/-5[%], 100[MHz]-8.5[GHz]:53",68,"53","GRT0335C2A150JA02");
+create_constant_form("GRT0335C1E180FA02","54:GRT0335C1E180FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 18[pF], +/-1[%], 100[MHz]-8.5[GHz]:54",68,"54","GRT0335C1E180FA02");
+create_constant_form("GRT0335C1E180GA02","55:GRT0335C1E180GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 18[pF], +/-2[%], 100[MHz]-8.5[GHz]:55",68,"55","GRT0335C1E180GA02");
+create_constant_form("GRT0335C1E180JA02","56:GRT0335C1E180JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 18[pF], +/-5[%], 100[MHz]-8.5[GHz]:56",68,"56","GRT0335C1E180JA02");
+create_constant_form("GRT0335C1H180FA02","57:GRT0335C1H180FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 18[pF], +/-1[%], 100[MHz]-8.5[GHz]:57",68,"57","GRT0335C1H180FA02");
+create_constant_form("GRT0335C1H180GA02","58:GRT0335C1H180GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 18[pF], +/-2[%], 100[MHz]-8.5[GHz]:58",68,"58","GRT0335C1H180GA02");
+create_constant_form("GRT0335C1H180JA02","59:GRT0335C1H180JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 18[pF], +/-5[%], 100[MHz]-8.5[GHz]:59",68,"59","GRT0335C1H180JA02");
+create_constant_form("GRT0335C2A180FA02","60:GRT0335C2A180FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 18[pF], +/-1[%], 100[MHz]-8.5[GHz]:60",68,"60","GRT0335C2A180FA02");
+create_constant_form("GRT0335C2A180GA02","61:GRT0335C2A180GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 18[pF], +/-2[%], 100[MHz]-8.5[GHz]:61",68,"61","GRT0335C2A180GA02");
+create_constant_form("GRT0335C2A180JA02","62:GRT0335C2A180JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 18[pF], +/-5[%], 100[MHz]-8.5[GHz]:62",68,"62","GRT0335C2A180JA02");
+create_constant_form("GRT0335C1E220FA02","63:GRT0335C1E220FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 22[pF], +/-1[%], 100[MHz]-8.5[GHz]:63",68,"63","GRT0335C1E220FA02");
+create_constant_form("GRT0335C1E220GA02","64:GRT0335C1E220GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 22[pF], +/-2[%], 100[MHz]-8.5[GHz]:64",68,"64","GRT0335C1E220GA02");
+create_constant_form("GRT0335C1E220JA02","65:GRT0335C1E220JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 22[pF], +/-5[%], 100[MHz]-8.5[GHz]:65",68,"65","GRT0335C1E220JA02");
+create_constant_form("GRT0335C1H220FA02","66:GRT0335C1H220FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 22[pF], +/-1[%], 100[MHz]-8.5[GHz]:66",68,"66","GRT0335C1H220FA02");
+create_constant_form("GRT0335C1H220GA02","67:GRT0335C1H220GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 22[pF], +/-2[%], 100[MHz]-8.5[GHz]:67",68,"67","GRT0335C1H220GA02");
+create_constant_form("GRT0335C1H220JA02","68:GRT0335C1H220JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 22[pF], +/-5[%], 100[MHz]-8.5[GHz]:68",68,"68","GRT0335C1H220JA02");
+create_constant_form("GRT0335C2A220FA02","69:GRT0335C2A220FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 22[pF], +/-1[%], 100[MHz]-8.5[GHz]:69",68,"69","GRT0335C2A220FA02");
+create_constant_form("GRT0335C2A220GA02","70:GRT0335C2A220GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 22[pF], +/-2[%], 100[MHz]-8.5[GHz]:70",68,"70","GRT0335C2A220GA02");
+create_constant_form("GRT0335C2A220JA02","71:GRT0335C2A220JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 22[pF], +/-5[%], 100[MHz]-8.5[GHz]:71",68,"71","GRT0335C2A220JA02");
+create_constant_form("GRT0335C1E270FA02","72:GRT0335C1E270FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 27[pF], +/-1[%], 100[MHz]-8.5[GHz]:72",68,"72","GRT0335C1E270FA02");
+create_constant_form("GRT0335C1E270GA02","73:GRT0335C1E270GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 27[pF], +/-2[%], 100[MHz]-8.5[GHz]:73",68,"73","GRT0335C1E270GA02");
+create_constant_form("GRT0335C1E270JA02","74:GRT0335C1E270JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 27[pF], +/-5[%], 100[MHz]-8.5[GHz]:74",68,"74","GRT0335C1E270JA02");
+create_constant_form("GRT0335C1H270FA02","75:GRT0335C1H270FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 27[pF], +/-1[%], 100[MHz]-8.5[GHz]:75",68,"75","GRT0335C1H270FA02");
+create_constant_form("GRT0335C1H270GA02","76:GRT0335C1H270GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 27[pF], +/-2[%], 100[MHz]-8.5[GHz]:76",68,"76","GRT0335C1H270GA02");
+create_constant_form("GRT0335C1H270JA02","77:GRT0335C1H270JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 27[pF], +/-5[%], 100[MHz]-8.5[GHz]:77",68,"77","GRT0335C1H270JA02");
+create_constant_form("GRT0335C2A270FA02","78:GRT0335C2A270FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 27[pF], +/-1[%], 100[MHz]-8.5[GHz]:78",68,"78","GRT0335C2A270FA02");
+create_constant_form("GRT0335C2A270GA02","79:GRT0335C2A270GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 27[pF], +/-2[%], 100[MHz]-8.5[GHz]:79",68,"79","GRT0335C2A270GA02");
+create_constant_form("GRT0335C2A270JA02","80:GRT0335C2A270JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 27[pF], +/-5[%], 100[MHz]-8.5[GHz]:80",68,"80","GRT0335C2A270JA02");
+create_constant_form("GRT0335C1E330FA02","81:GRT0335C1E330FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 33[pF], +/-1[%], 100[MHz]-8.5[GHz]:81",68,"81","GRT0335C1E330FA02");
+create_constant_form("GRT0335C1E330GA02","82:GRT0335C1E330GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 33[pF], +/-2[%], 100[MHz]-8.5[GHz]:82",68,"82","GRT0335C1E330GA02");
+create_constant_form("GRT0335C1E330JA02","83:GRT0335C1E330JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 33[pF], +/-5[%], 100[MHz]-8.5[GHz]:83",68,"83","GRT0335C1E330JA02");
+create_constant_form("GRT0335C1H330FA02","84:GRT0335C1H330FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 33[pF], +/-1[%], 100[MHz]-8.5[GHz]:84",68,"84","GRT0335C1H330FA02");
+create_constant_form("GRT0335C1H330GA02","85:GRT0335C1H330GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 33[pF], +/-2[%], 100[MHz]-8.5[GHz]:85",68,"85","GRT0335C1H330GA02");
+create_constant_form("GRT0335C1H330JA02","86:GRT0335C1H330JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 33[pF], +/-5[%], 100[MHz]-8.5[GHz]:86",68,"86","GRT0335C1H330JA02");
+create_constant_form("GRT0335C2A330FA02","87:GRT0335C2A330FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 33[pF], +/-1[%], 100[MHz]-8.5[GHz]:87",68,"87","GRT0335C2A330FA02");
+create_constant_form("GRT0335C2A330GA02","88:GRT0335C2A330GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 33[pF], +/-2[%], 100[MHz]-8.5[GHz]:88",68,"88","GRT0335C2A330GA02");
+create_constant_form("GRT0335C2A330JA02","89:GRT0335C2A330JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 33[pF], +/-5[%], 100[MHz]-8.5[GHz]:89",68,"89","GRT0335C2A330JA02");
+create_constant_form("GRT0335C1E390FA02","90:GRT0335C1E390FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 39[pF], +/-1[%], 100[MHz]-8.5[GHz]:90",68,"90","GRT0335C1E390FA02");
+create_constant_form("GRT0335C1E390GA02","91:GRT0335C1E390GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 39[pF], +/-2[%], 100[MHz]-8.5[GHz]:91",68,"91","GRT0335C1E390GA02");
+create_constant_form("GRT0335C1E390JA02","92:GRT0335C1E390JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 39[pF], +/-5[%], 100[MHz]-8.5[GHz]:92",68,"92","GRT0335C1E390JA02");
+create_constant_form("GRT0335C1H390FA02","93:GRT0335C1H390FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 39[pF], +/-1[%], 100[MHz]-8.5[GHz]:93",68,"93","GRT0335C1H390FA02");
+create_constant_form("GRT0335C1H390GA02","94:GRT0335C1H390GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 39[pF], +/-2[%], 100[MHz]-8.5[GHz]:94",68,"94","GRT0335C1H390GA02");
+create_constant_form("GRT0335C1H390JA02","95:GRT0335C1H390JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 39[pF], +/-5[%], 100[MHz]-8.5[GHz]:95",68,"95","GRT0335C1H390JA02");
+create_constant_form("GRT0335C2A390FA02","96:GRT0335C2A390FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 39[pF], +/-1[%], 100[MHz]-8.5[GHz]:96",68,"96","GRT0335C2A390FA02");
+create_constant_form("GRT0335C2A390GA02","97:GRT0335C2A390GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 39[pF], +/-2[%], 100[MHz]-8.5[GHz]:97",68,"97","GRT0335C2A390GA02");
+create_constant_form("GRT0335C2A390JA02","98:GRT0335C2A390JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 39[pF], +/-5[%], 100[MHz]-8.5[GHz]:98",68,"98","GRT0335C2A390JA02");
+create_constant_form("GRT0335C1E470FA02","99:GRT0335C1E470FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 47[pF], +/-1[%], 100[MHz]-8.5[GHz]:99",68,"99","GRT0335C1E470FA02");
+create_constant_form("GRT0335C1E470GA02","100:GRT0335C1E470GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 47[pF], +/-2[%], 100[MHz]-8.5[GHz]:100",68,"100","GRT0335C1E470GA02");
+create_constant_form("GRT0335C1E470JA02","101:GRT0335C1E470JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 47[pF], +/-5[%], 100[MHz]-8.5[GHz]:101",68,"101","GRT0335C1E470JA02");
+create_constant_form("GRT0335C1H470FA02","102:GRT0335C1H470FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 47[pF], +/-1[%], 100[MHz]-8.5[GHz]:102",68,"102","GRT0335C1H470FA02");
+create_constant_form("GRT0335C1H470GA02","103:GRT0335C1H470GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 47[pF], +/-2[%], 100[MHz]-8.5[GHz]:103",68,"103","GRT0335C1H470GA02");
+create_constant_form("GRT0335C1H470JA02","104:GRT0335C1H470JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 47[pF], +/-5[%], 100[MHz]-8.5[GHz]:104",68,"104","GRT0335C1H470JA02");
+create_constant_form("GRT0335C2A470FA02","105:GRT0335C2A470FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 47[pF], +/-1[%], 100[MHz]-8.5[GHz]:105",68,"105","GRT0335C2A470FA02");
+create_constant_form("GRT0335C2A470GA02","106:GRT0335C2A470GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 47[pF], +/-2[%], 100[MHz]-8.5[GHz]:106",68,"106","GRT0335C2A470GA02");
+create_constant_form("GRT0335C2A470JA02","107:GRT0335C2A470JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 47[pF], +/-5[%], 100[MHz]-8.5[GHz]:107",68,"107","GRT0335C2A470JA02");
+create_constant_form("GRT0335C1E560FA02","108:GRT0335C1E560FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 56[pF], +/-1[%], 100[MHz]-8.5[GHz]:108",68,"108","GRT0335C1E560FA02");
+create_constant_form("GRT0335C1E560GA02","109:GRT0335C1E560GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 56[pF], +/-2[%], 100[MHz]-8.5[GHz]:109",68,"109","GRT0335C1E560GA02");
+create_constant_form("GRT0335C1E560JA02","110:GRT0335C1E560JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 56[pF], +/-5[%], 100[MHz]-8.5[GHz]:110",68,"110","GRT0335C1E560JA02");
+create_constant_form("GRT0335C1H560FA02","111:GRT0335C1H560FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 56[pF], +/-1[%], 100[MHz]-8.5[GHz]:111",68,"111","GRT0335C1H560FA02");
+create_constant_form("GRT0335C1H560GA02","112:GRT0335C1H560GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 56[pF], +/-2[%], 100[MHz]-8.5[GHz]:112",68,"112","GRT0335C1H560GA02");
+create_constant_form("GRT0335C1H560JA02","113:GRT0335C1H560JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 56[pF], +/-5[%], 100[MHz]-8.5[GHz]:113",68,"113","GRT0335C1H560JA02");
+create_constant_form("GRT0335C2A560FA02","114:GRT0335C2A560FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 56[pF], +/-1[%], 100[MHz]-8.5[GHz]:114",68,"114","GRT0335C2A560FA02");
+create_constant_form("GRT0335C2A560GA02","115:GRT0335C2A560GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 56[pF], +/-2[%], 100[MHz]-8.5[GHz]:115",68,"115","GRT0335C2A560GA02");
+create_constant_form("GRT0335C2A560JA02","116:GRT0335C2A560JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 56[pF], +/-5[%], 100[MHz]-8.5[GHz]:116",68,"116","GRT0335C2A560JA02");
+create_constant_form("GRT0335C1E680FA02","117:GRT0335C1E680FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 68[pF], +/-1[%], 100[MHz]-8.5[GHz]:117",68,"117","GRT0335C1E680FA02");
+create_constant_form("GRT0335C1E680GA02","118:GRT0335C1E680GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 68[pF], +/-2[%], 100[MHz]-8.5[GHz]:118",68,"118","GRT0335C1E680GA02");
+create_constant_form("GRT0335C1E680JA02","119:GRT0335C1E680JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 68[pF], +/-5[%], 100[MHz]-8.5[GHz]:119",68,"119","GRT0335C1E680JA02");
+create_constant_form("GRT0335C1H680FA02","120:GRT0335C1H680FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 68[pF], +/-1[%], 100[MHz]-8.5[GHz]:120",68,"120","GRT0335C1H680FA02");
+create_constant_form("GRT0335C1H680GA02","121:GRT0335C1H680GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 68[pF], +/-2[%], 100[MHz]-8.5[GHz]:121",68,"121","GRT0335C1H680GA02");
+create_constant_form("GRT0335C1H680JA02","122:GRT0335C1H680JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 68[pF], +/-5[%], 100[MHz]-8.5[GHz]:122",68,"122","GRT0335C1H680JA02");
+create_constant_form("GRT0335C2A680FA02","123:GRT0335C2A680FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 68[pF], +/-1[%], 100[MHz]-8.5[GHz]:123",68,"123","GRT0335C2A680FA02");
+create_constant_form("GRT0335C2A680GA02","124:GRT0335C2A680GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 68[pF], +/-2[%], 100[MHz]-8.5[GHz]:124",68,"124","GRT0335C2A680GA02");
+create_constant_form("GRT0335C2A680JA02","125:GRT0335C2A680JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 68[pF], +/-5[%], 100[MHz]-8.5[GHz]:125",68,"125","GRT0335C2A680JA02");
+create_constant_form("GRT0335C1E820FA02","126:GRT0335C1E820FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 82[pF], +/-1[%], 100[MHz]-8.5[GHz]:126",68,"126","GRT0335C1E820FA02");
+create_constant_form("GRT0335C1E820GA02","127:GRT0335C1E820GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 82[pF], +/-2[%], 100[MHz]-8.5[GHz]:127",68,"127","GRT0335C1E820GA02");
+create_constant_form("GRT0335C1E820JA02","128:GRT0335C1E820JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 82[pF], +/-5[%], 100[MHz]-8.5[GHz]:128",68,"128","GRT0335C1E820JA02");
+create_constant_form("GRT0335C1H820FA02","129:GRT0335C1H820FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 82[pF], +/-1[%], 100[MHz]-8.5[GHz]:129",68,"129","GRT0335C1H820FA02");
+create_constant_form("GRT0335C1H820GA02","130:GRT0335C1H820GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 82[pF], +/-2[%], 100[MHz]-8.5[GHz]:130",68,"130","GRT0335C1H820GA02");
+create_constant_form("GRT0335C1H820JA02","131:GRT0335C1H820JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 82[pF], +/-5[%], 100[MHz]-8.5[GHz]:131",68,"131","GRT0335C1H820JA02");
+create_constant_form("GRT0335C2A820FA02","132:GRT0335C2A820FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 82[pF], +/-1[%], 100[MHz]-8.5[GHz]:132",68,"132","GRT0335C2A820FA02");
+create_constant_form("GRT0335C2A820GA02","133:GRT0335C2A820GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 82[pF], +/-2[%], 100[MHz]-8.5[GHz]:133",68,"133","GRT0335C2A820GA02");
+create_constant_form("GRT0335C2A820JA02","134:GRT0335C2A820JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 82[pF], +/-5[%], 100[MHz]-8.5[GHz]:134",68,"134","GRT0335C2A820JA02");
+create_constant_form("GRT0335C1E101FA02","135:GRT0335C1E101FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 100[pF], +/-1[%], 100[MHz]-8.5[GHz]:135",68,"135","GRT0335C1E101FA02");
+create_constant_form("GRT0335C1E101GA02","136:GRT0335C1E101GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 100[pF], +/-2[%], 100[MHz]-8.5[GHz]:136",68,"136","GRT0335C1E101GA02");
+create_constant_form("GRT0335C1E101JA02","137:GRT0335C1E101JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 100[pF], +/-5[%], 100[MHz]-8.5[GHz]:137",68,"137","GRT0335C1E101JA02");
+create_constant_form("GRT0335C1H101FA02","138:GRT0335C1H101FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 100[pF], +/-1[%], 100[MHz]-8.5[GHz]:138",68,"138","GRT0335C1H101FA02");
+create_constant_form("GRT0335C1H101GA02","139:GRT0335C1H101GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 100[pF], +/-2[%], 100[MHz]-8.5[GHz]:139",68,"139","GRT0335C1H101GA02");
+create_constant_form("GRT0335C1H101JA02","140:GRT0335C1H101JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 100[pF], +/-5[%], 100[MHz]-8.5[GHz]:140",68,"140","GRT0335C1H101JA02");
+create_constant_form("GRT0335C2A101FA02","141:GRT0335C2A101FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 100[pF], +/-1[%], 100[MHz]-8.5[GHz]:141",68,"141","GRT0335C2A101FA02");
+create_constant_form("GRT0335C2A101GA02","142:GRT0335C2A101GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 100[pF], +/-2[%], 100[MHz]-8.5[GHz]:142",68,"142","GRT0335C2A101GA02");
+create_constant_form("GRT0335C2A101JA02","143:GRT0335C2A101JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 100[V], 100[pF], +/-5[%], 100[MHz]-8.5[GHz]:143",68,"143","GRT0335C2A101JA02");
+create_constant_form("GRT0335C1H121FA02","144:GRT0335C1H121FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 120[pF], +/-1[%], 100[MHz]-8.5[GHz]:144",68,"144","GRT0335C1H121FA02");
+create_constant_form("GRT0335C1H121GA02","145:GRT0335C1H121GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 120[pF], +/-2[%], 100[MHz]-8.5[GHz]:145",68,"145","GRT0335C1H121GA02");
+create_constant_form("GRT0335C1H121JA02","146:GRT0335C1H121JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 120[pF], +/-5[%], 100[MHz]-8.5[GHz]:146",68,"146","GRT0335C1H121JA02");
+create_constant_form("GRT0335C1E151FA02","147:GRT0335C1E151FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 150[pF], +/-1[%], 100[MHz]-8.5[GHz]:147",68,"147","GRT0335C1E151FA02");
+create_constant_form("GRT0335C1E151GA02","148:GRT0335C1E151GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 150[pF], +/-2[%], 100[MHz]-8.5[GHz]:148",68,"148","GRT0335C1E151GA02");
+create_constant_form("GRT0335C1E151JA02","149:GRT0335C1E151JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 150[pF], +/-5[%], 100[MHz]-8.5[GHz]:149",68,"149","GRT0335C1E151JA02");
+create_constant_form("GRT0335C1H151FA02","150:GRT0335C1H151FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 150[pF], +/-1[%], 100[MHz]-8.5[GHz]:150",68,"150","GRT0335C1H151FA02");
+create_constant_form("GRT0335C1H151GA02","151:GRT0335C1H151GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 150[pF], +/-2[%], 100[MHz]-8.5[GHz]:151",68,"151","GRT0335C1H151GA02");
+create_constant_form("GRT0335C1H151JA02","152:GRT0335C1H151JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 150[pF], +/-5[%], 100[MHz]-8.5[GHz]:152",68,"152","GRT0335C1H151JA02");
+create_constant_form("GRT0335C1E181FA02","153:GRT0335C1E181FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 180[pF], +/-1[%], 100[MHz]-8.5[GHz]:153",68,"153","GRT0335C1E181FA02");
+create_constant_form("GRT0335C1E181GA02","154:GRT0335C1E181GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 180[pF], +/-2[%], 100[MHz]-8.5[GHz]:154",68,"154","GRT0335C1E181GA02");
+create_constant_form("GRT0335C1E181JA02","155:GRT0335C1E181JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 180[pF], +/-5[%], 100[MHz]-8.5[GHz]:155",68,"155","GRT0335C1E181JA02");
+create_constant_form("GRT0335C1H181FA02","156:GRT0335C1H181FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 180[pF], +/-1[%], 100[MHz]-8.5[GHz]:156",68,"156","GRT0335C1H181FA02");
+create_constant_form("GRT0335C1H181GA02","157:GRT0335C1H181GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 180[pF], +/-2[%], 100[MHz]-8.5[GHz]:157",68,"157","GRT0335C1H181GA02");
+create_constant_form("GRT0335C1H181JA02","158:GRT0335C1H181JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 180[pF], +/-5[%], 100[MHz]-8.5[GHz]:158",68,"158","GRT0335C1H181JA02");
+create_constant_form("GRT0335C1E221FA02","159:GRT0335C1E221FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 220[pF], +/-1[%], 100[MHz]-8.5[GHz]:159",68,"159","GRT0335C1E221FA02");
+create_constant_form("GRT0335C1E221GA02","160:GRT0335C1E221GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 220[pF], +/-2[%], 100[MHz]-8.5[GHz]:160",68,"160","GRT0335C1E221GA02");
+create_constant_form("GRT0335C1E221JA02","161:GRT0335C1E221JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 220[pF], +/-5[%], 100[MHz]-8.5[GHz]:161",68,"161","GRT0335C1E221JA02");
+create_constant_form("GRT0335C1H221FA02","162:GRT0335C1H221FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 220[pF], +/-1[%], 100[MHz]-8.5[GHz]:162",68,"162","GRT0335C1H221FA02");
+create_constant_form("GRT0335C1H221GA02","163:GRT0335C1H221GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 220[pF], +/-2[%], 100[MHz]-8.5[GHz]:163",68,"163","GRT0335C1H221GA02");
+create_constant_form("GRT0335C1H221JA02","164:GRT0335C1H221JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 50[V], 220[pF], +/-5[%], 100[MHz]-8.5[GHz]:164",68,"164","GRT0335C1H221JA02");
+create_constant_form("GRT0335C1E271FA02","165:GRT0335C1E271FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 270[pF], +/-1[%], 100[MHz]-8.5[GHz]:165",68,"165","GRT0335C1E271FA02");
+create_constant_form("GRT0335C1E271GA02","166:GRT0335C1E271GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 270[pF], +/-2[%], 100[MHz]-8.5[GHz]:166",68,"166","GRT0335C1E271GA02");
+create_constant_form("GRT0335C1E271JA02","167:GRT0335C1E271JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 270[pF], +/-5[%], 100[MHz]-8.5[GHz]:167",68,"167","GRT0335C1E271JA02");
+create_constant_form("GRT0335C1E331FA02","168:GRT0335C1E331FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 330[pF], +/-1[%], 100[MHz]-8.5[GHz]:168",68,"168","GRT0335C1E331FA02");
+create_constant_form("GRT0335C1E331GA02","169:GRT0335C1E331GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 330[pF], +/-2[%], 100[MHz]-8.5[GHz]:169",68,"169","GRT0335C1E331GA02");
+create_constant_form("GRT0335C1E331JA02","170:GRT0335C1E331JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 330[pF], +/-5[%], 100[MHz]-8.5[GHz]:170",68,"170","GRT0335C1E331JA02");
+create_constant_form("GRT0335C1E391FA02","171:GRT0335C1E391FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 390[pF], +/-1[%], 100[MHz]-8.5[GHz]:171",68,"171","GRT0335C1E391FA02");
+create_constant_form("GRT0335C1E391GA02","172:GRT0335C1E391GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 390[pF], +/-2[%], 100[MHz]-8.5[GHz]:172",68,"172","GRT0335C1E391GA02");
+create_constant_form("GRT0335C1E391JA02","173:GRT0335C1E391JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 390[pF], +/-5[%], 100[MHz]-8.5[GHz]:173",68,"173","GRT0335C1E391JA02");
+create_constant_form("GRT0335C1E471FA02","174:GRT0335C1E471FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 470[pF], +/-1[%], 100[MHz]-8.5[GHz]:174",68,"174","GRT0335C1E471FA02");
+create_constant_form("GRT0335C1E471GA02","175:GRT0335C1E471GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 470[pF], +/-2[%], 100[MHz]-8.5[GHz]:175",68,"175","GRT0335C1E471GA02");
+create_constant_form("GRT0335C1E471JA02","176:GRT0335C1E471JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 470[pF], +/-5[%], 100[MHz]-8.5[GHz]:176",68,"176","GRT0335C1E471JA02");
+create_constant_form("GRT0335C1E561FA02","177:GRT0335C1E561FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 560[pF], +/-1[%], 100[MHz]-8.5[GHz]:177",68,"177","GRT0335C1E561FA02");
+create_constant_form("GRT0335C1E561GA02","178:GRT0335C1E561GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 560[pF], +/-2[%], 100[MHz]-8.5[GHz]:178",68,"178","GRT0335C1E561GA02");
+create_constant_form("GRT0335C1E561JA02","179:GRT0335C1E561JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 560[pF], +/-5[%], 100[MHz]-8.5[GHz]:179",68,"179","GRT0335C1E561JA02");
+create_constant_form("GRT0335C1E681FA02","180:GRT0335C1E681FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 680[pF], +/-1[%], 100[MHz]-8.5[GHz]:180",68,"180","GRT0335C1E681FA02");
+create_constant_form("GRT0335C1E681GA02","181:GRT0335C1E681GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 680[pF], +/-2[%], 100[MHz]-8.5[GHz]:181",68,"181","GRT0335C1E681GA02");
+create_constant_form("GRT0335C1E681JA02","182:GRT0335C1E681JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 680[pF], +/-5[%], 100[MHz]-8.5[GHz]:182",68,"182","GRT0335C1E681JA02");
+create_constant_form("GRT0335C1E821FA02","183:GRT0335C1E821FA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 820[pF], +/-1[%], 100[MHz]-8.5[GHz]:183",68,"183","GRT0335C1E821FA02");
+create_constant_form("GRT0335C1E821GA02","184:GRT0335C1E821GA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 820[pF], +/-2[%], 100[MHz]-8.5[GHz]:184",68,"184","GRT0335C1E821GA02");
+create_constant_form("GRT0335C1E821JA02","185:GRT0335C1E821JA02, Infotainment for Automotive [AEC-Q200], C0G(-55to125[deg]), 25[V], 820[pF], +/-5[%], 100[MHz]-8.5[GHz]:185",68,"185","GRT0335C1E821JA02");
+
+create_form_set("GRT03_T_list" 
+,"GRT0335C1E1R0CA02"
+,"GRT0335C1H1R0CA02"
+,"GRT0335C2A1R0CA02"
+,"GRT0335C1E2R0CA02"
+,"GRT0335C1H2R0CA02"
+,"GRT0335C2A2R0CA02"
+,"GRT0335C1E3R0CA02"
+,"GRT0335C1H3R0CA02"
+,"GRT0335C2A3R0CA02"
+,"GRT0335C1E4R0CA02"
+,"GRT0335C1H4R0CA02"
+,"GRT0335C2A4R0CA02"
+,"GRT0335C1E5R0CA02"
+,"GRT0335C1H5R0CA02"
+,"GRT0335C2A5R0CA02"
+,"GRT0335C1E6R0DA02"
+,"GRT0335C1H6R0DA02"
+,"GRT0335C2A6R0DA02"
+,"GRT0335C1E7R0DA02"
+,"GRT0335C1H7R0DA02"
+,"GRT0335C2A7R0DA02"
+,"GRT0335C1E8R0DA02"
+,"GRT0335C1H8R0DA02"
+,"GRT0335C2A8R0DA02"
+,"GRT0335C1E9R0DA02"
+,"GRT0335C1H9R0DA02"
+,"GRT0335C2A9R0DA02"
+,"GRT0335C1E100FA02"
+,"GRT0335C1E100GA02"
+,"GRT0335C1E100JA02"
+,"GRT0335C1H100GA02"
+,"GRT0335C1H100JA02"
+,"GRT0335C2A100FA02"
+,"GRT0335C2A100GA02"
+,"GRT0335C2A100JA02"
+,"GRT0335C1E120FA02"
+,"GRT0335C1E120GA02"
+,"GRT0335C1E120JA02"
+,"GRT0335C1H120FA02"
+,"GRT0335C1H120GA02"
+,"GRT0335C1H120JA02"
+,"GRT0335C2A120FA02"
+,"GRT0335C2A120GA02"
+,"GRT0335C2A120JA02"
+,"GRT0335C1E150FA02"
+,"GRT0335C1E150GA02"
+,"GRT0335C1E150JA02"
+,"GRT0335C1H150FA02"
+,"GRT0335C1H150GA02"
+,"GRT0335C1H150JA02"
+,"GRT0335C2A150FA02"
+,"GRT0335C2A150GA02"
+,"GRT0335C2A150JA02"
+,"GRT0335C1E180FA02"
+,"GRT0335C1E180GA02"
+,"GRT0335C1E180JA02"
+,"GRT0335C1H180FA02"
+,"GRT0335C1H180GA02"
+,"GRT0335C1H180JA02"
+,"GRT0335C2A180FA02"
+,"GRT0335C2A180GA02"
+,"GRT0335C2A180JA02"
+,"GRT0335C1E220FA02"
+,"GRT0335C1E220GA02"
+,"GRT0335C1E220JA02"
+,"GRT0335C1H220FA02"
+,"GRT0335C1H220GA02"
+,"GRT0335C1H220JA02"
+,"GRT0335C2A220FA02"
+,"GRT0335C2A220GA02"
+,"GRT0335C2A220JA02"
+,"GRT0335C1E270FA02"
+,"GRT0335C1E270GA02"
+,"GRT0335C1E270JA02"
+,"GRT0335C1H270FA02"
+,"GRT0335C1H270GA02"
+,"GRT0335C1H270JA02"
+,"GRT0335C2A270FA02"
+,"GRT0335C2A270GA02"
+,"GRT0335C2A270JA02"
+,"GRT0335C1E330FA02"
+,"GRT0335C1E330GA02"
+,"GRT0335C1E330JA02"
+,"GRT0335C1H330FA02"
+,"GRT0335C1H330GA02"
+,"GRT0335C1H330JA02"
+,"GRT0335C2A330FA02"
+,"GRT0335C2A330GA02"
+,"GRT0335C2A330JA02"
+,"GRT0335C1E390FA02"
+,"GRT0335C1E390GA02"
+,"GRT0335C1E390JA02"
+,"GRT0335C1H390FA02"
+,"GRT0335C1H390GA02"
+,"GRT0335C1H390JA02"
+,"GRT0335C2A390FA02"
+,"GRT0335C2A390GA02"
+,"GRT0335C2A390JA02"
+,"GRT0335C1E470FA02"
+,"GRT0335C1E470GA02"
+,"GRT0335C1E470JA02"
+,"GRT0335C1H470FA02"
+,"GRT0335C1H470GA02"
+,"GRT0335C1H470JA02"
+,"GRT0335C2A470FA02"
+,"GRT0335C2A470GA02"
+,"GRT0335C2A470JA02"
+,"GRT0335C1E560FA02"
+,"GRT0335C1E560GA02"
+,"GRT0335C1E560JA02"
+,"GRT0335C1H560FA02"
+,"GRT0335C1H560GA02"
+,"GRT0335C1H560JA02"
+,"GRT0335C2A560FA02"
+,"GRT0335C2A560GA02"
+,"GRT0335C2A560JA02"
+,"GRT0335C1E680FA02"
+,"GRT0335C1E680GA02"
+,"GRT0335C1E680JA02"
+,"GRT0335C1H680FA02"
+,"GRT0335C1H680GA02"
+,"GRT0335C1H680JA02"
+,"GRT0335C2A680FA02"
+,"GRT0335C2A680GA02"
+,"GRT0335C2A680JA02"
+,"GRT0335C1E820FA02"
+,"GRT0335C1E820GA02"
+,"GRT0335C1E820JA02"
+,"GRT0335C1H820FA02"
+,"GRT0335C1H820GA02"
+,"GRT0335C1H820JA02"
+,"GRT0335C2A820FA02"
+,"GRT0335C2A820GA02"
+,"GRT0335C2A820JA02"
+,"GRT0335C1E101FA02"
+,"GRT0335C1E101GA02"
+,"GRT0335C1E101JA02"
+,"GRT0335C1H101FA02"
+,"GRT0335C1H101GA02"
+,"GRT0335C1H101JA02"
+,"GRT0335C2A101FA02"
+,"GRT0335C2A101GA02"
+,"GRT0335C2A101JA02"
+,"GRT0335C1H121FA02"
+,"GRT0335C1H121GA02"
+,"GRT0335C1H121JA02"
+,"GRT0335C1E151FA02"
+,"GRT0335C1E151GA02"
+,"GRT0335C1E151JA02"
+,"GRT0335C1H151FA02"
+,"GRT0335C1H151GA02"
+,"GRT0335C1H151JA02"
+,"GRT0335C1E181FA02"
+,"GRT0335C1E181GA02"
+,"GRT0335C1E181JA02"
+,"GRT0335C1H181FA02"
+,"GRT0335C1H181GA02"
+,"GRT0335C1H181JA02"
+,"GRT0335C1E221FA02"
+,"GRT0335C1E221GA02"
+,"GRT0335C1E221JA02"
+,"GRT0335C1H221FA02"
+,"GRT0335C1H221GA02"
+,"GRT0335C1H221JA02"
+,"GRT0335C1E271FA02"
+,"GRT0335C1E271GA02"
+,"GRT0335C1E271JA02"
+,"GRT0335C1E331FA02"
+,"GRT0335C1E331GA02"
+,"GRT0335C1E331JA02"
+,"GRT0335C1E391FA02"
+,"GRT0335C1E391GA02"
+,"GRT0335C1E391JA02"
+,"GRT0335C1E471FA02"
+,"GRT0335C1E471GA02"
+,"GRT0335C1E471JA02"
+,"GRT0335C1E561FA02"
+,"GRT0335C1E561GA02"
+,"GRT0335C1E561JA02"
+,"GRT0335C1E681FA02"
+,"GRT0335C1E681GA02"
+,"GRT0335C1E681JA02"
+,"GRT0335C1E821FA02"
+,"GRT0335C1E821GA02"
+,"GRT0335C1E821JA02"
+);
+
+create_compound_form("GRT03_T_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GRT03_T_list",-1,prm("GRT0335C1E1R0CA02")),
+create_parm("MIN","Minimum",32,"GRT03_T_list",-1,prm("GRT0335C1E1R0CA02")),
+create_parm("MAX","Maximum",32,"GRT03_T_list",-1,prm("GRT0335C1E821JA02")));
+
+create_form_set("GRT03_T_list_opt","NULL" 
+,"GRT0335C1E1R0CA02"
+,"GRT0335C1H1R0CA02"
+,"GRT0335C2A1R0CA02"
+,"GRT0335C1E2R0CA02"
+,"GRT0335C1H2R0CA02"
+,"GRT0335C2A2R0CA02"
+,"GRT0335C1E3R0CA02"
+,"GRT0335C1H3R0CA02"
+,"GRT0335C2A3R0CA02"
+,"GRT0335C1E4R0CA02"
+,"GRT0335C1H4R0CA02"
+,"GRT0335C2A4R0CA02"
+,"GRT0335C1E5R0CA02"
+,"GRT0335C1H5R0CA02"
+,"GRT0335C2A5R0CA02"
+,"GRT0335C1E6R0DA02"
+,"GRT0335C1H6R0DA02"
+,"GRT0335C2A6R0DA02"
+,"GRT0335C1E7R0DA02"
+,"GRT0335C1H7R0DA02"
+,"GRT0335C2A7R0DA02"
+,"GRT0335C1E8R0DA02"
+,"GRT0335C1H8R0DA02"
+,"GRT0335C2A8R0DA02"
+,"GRT0335C1E9R0DA02"
+,"GRT0335C1H9R0DA02"
+,"GRT0335C2A9R0DA02"
+,"GRT0335C1E100FA02"
+,"GRT0335C1E100GA02"
+,"GRT0335C1E100JA02"
+,"GRT0335C1H100GA02"
+,"GRT0335C1H100JA02"
+,"GRT0335C2A100FA02"
+,"GRT0335C2A100GA02"
+,"GRT0335C2A100JA02"
+,"GRT0335C1E120FA02"
+,"GRT0335C1E120GA02"
+,"GRT0335C1E120JA02"
+,"GRT0335C1H120FA02"
+,"GRT0335C1H120GA02"
+,"GRT0335C1H120JA02"
+,"GRT0335C2A120FA02"
+,"GRT0335C2A120GA02"
+,"GRT0335C2A120JA02"
+,"GRT0335C1E150FA02"
+,"GRT0335C1E150GA02"
+,"GRT0335C1E150JA02"
+,"GRT0335C1H150FA02"
+,"GRT0335C1H150GA02"
+,"GRT0335C1H150JA02"
+,"GRT0335C2A150FA02"
+,"GRT0335C2A150GA02"
+,"GRT0335C2A150JA02"
+,"GRT0335C1E180FA02"
+,"GRT0335C1E180GA02"
+,"GRT0335C1E180JA02"
+,"GRT0335C1H180FA02"
+,"GRT0335C1H180GA02"
+,"GRT0335C1H180JA02"
+,"GRT0335C2A180FA02"
+,"GRT0335C2A180GA02"
+,"GRT0335C2A180JA02"
+,"GRT0335C1E220FA02"
+,"GRT0335C1E220GA02"
+,"GRT0335C1E220JA02"
+,"GRT0335C1H220FA02"
+,"GRT0335C1H220GA02"
+,"GRT0335C1H220JA02"
+,"GRT0335C2A220FA02"
+,"GRT0335C2A220GA02"
+,"GRT0335C2A220JA02"
+,"GRT0335C1E270FA02"
+,"GRT0335C1E270GA02"
+,"GRT0335C1E270JA02"
+,"GRT0335C1H270FA02"
+,"GRT0335C1H270GA02"
+,"GRT0335C1H270JA02"
+,"GRT0335C2A270FA02"
+,"GRT0335C2A270GA02"
+,"GRT0335C2A270JA02"
+,"GRT0335C1E330FA02"
+,"GRT0335C1E330GA02"
+,"GRT0335C1E330JA02"
+,"GRT0335C1H330FA02"
+,"GRT0335C1H330GA02"
+,"GRT0335C1H330JA02"
+,"GRT0335C2A330FA02"
+,"GRT0335C2A330GA02"
+,"GRT0335C2A330JA02"
+,"GRT0335C1E390FA02"
+,"GRT0335C1E390GA02"
+,"GRT0335C1E390JA02"
+,"GRT0335C1H390FA02"
+,"GRT0335C1H390GA02"
+,"GRT0335C1H390JA02"
+,"GRT0335C2A390FA02"
+,"GRT0335C2A390GA02"
+,"GRT0335C2A390JA02"
+,"GRT0335C1E470FA02"
+,"GRT0335C1E470GA02"
+,"GRT0335C1E470JA02"
+,"GRT0335C1H470FA02"
+,"GRT0335C1H470GA02"
+,"GRT0335C1H470JA02"
+,"GRT0335C2A470FA02"
+,"GRT0335C2A470GA02"
+,"GRT0335C2A470JA02"
+,"GRT0335C1E560FA02"
+,"GRT0335C1E560GA02"
+,"GRT0335C1E560JA02"
+,"GRT0335C1H560FA02"
+,"GRT0335C1H560GA02"
+,"GRT0335C1H560JA02"
+,"GRT0335C2A560FA02"
+,"GRT0335C2A560GA02"
+,"GRT0335C2A560JA02"
+,"GRT0335C1E680FA02"
+,"GRT0335C1E680GA02"
+,"GRT0335C1E680JA02"
+,"GRT0335C1H680FA02"
+,"GRT0335C1H680GA02"
+,"GRT0335C1H680JA02"
+,"GRT0335C2A680FA02"
+,"GRT0335C2A680GA02"
+,"GRT0335C2A680JA02"
+,"GRT0335C1E820FA02"
+,"GRT0335C1E820GA02"
+,"GRT0335C1E820JA02"
+,"GRT0335C1H820FA02"
+,"GRT0335C1H820GA02"
+,"GRT0335C1H820JA02"
+,"GRT0335C2A820FA02"
+,"GRT0335C2A820GA02"
+,"GRT0335C2A820JA02"
+,"GRT0335C1E101FA02"
+,"GRT0335C1E101GA02"
+,"GRT0335C1E101JA02"
+,"GRT0335C1H101FA02"
+,"GRT0335C1H101GA02"
+,"GRT0335C1H101JA02"
+,"GRT0335C2A101FA02"
+,"GRT0335C2A101GA02"
+,"GRT0335C2A101JA02"
+,"GRT0335C1H121FA02"
+,"GRT0335C1H121GA02"
+,"GRT0335C1H121JA02"
+,"GRT0335C1E151FA02"
+,"GRT0335C1E151GA02"
+,"GRT0335C1E151JA02"
+,"GRT0335C1H151FA02"
+,"GRT0335C1H151GA02"
+,"GRT0335C1H151JA02"
+,"GRT0335C1E181FA02"
+,"GRT0335C1E181GA02"
+,"GRT0335C1E181JA02"
+,"GRT0335C1H181FA02"
+,"GRT0335C1H181GA02"
+,"GRT0335C1H181JA02"
+,"GRT0335C1E221FA02"
+,"GRT0335C1E221GA02"
+,"GRT0335C1E221JA02"
+,"GRT0335C1H221FA02"
+,"GRT0335C1H221GA02"
+,"GRT0335C1H221JA02"
+,"GRT0335C1E271FA02"
+,"GRT0335C1E271GA02"
+,"GRT0335C1E271JA02"
+,"GRT0335C1E331FA02"
+,"GRT0335C1E331GA02"
+,"GRT0335C1E331JA02"
+,"GRT0335C1E391FA02"
+,"GRT0335C1E391GA02"
+,"GRT0335C1E391JA02"
+,"GRT0335C1E471FA02"
+,"GRT0335C1E471GA02"
+,"GRT0335C1E471JA02"
+,"GRT0335C1E561FA02"
+,"GRT0335C1E561GA02"
+,"GRT0335C1E561JA02"
+,"GRT0335C1E681FA02"
+,"GRT0335C1E681GA02"
+,"GRT0335C1E681JA02"
+,"GRT0335C1E821FA02"
+,"GRT0335C1E821GA02"
+,"GRT0335C1E821JA02"
+,"GRT03_T_compound"
+);
+
+
+

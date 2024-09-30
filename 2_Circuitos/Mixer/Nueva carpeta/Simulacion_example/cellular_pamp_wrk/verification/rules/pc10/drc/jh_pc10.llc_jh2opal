@@ -1,0 +1,24 @@
+!!=======================================================
+!! File Name:  /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_jh2opal
+!! Compiled:						   
+!!=======================================================
+
+.MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.llc_jh2opal"
+
+.dump
+    slave devfilter all;
+    slave netfilter all;
+    slave
+    .MESSAGE "SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc10/drc/jh_pc10.opal_layers"
+    .stream include jh_pc10.opal_layers
+    outparam
+    flagmappedfilter
+
+    .message "output .... $2_dev.def ..."
+    .stream opalout $2_dev.def
+        opalheader
+        opaldraw
+    .stream opalout out
+    .message "------------ done --------------"
+end_dump
+.stream return

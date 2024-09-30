@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+
+   <COMPONENT>
+      <NAME>BFP181</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP181_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT143-4-1 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=21.0dB OIP3=16.5dBm OP1dB=-2.0dBm fT=8.0GHz Ptot=175.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP182W</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c960d6f062e6</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP182W_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=22.0dB OIP3=24.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0124c960d6f062e6</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP183</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/producthttp://www.infineon.com/cms/en/product/rf-and-wireless-control/rf-transistor/low-noise-si-transistor-up-to-25-ghz/BFP+183+E7764/productType.html?productType=ff80808112ab681d0112ab6edaa41efe</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP183W</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP183W_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT343 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3=26.5dBm OP1dB=8.5dBm fT=8.0GHz Ptot=450.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>URL_read_error</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP183_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT143 package, Key parameters: VCE0max=12.0V ICmax=65.0mA NFmin=0.9dB Gmax=22.0dB OIP3= OP1dB= fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/producthttp://www.infineon.com/cms/en/product/rf-and-wireless-control/rf-transistor/low-noise-si-transistor-up-to-25-ghz/BFP+183+E7764/productType.html?productType=ff80808112ab681d0112ab6edaa41efe</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR181W</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012501620e627ce2</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR181W_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=20.0mA NFmin=0.9dB Gmax=19.0dB OIP3=18.0dBm OP1dB=-1.0dBm fT=8.0GHz Ptot=175.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e012501620e627ce2</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR182</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6fdfb2283c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR182W</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016210767ce3</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR182W_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT323 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=19.0dB OIP3=25.0dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016210767ce3</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR182_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=12.0V ICmax=35.0mA NFmin=0.9dB Gmax=18.0dB OIP3=24.5dBm OP1dB=5.0dBm fT=8.0GHz Ptot=250.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6fdfb2283c</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR340F</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016218557ce6</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR340F_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, TSFP-3-1 package, Key parameters: VCE0max=6.0V ICmax=10.0mA NFmin=1.15dB Gmax=16.5dB OIP3=13.0dBm OP1dB=-1.0dBm fT=14.0GHz Ptot=60.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=db3a3044243b532e0125016218557ce6</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR35AP</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f49a52322</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR35AP_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f49a52322</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR92P</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f7662251a</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFR92P_SPARA</NAME>
+      <DESCRIPTION>Low Noise Si Transistor up to 2.5 GHz, SOT23 package, Key parameters: VCE0max=15.0V ICmax=45.0mA NFmin=1.4dB Gmax=16.0dB OIP3=24.0dBm OP1dB=9.0dBm fT=5.0GHz Ptot=280.0mW</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=ff80808112ab681d0112ab6f7662251a</URL>
+   </COMPONENT>
+
+</COMPONENTS>
+

@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GJ821BR71H105KA12","1:GJ821BR71H105KA12, Acoustic noise reduction, X7R(-55to125[deg]), 50[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GJ821BR71H105KA12");
+
+create_form_set("GJ821_list" 
+,"GJ821BR71H105KA12"
+);
+
+create_compound_form("GJ821_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GJ821_list",-1,prm("GJ821BR71H105KA12")),
+create_parm("MIN","Minimum",32,"GJ821_list",-1,prm("GJ821BR71H105KA12")),
+create_parm("MAX","Maximum",32,"GJ821_list",-1,prm("GJ821BR71H105KA12")));
+
+create_form_set("GJ821_list_opt","NULL" 
+,"GJ821BR71H105KA12"
+,"GJ821_compound"
+);
+
+
+

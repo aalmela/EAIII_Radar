@@ -1,0 +1,131 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Mon Jun 17 01:39:56 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 16088
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'HB' analysis present.
+
+HB HB1[1] <Mi_darae_lib:balun_mixer:schematic>
+    Number of tones:   1.
+    Number of frequencies:   8.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 405.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	4.76679 A   	100.0             
+1.0 	671.324 mA  	100.0	11.0781 mV   
+1.1 	463.705 mA  	100.0	7.37581 mV   
+1.2*	358.687 mA  	100.0	25.5412 mV   
+2.0 	129.806 mA  	100.0	7.87171 mV   
+2.1 	88.5726 mA  	100.0	4.84935 mV   
+2.2 	67.6936 mA  	100.0	3.45448 mV   
+2.3 	54.7828 mA  	100.0	2.80971 mV   
+2.4 	45.9314 mA  	100.0	2.37942 mV   
+2.5 	39.4565 mA  	100.0	2.05544 mV   
+2.6 	34.504 mA   	100.0	1.80418 mV   
+2.7*	30.5891 mA  	100.0	14.8131 mV   
+3.0 	9.45317 mA  	100.0	4.4701 mV    
+3.1 	5.80806 mA  	100.0	2.6782 mV    
+3.2 	4.04468 mA  	100.0	1.82825 mV   
+3.3 	2.97949 mA  	100.0	1.332 mV     
+3.4 	2.26679 mA  	100.0	1.0018 mV    
+3.5 	1.76042 mA  	100.0	769.568 uV   
+3.6 	1.38722 mA  	100.0	600.119 uV   
+3.7 	1.10498 mA  	100.0	473.837 uV   
+3.8 	889.922 uA  	100.0	377.374 uV   
+3.9 	722.413 uA  	100.0	302.569 uV   
+3.10 	589.529 uA  	100.0	243.883 uV   
+3.11 	483.139 uA  	100.0	197.53 uV    
+3.12 	397.331 uA  	100.0	160.563 uV   
+3.13 	327.707 uA  	100.0	130.895 uV   
+3.14*	271.021 uA  	100.0	604.829 uV   
+4.0 	6.46113 uA  	100.0	14.0471 uV   
+4.1 	319.017 nA  	100.0	746.897 nV   
+4.2 	16.4084 nA  	100.0	39.4602 nV   
+4.3 	850.915 pA  	100.0	2.06853 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.DIODE1.a             3.543e-04       >       1.179e-06
+X2.DIODE1.a             2.780e-04       >       1.013e-06
+X2.N__3                 1.632e-04       >       1.188e-06
+X1.N__3                 6.729e-05       >       1.002e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 3.543e-04 @ waveform X1.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.179e-06 for this waveform.
+o A time-domain plot of the N__11 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB1[1] <Mi_darae_lib:balun_mixer:schematic>   LOpower=0
+    Number of tones:   2.
+    Number of frequencies:   29.
+    Number of time samples:  128.
+    Number of HB equations (problem size): 1539.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+    LOpower=0            1/1
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	1.92836 mA  	100.0             
+1.0 	450.615 uA  	100.0	2.07598 mV   
+1.1 	103.08 uA   	100.0	822.401 uV   
+1.2 	39.9647 uA  	100.0	267.616 uV   
+1.3 	11.0905 uA  	100.0	108.75 uV    
+1.4 	4.4488 uA   	100.0	38.0637 uV   
+1.5 	1.34598 uA  	100.0	14.6082 uV   
+1.6 	546.644 nA  	100.0	5.2412 uV    
+1.7 	180.207 nA  	100.0	1.96016 uV   
+1.8 	70.5465 nA  	100.0	711.178 nV   
+1.9 	24.6337 nA  	100.0	263.139 nV   
+1.10 	9.33682 nA  	100.0	95.9252 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.DIODE1.a             6.413e-05       >       1.178e-06
+X2.DIODE1.a             6.068e-05       >       1.027e-06
+X2.N__3                 3.246e-05       >       1.188e-06
+X1.N__3                 9.572e-06       >       1.028e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 6.413e-05 @ waveform X1.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.178e-06 for this waveform.
+o A time-domain plot of the N__11 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+SP SP2[1] <Mi_darae_lib:balun_mixer:schematic>   freq=(10 MHz->3 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.42 seconds.
+

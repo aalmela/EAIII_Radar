@@ -1,0 +1,3 @@
+# Library Defs for JTI0603WirewoundIND design kit
+DEFINE JTI0603WirewoundIND_2011 ./JTI0603WirewoundIND_2011
+ASSIGN JTI0603WirewoundIND_2011 libMode readOnly

@@ -1,0 +1,3 @@
+create_item("FM_Modulator_Cx_Tx","FM_Modulator_Cx_Tx","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","FM_Modulator_Cx_Tx","%t%b%r%38?%:\n%39?all_parm%A%:%30?%s%:%k%?[%1i]%;=%s%;%;%;%e%e%;","FM_Modulator_Cx_Tx",0,NULL,0,
+create_parm("Pulse_Width","Pulse_Width",68608,"StdFormSet",-1,prm("StdForm","2500")),
+create_parm("Pulse_Period","Pulse_Period",68608,"StdFormSet",-1,prm("StdForm","3000")));

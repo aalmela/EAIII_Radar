@@ -1,0 +1,34 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("ZRB157R61E225KE11","1:ZRB157R61E225KE11, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 25[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","ZRB157R61E225KE11");
+create_constant_form("ZRB155R61E225ME01","2:ZRB155R61E225ME01, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 25[V], 2200000[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","ZRB155R61E225ME01");
+create_constant_form("ZRB157R6YA225KE11","3:ZRB157R6YA225KE11, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 35[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","ZRB157R6YA225KE11");
+create_constant_form("ZRB157R6YA225ME11","4:ZRB157R6YA225ME11, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 35[V], 2200000[pF], +/-20[%], 100[Hz]-6[GHz]:4",68,"4","ZRB157R6YA225ME11");
+create_constant_form("ZRB15XC80G106ME05","5:ZRB15XC80G106ME05, Acoustic noise reduction (interposer), X6S(-55to105[deg]), 4[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:5",68,"5","ZRB15XC80G106ME05");
+create_constant_form("ZRB15XR60J106ME12","6:ZRB15XR60J106ME12, Acoustic noise reduction (interposer), X5R(-55to85[deg]), 6.3[V], 10000000[pF], +/-20[%], 100[Hz]-6[GHz]:6",68,"6","ZRB15XR60J106ME12");
+
+create_form_set("ZRB15_list" 
+,"ZRB157R61E225KE11"
+,"ZRB155R61E225ME01"
+,"ZRB157R6YA225KE11"
+,"ZRB157R6YA225ME11"
+,"ZRB15XC80G106ME05"
+,"ZRB15XR60J106ME12"
+);
+
+create_compound_form("ZRB15_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"ZRB15_list",-1,prm("ZRB157R61E225KE11")),
+create_parm("MIN","Minimum",32,"ZRB15_list",-1,prm("ZRB157R61E225KE11")),
+create_parm("MAX","Maximum",32,"ZRB15_list",-1,prm("ZRB15XR60J106ME12")));
+
+create_form_set("ZRB15_list_opt","NULL" 
+,"ZRB157R61E225KE11"
+,"ZRB155R61E225ME01"
+,"ZRB157R6YA225KE11"
+,"ZRB157R6YA225ME11"
+,"ZRB15XC80G106ME05"
+,"ZRB15XR60J106ME12"
+,"ZRB15_compound"
+);
+
+
+

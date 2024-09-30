@@ -1,0 +1,17 @@
+//
+// Rule File: /home/karlk/ads10.daily/cellular_pamp/verification/rules/autorule.ael
+//
+
+// declare input design layer
+
+decl lyr_cond = dve_import_layer("cond");
+
+// declare output error layer
+
+decl lyr_error = dve_export_layer(101);
+
+// rule on layer cond
+
+lyr_error += dve_drc( width(lyr_cond) < 5.00,
+           "Width of layer cond must be >= 5.00");
+

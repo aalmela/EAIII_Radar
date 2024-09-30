@@ -1,0 +1,9 @@
+<!DOCTYPE SaveWorkspaceState>
+<SaveWorkspaceState>
+    <Windows>
+        <Schematic height="841" width="1536" x1="379" cell="Sample_PA" y1="96" geom="1,0,0,380,134,1536,841,1920,1080" lib="PA_BFU590_lib" view="schematic"/>
+        <Schematic height="841" width="1536" x1="382" cell="HB1TonePswp" y1="136" geom="1,0,0,383,174,1536,841,1920,1080" lib="PA_BFU590_lib" view="schematic"/>
+        <Schematic height="991" width="1920" x1="-1" cell="HB1TonePswp" y1="-9" geom="1,0,2,403,198,1536,841,1920,1080" lib="PA_BFU590_lib" view="schematic"/>
+    </Windows>
+    <MainWindowTab tab="1"/>
+</SaveWorkspaceState>

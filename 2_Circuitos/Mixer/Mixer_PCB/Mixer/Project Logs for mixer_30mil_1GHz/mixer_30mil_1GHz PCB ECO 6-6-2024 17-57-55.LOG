@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetC1_1 Pin=D1-1
+Removed Pin From Net: NetName=Net*_4 Pin=D1-3
+Removed Pin From Net: NetName=Net*_2 Pin=D2-1
+Removed Pin From Net: NetName=NetC1_1 Pin=D2-3
+Removed Member From Class: ClassName=mixer_30mil_1GHz Member=D1
+Removed Member From Class: ClassName=mixer_30mil_1GHz Member=D2
+Added Component: Designator=U?(SOT_327XTSA1_INF)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Infineon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*_4 Pin=U?-1
+Added Pin To Net: NetName=Net*_2 Pin=U?-2
+Added Pin To Net: NetName=NetC1_1 Pin=U?-3
+Added Member To Class: ClassName=mixer_30mil_1GHz Member=Component U? BAT1504WH6327XTSA1

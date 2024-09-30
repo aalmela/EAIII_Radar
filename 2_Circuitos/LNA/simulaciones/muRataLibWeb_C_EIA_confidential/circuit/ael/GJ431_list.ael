@@ -1,0 +1,25 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GJ431CC81E105JA01","1:GJ431CC81E105JA01, Audio signal low distortion, X6S(-55to105[deg]), 25[V], 1000000[pF], +/-5[%], 100[Hz]-6[GHz]:1",68,"1","GJ431CC81E105JA01");
+create_constant_form("GJ431CC81E105KA01","2:GJ431CC81E105KA01, Audio signal low distortion, X6S(-55to105[deg]), 25[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GJ431CC81E105KA01");
+create_constant_form("GJ431CC81E105MA01","3:GJ431CC81E105MA01, Audio signal low distortion, X6S(-55to105[deg]), 25[V], 1000000[pF], +/-20[%], 100[Hz]-6[GHz]:3",68,"3","GJ431CC81E105MA01");
+
+create_form_set("GJ431_list" 
+,"GJ431CC81E105JA01"
+,"GJ431CC81E105KA01"
+,"GJ431CC81E105MA01"
+);
+
+create_compound_form("GJ431_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GJ431_list",-1,prm("GJ431CC81E105JA01")),
+create_parm("MIN","Minimum",32,"GJ431_list",-1,prm("GJ431CC81E105JA01")),
+create_parm("MAX","Maximum",32,"GJ431_list",-1,prm("GJ431CC81E105MA01")));
+
+create_form_set("GJ431_list_opt","NULL" 
+,"GJ431CC81E105JA01"
+,"GJ431CC81E105KA01"
+,"GJ431CC81E105MA01"
+,"GJ431_compound"
+);
+
+
+

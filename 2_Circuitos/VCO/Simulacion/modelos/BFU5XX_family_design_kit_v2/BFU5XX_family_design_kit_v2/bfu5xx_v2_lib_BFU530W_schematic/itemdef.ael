@@ -1,0 +1,1 @@
+create_item("bfu5xx_v2_lib_BFU530W_schematic","BFU530W - encoded","X",1073741824,-1,NULL,"Component Parameters",NULL,"#uselib \"BFU5XX_family_design_kit_v2\" , \"%d\"\n\"%d\":%t %# %44?0%:%31?%C%:_net%c%;%;%e %r%b%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%e%e","bfu5xx_v2_lib_BFU530W_schematic","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",0,NULL,32);

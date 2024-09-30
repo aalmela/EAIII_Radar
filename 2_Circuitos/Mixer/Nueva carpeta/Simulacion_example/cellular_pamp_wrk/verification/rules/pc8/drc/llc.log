@@ -1,0 +1,59 @@
+
+ JRC: Jade Rules Compiler                                                
+      Version 2.105 : Feb  17, 1998                                      
+      Host: HP 9000 -- UX                                                
+      Compiled and linked on Tue Feb 17 13:16:44 PST 1998                
+ 
+*-----------------------------------------------------------*
+| JADE VLSI Design Rule  Checking Program                   |
+|      JRC  Jade   Rules Compiler Module                    |
+|                                                           |
+| Fletcher Automation,                       (408) 996-1110 |
+| 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+|                                                           |
+| (c) Copyright 1988-9,1990-7              Alan J. Fletcher |
+| Fletcher Automation Research               (408) 996-1110 |
+| 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+|                                                           |
+| RESTRICTED RIGHTS LEGEND                                  |
+|                                                           |
+|  Use, duplication, or disclosure by the U.S. Government   |
+|  is subject to restrictions as set forth in sub-paragraph |
+|  (c)(1)(ii) of the Rights in Technical Data and Computer  |
+|  Software clause in DFARS 252.227-7013.                   |
+|                                                           |
+|  Rights for non-DOD U.S.  Government Departments and      |
+|  Agencies are as set forth in FAR 52.227-19(c)(1,2).      |
+*-----------------------------------------------------------*
+
+Start      Time = <Tue Mar  3 10:22:51 1998>
+This program is licenced to:
+          
+    HP EEsof
+        
+    RESTRICTED RIGHTS LEGEND
+      
+       Use, duplication, or disclosure by the U.S. Government is subject to
+       restrictions as set forth in sub-paragraph (c)(1)(ii) of the Rights in
+       Technical Data and Computer Software clause in DFARS 252.227-7013.
+      
+       Rights for non-DOD U.S.  Government Departments and Agencies
+       are as set forth in FAR 52.227-19(c)(1,2).
+        
+for use on CPU hpsrkrk (machine 9000/780) until 3/3/1998 unix 889035770
+
+licenced modules (067777): bool select classify with size drc conj maskap dracula 
+.MESSAGE : SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc8/drc/jh_pc8.jr0
+.MESSAGE : SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc8/drc/jh_pc8.jade_design_layers
+.MESSAGE : SOURCING /home/karlk/ads10.daily/cellular_pamp/verification/rules/pc8/drc/jh_pc8.jade_operations
+compile
+^  *************************************************************************
+    90 : error : fringe 15.0000 is less than biggest rule/size 50.0000
+
+*** Exit JRC -- Jade Rules Compiler --- exit level : note  ***
+
+Command error summary :
+
+   error : 1
+
+End        Time = <Tue Mar  3 10:22:53 1998> Secs 2 

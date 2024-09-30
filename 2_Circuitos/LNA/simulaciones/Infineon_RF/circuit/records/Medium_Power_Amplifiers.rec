@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+
+   <COMPONENT>
+      <NAME>BFP780</NAME>
+      <DESCRIPTION>Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=5546d4624ca27d02014cb2b9831402b4</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFP780_SPARA</NAME>
+      <DESCRIPTION>Medium Power Amplifiers, SOT343 package, Key parameters: VCE0max=5.0 V ICmax=90 mA NFmin=- Gmax=22 dB OIP3=34 dBm OP1dB=23 dBm fT=1.8 GHz Ptot=-</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=5546d4624ca27d02014cb2b9831402b4</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFQ790</NAME>
+      <DESCRIPTION>Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=5546d4624ca27d02014cb2c2a98202c7</URL>
+   </COMPONENT>
+
+   <COMPONENT>
+      <NAME>BFQ790_SPARA</NAME>
+      <DESCRIPTION>Medium Power Amplifiers, SOT89 package, Key parameters: VCE0max=5.0 V ICmax=250 mA NFmin=- Gmax=18.5 dB OIP3=38.5 dBm OP1dB=27 dBm fT=1.8 GHz Ptot=-</DESCRIPTION>
+      <VENDOR>Infineon Technologies</VENDOR>
+      <LIBRARY>Infineon RF</LIBRARY>
+      <URL>http://www.infineon.com/cms/en/product/productType.html?productType=5546d4624ca27d02014cb2c2a98202c7</URL>
+   </COMPONENT>
+
+</COMPONENTS>
+

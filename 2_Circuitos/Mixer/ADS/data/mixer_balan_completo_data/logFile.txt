@@ -1,0 +1,108 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Sun Jun 23 12:56:55 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 27328
+
+
+HB HB1[1] <Mi_darae_lib:mixer_balan_completo:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 396.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------
+Newton solver:				Linear solver:
+Iter	KCL residual	Sol update	Iters	Residual
+------------------------------------------------------------------------
+0 	8.50938 mA               
+1 	13.4066 mA  	322.607 mV  	  3	2.388e-06   
+2 	33.0251 mA  	294.658 mV  	  5	2.547e-02   
+3 	34.8177 mA  	236.274 mV  	 10	2.155e-02   
+4 	6.81636 mA  	115.76 mV   	  8	2.101e-02   
+5 	567.526 uA  	23.2094 mV  	 17	1.933e-02   
+6 	17.0495 uA  	1.92033 mV  	 20	4.725e-03   
+7 	23.1822 nA  	69.4162 uV  	 22	8.700e-04   
+8 	55.6552 fA  	215.593 nV  	 23	6.801e-13   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             8.462e-04       >       1.033e-06
+X1.DIODE1.a             7.732e-04       >       1.212e-06
+X2.N__3                 4.486e-04       >       1.244e-06
+X1.N__3                 3.985e-04       >       1.014e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 8.462e-04 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.033e-06 for this waveform.
+o A time-domain plot of the vdp waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB1[1] <Mi_darae_lib:mixer_balan_completo:schematic>
+    Number of tones:   2.
+    Number of frequencies:   15.
+    Number of time samples:  64.
+    Number of HB equations (HB problem size): 1044.
+    Number of SS/noise equations (SS/noise problem size): 2088.
+    Auto mode: off.
+    Convergence mode: Fast.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+------------------------------------------------------------------------
+Newton solver:				Linear solver:
+Iter	KCL residual	Sol update	Iters	Residual
+------------------------------------------------------------------------
+0 	2.76683 mA               
+1 	1.0792 mA   	11.1434 mV  	  5	9.859e-02   
+2 	103.05 uA   	7.61511 mV  	 17	9.793e-02   
+3 	914.618 nA  	933.324 uV  	 30	7.798e-03   
+4 	934.083 pA  	5.46463 uV  	 36	9.193e-04   
+5 	542.604 fA  	6.24471 nV  	 38	6.131e-04   
+
+HB_NOISE HB1[1] <Mi_darae_lib:mixer_balan_completo:schematic>
+
+    Noise Freq=5 MHz  NFssb=37.77dB  NFdsb=3.805dB  Conv Gain=-58.05dB
+
+    Noise Freq=5 MHz  NFssb=37.77dB  NFdsb=3.805dB  Conv Gain=-58.05dB
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.DIODE1.a             2.310e-04       >       1.033e-06
+X1.DIODE1.a             2.084e-04       >       1.212e-06
+X2.N__3                 1.340e-04       >       1.244e-06
+X1.N__3                 1.014e-04       >       1.014e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 2.310e-04 @ waveform X2.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.033e-06 for this waveform.
+o A time-domain plot of the X2.N__4 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     3.33 seconds.
+

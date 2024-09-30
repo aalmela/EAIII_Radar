@@ -1,0 +1,53 @@
+; Top Design: "MyLibrary1_lib:cell_1:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary1_lib:cell_1:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:Term1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=.10 GHz Stop=2.0 GHz Step=0.005 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term2  N__5 0 Num=2 Z=50 Ohm Noise=yes 
+C:C4  0 N__17 C=5.6 pF 
+C:C5  0 N__2 C=5.6 pF 
+C:C7  0 N__8 C=15 pF 
+C:C8  N__1 N__10 C=1.2 pF 
+C:C10  N__8 N__3 C=1.2 pF 
+Port:Term3  N__1 0 Num=3 Z=50 Ohm Noise=yes 
+Port:Term4  N__6 0 Num=4 Z=50 Ohm Noise=yes 
+#uselib "ckt" , "S2P"
+S2P:L5  N__10 N__8 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W22N_SER" 
+#uselib "ckt" , "S2P"
+S2P:L6  N__8 0 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W1N8_SER" 
+#uselib "ckt" , "S2P"
+S2P:L7  N__3 N__6 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W22N_SER" 
+Port:Term5  N__11 0 Num=5 Z=50 Ohm Noise=yes 
+#uselib "ckt" , "S2P"
+S2P:SNP1  N__11 N__12 0 File="C:\Users\AlejandroAlmela\Downloads\filter_coupler_on.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term6  N__12 0 Num=6 Z=50 Ohm Noise=yes 
+#uselib "ckt" , "S2P"
+S2P:L8  N__0 N__17 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W8N2_SER" 
+#uselib "ckt" , "S2P"
+S2P:L9  N__2 N__5 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W8N2_SER" 
+#uselib "ckt" , "S2P"
+S2P:L10  N__17 0 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W10N_SER" 
+#uselib "ckt" , "S2P"
+S2P:L11  N__2 0 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W10N_SER" 
+#uselib "ckt" , "S2P"
+S2P:L12  N__17 N__2 0  Lib="JTI0603WirewoundIND" File="JTI_L-14W15N_SER" 
+#uselib "ckt" , "S4P"
+S4P:SNP2  N__14 N__9 N__15 N__16 0 File="C:\Users\AlejandroAlmela\Downloads\hhm22139a2.s4p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term7  N__14 0 Num=7 Z=50 Ohm Noise=yes 
+Port:Term8  N__9 0 Num=8 Z=50 Ohm Noise=yes 
+Port:Term9  N__15 0 Num=9 Z=50 Ohm Noise=yes 
+Port:Term10  N__16 0 Num=10 Z=50 Ohm Noise=yes 

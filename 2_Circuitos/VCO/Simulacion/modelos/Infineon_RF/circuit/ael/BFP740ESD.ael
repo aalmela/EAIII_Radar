@@ -1,0 +1,16 @@
+create_item(
+"BFP740ESD",             //name  	 
+"BFP740ESD",             //label 	 
+"Q",                     //prefix	 
+NULL,                    //attibute	 
+-1,                      //priority	 
+NULL,                    //icon name	 
+standard_dialog,         //dialog code	 
+"BJT",                   //dialog data	 
+ComponentNetlistFmt,     //Netlist Format 
+"BFP740ESD",             //Netlist Data   
+ComponentAnnotFmt,       //display Format 
+"SYM_BJT_2E",            //Symbol Name    
+0,                       //Artwork Type   
+NULL,                    //Artwork Data (SOT343-4-2)
+0);                      //extra Attribute

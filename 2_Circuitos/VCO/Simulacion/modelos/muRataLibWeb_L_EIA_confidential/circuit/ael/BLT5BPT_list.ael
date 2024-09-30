@@ -1,0 +1,19 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLT5BPT680LN1","1:BLT5BPT680LN1, Assembly Type, 11000[mA], 1[MHz]-3[GHz]:1",68,"1","BLT5BPT680LN1");
+
+create_form_set("BLT5BPT_list" 
+,"BLT5BPT680LN1"
+);
+
+create_compound_form("BLT5BPT_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLT5BPT_list",-1,prm("BLT5BPT680LN1")),
+create_parm("MIN","Minimum",32,"BLT5BPT_list",-1,prm("BLT5BPT680LN1")),
+create_parm("MAX","Maximum",32,"BLT5BPT_list",-1,prm("BLT5BPT680LN1")));
+
+create_form_set("BLT5BPT_list_opt","NULL" 
+,"BLT5BPT680LN1"
+,"BLT5BPT_compound"
+);
+
+
+

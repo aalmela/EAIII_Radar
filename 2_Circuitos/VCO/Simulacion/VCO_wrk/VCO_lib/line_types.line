@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LineTypes>
+    <line name="lineType_1">
+        <TMLtype>Custom</TMLtype>
+        <substrate>VCO_lib:tech</substrate>
+        <strips>
+            <strip stripId="strip1" defaultWidth="1">
+                <layer name="cond:drawing"/>
+                <spacing type="edge-edge" value="1"/>
+            </strip>
+        </strips>
+        <planes>
+            <plane layerName="M2:drawing"/>
+        </planes>
+        <beginEndStyle type="truncate"/>
+        <cornerStyle type="square"/>
+        <simulationModel>
+            <modelSet>TLines-Multilayer</modelSet>
+            <useSingleTLineElementToModelATrace>false</useSingleTLineElementToModelATrace>
+            <autogenerateSubstrate>true</autogenerateSubstrate>
+            <substrateInstanceName></substrateInstanceName>
+        </simulationModel>
+    </line>
+</LineTypes>

@@ -1,0 +1,137 @@
+
+hpeesofsim (*) 550.update0.2 Sep 22 2021, MINT version 5
+    (64-bit windows built: Tue Sep 21, 2021 21:32:30 +0000)
+
+
+***** Simulation started at Tue Sep 24 20:44:16 2024
+      Running on host: "DESKTOP-LHADK87"
+      In Directory: "C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\data"
+      Process ID: 34368
+
+
+HB HB2[1] <Mi_darae_lib:mixer_medicion_gain:schematic>
+    Number of tones:   1.
+    Number of frequencies:   10.
+    Number of time samples:  32.
+    Number of HB equations (problem size): 684.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	499.211 uA  	100.0             
+1.0 	5.49848 uA  	100.0	94.7189 uV   
+1.1 	181.673 nA  	100.0	3.54244 uV   
+1.2 	7.97731 nA  	100.0	174.005 nV   
+1.3 	398.295 pA  	100.0	8.89691 nV   
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.X3.DIODE1.a          1.532e-05       >       1.109e-06
+X1.X4.DIODE1.a          1.235e-05       >       1.001e-06
+X1.X4.N__3              8.411e-06       >       1.107e-06
+X1.X3.N__3              6.617e-06       >       1.000e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 1.532e-05 @ waveform X1.X3.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.109e-06 for this waveform.
+o A time-domain plot of the X1.X3.N__3 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+HB HB2[1] <Mi_darae_lib:mixer_medicion_gain:schematic>   P_LO=(-5->5)
+    Number of tones:   2.
+    Number of frequencies:   37.
+    Number of time samples:  512.
+    Number of HB equations (HB problem size): 2628.
+    Number of SS/noise equations (SS/noise problem size): 5256.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: Krylov (GS_GMRES).
+    Preconditioner: DCP.
+    The general solver is used for HB Krylov preconditioning.
+    P_LO=-5             0.00% 1/3
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	632.463 uA  	100.0             
+1 	449.867 uA  	100.0	25.138 mV   	  3	8.565e-04   
+2 	14.8974 uA  	100.0	3.81083 mV  	  4	3.822e-02   
+3 	43.22 nA    	100.0	295.665 uV  	  7	3.177e-03   
+4 	34.6242 pA  	100.0	893.787 nV  	  9	7.572e-04   
+5 	20.0066 fA  	100.0	697.533 pV  	  9	9.928e-04   
+.    P_LO=0             50.00% 2/3
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	2.76805 mA  	100.0             
+1 	197.879 mA  	100.0	128.468 mV  	  3	2.438e-02   
+2 	67.4799 mA  	100.0	24.7574 mV  	  4	4.617e-02   
+3 	22.3626 mA  	100.0	34.1782 mV  	  7	4.083e-02   
+4 	5.6376 mA   	100.0	45.2708 mV  	 15	4.050e-02   
+5 	800.967 uA  	100.0	45.6548 mV  	 30	3.862e-02   
+6 	48.1754 uA  	100.0	11.8273 mV  	 37	1.650e-02   
+7 	306.797 nA  	100.0	718.16 uV   	 48	2.819e-03   
+8 	1.77876 nA  	100.0	9.43073 uV  	 50	6.768e-03   
+9 	31.9512 pA  	100.0	94.2528 nV  	 50	1.914e-02   
+
+.    P_LO=5            100.00% 3/3
+------------------------------------------------------------------------------
+Newton solver:					Linear solver:
+Iter	KCL residual	Damp %	Sol update	Iters	Residual
+------------------------------------------------------------------------------
+0 	4.92237 mA  	100.0             
+1 	567.929 mA  	100.0	193.888 mV  	  4	9.955e-02   
+2 	201.642 mA  	100.0	26.1669 mV  	  3	7.901e-02   
+3 	66.4351 mA  	100.0	25.4232 mV  	  4	7.488e-02   
+4 	20.2996 mA  	100.0	43.3093 mV  	  7	7.137e-02   
+5 	4.17719 mA  	100.0	70.9468 mV  	 31	6.986e-02   
+6 	1.1544 mA   	100.0	85.8596 mV  	 59	9.635e-02   
+7 	146.719 uA  	100.0	25.7229 mV  	 57	9.778e-02   
+8 	20.7268 uA  	100.0	6.00332 mV  	 70	9.251e-02   
+9 	1.71491 uA  	100.0	762.48 uV   	 71	9.733e-02   
+10 	196.165 nA  	100.0	96.6751 uV  	 75	9.500e-02   
+11 	15.2676 nA  	100.0	6.49377 uV  	 69	9.980e-02   
+12 	1.74445 nA  	100.0	1.0579 uV   	 73	9.288e-02   
+
+Warning detected by hpeesofsim during small-signal mixer analysis `HB2'.
+                    The small-signal spectral equations were only solved to
+                    an accuracy of 3.96212e-05 instead of the requested 1e-06.
+                    Try increasing Krylov max iterations and Krylov restart length
+                    in order to improve solver's accuracy.
+.An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.X3.DIODE1.a          2.972e-04       >       1.217e-06
+X1.X4.DIODE1.a          1.775e-04       >       1.033e-06
+X1.X3.N__3              1.295e-04       >       1.013e-06
+X1.X4.N__3              1.223e-04       >       1.223e-06
+
+o Number of waveforms violating the HB truncation error check:
+        4 out of 4 waveforms.
+o Estimated max HB truncation error: 2.972e-04 @ waveform X1.X3.DIODE1.a .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.217e-06 for this waveform.
+o A time-domain plot of the VRFin waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     3.02 seconds.
+

@@ -1,0 +1,46 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GA355QR7GF182KW01","1:GA355QR7GF182KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1800[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","GA355QR7GF182KW01");
+create_constant_form("GA355QR7GF222KW01","2:GA355QR7GF222KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 2200[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","GA355QR7GF222KW01");
+create_constant_form("GA355QR7GF332KW01","3:GA355QR7GF332KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 3300[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","GA355QR7GF332KW01");
+create_constant_form("GA355DR7GF472KW01","4:GA355DR7GF472KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 4700[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","GA355DR7GF472KW01");
+create_constant_form("GA355QR7GB103KW01","5:GA355QR7GB103KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 10000[pF], +/-10[%], 100[kHz]-3[GHz]:5",68,"5","GA355QR7GB103KW01");
+create_constant_form("GA355QR7GB153KW01","6:GA355QR7GB153KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 15000[pF], +/-10[%], 100[kHz]-3[GHz]:6",68,"6","GA355QR7GB153KW01");
+create_constant_form("GA355DR7GB223KW01","7:GA355DR7GB223KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 22000[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","GA355DR7GB223KW01");
+create_constant_form("GA355ER7GB333KW01","8:GA355ER7GB333KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 33000[pF], +/-10[%], 100[kHz]-3[GHz]:8",68,"8","GA355ER7GB333KW01");
+create_constant_form("GA355ER7GB473KW01","9:GA355ER7GB473KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 47000[pF], +/-10[%], 100[kHz]-3[GHz]:9",68,"9","GA355ER7GB473KW01");
+create_constant_form("GA355XR7GB563KW06","10:GA355XR7GB563KW06, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 56000[pF], +/-10[%], 100[kHz]-3[GHz]:10",68,"10","GA355XR7GB563KW06");
+
+create_form_set("GA355_list" 
+,"GA355QR7GF182KW01"
+,"GA355QR7GF222KW01"
+,"GA355QR7GF332KW01"
+,"GA355DR7GF472KW01"
+,"GA355QR7GB103KW01"
+,"GA355QR7GB153KW01"
+,"GA355DR7GB223KW01"
+,"GA355ER7GB333KW01"
+,"GA355ER7GB473KW01"
+,"GA355XR7GB563KW06"
+);
+
+create_compound_form("GA355_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GA355_list",-1,prm("GA355QR7GF182KW01")),
+create_parm("MIN","Minimum",32,"GA355_list",-1,prm("GA355QR7GF182KW01")),
+create_parm("MAX","Maximum",32,"GA355_list",-1,prm("GA355XR7GB563KW06")));
+
+create_form_set("GA355_list_opt","NULL" 
+,"GA355QR7GF182KW01"
+,"GA355QR7GF222KW01"
+,"GA355QR7GF332KW01"
+,"GA355DR7GF472KW01"
+,"GA355QR7GB103KW01"
+,"GA355QR7GB153KW01"
+,"GA355DR7GB223KW01"
+,"GA355ER7GB333KW01"
+,"GA355ER7GB473KW01"
+,"GA355XR7GB563KW06"
+,"GA355_compound"
+);
+
+
+

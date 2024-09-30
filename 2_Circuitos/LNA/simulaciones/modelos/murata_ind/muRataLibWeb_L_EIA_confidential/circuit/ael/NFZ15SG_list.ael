@@ -1,0 +1,37 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("NFZ15SG101SN11","1:NFZ15SG101SN11, Inductor Type, 1100[mA], 1[MHz]-3[GHz]:1",68,"1","NFZ15SG101SN11");
+create_constant_form("NFZ15SG151SN11","2:NFZ15SG151SN11, Inductor Type, 1000[mA], 1[MHz]-3[GHz]:2",68,"2","NFZ15SG151SN11");
+create_constant_form("NFZ15SG152SN10","3:NFZ15SG152SN10, Inductor Type, 400[mA], 1[MHz]-3[GHz]:3",68,"3","NFZ15SG152SN10");
+create_constant_form("NFZ15SG262SN10","4:NFZ15SG262SN10, Inductor Type, 350[mA], 1[MHz]-3[GHz]:4",68,"4","NFZ15SG262SN10");
+create_constant_form("NFZ15SG331SN11","5:NFZ15SG331SN11, Inductor Type, 650[mA], 1[MHz]-3[GHz]:5",68,"5","NFZ15SG331SN11");
+create_constant_form("NFZ15SG462SN10","6:NFZ15SG462SN10, Inductor Type, 270[mA], 1[MHz]-3[GHz]:6",68,"6","NFZ15SG462SN10");
+create_constant_form("NFZ15SG771SN10","7:NFZ15SG771SN10, Inductor Type, 500[mA], 1[MHz]-3[GHz]:7",68,"7","NFZ15SG771SN10");
+
+create_form_set("NFZ15SG_list" 
+,"NFZ15SG101SN11"
+,"NFZ15SG151SN11"
+,"NFZ15SG152SN10"
+,"NFZ15SG262SN10"
+,"NFZ15SG331SN11"
+,"NFZ15SG462SN10"
+,"NFZ15SG771SN10"
+);
+
+create_compound_form("NFZ15SG_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"NFZ15SG_list",-1,prm("NFZ15SG101SN11")),
+create_parm("MIN","Minimum",32,"NFZ15SG_list",-1,prm("NFZ15SG101SN11")),
+create_parm("MAX","Maximum",32,"NFZ15SG_list",-1,prm("NFZ15SG771SN10")));
+
+create_form_set("NFZ15SG_list_opt","NULL" 
+,"NFZ15SG101SN11"
+,"NFZ15SG151SN11"
+,"NFZ15SG152SN10"
+,"NFZ15SG262SN10"
+,"NFZ15SG331SN11"
+,"NFZ15SG462SN10"
+,"NFZ15SG771SN10"
+,"NFZ15SG_compound"
+);
+
+
+

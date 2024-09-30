@@ -1,0 +1,344 @@
+********************************************************************************
+* Software License Agreement                                                   *
+*                                                                              *
+* The software supplied herewith by Microchip Technology Incorporated (the     *
+* 'Company') is intended and supplied to you, the Company's customer, for use  *
+* solely and exclusively on Microchip products.                                 *
+*                                                                              *
+* The software is owned by the Company and/or its supplier, and is protected   *
+* under applicable copyright laws. All rights are reserved. Any use in         *
+* violation of the foregoing restrictions may subject the user to criminal     *
+* sanctions under applicable laws, as well as to civil liability for the       *
+* breach of the terms and conditions of this license.                          *
+*                                                                              *
+* THIS SOFTWARE IS PROVIDED IN AN 'AS IS' CONDITION. NO WARRANTIES, WHETHER    *
+* EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED        *
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO  *
+* THIS SOFTWARE. THE COMPANY SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR    *
+* SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.     *
+*************************************************************************
+.SUBCKT MCP6486 1 2 3 4 5
+*               | | | | |
+*               | | | | Output
+*               | | | Negative Supply
+*               | | Positive Supply
+*               | Inverting Input
+*               Non-inverting Input
+*
+*
+* The following op-amps are covered by this model:
+*      MCP6486/6R/6U/7/9
+*
+* Date of model creation: 6-14-2022_3:26:38_PM
+* Level of Model Creator: MCP6486_1P02 / 06-07-22
+*
+* Revision History:
+*      REV A: 14-Jun-22, Initial Input
+*       
+*
+* Recommendations:
+*      Use PSPICE (or SPICE 2G6; other simulators may require translation)
+*      For a quick, effective design, use a combination of: data sheet
+*            specs, bench testing, and simulations with this macromodel
+*      For high impedance circuits, set GMIN=100F in the .OPTIONS statement
+*
+* Supported:
+*      Typical performance for temperature range (-40 to 125) degrees Celsius
+*      DC, AC, Transient, and Noise analyses.
+*      Most specs, including: offsets, DC PSRR, DC CMRR, input impedance,
+*            open loop gain, voltage ranges, supply current, ... , etc.
+*      Temperature effects for Ibias, Iquiescent, Iout short circuit 
+*            current, Vsat on both rails, Slew Rate vs. Temp and P.S.
+*
+* Not Supported:
+*      Some Variation in specs vs. Power Supply Voltage
+*      Vos distribution, Ib distribution for Monte Carlo
+*      Distortion (detailed non-linear behavior)
+*      Some Temperature analysis
+*      Process variation
+*      Behavior outside normal operating region
+*
+* Known Discrepancies in Model vs. Datasheet:
+*       
+*
+*
+* Input Stage
+*
+V10  3 10 -450M
+R10 10 11 69.0K
+R11 10 12 69.0K
+G10 10 11 10 11 1.44M
+G11 10 12 10 12 1.44M
+C11 11 12 115E-15
+M12 11 14 15 15 NMI 
+M14 12 2 15 15 NMI 
+C12  1  4 6.00P
+C14  2  4 6.00P
+C13  1 2 2.00P
+E12 71 14 VALUE { (200U) + V(20) * 1.39 + V(21) * 1.39 + V(22) * 1.39 + V(23) * 1.39 }
+EG1 VIBIASP 0 62 0 1u
+*
+* Convert Voltage to Current on Pin 1
+*
+GB1 1 0 VIBIASP 0 1
+EG2 VIBIASM 0 622 0 1u
+*
+* Convert Voltage to Current on Pin 2
+*
+GB2 2 0 VIBIASM 0 1
+*
+* Temp Sensistive IBias - Split Exponential
+*
+I6 0 62 DC 1mA
+VA200 62A 62 DC 0.00
+R17 0 62A REXP  703.80079N
+*
+* Temp Sensistive IBias - Split Exponential
+*
+I622 0 622 DC 1mA
+VA201 622A 622 DC 0.00
+R17A 0 622A REXPM  703.80079N
+I15 15 4 500U
+V16 16 4 -300M
+GD16 16 1 TABLE { V(16,1) } ((-100,-100E-18)(0,0)(1m,1u)(2m,1m)) 
+V13 3 13 -250M
+GD13 2 13 TABLE { V(2,13) } ((-100,-100E-18)(0,0)(1m,1u)(2m,1m)) 
+R71  1  0 10.0E12
+R72  2  0 10.0E12
+R73  1  2 10.0E12
+*
+* Noise 
+*
+I20 21 20 1.00
+D20 20  0 DN1
+D21  0 21 DN1
+I22 22 23 1N
+R22 22 0  1k
+R23  0 23 1k
+*
+* Open Loop Gain, Slew Rate
+*
+G30  0 30 12 11 1
+R30 30  0 1.00K
+G31 0 31 3 4 0.00
+I31 0 31 DC 241
+R31 31 0 1
+E_VDDMAX VDE 0 3 4 1
+V_VDD1 31VDD1 0 1.8
+V_VDD2 31VDD2 0 5.5
+G_ABMII2 0 31B VALUE { V(31)*(LIMIT(((V(31VDD1)-V(VDE))/(V(31VDD1)-V(31VDD2))), 0, 1))}
+R_R3 31A 0 1 TC=0.00, 0.00
+G_ABMII1 0 31A VALUE { V(31)*(LIMIT(((V(VDE)-V(31VDD2))/(V(31VDD1)-V(31VDD2))), 0, 1))}
+G_G6 30 31C TABLE { V(30, 31C) } ((-100,-1n)(0,0)(1m,0.1)(101m,190.1))
+E_ABM1 31C 0 VALUE { (V(31A) + V(31B)) }
+R_R8 31B 0 1 TC=0.00, 0.00
+G32 32 0 3 4 0.00
+I32 32 0 DC 217
+R32 32  0 1 
+G_ABMII22 32B 0 VALUE { V(32)*(LIMIT(((V(31VDD1)-V(VDE))/(V(31VDD1)-V(31VDD2))), 0, 1))}
+R_R23 32A 0 1 TC=0.00, 0.00
+G_ABMII21 32A 0 VALUE { V(32)*(LIMIT(((V(VDE)-V(31VDD2))/(V(31VDD1)-V(31VDD2))), 0, 1))}
+G_G26 32C 30 TABLE { V(30, 32C) } ((-101m,190.1)(-1m,0.1)(0,0)(100,-1n))
+E_ABM21 0 32C VALUE { (V(32A) + V(32B)) }
+R_R28 32B 0 1 TC=0.00, 0.00
+G6  0 33 30 0 1m
+R6  33 0 1K
+*
+* 1st Order Pole
+*
+G34  0 34 33 0 1.00
+R34  34 0 1K
+C34  34 0 12.0U
+*
+* 2nd Order Pole
+*
+G37  0 37 34 0 1m
+R37  37 0 1K
+C37  37 0 1.59P
+*
+* 1st Order Zero
+*
+G38  0 38 37 0 1m
+GR38  39 0 39 0 1m
+RR38  39 0 100G
+L38  38 39 159N
+E38  35 0 38 0 1
+G35 33 0 TABLE { V(35,3) } ((-1,-1p)(0,0)(100,1n))(110,1))
+G36 33 0 TABLE { V(35,4) } ((-110,-1)((-100,-1n)(0,0)(1,1p))
+*
+* Output Stage
+*
+R80 50 0 100MEG
+VR58 57 96 0
+R58X 57 96 1G
+F1 0 50 VR58 1
+R57 57  0 200
+* PSRR / CMRR 
+G57  0 57 VALUE { V(35) * 5.00M + V(118) + V(127) + V(137) } 
+*
+* PSRR Plus Gain and GBWP Pole Neutralization and Wave Shaping 
+*
+* G30 THE DC GAIN FOR +PSRR 
+G110 0 110 3 0 50.0U
+* ADD POLE TO NEUTRALIZE GBWP ZERO
+R110 110 0 10T 
+GR110 110 0 110 0 1M 
+C110 110 0 12.0U
+*
+* PSRR Plus Pole 
+*
+G111 0 111 110 0 1 
+L111 111 112 636U
+R112 112 0 10T 
+GR112 112 0 112 0 1 
+*
+* PSRR Plus Zero 
+*
+G114 0 114 111 0 1 
+R114 114 0 10T 
+C114 114 0 159P
+GR114 114 0 114 0 1 
+*
+* PSRR Plus 2nd Pole 
+*
+G115 0 115 114 0 1 
+L115 115 116 159P
+R116 116 0 1G 
+GR116 116 0 116 0 1 
+*
+* PSRR Plus 2nd Zero 
+*
+G117 0 117 115 0 1 
+R117 117 0 1G 
+C117 117 0 159P
+GR117 117 0 117 0 1 
+*
+* PSRR Plus 3rd Pole 
+*
+G118 0 118 117 0 1 
+L118 118 119 159P
+R119 119 0 1G 
+GR119 119 0 119 0 1 
+*
+* PSRR Minus Gain and GBWP Pole Neutralization and Wave Shaping 
+*
+* G40 THE DC GAIN FOR -PSRR 
+G120 0 120 4 0 50.0U
+* ADD POLE TO NEUTRALIZE GBWP ZERO
+R120 120 0 10T 
+GR120 120 0 120 0 1M 
+C120 120 0 12.0U
+*
+* PSRR Minus Pole 
+*
+G121 0 121 120 0 1 
+L121 121 122 636U
+R122 122 0 10T 
+GR122 122 0 122 0 1 
+*
+* PSRR Minus Zero 
+*
+G124 0 124 121 0 1 
+R124 124 0 10T 
+C124 124 0 159P
+GR124 124 0 124 0 1 
+*
+* PSRR Minus 2nd Pole 
+*
+G125 0 125 124 0 1 
+L125 125 126 159P
+R126 126 0 1G 
+GR126 126 0 126 0 1 
+*
+* PSRR Minus 2nd Zero 
+*
+G1217 0 127 125 0 1 
+R127 127 0 1G 
+C127 127 0 159P
+GR127 127 0 127 0 1 
+*
+* CMRR Gain and GBWP Pole Neutralization and Wave Shaping 
+*
+* G50 THE DC GAIN FOR CMRR 
+G130 0 130 VALUE { ( V(15) ) * 15.8U}
+* Add Zero To Neutralize GBWP Pole
+R130 130 0 1G 
+GR130 130 0 130 0 1m 
+C130 130 0 12.0U
+*
+* CMRR Pole 
+*
+G131 0 131 130 0 1 
+L131 131 132 318U
+R132 132 0 1G 
+GR132 132 0 132 0 1 
+*
+* CMRR Zero 
+*
+G133 0 133 131 0 1 
+R133 133 0 1G 
+C133 133 0  15.9N
+GR133 133 0 133 0 1 
+*
+* CMRR 2nd Pole
+*
+G134 0 134 133 0 1 
+L134 134 135 159P
+R135 135 0 1G 
+GR135 135 0 135 0 1 
+*
+* CMRR 2nd Zero 
+*
+G137 0 137 134 0 1 
+R137 137 0 1G 
+C137 137 0  159P
+GR137 137 0 137 0 1 
+*
+GD55 55 57 TABLE { V(55,57) } ((-0.2m,-400)(-0.1m,-1m)(0,0)(10,1n))
+GD56 57 56 TABLE { V(57,56) } ((-0.2m,-400)(-0.1m,-1m)(0,0)(10,1n))
+E55 55  0 VALUE { 21.1M + V(3) * 1 + V(51) * -14.0M }
+E56 56  0 VALUE { -20.8M + V(4) * 1 + V(52) * -13.8M }
+R51 51 0 1k
+R52 52 0 1k
+GD51 50 51 TABLE { V(50,51) } ((-10,-1n)(0,0)(1m,1m)(2m,1))
+GD52 50 52 TABLE { V(50,52) } ((-2m,-1)(-1m,-1m)(0,0)(10,1n))
+G53  3  0 VALUE { -500U + V(51) * 1M }
+G54  0  4 VALUE { -500U + V(52) * -1M }
+*
+* Current Limit
+*
+GD98A 98 98A TABLE { V(98,98A) } ((-3m,-1000)(-2m,-10)(-1m,-1)(0,0)(1,1n))
+GD98B 98 98B TABLE { V(98,98B) } ((-1,-1n)(0,0)(1m,1)(2m,10)(3m,1000))
+R98A 0 98A 1 TC=-3.45M,4.06U
+R98B 0 98B 1 TC=-3.45M,4.06U
+R98 98 0 1G
+G99 96 5 99 0 1
+G97 0 98 TABLE { V(96,5) } ((-11.0,-8.00M)(-1.00M,-4.52M)(0,0)(1.00M,4.65M)(11.0,5.00M))
+E97 99 0 VALUE { V(98) * LIMIT((( V(3) - V(4) ) * 1.83 + -1.75), 0.00, 1E6 ) * LIMIT((( V(3) - V(4) ) * 1.25 + -875M), 0, 1) }
+D98 4 5 DESD
+D99 5 3 DESD
+*
+* Temperature / Voltage Sensitive IQuiscent
+*
+R61 0 61 1 TC=-146U,-4.23U
+G61 3 4 61 0 1
+G60 0 61 TABLE { V(3, 4) } ((0, 0)(600M,5.45U)(800M,100U)(1.00,200U)(1.25,490U)(1.5,495U)(2.00,500U)
++ (3.00,520U)(4.00,545U)(6.00,555U))
+*
+* Temperature Sensitive offset voltage
+*
+I73 0 70 DC 1
+R74 0 70 1 TC=600N
+E75 1 71 VALUE {V(70)-1}
+*
+* Models
+.MODEL NMI NMOS(L=2.00U W=42.0U KP=200U LEVEL=1 )
+.MODEL DESD  D   N=1 IS=1.00E-15
+.MODEL DN1 D   IS=1P KF=170P AF=1
+.MODEL REXP  RES TCE= 13.76462
+.MODEL REXPM  RES TCE= 13.76462
+.ENDS MCP6486
+
+
+
+

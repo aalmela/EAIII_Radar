@@ -1,0 +1,34 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GA243QR7E2222MW01","1:GA243QR7E2222MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 2200[pF], +/-20[%], 100[kHz]-3[GHz]:1",68,"1","GA243QR7E2222MW01");
+create_constant_form("GA243QR7E2332MW01","2:GA243QR7E2332MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 3300[pF], +/-20[%], 100[kHz]-3[GHz]:2",68,"2","GA243QR7E2332MW01");
+create_constant_form("GA243DR7E2472MW01","3:GA243DR7E2472MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 4700[pF], +/-20[%], 100[kHz]-3[GHz]:3",68,"3","GA243DR7E2472MW01");
+create_constant_form("GA243QR7E2103MW01","4:GA243QR7E2103MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 10000[pF], +/-20[%], 100[kHz]-3[GHz]:4",68,"4","GA243QR7E2103MW01");
+create_constant_form("GA243QR7E2223MW01","5:GA243QR7E2223MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 22000[pF], +/-20[%], 100[kHz]-3[GHz]:5",68,"5","GA243QR7E2223MW01");
+create_constant_form("GA243DR7E2473MW01","6:GA243DR7E2473MW01, 200V and over/ under Japanese Law, X7R(-55to125[deg]), 250[Vac], 47000[pF], +/-20[%], 100[kHz]-3[GHz]:6",68,"6","GA243DR7E2473MW01");
+
+create_form_set("GA243_list" 
+,"GA243QR7E2222MW01"
+,"GA243QR7E2332MW01"
+,"GA243DR7E2472MW01"
+,"GA243QR7E2103MW01"
+,"GA243QR7E2223MW01"
+,"GA243DR7E2473MW01"
+);
+
+create_compound_form("GA243_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GA243_list",-1,prm("GA243QR7E2222MW01")),
+create_parm("MIN","Minimum",32,"GA243_list",-1,prm("GA243QR7E2222MW01")),
+create_parm("MAX","Maximum",32,"GA243_list",-1,prm("GA243DR7E2473MW01")));
+
+create_form_set("GA243_list_opt","NULL" 
+,"GA243QR7E2222MW01"
+,"GA243QR7E2332MW01"
+,"GA243DR7E2472MW01"
+,"GA243QR7E2103MW01"
+,"GA243QR7E2223MW01"
+,"GA243DR7E2473MW01"
+,"GA243_compound"
+);
+
+
+

@@ -1,0 +1,175 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GCE219R72A221KA01","1:GCE219R72A221KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 220[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GCE219R72A221KA01");
+create_constant_form("GCE219R72A221MA01","2:GCE219R72A221MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 220[pF], +/-20[%], 100[Hz]-6[GHz]:2",68,"2","GCE219R72A221MA01");
+create_constant_form("GCE219R72A471KA01","3:GCE219R72A471KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 470[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GCE219R72A471KA01");
+create_constant_form("GCE219R72A681KA01","4:GCE219R72A681KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 680[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GCE219R72A681KA01");
+create_constant_form("GCE216R72A102KA01","5:GCE216R72A102KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 1000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GCE216R72A102KA01");
+create_constant_form("GCE216R71H152KA01","6:GCE216R71H152KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 1500[pF], +/-10[%], 100[Hz]-6[GHz]:6",68,"6","GCE216R71H152KA01");
+create_constant_form("GCE216R72A152KA01","7:GCE216R72A152KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 1500[pF], +/-10[%], 100[Hz]-6[GHz]:7",68,"7","GCE216R72A152KA01");
+create_constant_form("GCE216R72A222KA01","8:GCE216R72A222KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 2200[pF], +/-10[%], 100[Hz]-6[GHz]:8",68,"8","GCE216R72A222KA01");
+create_constant_form("GCE216R71H332KA01","9:GCE216R71H332KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 3300[pF], +/-10[%], 100[Hz]-6[GHz]:9",68,"9","GCE216R71H332KA01");
+create_constant_form("GCE216R72A332KA01","10:GCE216R72A332KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 3300[pF], +/-10[%], 100[Hz]-6[GHz]:10",68,"10","GCE216R72A332KA01");
+create_constant_form("GCE216R71H392KA01","11:GCE216R71H392KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 3900[pF], +/-10[%], 100[Hz]-6[GHz]:11",68,"11","GCE216R71H392KA01");
+create_constant_form("GCE216R72A392KA01","12:GCE216R72A392KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 3900[pF], +/-10[%], 100[Hz]-6[GHz]:12",68,"12","GCE216R72A392KA01");
+create_constant_form("GCE216R71H472KA01","13:GCE216R71H472KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 4700[pF], +/-10[%], 100[Hz]-6[GHz]:13",68,"13","GCE216R71H472KA01");
+create_constant_form("GCE216R72A472KA01","14:GCE216R72A472KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 4700[pF], +/-10[%], 100[Hz]-6[GHz]:14",68,"14","GCE216R72A472KA01");
+create_constant_form("GCE219R72A682KA01","15:GCE219R72A682KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 6800[pF], +/-10[%], 100[Hz]-6[GHz]:15",68,"15","GCE219R72A682KA01");
+create_constant_form("GCE21BR72A103KA01","16:GCE21BR72A103KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 10000[pF], +/-10[%], 100[Hz]-6[GHz]:16",68,"16","GCE21BR72A103KA01");
+create_constant_form("GCE21BR71H153KA01","17:GCE21BR71H153KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 15000[pF], +/-10[%], 100[Hz]-6[GHz]:17",68,"17","GCE21BR71H153KA01");
+create_constant_form("GCE21BR72A153KA01","18:GCE21BR72A153KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 15000[pF], +/-10[%], 100[Hz]-6[GHz]:18",68,"18","GCE21BR72A153KA01");
+create_constant_form("GCE21BR71H183KA01","19:GCE21BR71H183KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 18000[pF], +/-10[%], 100[Hz]-6[GHz]:19",68,"19","GCE21BR71H183KA01");
+create_constant_form("GCE21BR71H223KA01","20:GCE21BR71H223KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 22000[pF], +/-10[%], 100[Hz]-6[GHz]:20",68,"20","GCE21BR71H223KA01");
+create_constant_form("GCE21BR72A223KA01","21:GCE21BR72A223KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 22000[pF], +/-10[%], 100[Hz]-6[GHz]:21",68,"21","GCE21BR72A223KA01");
+create_constant_form("GCE21BR71H273KA01","22:GCE21BR71H273KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 27000[pF], +/-10[%], 100[Hz]-6[GHz]:22",68,"22","GCE21BR71H273KA01");
+create_constant_form("GCE21BR71H273MA01","23:GCE21BR71H273MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 27000[pF], +/-20[%], 100[Hz]-6[GHz]:23",68,"23","GCE21BR71H273MA01");
+create_constant_form("GCE21BR72A273KA01","24:GCE21BR72A273KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 27000[pF], +/-10[%], 100[Hz]-6[GHz]:24",68,"24","GCE21BR72A273KA01");
+create_constant_form("GCE21BR72A273MA01","25:GCE21BR72A273MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 27000[pF], +/-20[%], 100[Hz]-6[GHz]:25",68,"25","GCE21BR72A273MA01");
+create_constant_form("GCE21BR71H333KA01","26:GCE21BR71H333KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 33000[pF], +/-10[%], 100[Hz]-6[GHz]:26",68,"26","GCE21BR71H333KA01");
+create_constant_form("GCE21BR71H333MA01","27:GCE21BR71H333MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 33000[pF], +/-20[%], 100[Hz]-6[GHz]:27",68,"27","GCE21BR71H333MA01");
+create_constant_form("GCE21BR72A333KA01","28:GCE21BR72A333KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 33000[pF], +/-10[%], 100[Hz]-6[GHz]:28",68,"28","GCE21BR72A333KA01");
+create_constant_form("GCE21BR72A333MA01","29:GCE21BR72A333MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 33000[pF], +/-20[%], 100[Hz]-6[GHz]:29",68,"29","GCE21BR72A333MA01");
+create_constant_form("GCE21BR71H393KA01","30:GCE21BR71H393KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 39000[pF], +/-10[%], 100[Hz]-6[GHz]:30",68,"30","GCE21BR71H393KA01");
+create_constant_form("GCE21BR71H393MA01","31:GCE21BR71H393MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 39000[pF], +/-20[%], 100[Hz]-6[GHz]:31",68,"31","GCE21BR71H393MA01");
+create_constant_form("GCE21BR72A393KA01","32:GCE21BR72A393KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 39000[pF], +/-10[%], 100[Hz]-6[GHz]:32",68,"32","GCE21BR72A393KA01");
+create_constant_form("GCE21BR72A393MA01","33:GCE21BR72A393MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 39000[pF], +/-20[%], 100[Hz]-6[GHz]:33",68,"33","GCE21BR72A393MA01");
+create_constant_form("GCE21BR71H473KA01","34:GCE21BR71H473KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 47000[pF], +/-10[%], 100[Hz]-6[GHz]:34",68,"34","GCE21BR71H473KA01");
+create_constant_form("GCE21BR71H473MA01","35:GCE21BR71H473MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 47000[pF], +/-20[%], 100[Hz]-6[GHz]:35",68,"35","GCE21BR71H473MA01");
+create_constant_form("GCE21BR72A473KA01","36:GCE21BR72A473KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 47000[pF], +/-10[%], 100[Hz]-6[GHz]:36",68,"36","GCE21BR72A473KA01");
+create_constant_form("GCE21BR72A473MA01","37:GCE21BR72A473MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 47000[pF], +/-20[%], 100[Hz]-6[GHz]:37",68,"37","GCE21BR72A473MA01");
+create_constant_form("GCE21BR71H563KA01","38:GCE21BR71H563KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 56000[pF], +/-10[%], 100[Hz]-6[GHz]:38",68,"38","GCE21BR71H563KA01");
+create_constant_form("GCE21BR71H563MA01","39:GCE21BR71H563MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 56000[pF], +/-20[%], 100[Hz]-6[GHz]:39",68,"39","GCE21BR71H563MA01");
+create_constant_form("GCE21BR72A563KA01","40:GCE21BR72A563KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 56000[pF], +/-10[%], 100[Hz]-6[GHz]:40",68,"40","GCE21BR72A563KA01");
+create_constant_form("GCE21BR72A563MA01","41:GCE21BR72A563MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 56000[pF], +/-20[%], 100[Hz]-6[GHz]:41",68,"41","GCE21BR72A563MA01");
+create_constant_form("GCE21BR71H683KA01","42:GCE21BR71H683KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 68000[pF], +/-10[%], 100[Hz]-6[GHz]:42",68,"42","GCE21BR71H683KA01");
+create_constant_form("GCE21BR71H683MA01","43:GCE21BR71H683MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 68000[pF], +/-20[%], 100[Hz]-6[GHz]:43",68,"43","GCE21BR71H683MA01");
+create_constant_form("GCE21BR72A683KA01","44:GCE21BR72A683KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 68000[pF], +/-10[%], 100[Hz]-6[GHz]:44",68,"44","GCE21BR72A683KA01");
+create_constant_form("GCE21BR72A683MA01","45:GCE21BR72A683MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 68000[pF], +/-20[%], 100[Hz]-6[GHz]:45",68,"45","GCE21BR72A683MA01");
+create_constant_form("GCE21BR71H823KA01","46:GCE21BR71H823KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 82000[pF], +/-10[%], 100[Hz]-6[GHz]:46",68,"46","GCE21BR71H823KA01");
+create_constant_form("GCE21BR71H823MA01","47:GCE21BR71H823MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 82000[pF], +/-20[%], 100[Hz]-6[GHz]:47",68,"47","GCE21BR71H823MA01");
+create_constant_form("GCE21BR72A823KA01","48:GCE21BR72A823KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 82000[pF], +/-10[%], 100[Hz]-6[GHz]:48",68,"48","GCE21BR72A823KA01");
+create_constant_form("GCE21BR72A823MA01","49:GCE21BR72A823MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 82000[pF], +/-20[%], 100[Hz]-6[GHz]:49",68,"49","GCE21BR72A823MA01");
+create_constant_form("GCE21BR71H104KA01","50:GCE21BR71H104KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 100000[pF], +/-10[%], 100[Hz]-6[GHz]:50",68,"50","GCE21BR71H104KA01");
+create_constant_form("GCE21BR71H104MA01","51:GCE21BR71H104MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 50[V], 100000[pF], +/-20[%], 100[Hz]-6[GHz]:51",68,"51","GCE21BR71H104MA01");
+create_constant_form("GCE21BR72A104KA01","52:GCE21BR72A104KA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 100000[pF], +/-10[%], 100[Hz]-6[GHz]:52",68,"52","GCE21BR72A104KA01");
+create_constant_form("GCE21BR72A104MA01","53:GCE21BR72A104MA01, Resin external electrode for Powertrain/safety for Automotive [AEC-Q200], X7R(-55to125[deg]), 100[V], 100000[pF], +/-20[%], 100[Hz]-6[GHz]:53",68,"53","GCE21BR72A104MA01");
+
+create_form_set("GCE21_list" 
+,"GCE219R72A221KA01"
+,"GCE219R72A221MA01"
+,"GCE219R72A471KA01"
+,"GCE219R72A681KA01"
+,"GCE216R72A102KA01"
+,"GCE216R71H152KA01"
+,"GCE216R72A152KA01"
+,"GCE216R72A222KA01"
+,"GCE216R71H332KA01"
+,"GCE216R72A332KA01"
+,"GCE216R71H392KA01"
+,"GCE216R72A392KA01"
+,"GCE216R71H472KA01"
+,"GCE216R72A472KA01"
+,"GCE219R72A682KA01"
+,"GCE21BR72A103KA01"
+,"GCE21BR71H153KA01"
+,"GCE21BR72A153KA01"
+,"GCE21BR71H183KA01"
+,"GCE21BR71H223KA01"
+,"GCE21BR72A223KA01"
+,"GCE21BR71H273KA01"
+,"GCE21BR71H273MA01"
+,"GCE21BR72A273KA01"
+,"GCE21BR72A273MA01"
+,"GCE21BR71H333KA01"
+,"GCE21BR71H333MA01"
+,"GCE21BR72A333KA01"
+,"GCE21BR72A333MA01"
+,"GCE21BR71H393KA01"
+,"GCE21BR71H393MA01"
+,"GCE21BR72A393KA01"
+,"GCE21BR72A393MA01"
+,"GCE21BR71H473KA01"
+,"GCE21BR71H473MA01"
+,"GCE21BR72A473KA01"
+,"GCE21BR72A473MA01"
+,"GCE21BR71H563KA01"
+,"GCE21BR71H563MA01"
+,"GCE21BR72A563KA01"
+,"GCE21BR72A563MA01"
+,"GCE21BR71H683KA01"
+,"GCE21BR71H683MA01"
+,"GCE21BR72A683KA01"
+,"GCE21BR72A683MA01"
+,"GCE21BR71H823KA01"
+,"GCE21BR71H823MA01"
+,"GCE21BR72A823KA01"
+,"GCE21BR72A823MA01"
+,"GCE21BR71H104KA01"
+,"GCE21BR71H104MA01"
+,"GCE21BR72A104KA01"
+,"GCE21BR72A104MA01"
+);
+
+create_compound_form("GCE21_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GCE21_list",-1,prm("GCE219R72A221KA01")),
+create_parm("MIN","Minimum",32,"GCE21_list",-1,prm("GCE219R72A221KA01")),
+create_parm("MAX","Maximum",32,"GCE21_list",-1,prm("GCE21BR72A104MA01")));
+
+create_form_set("GCE21_list_opt","NULL" 
+,"GCE219R72A221KA01"
+,"GCE219R72A221MA01"
+,"GCE219R72A471KA01"
+,"GCE219R72A681KA01"
+,"GCE216R72A102KA01"
+,"GCE216R71H152KA01"
+,"GCE216R72A152KA01"
+,"GCE216R72A222KA01"
+,"GCE216R71H332KA01"
+,"GCE216R72A332KA01"
+,"GCE216R71H392KA01"
+,"GCE216R72A392KA01"
+,"GCE216R71H472KA01"
+,"GCE216R72A472KA01"
+,"GCE219R72A682KA01"
+,"GCE21BR72A103KA01"
+,"GCE21BR71H153KA01"
+,"GCE21BR72A153KA01"
+,"GCE21BR71H183KA01"
+,"GCE21BR71H223KA01"
+,"GCE21BR72A223KA01"
+,"GCE21BR71H273KA01"
+,"GCE21BR71H273MA01"
+,"GCE21BR72A273KA01"
+,"GCE21BR72A273MA01"
+,"GCE21BR71H333KA01"
+,"GCE21BR71H333MA01"
+,"GCE21BR72A333KA01"
+,"GCE21BR72A333MA01"
+,"GCE21BR71H393KA01"
+,"GCE21BR71H393MA01"
+,"GCE21BR72A393KA01"
+,"GCE21BR72A393MA01"
+,"GCE21BR71H473KA01"
+,"GCE21BR71H473MA01"
+,"GCE21BR72A473KA01"
+,"GCE21BR72A473MA01"
+,"GCE21BR71H563KA01"
+,"GCE21BR71H563MA01"
+,"GCE21BR72A563KA01"
+,"GCE21BR72A563MA01"
+,"GCE21BR71H683KA01"
+,"GCE21BR71H683MA01"
+,"GCE21BR72A683KA01"
+,"GCE21BR72A683MA01"
+,"GCE21BR71H823KA01"
+,"GCE21BR71H823MA01"
+,"GCE21BR72A823KA01"
+,"GCE21BR72A823MA01"
+,"GCE21BR71H104KA01"
+,"GCE21BR71H104MA01"
+,"GCE21BR72A104KA01"
+,"GCE21BR72A104MA01"
+,"GCE21_compound"
+);
+
+
+

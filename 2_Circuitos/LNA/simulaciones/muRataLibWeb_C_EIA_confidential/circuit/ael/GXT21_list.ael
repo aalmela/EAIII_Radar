@@ -1,0 +1,40 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GXT21BR71H105KE01","1:GXT21BR71H105KE01, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 50[V], 1000000[pF], +/-10[%], 100[Hz]-6[GHz]:1",68,"1","GXT21BR71H105KE01");
+create_constant_form("GXT21BR71C225KE01","2:GXT21BR71C225KE01, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 16[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:2",68,"2","GXT21BR71C225KE01");
+create_constant_form("GXT21BR71E225KE13","3:GXT21BR71E225KE13, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 25[V], 2200000[pF], +/-10[%], 100[Hz]-6[GHz]:3",68,"3","GXT21BR71E225KE13");
+create_constant_form("GXT21BR71A475KE13","4:GXT21BR71A475KE13, Water repellent/ Infotainment [AEC-Q200], X7R(-55to125[deg]), 10[V], 4700000[pF], +/-10[%], 100[Hz]-6[GHz]:4",68,"4","GXT21BR71A475KE13");
+create_constant_form("GXT21BC71E106KE13","5:GXT21BC71E106KE13, Water repellent/ Infotainment [AEC-Q200], X7S(-55to125[deg]), 25[V], 10000000[pF], +/-10[%], 100[Hz]-6[GHz]:5",68,"5","GXT21BC71E106KE13");
+create_constant_form("GXT21BC81A226ME13","6:GXT21BC81A226ME13, Water repellent/ Infotainment [AEC-Q200], X6S(-55to105[deg]), 10[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:6",68,"6","GXT21BC81A226ME13");
+create_constant_form("GXT21BR61C226ME13","7:GXT21BR61C226ME13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 16[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:7",68,"7","GXT21BR61C226ME13");
+create_constant_form("GXT21BR61E226ME13","8:GXT21BR61E226ME13, Water repellent/ Infotainment [AEC-Q200], X5R(-55to85[deg]), 25[V], 22000000[pF], +/-20[%], 100[Hz]-6[GHz]:8",68,"8","GXT21BR61E226ME13");
+
+create_form_set("GXT21_list" 
+,"GXT21BR71H105KE01"
+,"GXT21BR71C225KE01"
+,"GXT21BR71E225KE13"
+,"GXT21BR71A475KE13"
+,"GXT21BC71E106KE13"
+,"GXT21BC81A226ME13"
+,"GXT21BR61C226ME13"
+,"GXT21BR61E226ME13"
+);
+
+create_compound_form("GXT21_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GXT21_list",-1,prm("GXT21BR71H105KE01")),
+create_parm("MIN","Minimum",32,"GXT21_list",-1,prm("GXT21BR71H105KE01")),
+create_parm("MAX","Maximum",32,"GXT21_list",-1,prm("GXT21BR61E226ME13")));
+
+create_form_set("GXT21_list_opt","NULL" 
+,"GXT21BR71H105KE01"
+,"GXT21BR71C225KE01"
+,"GXT21BR71E225KE13"
+,"GXT21BR71A475KE13"
+,"GXT21BC71E106KE13"
+,"GXT21BC81A226ME13"
+,"GXT21BR61C226ME13"
+,"GXT21BR61E226ME13"
+,"GXT21_compound"
+);
+
+
+

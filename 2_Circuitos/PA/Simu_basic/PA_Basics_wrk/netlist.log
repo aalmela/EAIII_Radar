@@ -1,0 +1,56 @@
+; Top Design: "PA_Basics_lib:classa_ab_ideal:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PA_Basics_lib:classa_ab_ideal:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+V_Source:SRC3  N__18 0 Type="V_DC" Vdc=V2 V SaveCurrent=1 
+V_Source:SRC5  N__25 0 Type="V_DC" Vdc=V1 V SaveCurrent=1 
+Short:Iout  N__23 Vout Mode=0 SaveCurrent=yes 
+Short:I2  N__10 Vext Mode=0 SaveCurrent=yes 
+Short:Iext  Vext N__22 Mode=0 SaveCurrent=yes 
+Short:I1  N__9 Vin1 Mode=0 SaveCurrent=yes 
+HB:HB1 MaxOrder=4 Freq[1]=1 GHz Order[1]=10 StatusLevel=2 Restart=no HBSS_WSP=0 SweepVar="Pin" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
+
+SweepPlan: HB1_stim Start=-20 Stop=25 Step=2 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1 GHz Order[1]=10 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+L:L1  N__15 Vin1 L=1.5 nH Noise=yes  
+#uselib "BFU5XX_family_design_kit_v2" , "bfu5xx_v2_lib_BFU580G_schematic"
+"bfu5xx_v2_lib_BFU580G_schematic":X2  Vin1 N__22 0 
+
+RL=50
+XL=0
+
+V1=0.82
+V2=8
+Pin=18
+C:C3  Vin N__15 C=100 pF 
+Short:DC_Feed1  N__25 N__9 Mode=-1 
+Port:PORT1  Vin 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin),0) Freq[1]=1 GHz    Noise=yes Pac=polar(dbmtow(0),0) 
+Port:Term2  Vout 0 Num=2 Z=RL+j*XL Ohm Noise=yes 
+C:C2  N__19 N__23 C=100 pF 
+C:C1  0 N__15 C=3.3 pF 
+L:L3  Vext N__19 L=6.76 nH tune{ 1 nH to 10 nH by 1 nH } Noise=yes  
+L:L2  N__18 N__10 L=18.17 nH tune{ 3 nH to 40 nH by 1 nH } Noise=yes  

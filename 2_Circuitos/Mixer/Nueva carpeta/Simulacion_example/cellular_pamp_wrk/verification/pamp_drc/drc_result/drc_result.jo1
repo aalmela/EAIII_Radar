@@ -1,0 +1,99 @@
+Reportfacets Summary :
+
+====  facet drc_result/000000 xy -15.00 -440.00  : xy 1407.50 645.00  PASS ====
+    Cmd  Errors : note  0 warn  0 error  0 fatal  0 alloc  0 other  0
+    Drc  Errors : 76 
+    Flag Errors : non45  0 acute  0 offgrid  0 bigplg  0
+    Storage  0.2225 bytes/area
+
+
+Total counts
+
+    Cmd  Errors : note  0 warn  0 error  0 fatal  0 alloc  0 other  0
+    Drc  Errors : 76 
+    Flag Errors : non45  0 acute  0 offgrid  0 bigplg  0
+    Storage  0.2225 bytes/area
+
+
+Reportfacets Details :
+
+====  facet drc_result/000000 xy -15.00 -440.00  : xy 1407.50 645.00  PASS ====
+  
+  Jade Version 2.105 : Feb 17, 1998 
+  Compiled and linked on Tue Feb 17 13:22:22 PST 1998 
+  Host: HP 9000 -- UX                                               
+   
+  *-----------------------------------------------------------*
+  | JADE VLSI Design Rule  Checking Program                   |
+  |                                                           |
+  | Fletcher Automation,                       (408) 996-1110 |
+  | 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+  |                                                           |
+  | (c) Copyright 1988-9,1990-7              Alan J. Fletcher |
+  | Fletcher Automation Research               (408) 996-1110 |
+  | 21831 San Fernando Avenue,            Cupertino  CA 95014 |
+  |                                                           |
+  | RESTRICTED RIGHTS LEGEND                                  |
+  |                                                           |
+  |  Use, duplication, or disclosure by the U.S. Government   |
+  |  is subject to restrictions as set forth in sub-paragraph |
+  |  (c)(1)(ii) of the Rights in Technical Data and Computer  |
+  |  Software clause in DFARS 252.227-7013.                   |
+  |                                                           |
+  |  Rights for non-DOD U.S.  Government Departments and      |
+  |  Agencies are as set forth in FAR 52.227-19(c)(1,2).      |
+  |                                                           |
+  *-----------------------------------------------------------*
+  
+  Start      Time = <Thu Mar  5 12:52:36 1998>
+  
+  This program is licenced to:
+            
+      HP EEsof
+          
+      RESTRICTED RIGHTS LEGEND
+        
+         Use, duplication, or disclosure by the U.S. Government is subject to
+         restrictions as set forth in sub-paragraph (c)(1)(ii) of the Rights in
+         Technical Data and Computer Software clause in DFARS 252.227-7013.
+        
+         Rights for non-DOD U.S.  Government Departments and Agencies
+         are as set forth in FAR 52.227-19(c)(1,2).
+          
+  for use on CPU hpsrkrk (machine 9000/780) until 3/5/1998 unix 889217552
+  
+  licenced modules (067777): bool select classify with size drc conj maskap dracula 
+  .MESSAGE : Rules jh_pc5 :  pc5 rules 
+  .MESSAGE : Compiled : Thu Feb 19 14:54:13 1998 
+  .MESSAGE : Run drc_result/000000 Merge group  1 loading data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  1 merging data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  1 extracting data Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  2 loading data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  2 merging data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  2 extracting data Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  3 (omit null)
+  .MESSAGE : Run drc_result/000000 Merge group  4 loading data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  4 merging data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Merge group  4 extracting data Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Drc   group  5 loading data  Step   1 Secs
+    Rule 101 drc_result/000000/ Minimum width of cond is 5 mil   76 errors
+  .MESSAGE : Run drc_result/000000 Drc   group  5 checking rules Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Drc   group  6 (omit null)
+  .MESSAGE : Run drc_result/000000 Drc   group  7 (omit null)
+  .MESSAGE : Run drc_result/000000 Drc   group  8 (omit null)
+  .MESSAGE : Run drc_result/000000 Drc   group  9 loading data  Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Drc   group  9 checking rules Step   0 Secs
+  .MESSAGE : Run drc_result/000000 Drc   group 10 (omit null)
+  
+  Group statistics  : area 1543412    maximum bytes  343384  bytes/area 0.2225
+  
+  
+  *** exit level : note  ***
+  
+  DRC     error summary : 76 errors
+  
+  Command error summary : no errors
+  
+  End drc_result/000000  Time = <Thu Mar  5 12:52:37 1998> Secs 1 
+
+

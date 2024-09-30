@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<AdsTranslatorSetupFile Version="1.0">
+    <Import>
+        <Unit>mil</Unit>
+        <Flatten>0</Flatten>
+        <Layers />
+    </Import>
+    <Export>
+        <FileFormat>DXF</FileFormat>
+        <AutocadVersion>Autocad 2004</AutocadVersion>
+        <PathsAsPolygons>1</PathsAsPolygons>
+        <HoleFormat>Holes As Cutlines</HoleFormat>
+        <Layers />
+        <Unit>mil</Unit>
+        <Flatten>0</Flatten>
+        <AutoMerge>0</AutoMerge>
+        <ImportNegativeLayerAsSlotLayer>0</ImportNegativeLayerAsSlotLayer>
+        <CreateComponentsInFolder>1</CreateComponentsInFolder>
+        <SelectedDesignName></SelectedDesignName>
+        <VectorizeText>0</VectorizeText>
+        <LayerStackup>1</LayerStackup>
+        <Polarity />
+        <Nets />
+        <Components />
+    </Export>
+</AdsTranslatorSetupFile>

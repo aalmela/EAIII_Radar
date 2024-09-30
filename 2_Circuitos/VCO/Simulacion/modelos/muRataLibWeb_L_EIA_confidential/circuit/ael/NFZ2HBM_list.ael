@@ -1,0 +1,46 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("NFZ2HBM110SN10","1:NFZ2HBM110SN10, Inductor Type, 800[mA], 1[MHz]-3[GHz]:1",68,"1","NFZ2HBM110SN10");
+create_constant_form("NFZ2HBM170SN10","2:NFZ2HBM170SN10, Inductor Type, 700[mA], 1[MHz]-3[GHz]:2",68,"2","NFZ2HBM170SN10");
+create_constant_form("NFZ2HBM1R5SN10","3:NFZ2HBM1R5SN10, Inductor Type, 1200[mA], 1[MHz]-3[GHz]:3",68,"3","NFZ2HBM1R5SN10");
+create_constant_form("NFZ2HBM240SN10","4:NFZ2HBM240SN10, Inductor Type, 650[mA], 1[MHz]-3[GHz]:4",68,"4","NFZ2HBM240SN10");
+create_constant_form("NFZ2HBM2R9SN10","5:NFZ2HBM2R9SN10, Inductor Type, 1100[mA], 1[MHz]-3[GHz]:5",68,"5","NFZ2HBM2R9SN10");
+create_constant_form("NFZ2HBM330SN10","6:NFZ2HBM330SN10, Inductor Type, 500[mA], 1[MHz]-3[GHz]:6",68,"6","NFZ2HBM330SN10");
+create_constant_form("NFZ2HBM4R4SN10","7:NFZ2HBM4R4SN10, Inductor Type, 1050[mA], 1[MHz]-3[GHz]:7",68,"7","NFZ2HBM4R4SN10");
+create_constant_form("NFZ2HBM600SN10","8:NFZ2HBM600SN10, Inductor Type, 400[mA], 1[MHz]-3[GHz]:8",68,"8","NFZ2HBM600SN10");
+create_constant_form("NFZ2HBM6R1SN10","9:NFZ2HBM6R1SN10, Inductor Type, 1000[mA], 1[MHz]-3[GHz]:9",68,"9","NFZ2HBM6R1SN10");
+create_constant_form("NFZ2HBM8R4SN10","10:NFZ2HBM8R4SN10, Inductor Type, 900[mA], 1[MHz]-3[GHz]:10",68,"10","NFZ2HBM8R4SN10");
+
+create_form_set("NFZ2HBM_list" 
+,"NFZ2HBM110SN10"
+,"NFZ2HBM170SN10"
+,"NFZ2HBM1R5SN10"
+,"NFZ2HBM240SN10"
+,"NFZ2HBM2R9SN10"
+,"NFZ2HBM330SN10"
+,"NFZ2HBM4R4SN10"
+,"NFZ2HBM600SN10"
+,"NFZ2HBM6R1SN10"
+,"NFZ2HBM8R4SN10"
+);
+
+create_compound_form("NFZ2HBM_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"NFZ2HBM_list",-1,prm("NFZ2HBM110SN10")),
+create_parm("MIN","Minimum",32,"NFZ2HBM_list",-1,prm("NFZ2HBM110SN10")),
+create_parm("MAX","Maximum",32,"NFZ2HBM_list",-1,prm("NFZ2HBM8R4SN10")));
+
+create_form_set("NFZ2HBM_list_opt","NULL" 
+,"NFZ2HBM110SN10"
+,"NFZ2HBM170SN10"
+,"NFZ2HBM1R5SN10"
+,"NFZ2HBM240SN10"
+,"NFZ2HBM2R9SN10"
+,"NFZ2HBM330SN10"
+,"NFZ2HBM4R4SN10"
+,"NFZ2HBM600SN10"
+,"NFZ2HBM6R1SN10"
+,"NFZ2HBM8R4SN10"
+,"NFZ2HBM_compound"
+);
+
+
+

@@ -1,6 +1,0 @@
-INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
-DEFINE MyLibrary_lib MyLibrary_lib
-ASSIGN MyLibrary_lib libMode shared
-INCLUDE $HOME/Documents/ADS_lib/Infineon_RFtransistors/Infineon_RF/lib.defs
-INCLUDE $HOME/Documents/ADS_lib/murata/muRataLibWeb_C_EIA_confidential/lib.defs
-INCLUDE $HOME/Documents/ADS_lib/NXP/BFU5XX_family_design_kit_v2/lib.defs

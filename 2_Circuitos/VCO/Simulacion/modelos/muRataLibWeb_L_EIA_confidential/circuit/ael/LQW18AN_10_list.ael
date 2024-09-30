@@ -1,0 +1,73 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("LQW18AN2N2D10","1:LQW18AN2N2D10, Wound, 2.2[nH], +/-0.5[nH], 1400[mA], 50[MHz]-20[GHz]:1",68,"1","LQW18AN2N2D10");
+create_constant_form("LQW18AN3N9C10","2:LQW18AN3N9C10, Wound, 3.9[nH], +/-0.2[nH], 1000[mA], 50[MHz]-20[GHz]:2",68,"2","LQW18AN3N9C10");
+create_constant_form("LQW18AN3N9D10","3:LQW18AN3N9D10, Wound, 3.9[nH], +/-0.5[nH], 1000[mA], 50[MHz]-20[GHz]:3",68,"3","LQW18AN3N9D10");
+create_constant_form("LQW18AN5N6D10","4:LQW18AN5N6D10, Wound, 5.6[nH], +/-0.5[nH], 900[mA], 50[MHz]-20[GHz]:4",68,"4","LQW18AN5N6D10");
+create_constant_form("LQW18AN6N8C10","5:LQW18AN6N8C10, Wound, 6.8[nH], +/-0.2[nH], 900[mA], 50[MHz]-20[GHz]:5",68,"5","LQW18AN6N8C10");
+create_constant_form("LQW18AN6N8D10","6:LQW18AN6N8D10, Wound, 6.8[nH], +/-0.5[nH], 900[mA], 50[MHz]-20[GHz]:6",68,"6","LQW18AN6N8D10");
+create_constant_form("LQW18AN8N2D10","7:LQW18AN8N2D10, Wound, 8.2[nH], +/-0.5[nH], 800[mA], 50[MHz]-20[GHz]:7",68,"7","LQW18AN8N2D10");
+create_constant_form("LQW18AN10NG10","8:LQW18AN10NG10, Wound, 10[nH], +/-2[%], 800[mA], 50[MHz]-20[GHz]:8",68,"8","LQW18AN10NG10");
+create_constant_form("LQW18AN10NJ10","9:LQW18AN10NJ10, Wound, 10[nH], +/-5[%], 800[mA], 50[MHz]-20[GHz]:9",68,"9","LQW18AN10NJ10");
+create_constant_form("LQW18AN12NG10","10:LQW18AN12NG10, Wound, 12[nH], +/-2[%], 750[mA], 50[MHz]-20[GHz]:10",68,"10","LQW18AN12NG10");
+create_constant_form("LQW18AN12NJ10","11:LQW18AN12NJ10, Wound, 12[nH], +/-5[%], 750[mA], 50[MHz]-20[GHz]:11",68,"11","LQW18AN12NJ10");
+create_constant_form("LQW18AN15NJ10","12:LQW18AN15NJ10, Wound, 15[nH], +/-5[%], 700[mA], 50[MHz]-20[GHz]:12",68,"12","LQW18AN15NJ10");
+create_constant_form("LQW18AN18NG10","13:LQW18AN18NG10, Wound, 18[nH], +/-2[%], 700[mA], 50[MHz]-20[GHz]:13",68,"13","LQW18AN18NG10");
+create_constant_form("LQW18AN18NJ10","14:LQW18AN18NJ10, Wound, 18[nH], +/-5[%], 700[mA], 50[MHz]-20[GHz]:14",68,"14","LQW18AN18NJ10");
+create_constant_form("LQW18AN22NG10","15:LQW18AN22NG10, Wound, 22[nH], +/-2[%], 640[mA], 50[MHz]-20[GHz]:15",68,"15","LQW18AN22NG10");
+create_constant_form("LQW18AN22NJ10","16:LQW18AN22NJ10, Wound, 22[nH], +/-5[%], 640[mA], 50[MHz]-20[GHz]:16",68,"16","LQW18AN22NJ10");
+create_constant_form("LQW18AN27NG10","17:LQW18AN27NG10, Wound, 27[nH], +/-2[%], 590[mA], 50[MHz]-20[GHz]:17",68,"17","LQW18AN27NG10");
+create_constant_form("LQW18AN27NJ10","18:LQW18AN27NJ10, Wound, 27[nH], +/-5[%], 590[mA], 50[MHz]-20[GHz]:18",68,"18","LQW18AN27NJ10");
+create_constant_form("LQW18AN33NJ10","19:LQW18AN33NJ10, Wound, 33[nH], +/-5[%], 550[mA], 50[MHz]-20[GHz]:19",68,"19","LQW18AN33NJ10");
+
+create_form_set("LQW18AN_10_list" 
+,"LQW18AN2N2D10"
+,"LQW18AN3N9C10"
+,"LQW18AN3N9D10"
+,"LQW18AN5N6D10"
+,"LQW18AN6N8C10"
+,"LQW18AN6N8D10"
+,"LQW18AN8N2D10"
+,"LQW18AN10NG10"
+,"LQW18AN10NJ10"
+,"LQW18AN12NG10"
+,"LQW18AN12NJ10"
+,"LQW18AN15NJ10"
+,"LQW18AN18NG10"
+,"LQW18AN18NJ10"
+,"LQW18AN22NG10"
+,"LQW18AN22NJ10"
+,"LQW18AN27NG10"
+,"LQW18AN27NJ10"
+,"LQW18AN33NJ10"
+);
+
+create_compound_form("LQW18AN_10_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"LQW18AN_10_list",-1,prm("LQW18AN2N2D10")),
+create_parm("MIN","Minimum",32,"LQW18AN_10_list",-1,prm("LQW18AN2N2D10")),
+create_parm("MAX","Maximum",32,"LQW18AN_10_list",-1,prm("LQW18AN33NJ10")));
+
+create_form_set("LQW18AN_10_list_opt","NULL" 
+,"LQW18AN2N2D10"
+,"LQW18AN3N9C10"
+,"LQW18AN3N9D10"
+,"LQW18AN5N6D10"
+,"LQW18AN6N8C10"
+,"LQW18AN6N8D10"
+,"LQW18AN8N2D10"
+,"LQW18AN10NG10"
+,"LQW18AN10NJ10"
+,"LQW18AN12NG10"
+,"LQW18AN12NJ10"
+,"LQW18AN15NJ10"
+,"LQW18AN18NG10"
+,"LQW18AN18NJ10"
+,"LQW18AN22NG10"
+,"LQW18AN22NJ10"
+,"LQW18AN27NG10"
+,"LQW18AN27NJ10"
+,"LQW18AN33NJ10"
+,"LQW18AN_10_compound"
+);
+
+
+

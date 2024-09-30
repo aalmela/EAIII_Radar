@@ -1,0 +1,43 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("BLM15PE121SH1","1:BLM15PE121SH1, Ferrite Bead Single Type, 1500[mA], 1[MHz]-3[GHz]:1",68,"1","BLM15PE121SH1");
+create_constant_form("BLM15PE181SH1","2:BLM15PE181SH1, Ferrite Bead Single Type, 1200[mA], 1[MHz]-3[GHz]:2",68,"2","BLM15PE181SH1");
+create_constant_form("BLM15PE221SH1","3:BLM15PE221SH1, Ferrite Bead Single Type, 1100[mA], 1[MHz]-3[GHz]:3",68,"3","BLM15PE221SH1");
+create_constant_form("BLM15PE300SH1","4:BLM15PE300SH1, Ferrite Bead Single Type, 2300[mA], 1[MHz]-3[GHz]:4",68,"4","BLM15PE300SH1");
+create_constant_form("BLM15PE331SH1","5:BLM15PE331SH1, Ferrite Bead Single Type, 1000[mA], 1[MHz]-3[GHz]:5",68,"5","BLM15PE331SH1");
+create_constant_form("BLM15PE471SH1","6:BLM15PE471SH1, Ferrite Bead Single Type, 750[mA], 1[MHz]-3[GHz]:6",68,"6","BLM15PE471SH1");
+create_constant_form("BLM15PE600SH1","7:BLM15PE600SH1, Ferrite Bead Single Type, 1800[mA], 1[MHz]-3[GHz]:7",68,"7","BLM15PE600SH1");
+create_constant_form("BLM15PE601SH1","8:BLM15PE601SH1, Ferrite Bead Single Type, 700[mA], 1[MHz]-3[GHz]:8",68,"8","BLM15PE601SH1");
+create_constant_form("BLM15PE800SH1","9:BLM15PE800SH1, Ferrite Bead Single Type, 1700[mA], 1[MHz]-3[GHz]:9",68,"9","BLM15PE800SH1");
+
+create_form_set("BLM15PE_list" 
+,"BLM15PE121SH1"
+,"BLM15PE181SH1"
+,"BLM15PE221SH1"
+,"BLM15PE300SH1"
+,"BLM15PE331SH1"
+,"BLM15PE471SH1"
+,"BLM15PE600SH1"
+,"BLM15PE601SH1"
+,"BLM15PE800SH1"
+);
+
+create_compound_form("BLM15PE_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"BLM15PE_list",-1,prm("BLM15PE121SH1")),
+create_parm("MIN","Minimum",32,"BLM15PE_list",-1,prm("BLM15PE121SH1")),
+create_parm("MAX","Maximum",32,"BLM15PE_list",-1,prm("BLM15PE800SH1")));
+
+create_form_set("BLM15PE_list_opt","NULL" 
+,"BLM15PE121SH1"
+,"BLM15PE181SH1"
+,"BLM15PE221SH1"
+,"BLM15PE300SH1"
+,"BLM15PE331SH1"
+,"BLM15PE471SH1"
+,"BLM15PE600SH1"
+,"BLM15PE601SH1"
+,"BLM15PE800SH1"
+,"BLM15PE_compound"
+);
+
+
+

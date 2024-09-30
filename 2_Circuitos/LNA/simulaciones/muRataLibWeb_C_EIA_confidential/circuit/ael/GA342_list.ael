@@ -1,0 +1,61 @@
+create_constant_form("NULL","NULL",16,"NULL","NULL");
+create_constant_form("GA342QR7GD101KW01","1:GA342QR7GD101KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 100[pF], +/-10[%], 100[kHz]-3[GHz]:1",68,"1","GA342QR7GD101KW01");
+create_constant_form("GA342QR7GF101KW01","2:GA342QR7GF101KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 100[pF], +/-10[%], 100[kHz]-3[GHz]:2",68,"2","GA342QR7GF101KW01");
+create_constant_form("GA342QR7GD151KW01","3:GA342QR7GD151KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 150[pF], +/-10[%], 100[kHz]-3[GHz]:3",68,"3","GA342QR7GD151KW01");
+create_constant_form("GA342QR7GF151KW01","4:GA342QR7GF151KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 150[pF], +/-10[%], 100[kHz]-3[GHz]:4",68,"4","GA342QR7GF151KW01");
+create_constant_form("GA342QR7GD221KW01","5:GA342QR7GD221KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 220[pF], +/-10[%], 100[kHz]-3[GHz]:5",68,"5","GA342QR7GD221KW01");
+create_constant_form("GA342DR7GF221KW02","6:GA342DR7GF221KW02, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 220[pF], +/-10[%], 100[kHz]-3[GHz]:6",68,"6","GA342DR7GF221KW02");
+create_constant_form("GA342QR7GD331KW01","7:GA342QR7GD331KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 330[pF], +/-10[%], 100[kHz]-3[GHz]:7",68,"7","GA342QR7GD331KW01");
+create_constant_form("GA342DR7GF331KW02","8:GA342DR7GF331KW02, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 330[pF], +/-10[%], 100[kHz]-3[GHz]:8",68,"8","GA342DR7GF331KW02");
+create_constant_form("GA342QR7GD471KW01","9:GA342QR7GD471KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 470[pF], +/-10[%], 100[kHz]-3[GHz]:9",68,"9","GA342QR7GD471KW01");
+create_constant_form("GA342QR7GF471KW01","10:GA342QR7GF471KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 470[pF], +/-10[%], 100[kHz]-3[GHz]:10",68,"10","GA342QR7GF471KW01");
+create_constant_form("GA342QR7GD681KW01","11:GA342QR7GD681KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 680[pF], +/-10[%], 100[kHz]-3[GHz]:11",68,"11","GA342QR7GD681KW01");
+create_constant_form("GA342QR7GF681KW01","12:GA342QR7GF681KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 680[pF], +/-10[%], 100[kHz]-3[GHz]:12",68,"12","GA342QR7GF681KW01");
+create_constant_form("GA342QR7GD102KW01","13:GA342QR7GD102KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:13",68,"13","GA342QR7GD102KW01");
+create_constant_form("GA342DR7GF102KW02","14:GA342DR7GF102KW02, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1000[pF], +/-10[%], 100[kHz]-3[GHz]:14",68,"14","GA342DR7GF102KW02");
+create_constant_form("GA342QR7GD152KW01","15:GA342QR7GD152KW01, Safety Standard Certified, X7R(-55to125[deg]), 250[Vac], 1500[pF], +/-10[%], 100[kHz]-3[GHz]:15",68,"15","GA342QR7GD152KW01");
+
+create_form_set("GA342_list" 
+,"GA342QR7GD101KW01"
+,"GA342QR7GF101KW01"
+,"GA342QR7GD151KW01"
+,"GA342QR7GF151KW01"
+,"GA342QR7GD221KW01"
+,"GA342DR7GF221KW02"
+,"GA342QR7GD331KW01"
+,"GA342DR7GF331KW02"
+,"GA342QR7GD471KW01"
+,"GA342QR7GF471KW01"
+,"GA342QR7GD681KW01"
+,"GA342QR7GF681KW01"
+,"GA342QR7GD102KW01"
+,"GA342DR7GF102KW02"
+,"GA342QR7GD152KW01"
+);
+
+create_compound_form("GA342_compound","Discrete Optimize setting","DistLibForm",68,"%p opt{ discrete %1p to %2p by 1 }","%s, %1s to %2s",
+create_parm("NOM","Nominal",32,"GA342_list",-1,prm("GA342QR7GD101KW01")),
+create_parm("MIN","Minimum",32,"GA342_list",-1,prm("GA342QR7GD101KW01")),
+create_parm("MAX","Maximum",32,"GA342_list",-1,prm("GA342QR7GD152KW01")));
+
+create_form_set("GA342_list_opt","NULL" 
+,"GA342QR7GD101KW01"
+,"GA342QR7GF101KW01"
+,"GA342QR7GD151KW01"
+,"GA342QR7GF151KW01"
+,"GA342QR7GD221KW01"
+,"GA342DR7GF221KW02"
+,"GA342QR7GD331KW01"
+,"GA342DR7GF331KW02"
+,"GA342QR7GD471KW01"
+,"GA342QR7GF471KW01"
+,"GA342QR7GD681KW01"
+,"GA342QR7GF681KW01"
+,"GA342QR7GD102KW01"
+,"GA342DR7GF102KW02"
+,"GA342QR7GD152KW01"
+,"GA342_compound"
+);
+
+
+
