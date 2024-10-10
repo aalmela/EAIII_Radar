@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      AlejandroAlmela
 HostName                       DESKTOP-LHADK87
-ProcessIdentifier              28380
-ProcessCreationTime_UTC        1727201919
-ProcessCreationTime_Readable   Tue Sep 24 15:18:39 2024 Hora estándar de Argentina
+ProcessIdentifier              16084
+ProcessCreationTime_UTC        1727889630
+ProcessCreationTime_Readable   Wed Oct  2 14:20:30 2024 Hora estándar de Argentina
 AppIdentifier                  OA File System Design Manager
 OSType                         win32
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         C:\Users\AlejandroAlmela\svn\EAIII_Radar\Mixer\ADS\Mi_darae_lib\mixer_rat_race_discreto\schematic\sch.oa.cdslck
-TimeEditLocked                 Wed Sep 25 11:12:40 2024 Hora estándar de Argentina
+FilePathUsedToEditLock         C:\Users\AlejandroAlmela\svn\EAIII_Radar\2_Circuitos\Mixer\ADS\Mi_darae_lib\mixer_rat_race_discreto\schematic\sch.oa.cdslck.dirlck
+TimeEditLocked                 Thu Oct  3 22:47:46 2024 Hora estándar de Argentina
