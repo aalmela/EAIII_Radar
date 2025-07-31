@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=V+ Pin=Cp3-1
+Removed Member From Class: ClassName=RF50R Member=V+
+Added Pin To Net: NetName=VCO+ Pin=Cp3-1

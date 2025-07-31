@@ -1,0 +1,103 @@
+Removed Pin From Net: NetName=GND Pin=C53-1
+Removed Pin From Net: NetName=NetC57_1 Pin=C57-1
+Removed Pin From Net: NetName=NetC57_2 Pin=R22-2
+Removed Pin From Net: NetName=NetC57_2 Pin=R23-1
+Removed Pin From Net: NetName=NetC53_2 Pin=R23-2
+Removed Pin From Net: NetName=NetC53_2 Pin=U5-3
+Removed Pin From Net: NetName=NetC20_2 Pin=Vtune-1
+Change Component Footprint: Designator=T1 Old Footprint=SMB_V-RJ45 New Footprint=SMA-142-0701-851
+Change Component Footprint: Designator=T2 Old Footprint=SMB_V-RJ45 New Footprint=SMA-142-0701-851
+Change Component Footprint: Designator=T4 Old Footprint=SMB_V-RJ45 New Footprint=SMA-142-0701-851
+Change Component Footprint: Designator=T5 Old Footprint=SMB_V-RJ45 New Footprint=SMA-142-0701-851
+Change Component Comment : Designator=T1 Old Comment=SMB New Comment=SMA
+Change Component Comment : Designator=T2 Old Comment=SMB New Comment=SMA
+Change Component Comment : Designator=T4 Old Comment=SMB New Comment=SMA
+Change Component Comment : Designator=T5 Old Comment=SMB New Comment=SMA
+Added Component: Designator=Cp3(CAPC1608X90N)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Polarized Capacitor; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "POLAR0.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.6pF"; VariantName = "[No Variations]"
+Added Component: Designator=R40(RESC1508X55N)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "10 ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R41(RESC1508X55N)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "10 ohms"; VariantName = "[No Variations]"
+Added Component: Designator=R42(RESC1508X55N)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "value"; Value = "10 ohms"; VariantName = "[No Variations]"
+Added Component: Designator=U7(SOP50P490X110-10N)
+Add component (AddParameter): Name = "Characteristics"; Value = "LMP7712MM18VPrecisonDualLowNoiseCMOSInputOpAmpwithShutdown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1DescBC"; Value = "LMP7712Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http//wwwnationalcom/ds/LM/LMP7712pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2DescA4"; Value = "LMP7712WebPage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http//wwwnationalcom/pf/LM/LMP7712html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3DescAC"; Value = "MUB10APackageWebPage"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http//wwwnationalcom/packaging/folders/mub10ahtml"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "CompType"; Value = "OpAmpIC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2009-03-16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "MassUpdate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "NationalSemiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "10LeadMSOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "MUB10A_L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "LMP7712MM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2009-03-16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "NationalSemiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolVersion"; Value = "2008-07-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMax_C"; Value = "1250"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TaMin_C"; Value = "-400"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Version"; Value = "B1608"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC53_2 Pin=C57-1
+Added Pin To Net: NetName=V+ Pin=Cp3-1
+Added Pin To Net: NetName=GND Pin=Cp3-2
+Added Pin To Net: NetName=NetC57_2 Pin=IN_IF-1
+Added Pin To Net: NetName=NetC53_2 Pin=R22-1
+Added Pin To Net: NetName=NetC57_1 Pin=R22-2
+Added Pin To Net: NetName=GND Pin=R23-1
+Added Pin To Net: NetName=NetC57_2 Pin=R30-1
+Added Pin To Net: NetName=GND Pin=R40-1
+Added Pin To Net: NetName=GND Pin=R41-1
+Added Pin To Net: NetName=NetC20_2 Pin=R42-2
+Added Pin To Net: NetName=NetC56_2 Pin=U6-5
+Added Pin To Net: NetName=NetR20_2 Pin=U6-6
+Added Pin To Net: NetName=NetC60_1 Pin=U6-7
+Added Pin To Net: NetName=NetC20_2 Pin=U7-1
+Added Pin To Net: NetName=V+ Pin=U7-4
+Added Pin To Net: NetName=V+ Pin=U7-5
+Added Pin To Net: NetName=GND Pin=U7-10
+Change Net Name : Old Net Name=NetC57_1 New Net Name=NetR15_2
+Added Pin To Net: NetName=NetC53_1 Pin=C53-1
+Added Pin To Net: NetName=NetC53_1 Pin=R23-2
+Added Pin To Net: NetName=NetC53_1 Pin=U5-3
+Added Net: Name=NetC53_1
+Added Pin To Net: NetName=NetR40_2 Pin=R40-2
+Added Pin To Net: NetName=NetR40_2 Pin=U7-3
+Added Pin To Net: NetName=NetR40_2 Pin=Vtune-1
+Added Net: Name=NetR40_2
+Added Pin To Net: NetName=NetR41_2 Pin=R41-2
+Added Pin To Net: NetName=NetR41_2 Pin=R42-1
+Added Pin To Net: NetName=NetR41_2 Pin=U7-2
+Added Net: Name=NetR41_2
+Added Member To Class: ClassName=VCO Member=Component Cp3 Cap 0603
+Added Member To Class: ClassName=VCO Member=Component R40 Resistor
+Added Member To Class: ClassName=VCO Member=Component R41 Resistor
+Added Member To Class: ClassName=VCO Member=Component R42 Resistor
+Added Member To Class: ClassName=VCO Member=Component U7 LMP7712MMNOPB
+Added Member To Class: ClassName=RF50R Member=Wire NetR40_2
+Added Member To Class: ClassName=RF50R Member=Wire NetR41_2
+Added Member To Class: ClassName=RF50R Member=Wire V+
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2

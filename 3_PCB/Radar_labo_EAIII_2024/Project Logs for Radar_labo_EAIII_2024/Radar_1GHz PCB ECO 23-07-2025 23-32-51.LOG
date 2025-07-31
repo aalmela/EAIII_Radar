@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=V+ Pin=U7-4
+Removed Pin From Net: NetName=V+ Pin=U7-5
+Removed Member From Class: ClassName=RF50R Member=NetC12_2
+Added Pin To Net: NetName=NetC12_2 Pin=U7-4
+Added Pin To Net: NetName=NetC12_2 Pin=U7-5
+Change Net Name : Old Net Name=NetC12_2 New Net Name=VCO+
+Added Member To Class: ClassName=RF50R Member=Wire VCO+
+Added Rule: Name=Schematic Supply Nets_3
